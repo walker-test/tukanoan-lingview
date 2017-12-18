@@ -3,7 +3,7 @@
     "97b8ab3b-d2a5-428a-aa68-0aa304ba1c44": {
       "timed": true,
       "title": {
-        "_default": "Intro"
+        "_default": "Sample Story"
       },
       "media": {
         "audio": "Intro.mp3",
@@ -33,7 +33,7 @@
       "metadata": {
         "timed": true,
         "title": {
-          "_default": "Intro"
+          "_default": "Sample Story"
         },
         "media": {
           "audio": "Intro.mp3",

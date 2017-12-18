@@ -9,54 +9,30 @@ export class StoryIndex extends React.Component {
         let storyList = [];
         for (const story in index) {
             if (index.hasOwnProperty(story)) {
-                /////////////////
-                // A'ingae Title
-                /////////////////
+                /////////
+                // Title
+                /////////
                 let mainTitle = '';
                 // get default title
                 if (index[story]['title']['_default'] != '') {
                     mainTitle = index[story]['title']['_default'];
                 }
-                // replace with cofan title if available
-                if (index[story]['title'].hasOwnProperty('con-Latn-EC') && index[story]['title']['con-Latn-EC'] != '') {
-                    mainTitle = index[story]['title']['con-Latn-EC'];
-                }
-                // remove first word?
-                if (!isNaN(mainTitle.split(' ')[0])) {
-                    mainTitle = mainTitle.substr(mainTitle.indexOf(" ") + 1);
-                }
-                /////////////////////
-                // Translated Title
-                /////////////////////
-                let translatedTitle = '';
-                if (index[story]['title'].hasOwnProperty('es') && index[story]['title']['es'] != '') {
-                    translatedTitle = index[story]['title']['es'];
-                }
-                if (index[story]['title'].hasOwnProperty('en') && index[story]['title']['en'] != '') {
-                    translatedTitle = index[story]['title']['en'];
-                }
 
                 let timed = '';
                 if (index[story]['timed']) {
                     if (index[story]['media']['audio'] != '') {
-                        timed += '🎧    '
+                        timed += '🎧 &nbsp;&nbsp;'
                     }
                     if (index[story]['media']['video'] != '') {
-                        timed += '🎞'
+                        timed += '🎞 &nbsp;&nbsp;'
                     }
                 } else {
                     timed = '✘';
                 }
-
-                // const link = ReactDOMServer.renderToString(`<Link to={'/story/${index[story]['story ID']}'}>${mainTitle}</Link>`);
+                // React Router link:
                 const link = `<a href='#/story/${index[story]['story ID']}'>${mainTitle}</a>`;
                 
-                storyList.push([link, translatedTitle, index[story]['author'], timed]);
-                // storyList.push(
-                //     <li key={id.generate()}>
-                //         <Link to={`/story/${index[story]['story ID']}`}>{story}</Link>
-                //     </li>
-                // )
+                storyList.push([link, index[story]['author'], timed]);
             }
         }
 
@@ -64,8 +40,7 @@ export class StoryIndex extends React.Component {
             $('#indexTable').DataTable( {
                 data: storyList,
                 columns: [
-                    { title: "Title (A'ingae)" },
-                    { title: "Title (English)" },
+                    { title: "Title" },
                     { title: "Author" },
                     { title: "Media" }
                 ]
