@@ -289,9 +289,5 @@ video {
 }
 
 #navbar a:hover {
-	background-color: rgb(194,24,81);
-}
-
-#navbar a:active {
-	background-color: rgb(172,21,72);
+	background-color: rgb(119,156,200);
 }
