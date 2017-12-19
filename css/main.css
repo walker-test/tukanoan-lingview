@@ -38,7 +38,7 @@ body {
 }
 
 #leftPanel {
-	width: 240px;
+	width: 300px;
 	position: fixed;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -88,8 +88,8 @@ td {
 
 #centerPanel {
 	position: fixed;
-	margin-left: 240px;
-	width: calc(100% - 240px);
+	margin-left: 300px;
+	width: calc(100% - 300px);
 	height: calc(100% - 48px);
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -147,7 +147,7 @@ a.timeStamp {
 		Untimed */
 #untimedTextDisplay {
 	position: fixed;
-	width: calc(100% - 240px);
+	width: calc(100% - 300px);
 	height: calc(100% - 48px);
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -182,7 +182,7 @@ ul {
 }
 
 #title {
-	padding-left: 10px;
+	padding-left: 20px;
 	padding-right: 20px;
 	font-weight: 700;
 	font-size: 1.7em;
@@ -257,7 +257,7 @@ a:hover {
 }
 
 #miniPage {
-	margin: 20px 10px;
+	margin: 20px 20px;
 }
 
 #speakerList ul {

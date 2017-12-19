@@ -14,7 +14,7 @@ export class Story extends React.Component {
             var footheight = ($('#footer').height() + 48).toString() + 'px';
             var bodyheight = 'calc(100% - ' + footheight + ')';
 
-            $('#leftPanel').css('width', '240px');
+            $('#leftPanel').css('width', '300px');
             $('#leftPanel').css('height', bodyheight);
             $('#centerPanel').css('height', bodyheight);
         }

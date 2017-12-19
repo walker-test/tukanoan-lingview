@@ -11300,11 +11300,11 @@ var Video = exports.Video = function (_React$Component) {
 			var footheight = ($("#footer").height() + 48).toString() + "px";
 			var bodyheight = "calc(100% - " + footheight + ")";
 
-			$("#leftPanel").css("width", "240px");
+			$("#leftPanel").css("width", "300px");
 			$("#leftPanel").css("height", bodyheight);
 			$("#centerPanel").css("height", bodyheight);
-			$("#centerPanel").css("margin-left", "240px");
-			$("#centerPanel").css("width", "calc(100% - 240px)");
+			$("#centerPanel").css("margin-left", "300px");
+			$("#centerPanel").css("width", "calc(100% - 300px)");
 
 			// Deactivate video:
 			$("#video").css("display", "none");
@@ -26586,7 +26586,7 @@ var Story = exports.Story = function (_React$Component) {
                 var footheight = ($('#footer').height() + 48).toString() + 'px';
                 var bodyheight = 'calc(100% - ' + footheight + ')';
 
-                $('#leftPanel').css('width', '240px');
+                $('#leftPanel').css('width', '300px');
                 $('#leftPanel').css('height', bodyheight);
                 $('#centerPanel').css('height', bodyheight);
             }
