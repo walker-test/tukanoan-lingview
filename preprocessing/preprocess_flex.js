@@ -291,7 +291,7 @@ function preprocessText(jsonIn, jsonFilesDir, shortFileName, isoDict, callback) 
   let storyID = jsonIn.$.guid;
 
   let metadata = helper.improveFLExIndexData(storyID, jsonIn);
-  updateIndex(metadata, "data/index2.json", storyID);
+  updateIndex(metadata, "data/index.json", storyID);
 
   const jsonOut = {
     "metadata": metadata,

@@ -82,6 +82,7 @@ td {
 /*	MAIN.CSS
 	->	Text Display
 		Timed */
+
 #video {
 	width: calc(100% + 1px);
 }
@@ -93,7 +94,6 @@ td {
 	height: calc(100% - 48px);
 	overflow-y: auto;
 	overflow-x: hidden;
-	background-color: rgb(255,239,220);
 }
 
 .labeledTimeBlock {
@@ -101,9 +101,9 @@ td {
 	float: left;
 	display: flex;
 	padding-right: 10px;
+	padding-top: 27px;
+	padding-bottom: 27px;
 	width: 100%;
-	border-bottom: 2px solid rgb(151,151,151);
-	border-left: 2px solid rgb(151,151,151);
 }
 
 .timeBlock {
@@ -118,7 +118,6 @@ td {
 	/*margin-right: 9px;*/
 	margin-left: 9px;
 	padding-right: 9px;
-	border-right: 2px solid rgb(151,151,151);
 	text-align: center;
 	min-width: 46px;
 	padding-top: 8px;
@@ -151,7 +150,6 @@ a.timeStamp {
 	height: calc(100% - 48px);
 	overflow-y: scroll;
 	overflow-x: hidden;
-	background-color: rgb(255,239,220);
 }
 
 .untimedBlock {

@@ -96,8 +96,8 @@ function stretchSlots(anotID, prevStretch, tiersToConstraints,
 function preprocess(adocIn, jsonFilesDir, xmlFileName, callback) {
   const storyID = eafUtils.getDocID(adocIn);
   const indexMetadata = helper.improveElanIndexData(xmlFileName, storyID, adocIn);
-  updateIndex(indexMetadata, "data/index2.json", storyID);
-  updateIndex(indexMetadata, "data/index2.json", storyID);
+  updateIndex(indexMetadata, "data/index.json", storyID);
+  updateIndex(indexMetadata, "data/index.json", storyID);
   const jsonOut = {
     "metadata": indexMetadata,
     "sentences": []
