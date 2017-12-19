@@ -271,6 +271,10 @@ video {
 	margin: 20px;
 }
 
+#indexTable {
+	text-align: center;
+}
+
 #navLinks {
 	float: right;
 	margin-right: 20px;
