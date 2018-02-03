@@ -2,54 +2,56 @@
   "index": {
     "97b8ab3b-d2a5-428a-aa68-0aa304ba1c44": {
       "timed": true,
+      "story ID": "97b8ab3b-d2a5-428a-aa68-0aa304ba1c44",
       "title": {
         "_default": "Intro"
       },
-      "media": {},
-      "date_created": "01/17/2012",
-      "date_uploaded": "",
-      "speakers": [
-        "Martin Criollo",
-        "Hugo Lucitante"
-      ],
-      "description": "A brief introduction to the Cofán people.",
-      "genre": "Nonfiction",
-      "author": "Martin Criollo",
-      "glosser": "Scott Anderbois",
+      "media": {
+        "audio": "Intro.mp3",
+        "video": "Intro.mp4"
+      },
       "languages": [],
+      "date_created": "",
+      "date_uploaded": "2/3/2018",
       "source": {
         "_default": ""
       },
-      "tier IDs": {},
-      "speaker IDs": {},
-      "story ID": "97b8ab3b-d2a5-428a-aa68-0aa304ba1c44"
+      "description": "",
+      "genre": "",
+      "author": "",
+      "glosser": "",
+      "speakers": [
+        "Martin Criollo",
+        "Hugo Lucitante"
+      ]
     }
   },
   "stories": [
     {
       "metadata": {
         "timed": true,
+        "story ID": "97b8ab3b-d2a5-428a-aa68-0aa304ba1c44",
         "title": {
-          "_default": "Sample Story"
+          "_default": "Intro"
         },
         "media": {
           "audio": "Intro.mp3",
           "video": "Intro.mp4"
         },
-        "date_created": "01/17/2012",
-        "date_uploaded": "",
+        "languages": [],
+        "date_created": "",
+        "date_uploaded": "2/3/2018",
+        "source": {
+          "_default": ""
+        },
+        "description": "",
+        "genre": "",
+        "author": "",
+        "glosser": "",
         "speakers": [
           "Martin Criollo",
           "Hugo Lucitante"
         ],
-        "description": "A brief introduction to the Cofán people.",
-        "genre": "Nonfiction",
-        "author": "Martin Criollo",
-        "glosser": "Scott Anderbois",
-        "languages": [],
-        "source": {
-          "_default": ""
-        },
         "tier IDs": {
           "T1": {
             "name": "A'ingae",
@@ -73,8 +75,7 @@
             "name": "Martin Criollo",
             "tier": "T1"
           }
-        },
-        "story ID": "97b8ab3b-d2a5-428a-aa68-0aa304ba1c44"
+        }
       },
       "sentences": [
         {

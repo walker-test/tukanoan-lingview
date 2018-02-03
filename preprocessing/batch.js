@@ -14,10 +14,9 @@ console.log("Converting all files to .JSON and re-building the database. The ind
 // use this to wait for things to terminate before executing the callback
 const status = {numJobs: 2};
 const whenDone = function () {
-  // console.log("job done");
   status.numJobs--;
-  if (status.numJobs === 0) {
-    // console.log("Building database...");
+  if (status.numJobs <= 0) {
+    console.log("Building database...");
     db.build(jsonFilesDir, indexFileName, dbFileName);
   }
 };

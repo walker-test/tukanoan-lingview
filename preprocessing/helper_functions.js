@@ -13,7 +13,7 @@ function getMetadataFromIndex(filename) {
   // O/P: a JSON object with metadata for the given file;
   //      or null if filename not in index
   // Status: tested, working
-  const index = JSON.parse(fs.readFileSync("data/index2.json", "utf8"));
+  const index = JSON.parse(fs.readFileSync("data/index.json", "utf8"));
   if (index.hasOwnProperty(filename)) {
     return index[filename];
   } else {

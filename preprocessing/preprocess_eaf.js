@@ -455,9 +455,13 @@ function preprocess_dir(eafFilesDir, jsonFilesDir, callback) {
   
   // use this to wait for all preprocess calls to terminate before executing the callback
   const status = {numJobs: eafFileNames.length};
+  if (eafFileNames.length == 0) {
+    callback();
+  }
+
   const whenDone = function () {
     status.numJobs--;
-    if (status.numJobs === 0) {
+    if (status.numJobs <= 0) {
       callback();
     }
   };

@@ -342,9 +342,13 @@ function preprocess_dir(xmlFilesDir, jsonFilesDir, isoFileName, callback) {
 
   // use this to wait for all preprocess calls to terminate before executing the callback
   const status = {numJobs: xmlFileNames.length};
+  if (xmlFileNames.length == 0) {
+    callback();
+  }
+
   const whenDone = function () {
     status.numJobs--;
-    if (status.numJobs === 0) {
+    if (status.numJobs <= 0) {
       callback();
     }
   };
