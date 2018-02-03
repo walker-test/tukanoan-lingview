@@ -1,5 +1,6 @@
 import { Sidebar } from './Sidebar/Sidebar.jsx';
 import { CenterPanel } from './Display/CenterPanel.jsx';
+import { Video } from './Sidebar/Video.jsx';
 
 export class Story extends React.Component {
     componentDidMount() {
@@ -10,13 +11,12 @@ export class Story extends React.Component {
                 dataType: 'script',
             });
 
-            // Resize elements based on footer height:
-            var footheight = ($('#footer').height() + 48).toString() + 'px';
-            var bodyheight = 'calc(100% - ' + footheight + ')';
-
-            $('#leftPanel').css('width', '300px');
-            $('#leftPanel').css('height', bodyheight);
-            $('#centerPanel').css('height', bodyheight);
+            // If video exists:
+            if ($('#video').length !== 0) {
+                Video.show();
+            } else {
+                Video.hide();
+            }
         }
     }
 
