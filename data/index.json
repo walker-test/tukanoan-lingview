@@ -1,12 +1,10 @@
-{ "97b8ab3b-d2a5-428a-aa68-0aa304ba1c44": {
+{
+  "97b8ab3b-d2a5-428a-aa68-0aa304ba1c44": {
     "timed": true,
     "title": {
       "_default": "Intro"
     },
-    "media": {
-      "audio": "Intro.mp3",
-      "video": "Intro.mp4"
-    },
+    "media": {},
     "date_created": "01/17/2012",
     "date_uploaded": "",
     "speakers": [
