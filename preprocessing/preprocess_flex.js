@@ -290,7 +290,7 @@ function getSentenceJson(sentence, tierReg, wordsTierID) {
 function preprocessText(jsonIn, jsonFilesDir, shortFileName, isoDict, callback) {
   let storyID = jsonIn.$.guid;
 
-  let metadata = helper.improveFLExIndexData(storyID, jsonIn);
+  let metadata = helper.improveFLExIndexData(shortFileName + ".xml", storyID, jsonIn);
   updateIndex(metadata, "data/index.json", storyID);
 
   const jsonOut = {

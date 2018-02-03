@@ -16934,8 +16934,7 @@ var StoryIndex = exports.StoryIndex = function (_React$Component) {
                     /////////
                     // Title
                     /////////
-                    var mainTitle = '';
-                    // get default title
+                    var mainTitle = index[story]['title']['con-Latn-EC'];
                     if (index[story]['title']['_default'] != '') {
                         mainTitle = index[story]['title']['_default'];
                     }

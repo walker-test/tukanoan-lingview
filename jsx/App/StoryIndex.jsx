@@ -12,8 +12,7 @@ export class StoryIndex extends React.Component {
                 /////////
                 // Title
                 /////////
-                let mainTitle = '';
-                // get default title
+                let mainTitle = index[story]['title']['con-Latn-EC'];
                 if (index[story]['title']['_default'] != '') {
                     mainTitle = index[story]['title']['_default'];
                 }

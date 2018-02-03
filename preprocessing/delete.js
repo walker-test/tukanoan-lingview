@@ -1,3 +1,5 @@
+// 
+
 const fs = require("fs");
 const inquirer = require("inquirer");
 let obj = JSON.parse(fs.readFileSync("data/index.json", "utf8"));
@@ -6,28 +8,32 @@ let DB = JSON.parse(fs.readFileSync("data/database.json", "utf8"));
 let filename;
 let data;
 
+let maxArgIndex = 0;
 process.argv.forEach(function (val, index, array) {
+  maxArgIndex = index;
   if (index === 2) {
 		filename = val;
-	} else if (index === 3) {
-		console.log("Too many arguments. Continuing anyway...");
-	}
+	} 
 });
+if (maxArgIndex !== 2) {
+	console.log("Wrong number of arguments! To delete a file, type: \n $ node preprocessing/delete.js storyID \nwhere the storyID can be found in the URL or index.json file.");
+} else {
+	main();
+}
 
-
+function main() {
 try {
+
 	audio_filename = "";
 	video_filename = "";
 	// Get associated media:
 	media = obj[filename]["media"]
-	if (media.hasOwnProperty('audio') && media['audio'] != '') {
+	if (media.hasOwnProperty('audio') && media['audio'] !== '') {
 		audio_filename = "data/media_files/" +  media['audio'];
 	}
-	if (media.hasOwnProperty('video') && media['video'] != '') {
+	if (media.hasOwnProperty('video') && media['video'] !== '') {
 		video_filename = "data/media_files/" +  media['video'];
 	}
-	console.log(audio_filename);
-	console.log(video_filename);
 
 	///////////////////////////////////
 	// Ask to delete video/audio files:
@@ -41,7 +47,7 @@ try {
 			"default": false,
 			"when": 
 				function(answers) {
-					if (audio_filename != "") {
+					if (audio_filename !== "") {
 						return true;
 					} else {
 						return false;
@@ -55,7 +61,7 @@ try {
 			"default": false,
 			"when": 
 				function(answers) {
-					if (video_filename != "") {
+					if (video_filename !== "") {
 						return true;
 					} else {
 						return false;
@@ -74,16 +80,25 @@ try {
 	// End inquirer
 	///////////////////////////////////
 
+	// Get original XML filename:
+	xmlFileName = obj[filename]["xml_file_name"]
+	if (obj[filename]["source_filetype"] === "ELAN") {
+		fs.unlink("data/elan_files/" + xmlFileName, function(){});
+	} else if (obj[filename]["source_filetype"] === "FLEx") {
+		fs.unlink("data/flex_files/" + xmlFileName, function(){});
+	} else {
+		console.log("Unsure of filetype. Unable to delete original XML file.")
+	}
 
 	// Removes the index:
 	delete obj[filename];
-	
+
 	// Removes story gloss from the database:
 	stories = DB["stories"];
 	for (i=0; i<stories.length; i++) {
 		story = stories[i];
-		if (story["metadata"]["story ID"] == filename) {
-			delete DB["stories"][i];
+		if (story["metadata"]["story ID"] === filename) {
+			DB["stories"].splice(i,1); // Delete the ith entry
 		}
 	}
 
@@ -97,5 +112,4 @@ try {
 	console.log("✅" + "  " + "File successfully deleted!");
 } catch(err) {
 	console.log("❌" + "  " + "Deletion failed.");
-}
-
+}}
