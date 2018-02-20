@@ -26792,7 +26792,8 @@ function Minibar(_ref) {
 			'div',
 			{ id: 'miniPage' },
 			React.createElement(_Info.Info, { metadata: metadata }),
-			React.createElement(_Settings.Settings, { tiers: metadata['tier IDs'], hasVideo: hasVideo })
+			React.createElement(_Settings.Settings, { tiers: metadata['tier IDs'], hasVideo: hasVideo }),
+			React.createElement(_Info.MoreInfo, { metadata: metadata })
 		)
 	);
 }
@@ -26808,6 +26809,7 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 exports.Info = Info;
+exports.MoreInfo = MoreInfo;
 
 var _SpeakerInfo = __webpack_require__(245);
 
@@ -26818,12 +26820,25 @@ function Info(_ref) {
 
 	// I/P: metadata, in JSON format
 	// O/P: a nice display of speaker names + other metadata
-	// Status: unfinished
+	// Status: finished
 	return React.createElement(
 		'div',
 		{ id: 'info', className: 'miniPage active' },
 		React.createElement(_Metadata.Metadata, { metadata: metadata }),
 		React.createElement(_SpeakerInfo.SpeakerInfo, { speakers: metadata['speaker IDs'] })
+	);
+}
+
+function MoreInfo(_ref2) {
+	var metadata = _ref2.metadata;
+
+	// I/P: metadata, in JSON format
+	// O/P: glossing and source information
+	// Status: finished
+	return React.createElement(
+		'div',
+		{ id: 'info', className: 'miniPage active' },
+		React.createElement(_Metadata.MoreMetadata, { metadata: metadata })
 	);
 }
 
@@ -26891,16 +26906,15 @@ Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 exports.Metadata = Metadata;
+exports.MoreMetadata = MoreMetadata;
 function Metadata(_ref) {
 	var metadata = _ref.metadata;
 
 	// I/P: metadata, in JSON format
 	// O/P: a nice display of speaker names + other metadata
-	// Status: unfinished
+	// Status: finished
 	var description = null;
 	var author = null;
-	var glosser = null;
-	var source = null;
 	var genre = null;
 	var date_created = null;
 
@@ -26927,6 +26941,41 @@ function Metadata(_ref) {
 		);
 	}
 
+	if (metadata["genre"] != "") {
+		genre = React.createElement(
+			"p",
+			null,
+			"Genre: ",
+			metadata["genre"]
+		);
+	}
+
+	if (metadata["date_created"] != "") {
+		date_created = React.createElement(
+			"p",
+			null,
+			"Date: ",
+			metadata["date_created"]
+		);
+	}
+
+	return React.createElement(
+		"div",
+		{ id: "metadata" },
+		description,
+		author
+	);
+}
+
+function MoreMetadata(_ref2) {
+	var metadata = _ref2.metadata;
+
+	// I/P: metadata, in JSON format
+	// O/P: glosser + source information
+	// Status: finished
+	var glosser = null;
+	var source = null;
+
 	if (metadata["glosser"] != "") {
 		glosser = React.createElement(
 			"p",
@@ -26952,29 +27001,9 @@ function Metadata(_ref) {
 		);
 	}
 
-	if (metadata["genre"] != "") {
-		genre = React.createElement(
-			"p",
-			null,
-			"Genre: ",
-			metadata["genre"]
-		);
-	}
-
-	if (metadata["date_created"] != "") {
-		date_created = React.createElement(
-			"p",
-			null,
-			"Date: ",
-			metadata["date_created"]
-		);
-	}
-
 	return React.createElement(
 		"div",
 		{ id: "metadata" },
-		description,
-		author,
 		glosser,
 		source
 	);
