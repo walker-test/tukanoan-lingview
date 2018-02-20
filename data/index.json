@@ -33,12 +33,9 @@
       "con-Latn-EC": "103 Singo a'i",
       "en": "Black People",
       "es": "El negro",
-      "_default": ""
+      "_default": "Singo a'i"
     },
-    "media": {
-      "audio": "",
-      "video": ""
-    },
+    "media": {},
     "languages": [
       "con-Latn-EC",
       "en",

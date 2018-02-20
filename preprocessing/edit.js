@@ -69,6 +69,13 @@ function main(callback) {
 					}
 				}
 		},
+		// edit title?
+		{
+			"type": "input", 
+			"name": "title",
+			"message": "Title:",
+			"default": data["title"]["_default"]
+		},
 		// edit description?
 		{
 			"type": "confirm", 
@@ -111,7 +118,7 @@ function main(callback) {
 			"type": "list", 
 			"name": "genre",
 			"message": "Select a genre:",
-			"choices": ["Nonfiction", "Fiction"],
+			"choices": ["Nonfiction", "Fiction", ""],
 			"default": data["genre"]
 		},
 		// author
@@ -158,6 +165,7 @@ function main(callback) {
 		if (answers["description"]) {
 			data["description"] = answers["description"];
 		}
+		data["title"]["_default"] = answers["title"];
 		data["genre"] = answers["genre"];
 		data["author"] = answers["author"];
 		data["glosser"] = answers["glosser"];
