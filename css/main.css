@@ -153,10 +153,14 @@ a.timeStamp {
 }
 
 .untimedBlock {
+	clear: both;
+	float: left;
+	display: flex;
+	padding-right: 10px;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	width: 100%;
 	overflow-x: auto;
-	border: 2px solid rgb(151,151,151);
-	border-top: none;
-	padding: 5px 0px;
 }
 
 table.gloss {
