@@ -51,8 +51,8 @@ export function MoreMetadata({ metadata }) {
 
 	return (
 		<div id="metadata">
-			{glosser}
 			{source}
+			{glosser}
 		</div>
 	);
 }
