@@ -34,7 +34,7 @@ export class Story extends React.Component {
             } else {
                 audioFile = media['video'];
             }
-            footer = <div id="footer"><audio data-live="true" controls id="audio" src={'data/media_files/' + audioFile}/></div>;
+            footer = <div id="footer"><audio data-live="true" controls controlsList="nodownload" id="audio" src={'data/media_files/' + audioFile}/></div>;
         }
         return (
             <div>

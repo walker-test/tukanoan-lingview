@@ -7256,16 +7256,16 @@ var Video = exports.Video = function (_React$Component) {
 	}
 
 	_createClass(Video, [{
-		key: 'render',
+		key: "render",
 
 		// I/P: path, the path to the video
 		// O/P: a video player
 		// Status: re-written, untested
 		value: function render() {
-			return React.createElement('video', { src: this.props.path, id: 'video', controls: true });
+			return React.createElement("video", { src: this.props.path, id: "video", controls: true, controlsList: "nodownload" });
 		}
 	}], [{
-		key: 'show',
+		key: "show",
 		value: function show() {
 			// Resize panels:
 			$('#leftPanel').css('width', '40%');
@@ -7296,7 +7296,7 @@ var Video = exports.Video = function (_React$Component) {
 			video.currentTime = audio.currentTime;
 		}
 	}, {
-		key: 'hide',
+		key: "hide",
 		value: function hide() {
 			// Resize panels:
 			var footheight = ($("#footer").height() + 48).toString() + "px";
@@ -26666,7 +26666,7 @@ var Story = exports.Story = function (_React$Component) {
                 footer = React.createElement(
                     'div',
                     { id: 'footer' },
-                    React.createElement('audio', { 'data-live': 'true', controls: true, id: 'audio', src: 'data/media_files/' + audioFile })
+                    React.createElement('audio', { 'data-live': 'true', controls: true, controlsList: 'nodownload', id: 'audio', src: 'data/media_files/' + audioFile })
                 );
             }
             return React.createElement(
