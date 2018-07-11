@@ -242,6 +242,9 @@ function preprocess(adocIn, jsonFilesDir, xmlFileName, callback) {
         
         const parentAnotID = eafUtils.getAnnotationID(parentAnot);
         if (sortedChildIDs.length !== 0) {
+          if (annotationChildren[parentAnotID] == null) {
+            annotationChildren[parentAnotID] = {}
+          }
           annotationChildren[parentAnotID][childTierName] = sortedChildIDs;
         }
       }
