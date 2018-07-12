@@ -7,7 +7,10 @@ let DB = JSON.parse(fs.readFileSync("data/database.json", "utf8"));
 let filename;
 let data;
 
+let maxArgIndex = 0;
+
 process.argv.forEach(function (val, index, array) {
+  maxArgIndex = index;
   if (index === 2) {
 		filename = val;
 	} else if (index === 3) {
@@ -15,12 +18,16 @@ process.argv.forEach(function (val, index, array) {
 	}
 });
 
-try {
-	data = obj[filename];
-	main(update);
-	console.log("✅" + "  " + "File found! Preparing to edit...");
-} catch (err) {
-	console.log("❌" + "  " + " File not found! Correct usage: \n\nnode preprocess/edit.js unique_id\n\nwhere unique_id is the last part of a story's URL. \nExiting...");
+if (maxArgIndex < 2) {
+	console.log("To edit the metadata for a file, type: \n node preprocess/edit.js unique_id\n where unique_id is the last part of a story's URL.");
+} else {
+	try {
+    data = obj[filename];
+    main(update);
+    console.log("✅" + "  " + "File found! Preparing to edit...");
+  } catch (err) {
+    console.log("❌" + "  " + " File not found!  \nExiting...");
+  }
 }
 
 function main(callback) {
