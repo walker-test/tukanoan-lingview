@@ -20,7 +20,7 @@ try {
 	main(update);
 	console.log("✅" + "  " + "File found! Preparing to edit...");
 } catch (err) {
-	console.log("❌" + "  " + " File not found! Exiting...");
+	console.log("❌" + "  " + " File not found! Correct usage: \n\nnode preprocess/edit.js unique_id\n\nwhere unique_id is the last part of a story's URL. \nExiting...");
 }
 
 function main(callback) {
