@@ -292,8 +292,10 @@ function preprocess(adocIn, jsonFilesDir, xmlFileName, callback) {
           }
           
           // sort by ms value
-          childIDs = childIDs.sort((a1,a2) => {
+          childIDs = childIDs.sort((id1,id2) => {
             // if start isn't defined, calculate it based on end, pretending duration is 1 ms
+            const a1 = annotationsFromIDs[id1];
+            const a2 = annotationsFromIDs[id2];
             const start1 = (
               timeslots[eafUtils.getAlignableAnnotationStartSlot(a1)]
               || timeslots[eafUtils.getAlignableAnnotationEndSlot(a1)] - 1
@@ -320,7 +322,7 @@ function preprocess(adocIn, jsonFilesDir, xmlFileName, callback) {
         
         // add children which share a boundary with an existing child
         // (but not if they end at the first child or start at the last child)
-        const prevIndex = 0;
+        let prevIndex = 0;
         while (prevIndex < childIDs.length - 1) {
           const prevID = childIDs[prevIndex];
           const prevAnot = annotationsFromIDs[prevID];
@@ -334,13 +336,15 @@ function preprocess(adocIn, jsonFilesDir, xmlFileName, callback) {
             eafUtils.getAlignableAnnotationStartSlot(a) === prevSlot
           );
           if (newAnot == null) {
-            newAnot = childTierAnots.find(
+            newAnot = childTierAnots.find(a =>
               eafUtils.getAlignableAnnotationEndSlot(a) === nextSlot
             );
           }
-          const newID = eafUtils.getAnnotationID(newAnot);
-          if (newID != null && newID != nextID) {
-            childIDs.splice(prevIndex + 1, 0, newID); // insert after prevIndex
+          if (newAnot != null) {
+            const newID = eafUtils.getAnnotationID(newAnot);
+            if (newID != null && newID != nextID) {
+              childIDs.splice(prevIndex + 1, 0, newID); // insert after prevIndex
+            }
           }
           
           prevIndex++;
