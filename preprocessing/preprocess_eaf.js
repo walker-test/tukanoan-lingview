@@ -1,6 +1,7 @@
 const fs = require('fs');
 const parseXml = require('xml2js').parseString;
 const eafUtils = require('./eaf_utils');
+const pfsxUtils = require('./pfsx_utils');
 const helper = require('./helper_functions');
 
 function updateIndex(indexMetadata, indexFileName, storyID) {
@@ -93,7 +94,7 @@ function stretchSlots(anotID, prevStretch, tiersToConstraints,
   }
 }
 
-function preprocess(adocIn, jsonFilesDir, xmlFileName, callback) {
+function preprocess(adocIn, pfsxIn, jsonFilesDir, xmlFileName, callback) {
   const storyID = eafUtils.getDocID(adocIn);
   const indexMetadata = helper.improveElanIndexData(xmlFileName, storyID, adocIn);
   updateIndex(indexMetadata, "data/index.json", storyID);
@@ -122,16 +123,22 @@ function preprocess(adocIn, jsonFilesDir, xmlFileName, callback) {
     tierIDsFromNames[tierName] = newID;
   }
   
+  const garbageTierNames = pfsxUtils.getHiddenTiers(pfsxIn);
+  let garbageTierIDs = [];
+  for (const garbageTierName of garbageTierNames) {
+    garbageTierIDs.push(tierIDsFromNames[garbageTierName]);
+  }
+  
   // TODO glom morphs if coming from FLEx?
   
   // tiersToConstraints: tierName -> constraintName
   // (to generate, first create typesToConstraints: linguisticTypeName -> constraintName)
   const typesToConstraints = {};
   const linguisticTypes = adocIn.LINGUISTIC_TYPE
-  for (const lType of linguisticTypes) {
-    const lTypeID = lType.$.LINGUISTIC_TYPE_ID;
-    const constraintName = lType.$.CONSTRAINTS || '';
-    typesToConstraints[lTypeID] = constraintName;
+  for (const lingType of linguisticTypes) {
+    const lingTypeID = lingType.$.LINGUISTIC_TYPE_ID;
+    const constraintName = lingType.$.CONSTRAINTS || '';
+    typesToConstraints[lingTypeID] = constraintName;
   }
   const tiersToConstraints = {};
   for (const tier of tiers) {
@@ -441,13 +448,26 @@ function preprocess(adocIn, jsonFilesDir, xmlFileName, callback) {
           sentenceJson.dependents.push(depTierJson); 
         }
       }
-      // sort by the numerical part of the tier ID (to match ELAN tier order)
-      sentenceJson.dependents.sort((t1,t2) => parseInt(t1.tier.slice(1),10) - parseInt(t2.tier.slice(1),10));
       
+      // remove hidden dependent tiers
+      sentenceJson.dependents = sentenceJson.dependents.filter((t) => !garbageTierIDs.includes(t.tier));
+      if (garbageTierIDs.includes(sentenceJson["tier"])) {
+        sentenceJson["text"] = ""; // TODO remove the entire tier instead of just blanking out its text
+      }
+      
+      // sort by the numerical part of the tier ID to ensure consistent ordering; TODO match pfsx order instead
+      sentenceJson.dependents.sort((t1,t2) => parseInt(t1.tier.slice(1),10) - parseInt(t2.tier.slice(1),10));
+          
       jsonOut.sentences.push(sentenceJson);
     }
   }
   jsonOut.sentences.sort((s1,s2) => s1.start_time_ms - s2.start_time_ms);
+  
+  for (const tier in jsonOut.metadata["tier IDs"]) {
+    if (jsonOut.metadata["tier IDs"].hasOwnProperty(tier) && garbageTierIDs.includes(tier)) {
+      delete jsonOut.metadata["tier IDs"][tier];
+    }
+  }
   
   const jsonPath = jsonFilesDir + storyID + ".json";
   fs.writeFileSync(jsonPath, JSON.stringify(jsonOut, null, 2));
@@ -476,12 +496,27 @@ function preprocess_dir(eafFilesDir, jsonFilesDir, callback) {
   for (const eafFileName of eafFileNames) {
     console.log("Processing " + eafFileName);
     const eafPath = eafFilesDir + eafFileName;
+    
+    // parse .pfsx file, if found
+    let pfsxJson = null;
+    let pfsxPath = eafPath.slice(0, -4) + ".pfsx";
+    fs.readFile(pfsxPath, function(err1, xmlData) {
+      if (err1) {
+        console.log(`WARN: Could not find .pfsx file for ${eafFileName}. Viewing preferences won't be used.`);
+      } else {
+        parseXml(xmlData, function (err2, jsonData) {
+          if (err2) throw err2; 
+          pfsxJson = jsonData;
+        });
+      }
+    });
+    
     fs.readFile(eafPath, function (err1, xmlData) {
       if (err1) throw err1;
       parseXml(xmlData, function (err2, jsonData) {
         if (err2) throw err2;
         const adoc = jsonData.ANNOTATION_DOCUMENT;
-        preprocess(adoc, jsonFilesDir, eafFileName, whenDone);
+        preprocess(adoc, pfsxJson, jsonFilesDir, eafFileName, whenDone);
       });
     });
   }
