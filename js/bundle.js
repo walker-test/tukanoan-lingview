@@ -11606,15 +11606,17 @@ function Sentence(_ref2) {
 	var numSlots = sentence['num_slots'];
 	// Add the indepentent tier, i.e., the top row, to the list of rows. Note that
 	// 'colSpan={numSlots}' ensures that this row spans the entire table.
-	rowList.push(React.createElement(
-		'tr',
-		{ 'data-tier': sentence['tier'] },
-		React.createElement(
-			'td',
-			{ colSpan: numSlots, className: 'topRow' },
-			sentence['text']
-		)
-	));
+	if (sentence['noTopRow'] == null || sentence['noTopRow'] === 'false') {
+		rowList.push(React.createElement(
+			'tr',
+			{ 'data-tier': sentence['tier'] },
+			React.createElement(
+				'td',
+				{ colSpan: numSlots, className: 'topRow' },
+				sentence['text']
+			)
+		));
+	}
 	var dependents = sentence['dependents']; // list of dependent tiers, flat structure
 	// Add each dependent tier to the row list:
 	var _iteratorNormalCompletion2 = true;

@@ -60,11 +60,13 @@ export function Sentence({ sentence }) {
 	const numSlots = sentence['num_slots'];
 	// Add the indepentent tier, i.e., the top row, to the list of rows. Note that
 	// 'colSpan={numSlots}' ensures that this row spans the entire table.
-	rowList.push(
-		<tr data-tier={sentence['tier']}>
-			<td colSpan={numSlots} className="topRow">{sentence['text']}</td>
-		</tr>
-	);
+  if (sentence['noTopRow'] == null || sentence['noTopRow'] === 'false') {
+    rowList.push(
+      <tr data-tier={sentence['tier']}>
+        <td colSpan={numSlots} className="topRow">{sentence['text']}</td>
+      </tr>
+    );
+  }
 	const dependents = sentence['dependents']; // list of dependent tiers, flat structure
 	// Add each dependent tier to the row list:
 	for (const {values, tier} of dependents) {
