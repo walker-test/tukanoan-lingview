@@ -123,12 +123,6 @@ function preprocess(adocIn, pfsxIn, jsonFilesDir, xmlFileName, callback) {
     tierIDsFromNames[tierName] = newID;
   }
   
-  const garbageTierNames = pfsxUtils.getHiddenTiers(pfsxIn);
-  let garbageTierIDs = [];
-  for (const garbageTierName of garbageTierNames) {
-    garbageTierIDs.push(tierIDsFromNames[garbageTierName]);
-  }
-  
   // TODO glom morphs if coming from FLEx?
   
   // tiersToConstraints: tierName -> constraintName
@@ -394,6 +388,12 @@ function preprocess(adocIn, pfsxIn, jsonFilesDir, xmlFileName, callback) {
   }
   //jsonOut['anotDescendants'] = anotDescendants; // TODO remove when no longer needed for debugging
   
+  const garbageTierNames = pfsxUtils.getHiddenTiers(pfsxIn);
+  let garbageTierIDs = [];
+  for (const garbageTierName of garbageTierNames) {
+    garbageTierIDs.push(tierIDsFromNames[garbageTierName]);
+  }
+  
   for (let i = 0; i < indepTiers.length; i++) {
     const spkrID = "S" + (i + 1).toString(); // assume each independent tier has a distinct speaker
     const indepTierName = eafUtils.getTierName(indepTiers[i]);
@@ -451,8 +451,10 @@ function preprocess(adocIn, pfsxIn, jsonFilesDir, xmlFileName, callback) {
       
       // remove hidden dependent tiers
       sentenceJson.dependents = sentenceJson.dependents.filter((t) => !garbageTierIDs.includes(t.tier));
+      // remove the independent tier it it's hidden
       if (garbageTierIDs.includes(sentenceJson["tier"])) {
-        sentenceJson["text"] = ""; // TODO remove the entire tier instead of just blanking out its text
+        sentenceJson["text"] = "";
+        sentenceJson["noTopRow"] = "true";
       }
       
       // sort by the numerical part of the tier ID to ensure consistent ordering; TODO match pfsx order instead
