@@ -187,6 +187,6 @@ function update() {
 	DB["index"] = obj;
 	fs.writeFileSync("data/database.json", JSON.stringify(DB, null, 2));
 	console.log("📤" + "  " + "Metadata edit complete.");
-	console.log("\nYou've successfully edited the metadata. However, this will not be displayed on the site until you run the batch.js script. You can run this script from the root directory with the command 'node preprocessing/batch.js'. We recommend doing this immediately.");
+	console.log("\nYou've successfully edited the metadata. However, this will not be displayed on the site until you run the rebuild.js script. You can run this script from the root directory with the command 'node preprocessing/rebuild.js'. We recommend doing this immediately.");
 }
 
