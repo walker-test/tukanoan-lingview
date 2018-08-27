@@ -23,12 +23,14 @@
     "require": "^2.4.20",
     "requirejs": "^2.3.3",
     "shortid": "^2.2.8",
-    "webpack": "^3.3.0",
+    "webpack": "^4.0.0",
+    "webpack-cli": "^3.1.0",
     "xml2js": "^0.4.17"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",

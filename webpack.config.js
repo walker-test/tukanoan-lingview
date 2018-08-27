@@ -6,8 +6,9 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'js')
   },
+  mode: 'production',
   module: {
-    loaders: [{
+    rules: [{
       test: /\.jsx$/,
       exclude: /node_modules/,
       loader: 'babel-loader',
