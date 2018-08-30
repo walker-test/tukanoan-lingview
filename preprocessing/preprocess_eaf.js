@@ -400,9 +400,6 @@ function preprocess(adocIn, pfsxIn, jsonFilesDir, xmlFileName, callback) {
     tierIDOrder.push(tierIDsFromNames[tierName]);
   }
   
-  console.log("tierNameOrder, tierIDOrder: ");
-  console.log(tierNameOrder);
-  console.log(tierIDOrder);
   // careful - garbageTierIDs and tierIDOrder may contain undefined, e.g. if there are empty tiers
   
   for (let i = 0; i < indepTiers.length; i++) {
