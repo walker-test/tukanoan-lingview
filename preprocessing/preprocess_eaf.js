@@ -463,7 +463,6 @@ function preprocess(adocIn, pfsxIn, jsonFilesDir, xmlFileName, callback) {
           const tier = sentenceJson.dependents.find((t) => t.tier === tierID);
           if (tier != null) {
             orderedDependents.push(tier);
-            console.log("Pushed tier " + tierID + " to orderedDependents.");
           }
         }
         sentenceJson["dependents"] = orderedDependents;
@@ -499,12 +498,12 @@ function preprocess(adocIn, pfsxIn, jsonFilesDir, xmlFileName, callback) {
 
 function preprocess_dir(eafFilesDir, jsonFilesDir, callback) {
   const eafFileNames = fs.readdirSync(eafFilesDir).filter(f => 
-    f[0] != "." && f.slice(-4) != 'pfsx'
+    f[0] !== "." && f.slice(-4) !== 'pfsx'
   ); // excludes pfsx files (which are generated just by opening ELAN) and hidden files
   
   // use this to wait for all preprocess calls to terminate before executing the callback
   const status = {numJobs: eafFileNames.length};
-  if (eafFileNames.length == 0) {
+  if (eafFileNames.length === 0) {
     callback();
   }
 
