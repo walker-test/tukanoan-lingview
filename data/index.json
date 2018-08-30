@@ -1,31 +1,4 @@
 {
-  "97b8ab3b-d2a5-428a-aa68-0aa304ba1c44": {
-    "timed": true,
-    "story ID": "97b8ab3b-d2a5-428a-aa68-0aa304ba1c44",
-    "title": {
-      "_default": "Intro"
-    },
-    "media": {
-      "audio": "Intro.mp3",
-      "video": "Intro.mp4"
-    },
-    "languages": [],
-    "date_created": "",
-    "date_uploaded": "2/3/2018",
-    "source": {
-      "_default": ""
-    },
-    "description": "",
-    "genre": "",
-    "author": "",
-    "glosser": "",
-    "speakers": [
-      "Martin Criollo",
-      "Hugo Lucitante"
-    ],
-    "xml_file_name": "Intro.eaf",
-    "source_filetype": "ELAN"
-  },
   "1e3bff88-29b9-4b3f-be34-bffc38624bac": {
     "timed": false,
     "story ID": "1e3bff88-29b9-4b3f-be34-bffc38624bac",
@@ -55,5 +28,31 @@
     "speakers": [],
     "xml_file_name": "103.xml",
     "source_filetype": "FLEx"
+  },
+  "1ed3d641-acd9-4466-811d-17c8ed59844c": {
+    "timed": true,
+    "story ID": "1ed3d641-acd9-4466-811d-17c8ed59844c",
+    "title": {
+      "_default": "Kuke chiste"
+    },
+    "media": {
+      "audio": "20170804_kuke_chiste_FACQ.mp3",
+      "video": "20170804_kuke_chiste_FACQ_handbrake.mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "8/30/2018",
+    "source": {
+      "_default": ""
+    },
+    "description": "A joke about a hare",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "Fausto Criollo"
+    ],
+    "xml_file_name": "20170804_kuke_chiste_FACQ.eaf",
+    "source_filetype": "ELAN"
   }
 }
