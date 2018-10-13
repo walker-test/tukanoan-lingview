@@ -9,7 +9,9 @@ export class Search extends React.Component {
             var options = {
                 shouldSort: true,
                 findAllMatches: true,
-                threshold: 1,
+                tokenize: true,
+                matchAllTokens: true,  
+                threshold: 0,
                 location: 0,
                 distance: 100,
                 maxPatternLength: 32,
