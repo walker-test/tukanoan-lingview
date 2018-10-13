@@ -11,6 +11,7 @@ export function App({ data }) {
             <Route exact path="/" render={props => <LandingPage/>} />
             <Route exact path="/index" render={props => <StoryIndex index={data.index} />} />
             <Route path="/story" render={props => <Stories stories={data.stories} />} />
+            {/* <Route path="/search" render={props => <Stories search_index={data.search_index} />} /> */}
         </div>
     );
 }
