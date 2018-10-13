@@ -16,7 +16,7 @@ export class Search extends React.Component {
                 distance: 100,
                 maxPatternLength: 32,
                 minMatchCharLength: 1,
-                keys: ["text"]
+                keys: ["dependents.values.value"]
             };
             console.log("running search");
             var fuse = new Fuse(list, options); // "list" is the item array
@@ -28,7 +28,10 @@ export class Search extends React.Component {
             const displayTable = document.getElementById("displayTable");
             displayTable.innerHTML = "";
             for (var i = 0, j = searchResult.length; i < j; i++) {
-                displayTable.innerHTML += `<tr>${searchResult[i]["text"]}</tr>`;
+                displayTable.innerHTML += `<tr>
+                <td>${searchResult[i]["text"]}</td>
+                <td>${searchResult[i]["speaker"]}</td>
+                </tr>`;
             }
         });
     }
