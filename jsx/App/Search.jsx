@@ -4,19 +4,19 @@ import Fuse from 'fuse.js';
 
 export class Search extends React.Component {
     componentDidMount() {
-        const list = this.props;
+        const list = this.props.search_index;
         function runSearch (query) {
-            alert(JSON.stringify(list))
             var options = {
                 shouldSort: true,
                 findAllMatches: true,
-                threshold: 0.4,
+                threshold: 1,
                 location: 0,
                 distance: 100,
                 maxPatternLength: 32,
                 minMatchCharLength: 1,
                 keys: ["text"]
             };
+            console.log("running search");
             var fuse = new Fuse(list, options); // "list" is the item array
             return fuse.search(query);
         }
@@ -25,8 +25,8 @@ export class Search extends React.Component {
             const searchResult = runSearch(this.value);
             const displayTable = document.getElementById("displayTable");
             displayTable.innerHTML = "";
-            for (sentence in searchResult) {
-                displayTable.innerHTML += `<tr>${sentence.text}</tr>`;
+            for (var i = 0, j = searchResult.length; i < j; i++) {
+                displayTable.innerHTML += `<tr>${searchResult[i]["text"]}</tr>`;
             }
         });
     }
