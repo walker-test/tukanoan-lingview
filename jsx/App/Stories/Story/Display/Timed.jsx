@@ -6,6 +6,7 @@ function LabeledSentence({ sentence }) {
 	// O/P: glossed sentence with speaker label
 	// Status: tested, working
 	const label = sentence['speaker'];
+	console.log(sentence);
 	return (
 		<div className="labeledSentence">
 			<span className="speakerLabel">{label}: </span>
