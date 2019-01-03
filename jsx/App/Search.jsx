@@ -1,6 +1,6 @@
 import React from 'react';
 import Fuse from 'fuse.js';
-import { Sentence } from './Stories/Story/Display/Sentence.jsx';
+import { SearchSentence } from './Stories/Story/Display/Sentence.jsx';
 
 
 export class Search extends React.Component {
@@ -43,10 +43,10 @@ export class Search extends React.Component {
         searchResults = [];
         for (var i = 0, j = searchResult.length; i < j; i++) {
             if ('speaker' in searchResult[i]) {
-                let component = (<Sentence sentence={searchResult[i]} true />);
+                let component = (<SearchSentence sentence={searchResult[i]} true />);
                 searchResults.push(component);
             } else {
-                let component = (<Sentence sentence={searchResult[i]} false />);
+                let component = (<SearchSentence sentence={searchResult[i]} false />);
                 searchResults.push(component);
             }
         }
