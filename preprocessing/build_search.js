@@ -7,13 +7,20 @@ function build_search() {
     // Concatenate sentences from each story together
     let sentences = [];
     for (const jsonFileName of jsonFileNames) {
-        const jsonPath = "data/json_files/" + jsonFileName;;
-        sentences = sentences.concat(JSON.parse(fs.readFileSync(jsonPath))["sentences"]);
+        const jsonPath = "data/json_files/" + jsonFileName;
+        const f = JSON.parse(fs.readFileSync(jsonPath))
+        const storyID = f.metadata["story ID"]
+        let newSentences = f["sentences"]
+        for (sentence in newSentences) {
+            newSentences[sentence]["story"] = storyID;
+            console.log(storyID);
+        }
+        sentences = sentences.concat(newSentences);
     }
 
     // Write sentences into search_index.json
     const data = JSON.stringify(sentences)
-    console.log(data)
+    // console.log(data)
     fs.writeFile(searchFileName, data, function (err) {
         if (err) throw err;
         console.log("Successfully wrote to search_index.json")
