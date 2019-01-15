@@ -19,7 +19,6 @@ function build_search() {
     }
 
     // Write sentences into search_index.json
-<<<<<<< HEAD
     let data = []
     for (i in sentences) {
         const sentence = sentences[i]
@@ -38,10 +37,6 @@ function build_search() {
 
     data = JSON.stringify(data)
     console.log(data)
-=======
-    const data = JSON.stringify(sentences)
-    // console.log(data)
->>>>>>> tmp
     fs.writeFile(searchFileName, data, function (err) {
         if (err) throw err;
         console.log("Successfully wrote to search_index.json")
