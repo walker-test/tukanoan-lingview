@@ -112,7 +112,7 @@ td {
 	overflow-x: auto;
 }
 
-.timeStampContainer {
+span.timeStamp {
 	padding-top: 3px;
 	float: left;
 	/*margin-right: 9px;*/
@@ -122,9 +122,6 @@ td {
 	min-width: 46px;
 	padding-top: 8px;
 	padding-bottom: 5px;
-}
-
-a.timeStamp {
 	color: black;
 	font-weight: 700;
 	text-decoration: none;

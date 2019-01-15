@@ -18,16 +18,6 @@ export class Story extends React.Component {
                 Video.hide();
             }
         }
-
-        // Jump to timestamp:
-        // Source: http://snydersoft.com/blog/2009/11/14/get-parameters-to-html-page-with-javascript/
-        $( document ).ready(function() {
-            let qAt = document.URL.indexOf("?");
-            let params = document.URL.substr(qAt+1); 
-            console.log(params);
-            console.log(document.getElementById(params));
-            document.getElementById(params).click();
-        });
     }
 
     render() {

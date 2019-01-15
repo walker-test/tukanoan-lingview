@@ -58,10 +58,8 @@ function LabeledTimeBlock({ sentences, timestamp }) {
 	}
 	return (
 		<div className="labeledTimeBlock" data-start_time={minStart} data-end_time={maxEnd}>
-			<span className="timeStampContainer">
-				<a href="javascript:void(0)" id={minStart} data-start_time={minStart} className="timeStamp">
+			<span className="timeStampContainer timeStamp" id={minStart} data-start_time={minStart}>
 					{timestamp}
-				</a>
 			</span>
 			<TimeBlock sentences={sentences} />
 		</div>

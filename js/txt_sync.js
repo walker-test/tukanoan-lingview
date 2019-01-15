@@ -64,3 +64,13 @@ function jumpToTime(t) {
 $(".timeStamp").click(function() {
     jumpToTime($(this).data('start_time'));
 });
+
+// Jump to timestamp:
+// Source: http://snydersoft.com/blog/2009/11/14/get-parameters-to-html-page-with-javascript/
+$( document ).ready(function() {
+    let qAt = document.URL.indexOf("?");
+    let startTime = Number(document.URL.substr(qAt+1));
+    jumpToTime(startTime);
+    console.log(startTime);
+    console.log(document.getElementById(startTime));
+});

@@ -6,7 +6,7 @@ import { SearchSentence } from './Stories/Story/Display/Sentence.jsx';
 export class Search extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {searchResults: []};
+        this.state = {"searchResults": []};
         this.list = this.props.search_index;
         this.handleInput = this.handleInput.bind(this);
     }
@@ -40,7 +40,7 @@ export class Search extends React.Component {
         console.log(searchResult);
         const displayTable = document.getElementById("searchResults");
         // displayTable.innerHTML = ""; (DON'T DO THIS)
-        searchResults = [];
+        let searchResults = [];
         for (var i = 0, j = searchResult.length; i < j; i++) {
             if ('speaker' in searchResult[i]) {
                 let component = (<SearchSentence sentence={searchResult[i]} true />);
@@ -50,7 +50,7 @@ export class Search extends React.Component {
                 searchResults.push(component);
             }
         }
-        this.setState({searchResults: searchResults});
+        this.setState({"searchResults": searchResults});
     }
     render() {
         console.log("rendering...");
