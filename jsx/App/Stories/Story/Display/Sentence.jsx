@@ -98,8 +98,8 @@ export function SearchSentence({ sentence }) {
 	}
 	const dependents = sentence['dependents'];
 	// Add each dependent tier to the row list:
-	for (const {values, tier} of dependents) {
-		rowList.push(<Row key={id.generate()} numSlots={numSlots} values={values} tier={tier} />);
+	for (const tier of Object.keys(dependents)) {
+		rowList.push(<Row key={id.generate()} numSlots={numSlots} values={dependents[tier]} tier={tier} />);
 	}
 
 	// Get URL:

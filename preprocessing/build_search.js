@@ -26,6 +26,8 @@ function build_search() {
         console.log(sentence);
         reformatted["num_slots"] = sentence["num_slots"];
         reformatted["text"] = sentence["text"];
+        reformatted["story"] = sentence["story"];
+        reformatted["start_time_ms"] = sentence["start_time_ms"];
         reformatted["dependents"] = {};
         for (j in sentence["dependents"]) {
             const tier = sentence["dependents"][j];

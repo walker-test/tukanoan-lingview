@@ -11,7 +11,12 @@ export class Search extends React.Component {
         this.handleInput = this.handleInput.bind(this);
     }
 
-    runSearch (query) {
+    runSearch (query, tiers) {
+        let fields = [];
+        document.getElementsByName("fields").forEach(function (e) {
+            if (e.checked) fields.push(`dependents.${e.id}.value`);
+        });
+
         var options = {
             shouldSort: true,
             findAllMatches: true,
@@ -22,9 +27,9 @@ export class Search extends React.Component {
             distance: 100,
             maxPatternLength: 32,
             minMatchCharLength: 1,
-            keys: ["dependents.values.value"]
+            keys: fields
         };
-        console.log("running search");
+        console.log("running search over: " + JSON.stringify(this.list[0].dependents));
         var fuse = new Fuse(this.list, options); // "list" is the item array
         console.log("Made a fuse...")
         return fuse.search(query);
@@ -58,6 +63,29 @@ export class Search extends React.Component {
         return (
           <div>
             <label for="searchInput">Search database:</label> <input id="searchInput" onInput={this.handleInput} type="text"/>
+            <br />
+            <label>Select Fields:   </label>
+            <label>Tier 1</label>
+                <input id="T1" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.handleInput} />
+            <label>Tier 2</label>
+                <input id="T2" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.handleInput} />
+            <label>Tier 3</label>
+                <input id="T3" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.handleInput} />
+            <label>Tier 4</label>
+                <input id="T4" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.handleInput} />
+            <label>Tier 5</label>
+                <input id="T5" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.handleInput} />
+            <label>Tier 6</label>
+                <input id="T6" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.handleInput} />
+            <label>Tier 7</label>
+                <input id="T7" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.handleInput} />
+            <label>Tier 8</label>
+                <input id="T8" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.handleInput} />
+            <label>Tier 9</label>
+                <input id="T9" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.handleInput} />
+            <label>Tier 10</label>
+                <input id="T10" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.handleInput} />
+            <br />
             <div id="searchResults">{results}</div>
           </div>
       )
