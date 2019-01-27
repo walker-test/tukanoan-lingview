@@ -107,5 +107,5 @@ export function SearchSentence({ sentence }) {
 	let url = document.URL.substring(0,at);
 	url += ("story/" + sentence.story + "?" + sentence.start_time_ms);
 
-	return <div className="searchSentence"><table className="gloss"><tbody>{rowList}</tbody></table><a href={url}>View Story</a></div>;
+	return <div className="searchSentence"><table className="gloss"><tbody>{rowList}</tbody></table><div class="storyLink"><a href={url}>View Story</a></div></div>;
 }
