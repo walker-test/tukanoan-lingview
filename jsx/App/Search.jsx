@@ -33,7 +33,9 @@ export class Search extends React.Component {
                 }, threshhold);
               } else {
                 last = now;
-                return fn.apply(context);
+                deferTimer = setTimeout(function () {
+                    return fn.apply(context);
+                  }, threshhold);
               }
         };
     }
@@ -85,29 +87,29 @@ export class Search extends React.Component {
         let results = this.state.searchResults;
         return (
             <div>
-                <label for="searchInput">Search database:</label> <input id="searchInput" onInput={this.runSearch()} type="text" />
+                <label for="searchInput">Search database:</label> <input id="searchInput" onInput={this.runSearch} type="text" />
                 <br />
                 <label>Select Fields:   </label>
                 <label>Tier 1</label>
-                <input id="T1" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch()} />
+                <input id="T1" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch} />
                 <label>Tier 2</label>
-                <input id="T2" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch()} />
+                <input id="T2" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch} />
                 <label>Tier 3</label>
-                <input id="T3" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch()} />
+                <input id="T3" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch} />
                 <label>Tier 4</label>
-                <input id="T4" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch()} />
+                <input id="T4" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch} />
                 <label>Tier 5</label>
-                <input id="T5" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch()} />
+                <input id="T5" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch} />
                 <label>Tier 6</label>
-                <input id="T6" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch()} />
+                <input id="T6" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch} />
                 <label>English</label>
-                <input id="T7" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch()} />
+                <input id="T7" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch} />
                 <label>Tier 8</label>
-                <input id="T8" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch()} />
+                <input id="T8" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch} />
                 <label>Tier 9</label>
-                <input id="T9" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch()} />
+                <input id="T9" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch} />
                 <label>Tier 10</label>
-                <input id="T10" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch()} />
+                <input id="T10" onChange={this.handleSearchInput} name="fields" type="checkbox" onInput={this.runSearch} />
                 <br />
                 <div id="searchResults">{results}</div>
             </div>
