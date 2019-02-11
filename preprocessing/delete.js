@@ -29,10 +29,10 @@ try {
 	// Get associated media:
 	media = obj[filename]["media"]
 	if (media.hasOwnProperty('audio') && media['audio'] !== '') {
-		audio_filename = "data/media_files/" +  media['audio'];
+		audio_filename = "/srv/Library_Projects/kofan_dir/media_files/" +  media['audio'];
 	}
 	if (media.hasOwnProperty('video') && media['video'] !== '') {
-		video_filename = "data/media_files/" +  media['video'];
+		video_filename = "/srv/Library_Projects/kofan_dir/media_files/" +  media['video'];
 	}
 
 	///////////////////////////////////

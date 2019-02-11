@@ -44,7 +44,7 @@ function main(callback) {
 				},
 			"validate":	
 				function(response) {
-					const media_files = fs.readdirSync("data/media_files");
+					const media_files = fs.readdirSync("/srv/Library_Projects/kofan_dir/media_files");
 					if (media_files.indexOf(response) >= 0 || response === "") {
 						return true;
 					} else if (response === "blank") { // TODO: replace "blank" with "" in then()
@@ -66,7 +66,7 @@ function main(callback) {
 				},
 			"validate":	
 				function(response) {
-					const media_files = fs.readdirSync("data/media_files");
+					const media_files = fs.readdirSync("/srv/Library_Projects/kofan_dir/media_files");
 					if (media_files.indexOf(response) >= 0 || response === "") {
 						return true;
 					} else if (response === "blank") {

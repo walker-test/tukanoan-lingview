@@ -4,7 +4,7 @@ function verifyMedia(filename) {
   // I/P: filename, a .mp3 or .mp4 file
   // O/P: boolean, whether or not file exists in media_files directory
   // Status: untested
-  const media_files = fs.readdirSync("data/media_files");
+  const media_files = fs.readdirSync("/srv/Library_Projects/kofan_dir/media_files");
   return (media_files.indexOf(filename) >= 0);
 }
 
