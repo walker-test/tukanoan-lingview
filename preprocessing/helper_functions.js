@@ -186,6 +186,9 @@ function improveElanIndexData(path, storyID, adoc) {
       }
     }
   }
+  
+  needsVideo = true;
+
   ////////////////////
   /// AUDIO SEARCH ///
   ////////////////////

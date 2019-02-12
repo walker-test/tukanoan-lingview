@@ -1,58 +1,28 @@
 {
-  "1e3bff88-29b9-4b3f-be34-bffc38624bac": {
-    "timed": false,
-    "story ID": "1e3bff88-29b9-4b3f-be34-bffc38624bac",
+  "b7049ca7-e15f-4dba-83e6-99d6d5fb75a5": {
+    "timed": true,
+    "story ID": "b7049ca7-e15f-4dba-83e6-99d6d5fb75a5",
     "title": {
-      "con-Latn-EC": "103 Singo a'i",
-      "en": "Black People",
-      "es": "El negro",
-      "_default": "Singo a'i"
+      "_default": "weboptimized2018_11_14_Historia_de_vida_Luis_Cahum"
     },
-    "media": {},
-    "languages": [
-      "con-Latn-EC",
-      "en",
-      "es"
-    ],
+    "media": {
+      "audio": "",
+      "video": "weboptimized2018_11_14_Historia_de_vida_Luis_Cahum.mp4"
+    },
+    "languages": [],
     "date_created": "",
-    "date_uploaded": "2/3/2018",
+    "date_uploaded": "2/12/2019",
     "source": {
-      "con-Latn-EC": "Blaser, Magdalena \"Mitos del pueblo Cofán\"",
-      "en": "Blaser, Magdalena \"Myths of the Cofán people\"",
       "_default": ""
     },
     "description": "",
     "genre": "",
     "author": "",
     "glosser": "",
-    "speakers": [],
-    "xml_file_name": "103.xml",
-    "source_filetype": "FLEx"
-  },
-  "1ed3d641-acd9-4466-811d-17c8ed59844c": {
-    "timed": true,
-    "story ID": "1ed3d641-acd9-4466-811d-17c8ed59844c",
-    "title": {
-      "_default": "Kuke chiste"
-    },
-    "media": {
-      "audio": "20170804_kuke_chiste_FACQ.mp3",
-      "video": "20170804_kuke_chiste_FACQ_handbrake.mp4"
-    },
-    "languages": [],
-    "date_created": "",
-    "date_uploaded": "8/30/2018",
-    "source": {
-      "_default": ""
-    },
-    "description": "A joke about a hare",
-    "genre": "",
-    "author": "",
-    "glosser": "",
     "speakers": [
-      "Fausto Criollo"
+      "[APELLIDO, NOMBRE]"
     ],
-    "xml_file_name": "20170804_kuke_chiste_FACQ.eaf",
+    "xml_file_name": "weboptimized2018_11_14_Historia_de_vida_Luis_Cahum.eaf",
     "source_filetype": "ELAN"
   }
 }
