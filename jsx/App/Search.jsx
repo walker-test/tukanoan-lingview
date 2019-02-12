@@ -78,26 +78,18 @@ export class Search extends React.Component {
                 <label for="searchInput">Search database:</label> <input id="searchInput" onInput={this.runSearch} type="text" />
                 <br />
                 <label>Select Fields:   </label>
-                <label>Tier 1</label>
+                <label>H1_Transcripción</label>
                 <input id="T1" name="fields" type="checkbox" onInput={this.runSearch} />
-                <label>Tier 2</label>
+                <label>H2_Transcripción</label>
                 <input id="T2" name="fields" type="checkbox" onInput={this.runSearch} />
-                <label>Tier 3</label>
+                <label>H1_Maya</label>
                 <input id="T3" name="fields" type="checkbox" onInput={this.runSearch} />
-                <label>Tier 4</label>
+                <label>H2_Maya</label>
                 <input id="T4" name="fields" type="checkbox" onInput={this.runSearch} />
-                <label>Tier 5</label>
+                <label>H1_Traducción</label>
                 <input id="T5" name="fields" type="checkbox" onInput={this.runSearch} />
-                <label>Tier 6</label>
+                <label>H2_Traducción</label>
                 <input id="T6" name="fields" type="checkbox" onInput={this.runSearch} />
-                <label>English</label>
-                <input id="T7" name="fields" type="checkbox" onInput={this.runSearch} />
-                <label>Tier 8</label>
-                <input id="T8" name="fields" type="checkbox" onInput={this.runSearch} />
-                <label>Tier 9</label>
-                <input id="T9" name="fields" type="checkbox" onInput={this.runSearch} />
-                <label>Tier 10</label>
-                <input id="T10" name="fields" type="checkbox" onInput={this.runSearch} />
                 <br />
                 <div id="searchResults">{results}</div>
             </div>
