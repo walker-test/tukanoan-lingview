@@ -74,7 +74,7 @@ export class Search extends React.Component {
         console.log("rendering...");
         let results = this.state.searchResults;
         return (
-            <div>
+            <div id="searchForm">
                 <label for="searchInput">Search database:</label> <input id="searchInput" onInput={this.runSearch} type="text" />
                 <br />
                 <label>Select Fields:   </label>
