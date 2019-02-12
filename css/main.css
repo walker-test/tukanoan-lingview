@@ -305,3 +305,7 @@ video {
 #navbar a:hover {
 	background-color: rgb(119,156,200);
 }
+
+#searchForm {
+	margin: 20px;
+}
