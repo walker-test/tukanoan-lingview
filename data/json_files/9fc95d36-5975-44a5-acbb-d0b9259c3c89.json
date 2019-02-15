@@ -1,0 +1,735 @@
+{
+  "metadata": {
+    "timed": true,
+    "story ID": "9fc95d36-5975-44a5-acbb-d0b9259c3c89",
+    "title": {
+      "_default": "grabación 1 u meyajil xa'ak' doña Cecilia"
+    },
+    "media": {
+      "audio": "grabación 1 u meyajil xa'ak' doña Cecilia.wav",
+      "video": ""
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "2/13/2019",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "grabación 1 u meyajil xa'ak' doña Cecilia.eaf",
+    "source_filetype": "ELAN",
+    "tier IDs": {
+      "T1": {
+        "name": "H1_Transcripción",
+        "subdivided": false
+      },
+      "T2": {
+        "name": "H2_Transcripción",
+        "subdivided": false
+      },
+      "T3": {
+        "name": "H1_Maya",
+        "subdivided": false
+      },
+      "T4": {
+        "name": "H2_Maya",
+        "subdivided": false
+      },
+      "T5": {
+        "name": "H1_Traducción",
+        "subdivided": false
+      },
+      "T6": {
+        "name": "H2_Traducción",
+        "subdivided": false
+      }
+    },
+    "speaker IDs": {
+      "S1": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T1"
+      },
+      "S2": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T2"
+      }
+    }
+  },
+  "sentences": [
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 2155,
+      "end_time_ms": 2765,
+      "num_slots": 1,
+      "text": "Ka'an.",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka'an."
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Fuerte."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 4700,
+      "end_time_ms": 10405,
+      "num_slots": 1,
+      "text": "E xa'ak'o' est ku séerbir ti'alu  u meeta'a ki'iwaj,",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le xa'ak'o' est ku séerbir ti'al u meeta'al ki'iwaj,"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "El recado sirve para preparar comida,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 12195,
+      "end_time_ms": 38200,
+      "num_slots": 1,
+      "text": "ku, kin preparaartke xa'ak'o' esten... kin ts'áaik aajo, pimyeenta, sebooya, esten... káanela, pimyeenta Tabaasko yéete komiino, óoreganoj, tu láakle je'elo' kin ts'áak ichij.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ku, kin preparaartik le xa'ak'o' esten... kin ts'áaik aajo, pimyeenta, sebooya, esten... káanela, pimyeenta Tabaasko yéetel komiino, óoreganoj, tu láakal le je'elo' kin ts'áak ichij."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Lo, preparo el recado estén… le pongo ajo, pimienta, cebolla, estén… canela, pimienta Tabasco, comino, orégano, todo eso le pongo adentro."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 39300,
+      "end_time_ms": 48365,
+      "num_slots": 1,
+      "text": "Ti'al u... máak'antik, tin ts'áak ich ki'iwaj ti'alu ts'áak u sáabor ti'e ki'iwajo', ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ti'al u... máak'antik, tin ts'áaik ich ki'iwaj ti'al u ts'áaik u sáabor ti' le ki'iwajo',"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Para que… lo preparo, para ponerlo dentro la comida para que le de sabor, "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 50560,
+      "end_time_ms": 76500,
+      "num_slots": 1,
+      "text": "je'e bix ku beeta'ale e ki'iwajo', ku beeta'a eskabeeche, esten... chirmoole, reyenoj, esten... bisteek yéete, yéete tak óonsikil.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "je'el bix ku beeta'al le ki'iwajo', ku beeta'al eskabeeche, esten... chirmoole, reyenoj, esten... bisteek yéetel, yéetel tak óonsikil."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Como preparan la comida, hacen escabeche, estén… chimole, relleno, estén… bistec y hasta pipián."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 79950,
+      "end_time_ms": 98005,
+      "num_slots": 1,
+      "text": "ya'abu klaasesi esten... ki'iwaj ku beeta'a yéete, e kin, chenin preparaarte' ti' u p'ée, un p'ée ka' kin juch'ik, úuchben , úuchben klaase e, e ka' tu'uxkin juch'ko'.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ya'ab u klaasesi esten... ki'iwaj ku beeta'al yéetel, e kin, chenin preparaarte' ti' jump'éel, jump'éel ka' kin juch'ik, úuchben, úuchben klaase e, e ka' tu'ux kin juch'iko'."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Muchos tipos de estén… comida se prepara con ello, cuando, cuando lo preparo en un, un metate lo muelo, de clase antigua es el metate donde lo muelo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 102895,
+      "end_time_ms": 104515,
+      "num_slots": 1,
+      "text": "¿Tu'ux tun ta cha'e e ka'o'?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Tu'ux túun ta cha'aj le ka'o'?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Dónde agarraste el metate?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 105810,
+      "end_time_ms": 121805,
+      "num_slots": 1,
+      "text": "Elo' aanimasin in, in sweegra p'atmij, leti'o' p'at ten  ti'ain in, in máak'antik xa'ak', tin juch'ik xa'ak' ka tu p'ato' ten.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le je’elo’ aanimas in in, in sweegra p'atmi, leti'ob p'at ten ti'al in in, in máak'antik xa'ak', tin juch'ik xa'ak' ka tu p'ato'ob ten."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Eso la difunta de mi suegra lo tiene dejado, ellos me lo dejaron para que prepare recado, para que muele recado y me lo dejaron."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 122955,
+      "end_time_ms": 124795,
+      "num_slots": 1,
+      "text": "utsi úuchben kensa tu'ux tu cha'o',",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "utsi úuchben kensa tu'ux tu cha'o',"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "es muy antiguo, quien sabe dónde lo agarraon,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 128595,
+      "end_time_ms": 140695,
+      "num_slots": 1,
+      "text": "elo' ma' chen ma', ma' je'e bixe ku, ku ko'ono' ti', ti' áartesaniyaobo' elo' jach, jach de tuunich máak'anta'anik.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le je’elo' ma' chen ma', ma' je'el bix le ku, ku ko'onol ti', ti' áartesaniyáaobo' le je’elo' jach, jach de tuunich máak'anta'anik."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ese no es como lo que vende en las artesanías, ese de pura piedra lo tienen elaborado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 143055,
+      "end_time_ms": 148885,
+      "num_slots": 1,
+      "text": "Le chena juch' tune xa'ak'o'¿ jayp'ée k'iin, ti'al jayp'ée k'iin ku estenu u séerbir tech?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Le chen a juch' túun le xa'ak'o' jayp'éel k'iin, ti'al jayp'éel k'iin ku estenu u séerbir tech?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando mueles el recado ¿cuánto tiempo, para cuanto tiempo te estén… te srive?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 150050,
+      "end_time_ms": 180605,
+      "num_slots": 1,
+      "text": "Pus bey ya'abo' ku ts'áak taku p'ée semaana pero wa ma'e' yaan oorae' chenu, chenu p'íit kin máak'anki' chen ti'alun p'íit ki'iwaj chen, yaan oorae' chenu p'ée aajo kin máak'anku xa'ak'ij, láaj ts'áaku u tu láakle ba'axo' ku bisko' chen ti'alu u p'ée chan ooya ki'iwaj kin máak'antik beyo', pus ma' ya'ab kin máak'anki'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pus bey ya'abo' ku ts'áaik tak jump'éel semaana pero wa ma'e' yaan oorae' chen u, chen u p'íit kin máak'antiki' chen ti'al junp'íit ki'iwaj chen, yaan oorae' chen jump'éel aajo kin máak'antik u xa'ak'ij, láaj ts'áaik u u tu láakal le ba'axo'ob ku bisiko' chen ti'al jump'éel chan ooya ki'iwaj kin máak'antik beyo', pus ma' ya'ab kin máak'antiki'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues si es mucho me dura esta una semana pero si no a veces solo, solo un poco preparo solo para un poco de comida, a veces solo un ajo le preparo el recado, pongo todo lo que lleva solo para una olla de comida preparo, pues así no preparo mucho."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 181710,
+      "end_time_ms": 188510,
+      "num_slots": 1,
+      "text": "wa kin máak'antik ya'abe' pus elo' ku, ku xáanta ten, ku beetik taku p'ée semaana.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "wa kin máak'antik ya'abe' pus le je’elo' ku, ku xáantal ten, ku beetik tak jump'éel semaana."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si preparo mucho pues eso me, me tarda, me dura hasta una semana."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 191460,
+      "end_time_ms": 194190,
+      "num_slots": 1,
+      "text": "¿Bixtunu u, u foorma a máak'antik le xa'ak'o'?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Bixtun u foormail a máak'antik le xa'ak'o'?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Cuál es la forma en que preparas el recado?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 196355,
+      "end_time_ms": 214305,
+      "num_slots": 1,
+      "text": "¿Bixu foormai?, e aajo yan... yanin mukik, chenin muke' kin ts'íilik, ts'oke' kin, kin láaj p'ayláantik take sebooyao' kin láaj ts'áaki',",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Bix u foormail?, le aajo yaan... yaan in mukik, chen in muke' kin ts'íilik, ts'okole' kin, kin láaj p'ayláantik tak le sebooyao' kin láaj ts'áaiki',"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Cuál es la forma?, el ajo lo… lo entierro, cuando lo entierre lo pelo, después lo, lo pico con a cebolla y le pongo todo,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 214305,
+      "end_time_ms": 228400,
+      "num_slots": 1,
+      "text": "chen ts'o'okok in laj ts'áak beye ba'ax ku biske xa'ak'o' kin juch'ik te'ej ka'o', ku astu utsi tattale' kin ch'enkin juch'ik.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chen ts'o'okok in laj ts'áak beye ba'ax ku biske xa'ak'o' kin juch'ik te'ej ka'o', ku astu itsi tattale' kin ch'enkin juch'ik."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando termine de poner todo lo que lleva el recado así lo muelo en el metate, hasta que quede espeso lo dejo de moler."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 230760,
+      "end_time_ms": 233305,
+      "num_slots": 1,
+      "text": "¿Le seboyao' che'che' xan chena ts'áai' wa ka mukik?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Le seboyao' che'che' xan chen a ts'áai' wa ka mukik?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿la cebolla cruda se lo pones o lo entierras también?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 233460,
+      "end_time_ms": 237750,
+      "num_slots": 1,
+      "text": "Che' che', e seboyao' che' che' chéene aajo kin mukko'.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Che' che', Le seboyao' che' che' chéen le aajo kin mukiko'."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cruda, la cebolla cruda solo el ajo entierro."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 246255,
+      "end_time_ms": 250805,
+      "num_slots": 1,
+      "text": "¿Je'elu páajtala wa'alik to'on túun bixa a, a ts'áaik le xa'ak' ichile' ki'iwajo'?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Je'ela u páajtal a wa'alik to'on túun bix a ts'áaik le xa'ak' ichil le ki'iwajo'?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Nos puedes decir como pones el recado dentro de la comida?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 253670,
+      "end_time_ms": 277210,
+      "num_slots": 1,
+      "text": "pus segun ba'ax ki'iwaji, wa... wa yéete bisteeke' yanin in puk'ke xa'ak' yéete... yéete esten... náaraja wa yéete limon je'e ba'axe', wa yaan limone' yéete kin in  estenin puk'ke xa'ak'o' kin ts'áaik, kin ts'áaik ichile ki'iwajo',",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pus segun ba'ax ki'iwaji, wa... wa yéetel bisteeke' yan in puk'ik le xa'ak' yéetel... yéetel esten... náaraja wa yéetel limon je'el ba'axe', wa yaan limone' yéetel kin in estén in puk'ik le xa'ak'o' kin ts'áaik, kin ts'áaik ichil le ki'iwajo',"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pues según que comida sea, si… si es con bistec deshago el recado con… con estén… naranja o con limón o con otra cosa, si hay limón con ello lo estén deshago el recado y lo pongo, lo pongo dentro de la comida,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 279110,
+      "end_time_ms": 287080,
+      "num_slots": 1,
+      "text": "pero esten... yaan xan kin máak'anke' chen, chen kin tsajke xa'ak'o' kin ts'áaik ichile ki'iwajo' ,",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero esten... yaan xan kin máak'antike' chen, chen kin tsajik le xa'ak'o' kin ts'áaik ichil le ki'iwajo',"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero estén… también hay que preparo solo, solo frío el recado y lo pongo dentro de la comida"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 288305,
+      "end_time_ms": 298565,
+      "num_slots": 1,
+      "text": "bix kin máak'antik take ej kaax de kaaldo, ej kaax de kaaldo pus kin tsajke xa'ak'o'  kin ts'áak ichij.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "bix kin máak'antik tak le ej kaax de kaaldo, ej kaax de kaaldo pus kin tsajik le xa'ak'o' kin ts'áaik ichij."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Asi preparo hasta el pollo en caldo, el pollo en caldo pues frío el recado y lo pongo adentro."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 288305,
+      "end_time_ms": 298565,
+      "num_slots": 1,
+      "text": "",
+      "dependents": []
+    }
+  ]
+}

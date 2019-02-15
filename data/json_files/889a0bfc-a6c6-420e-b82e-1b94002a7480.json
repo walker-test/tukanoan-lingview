@@ -1,0 +1,680 @@
+{
+  "metadata": {
+    "timed": true,
+    "story ID": "889a0bfc-a6c6-420e-b82e-1b94002a7480",
+    "title": {
+      "_default": "U MEJAY MAAMATSIL"
+    },
+    "media": {
+      "audio": "",
+      "video": "U MEJAY MAAMATSIL.mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "2/13/2019",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "U MEJAY MAAMATSIL.eaf",
+    "source_filetype": "ELAN",
+    "tier IDs": {
+      "T1": {
+        "name": "H1_Transcripción",
+        "subdivided": false
+      },
+      "T2": {
+        "name": "H1_Maya",
+        "subdivided": false
+      },
+      "T3": {
+        "name": "H1_Traducción",
+        "subdivided": false
+      }
+    },
+    "speaker IDs": {
+      "S1": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T1"
+      }
+    }
+  },
+  "sentences": [
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 1750,
+      "end_time_ms": 5830,
+      "num_slots": 1,
+      "text": "Tene' in k'aaba'e' Aisela, yaan ten treinta y trees anyos",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tene' in k'aaba'e' Aisela, yaan ten treinta y trees anyos."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Mi nombre es Aisela, tengo treinta y tres años."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 8155,
+      "end_time_ms": 18515,
+      "num_slots": 1,
+      "text": "Ka'achile' kin beetkin koono ti'alin bis eskweela, pero ka t'a'anen meyaj ti' u p'ée naj tu kaaji p'iste'e' kaj binen.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka'achile' kin beetik in koonol ti'al in bis eskweela, pero ka t'a'anen meyaj ti' jump'éel naj tu kaajil p'iste'e' ka binen."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "De antes hacía mi venta para llevar en la escuela, pero me hablaron para trabajar en una casa en el pueblo de Piste y me fui."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 19600,
+      "end_time_ms": 29975,
+      "num_slots": 1,
+      "text": "Puro, chen píintar figuuras kin beetik ti'alu ko'ono esten... chi'ich'e'en, pero ba'axe' ma'… ma’ uts tin wichi' men jach báarato in bo'ota'a,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Puro, chen píintar figuuras kin beetik ti'al u ko'onol esten... chi'ich'e'en, pero ba'axe' ma' uts tin wichi' men jach báarato in bo'ota'al, "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Solo pintaba figuras para que vendieran esten… en Chichen pero no… no me gustó porque me pagaban muy barato,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 31595,
+      "end_time_ms": 38745,
+      "num_slots": 1,
+      "text": "despweese' ka tin kaxtu jee meyaj ti'alu u p'ée esten... restawraane' chen pak'ach kin beetki'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "despweese' ka tin kaxtaj u jeel meyaj ti'al jump'éel esten... restawraane' chen pak'ach kin beetiki'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Después encontré un trabajo en un estén… restaurante, solo torteo allá."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 39850,
+      "end_time_ms": 47495,
+      "num_slots": 1,
+      "text": "Aantesin bin tin in meyaje' tin máak'antiku yo'ochin paala ti'a bisbi' ti'o' esten... eskweela,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Aantes in bin tin in meyaje' tin máak'antik u yo'och in paalal ti'al bisbi' ti'ob esten... eskweela,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Antes de ir a mi trabajo preparo la comida de mis hijas para que se los lleven esten en la escuela,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 48500,
+      "end_time_ms": 55010,
+      "num_slots": 1,
+      "text": "chen ts'o'ojke' tin p'o', tin liimpyokúunsik ichilin naay, tin kosinaar,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chen ts'o'ojke' tin p'o', tin liimpyokúunsik ichil in naay, tin kosinaar,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "después lavo, limpio dentro de mi casa, cocino, "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 58195,
+      "end_time_ms": 60360,
+      "num_slots": 1,
+      "text": "men tene' siinko u túululin paala.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tumen tene' siinko júuntúul in paalal."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "porque yo tengo cinco hijas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 62700,
+      "end_time_ms": 71905,
+      "num_slots": 1,
+      "text": "U túule' ku bin xook esten... báachiyer, u túule' seguundo ti' sekun daarya, óoxtule' primaarya.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Júuntúule' ku bin xook esten... báachiyer, júuntúule' seguundo ti' sekun daarya, óoxtúule' primaarya."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Una va en a estudiar en estén… bachiller, una en segundo de secundaria, tres en la primaria."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 74710,
+      "end_time_ms": 92025,
+      "num_slots": 1,
+      "text": "Tene' uts tin wichin bin meyaj men beyo' kin wáantik estenin esposo ti'ilik gaastos, ik gaastos ti' in naay beyo' mix ba'a… mix ba'a ju beetik faalta ti'ik paalalo'one' men siinko ik paalalo'one'  ya'abu gaasto,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tene' uts tin wich in bin meyaj men beyo' kin wáantik estén… in esposo ti' ik gaastos, ik gaastos ti' in naay beyo' mix ba'al… mix ba'al je'u beetik faalta ti' ik paalalo'one' tumen siinko ik paalalo'one' ya'ab u gaasto,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "A mí me gusta ir a trabajar porque así ayudo estén… a mi esposo con nuestros gastos, nuestros gastos de la casa, así nada… nada le puede hacer falta a nuestras hijas, porque tenemos cinco hijas y es mucho el gasto,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 95095,
+      "end_time_ms": 104515,
+      "num_slots": 1,
+      "text": "men to'one' séemanale' yanik bo'otko'on sekundaaryai' yaan kik bo'otik esten... bachiyeeri'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tumen to'one' séemanale' yaan ik bo'otiko'on sekundaaryai' yaan kik bo'otik esten... bachiyeeri'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Porque nosotros semanal pagamos en la secundaria, igual pagamos estén… en el bachiller."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 108260,
+      "end_time_ms": 115485,
+      "num_slots": 1,
+      "text": "Tene' chen jo'oken tin meyaje' ku binu ch'a'enin espooso yo'osa beyo' kin aoraartik ti'ilik pa, ti'ilin páasaje,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tene' chen jo'oken tin meyaje' ku bin u ch'a'en in espooso yo'osal beyo' kin aoraartik ti'ilik pa, ti'ilin páasaje,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando salgo de mi trabajo me van a buscar por mi esposo y así ahorro para nuestro pasaje, para mi pasaje,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 116655,
+      "end_time_ms": 130225,
+      "num_slots": 1,
+      "text": "beyo' kik líisko'on u p'íit taak'ine' wa ka'abet to'on ti'alu u… u… u túu wa ku k'oja'antale' beyo' in woole' yaan to'on u p'íit taak'in ti'alik biso'on ikna doktor.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "beyo' kik líisko'on jump'íit taak'ine' wa ka'abet to'on ti'al u… u… u juntúule’ wa ku k'oja'antale' beyo' in woojele' yaan to'on jump'íit taak'in ti'al ik biso'on yikna doktor."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Así levantamos un poco de dinero si llegamos a necesitar cuando se enferme una así sé que tenemos un poco de dinero para llevarla con el doctor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 132490,
+      "end_time_ms": 148395,
+      "num_slots": 1,
+      "text": "Yaan oorae' chen taako'one' tu k'áatko' to'ne' ti'alu manko'o' esten... oojas wa laapis wa ba'ax ti'alu séerbir ti'o' tu xooko',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Yaan oorae' chen taako'one' tun k'áatiko'ob to'ne' ti'al u maniko'ob esten... oojas wa laapis wa ba'ax ti'al u séerbir ti'ob tu xooko'ob,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "A veces cuando llegamos nos piden para que compren estén… hojas o lápiz o cosas así para que les sirva en sus estudios,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 148995,
+      "end_time_ms": 159155,
+      "num_slots": 1,
+      "text": "la beetke' tene’uts tin wich ti'al in bin meyaj beyo' kik áantik estenelin espooso ti’ ik gaastoso'on ti' ichik naayo'on.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "la beetike' tene’ uts tin wich ti'al  in bin meyaj beyo' kik áantik estén…in espooso tik gaastoso'on ti' ichik naayo'on."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Por eso me gusta ir a trabajar así ayudo estén… a mi esposo con nuestros gastos de la casa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 164050,
+      "end_time_ms": 166845,
+      "num_slots": 1,
+      "text": "Tene' te' restawraano' chen pak'ach kin beetik. ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tene' te' restawraano' chen pak'ach kin beetik. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Yo en el restaurante solo hago tortillas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 177055,
+      "end_time_ms": 182845,
+      "num_slots": 1,
+      "text": "U túulin iijae' esten... primeero ti' bachiyeer ku xokik.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Juntúul in iijae' esten... primeero ti' bachiyeer ku xokik."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Una de mis hijas estén… estudia en primero del bachiller."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 186350,
+      "end_time_ms": 202210,
+      "num_slots": 1,
+      "text": "Tene' siinko estenilin paala, u túule' de seeys anyos, u túule' de oocho, u túule' de oonse yéete la' un túule' de katoorse, u maas nojchile' dyesiseeys anyos.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tene' siinko estén…in paalal juntúule' de seeys anyos, juntúule' de oocho, juntúule' de oonse yéetel láak' juntúule' de katoorse, u maas nojochile' dyesiseeys anyos."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Yo tengo cinco estén… hijas, una de seis años, una de ocho, una de once y otra de catorce, la más grande es de dieciséis años. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 211160,
+      "end_time_ms": 216795,
+      "num_slots": 1,
+      "text": "In espooso leti'e' albaniil u meyaj,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "In espooso leti'e' albaniil u meyaj,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Mi esposo trabaja de albañil,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 217440,
+      "end_time_ms": 252975,
+      "num_slots": 1,
+      "text": "leti'e' chen taake' tu bin si', tu bin ichkol ka taasto'onu p'it nal beyo' mik manko'on xi'im beyo' yaan tenu p'it nale' lúugarik manik xi'ime' kik aorarko'onu p´it ti'ilik manko'on ik méerkansiyaon, áasukar ik faab, in faab wa ba'ax ti'ali esten u séerbir ten sáasama ti'alin liimpyokúunsku nook' in paalalo' ti' esten... ti'u bino' tu xooko'o’.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "leti'e' chen taake' tu bin si', tu bin ichkol ka u taasto'on jump'íit nal beyo' mik maniko'on xi'im beyo', yaan ten jump'íit nale' lúugar ik manik xi'ime' kik aorarko'on jump´íit ti'al ik maniko'on ik méerkansiyaon, áasukar ik faab, in faab wa ba'ax ti'al u estén… u séerbir ten sáansamal ti'al in liimpyokúunsik u nook' in paalalo'ob ti' esten... ti' u bino'ob tu xooko'ob."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando llega está yendo a leñar, está yendo a la milpa para que nos traiga un poco de elote, así no compramos maíz, tenemos un poco de elote en lugar de comprar maíz ahorramos un poco para comprar nuestra mercancía, azúcar, nuestro fab, mi fab o cosas para estén… que me sirva todos los días, para dejar limpio su ropa de mis hijas estén… para que vayan a clases."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 261845,
+      "end_time_ms": 283645,
+      "num_slots": 1,
+      "text": "Chen taaken tin meyaje' tin máak'anku yo'och in paala tuka'atéen ti'alu u… u seenarto'o’, chen ts'o'ojke' tin ts'áakin k'u'um k'áak', chen ts'o'jke' tin binin estenilin in manu u… u yo'ocho' ti'a u sigyeente diyai, ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Chen taaken tin meyaje' tin máak'antik u yo'och in paalal tuka'atéen ti'al u seenarto'ob, chen ts'o'ojke' tin ts'áaik in k'u'um k'áak', chen ts'o'jke' tin bin in esténil… in… in man u… u… u yo'ocho'ob ti'al u sigyeente diyail,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando llego de mi trabajo estoy preparando la comida de mis hijas otra vez para que cenen, después estoy poniendo mi nixtamal en la candela, después estoy yendo estén… a… a comprar su… su… su comida para el siguiente día, "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 284965,
+      "end_time_ms": 300010,
+      "num_slots": 1,
+      "text": "beyo' ku esten... chen sáasake' nuka'ajenin ka máak'antu yo'ocho' ti'alu bino' tu xooko' yo'osa beyo' chen taako' tu xookobe' yanu yo'ocho' yaan ba'alu jaanto' chen taako' tu… tu xooko'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "beyo' ku esten... chen sáasake' nuka'ajen in ka’ máak'ant u yo'ocho'ob  ti'al u bino'ob tu xooko'ob yo'osal beyo' chen taako'ob tu xooko’obe' yaan u yo'ocho'ob  yaan ba'al u jaanto'ob chen taako'ob tu… tu xooko'ob."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "así estén… cuando amanece voy a preparar su comida para que vayan a clases, así cuando lleguen de la escuela tienen comida cuando vengan de su escuela."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

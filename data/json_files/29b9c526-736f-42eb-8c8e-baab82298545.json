@@ -1,0 +1,1100 @@
+{
+  "metadata": {
+    "timed": true,
+    "story ID": "29b9c526-736f-42eb-8c8e-baab82298545",
+    "title": {
+      "_default": "U MEYAJ AUKSILYAAR"
+    },
+    "media": {
+      "audio": "",
+      "video": "U MEYAJ AUKSILYAAR.mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "2/13/2019",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "U MEYAJ AUKSILYAAR.eaf",
+    "source_filetype": "ELAN",
+    "tier IDs": {
+      "T1": {
+        "name": "H1_Transcripción",
+        "subdivided": false
+      },
+      "T2": {
+        "name": "H1_Maya",
+        "subdivided": false
+      },
+      "T3": {
+        "name": "H1_Traducción",
+        "subdivided": false
+      }
+    },
+    "speaker IDs": {
+      "S1": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T1"
+      }
+    }
+  },
+  "sentences": [
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 2940,
+      "end_time_ms": 5455,
+      "num_slots": 1,
+      "text": "Tene' in k'aba'e' Aurelia Chan,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tene' in k'aba'e' Aurelia Chan,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Yo me llamo Aurelia Chan,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 6100,
+      "end_time_ms": 9500,
+      "num_slots": 1,
+      "text": "ee... tene' esten... kin ts'aa ts'aak way kaaje'.\n\nee... tene' esten... kin ts'aa ts'aak way kaaje'.\nee... tene' esten... kin ts'aa ts'aak way kaaje'.\n\nee... tene' esten... kin ts'aa ts'aak way kaaje'.\n\nee... tene' esten... kin ts'aa ts'aak way kaaje'.\nee... tene' esten... kin ts'aa ts'aak way kaaje'.\nee... tene' esten... kin ts'aa ts'aak way kaaje'.\n\n\n\n",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ee... tene' esten... kin ts'áak ts'aak way kaaje'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "e..yo estén… doy medicamentos en este pueblo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 11730,
+      "end_time_ms": 26505,
+      "num_slots": 1,
+      "text": "E… tene' esten... utsin wilik xan ku u... k'aaba'e' estene... ee...  bweno ts'áan xan te'e estene e kliinika tu'ux kin bino' esten... promotoora de este... de salud boluntaaryo, beyu k'aaba'o' esten...",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "E… tene' esten... uts in wilik xan ku u... k'aaba'e' estén le... ee...  bweno ts'áaba’an xan te'e estene le kliinika tu'ux kin bino' esten... promotoora de este... de salud boluntaaryo, bey u k'aaba’o’ esten..."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "A mi estén… me gusta lo… el nombre estén… ee… bueno el nombre que nos tienen dado en la clínica donde asisto estén… promotora de estén… de salud voluntario, así se llama estén…"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 27080,
+      "end_time_ms": 31955,
+      "num_slots": 1,
+      "text": "to'one' kik séen bisa'alo'on ch'a' kuurso xan esten... Telchak Pwerto,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "to'one' kik séen bisa'alo'on ch'a' kuurso xan esten... Telchak Pwerto,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "a nosotros nos llevan constantemente a tomar cursos también en estén… Telchac Puerto,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 33090,
+      "end_time_ms": 41700,
+      "num_slots": 1,
+      "text": "kin bisa'alo'on xan esten... Jo' ee esten... kaada kwaatro meses xane' kik bisa'alo'on Saki'",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "kin bisa'alo'on xan esten... Jo' ee esten... kaada kwaatro meses xane' kik bisa'alo'on Saki'. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "también nos llevan en estén… Mérida ee.. estén… cada cuatro meses también nos llevan a Valladolid."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 44500,
+      "end_time_ms": 51755,
+      "num_slots": 1,
+      "text": "Syeempre xan esten... kin bin ko'ox a'ake' em... ka'alak'o'ope' yaan oorae' esten... ka'amáal in bin u' pée semaana",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Syeempre xan esten... kin bin ko'ox a'ake' em... ka'alak'o'ope' yaan oorae' esten... ka'amáal in bin jump’éel semaana, "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "También voy siempre estén… voy digamos en… en Xcalacoop a veces estén… voy dos veces a la semana, "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 52620,
+      "end_time_ms": 62205,
+      "num_slots": 1,
+      "text": "ee... laayli' xan te'elo' chen k'uchko'on beyo' pus yaan ooare' esten... kik pesáarko'on xane e estene e xko'olelo'obo', mejen paalalo'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ee... laayli' xan te'elo' chen k'uch ko'on beyo' pus yaan ooare' esten... kik pesáarko'on xan le, le estén le, le xko'olelo'obo', mejen paalalo'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ee… ahí también cuando llegamos así, pues a veces estén… pesamos a las señoras, a los niños."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 62885,
+      "end_time_ms": 66405,
+      "num_slots": 1,
+      "text": "Kik ch'a'ako'on xan presyon e... u dekstros,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Kik ch'a'ako'on xan presyon e... u dekstros,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le tomamos también la presión e… su dextros,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 66610,
+      "end_time_ms": 86160,
+      "num_slots": 1,
+      "text": "entonses esten... tene' kin... in ch'a'ik ts'aak te'elo' kin taasik waya', way tune' tene' kin ts'áak ts'aak te' estene e...  te'ex xko'olelo' waya', bweno ti' en géeneral, ti' tu láaka beyo', ti'a mejen paala, ti'a esten... ti'a nukuch winik, tia'a esten... ti'a áabwelitos,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "entonses esten... tene' kin in ch'a'ik ts'aak te'elo' kin taasik waya', way tune' tene' kin ts'áak ts'aak te' estene e... te'ex xko'olelo' waya', bweno ti' en géeneral, ti' tu láakal beyo', ti'al mejen paalal, ti'al esten... ti'al nukuch winik, ti’al esten... ti'al abweliitos, "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "entonces estén… yo agarro medicamentos ahí y los traigo aquí, entonces aquí yo doy medicamento a estén… a… a las señoras de aquí, bueno en general, a todos así, para niños, para estén… para adultos, para estén… para abuelitos,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 86800,
+      "end_time_ms": 89965,
+      "num_slots": 1,
+      "text": "esten... kin in ts'áak xan ts'aak ti'o'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "esten... kin ts'áaik xan ts'aak ti'o'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "estén… les doy medicamentos también a ellos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 90705,
+      "end_time_ms": 102490,
+      "num_slots": 1,
+      "text": "Ee... estene’e... kin ts'áaku ts'aak ti' bey yaan máak beyo' pus yaan se'en ti', yaan táankabi ti' esten... wa tu chokwile' pwes tene' esten... kin ts'áak ts'aak ti'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ee... esten ee... kin ts'áaik u ts'aak ti' bey yaan máak beyo' pus yaan se'en ti', yaan táankabil ti' esten... wa tu chokwile' pwes tene' esten... kin ts'áaik ts'aak ti'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ee… estén… ee… doy medicamentos para personas que tengan tos, diarrea, estén… si tiene calentura pues yo estén… les doy la medicina."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 104295,
+      "end_time_ms": 125545,
+      "num_slots": 1,
+      "text": "Ee... kin ch'a'ak xanu presyono' xan yaan oorae' chen taako' xan way xane' pus yaan oorae' chenu ya'alo'obe' yaan ooare' bey xuul o yóolo' xane' pwes kin estenin in kin ch'a'ak  u presyono' xan, yo'ola ke in wik xan wa… wa uts yanik wa esten wa  k'aas yanik u presyono' beyo' wa  bix ya'ala' wa ku yéeme wa ku na'aka pwes tene' kin ch'a'ik.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ee... kin ch'a'ak xan u presyono'ob xan, yaan oorae' chen taako'ob xan way xane' pus yaan oorae' chen u ya'alo'obe' yaan ooare' bey xuul o yóolo' xane', pwes kin estén kin ch'a'ik  u presyono' xan, yo'olal ke in wilik xan wa… wa uts yanik wa esten wa  k'aas yanik u presyono'ob beyo' wa  bix ya'ala'al wa ku yéemel wa ku na'akal pwes tene' kin ch'a'ik"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ee…a veces les tomo su presión, a veces cuando vienen aquí pues a veces me dicen que sienten sin fuerzas, pues aquí les tomo la presión, así pues, veo si están bien o está mal su presión o como se dice, se les sube o baja pues lo tomo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 126465,
+      "end_time_ms": 147705,
+      "num_slots": 1,
+      "text": "Esten... chen tso'ojke' wa… wa tumen tin wilaj esten... na'aka'an wa bixe' pus tene' ki ts'áaku p'ée chan… p'ée chan bolaante ti' beya' ku jo'olin in, kin estenenin in ts'íitik bixu k'aaba', esten... jayp'ée aanyo yan ti' yéete ba'ax o'osa le kilin túuxtik bey esten... bey pwes… pwes te'ex xkalak'o'op beyo'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Esten... chen tso'ojke' wa… wa tumen tin wilaj esten... na'aka'an wa bixe' pus tene' ki ts'áak jump'éel chan… jump'éel chan bolaante ti' beya' ku jo'olin in, kin estenen in… in ts'íibtik bix u k'aaba', esten... jayp'éel aanyo yan ti' yéetel ba'ax yo'osal le kil in túuxtik bey esten... bey pwes… pwes te'ex xkalak'o'op beyo'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Estén… al finalizar si… si veo así que estén… su presión esta elevado o así pues yo les doy un… un volante así y empiezo a… a escribir cómo se llama estén… cuántos años tiene y el por qué lo estoy mandando así… así pues… pues ahí en Xcalacoop. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 147850,
+      "end_time_ms": 154900,
+      "num_slots": 1,
+      "text": "Ee… te'e e u k'aaba' estene e kliinikao' esten... IMSS-PROSPERA, beyu k'aaba'o'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ee.. te'e e u k'aaba' estén le kliinikao' esten... IMSS-PROSPERA, bey u k'aaba'o'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ee… ahí el nombre de la clínica estén… es IMMS-PROSPERA, así se llama."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 155145,
+      "end_time_ms": 164660,
+      "num_slots": 1,
+      "text": "Pwes te' kik bino'oni' men esten maas… maas nats' waye' entonses pwes ti' kik bino'on te'elo' i ti' xan kin túuxko'o’ beyo'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pwes te' kik bino'oni' men esten maas… maas naats' waye' entonses pwes ti' kik bino'on te'elo' i ti' xan kin túuxko'ob beyo'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues ahí asistimos porque nos queda más… más cerca de aquí entonces pues ahí asistimos y ahí los mando también. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 165590,
+      "end_time_ms": 181210,
+      "num_slots": 1,
+      "text": "I ten xane' pwes kin ts'áak tayer xan, e tayer xan kin ts'áak xano' láayli' xan esten... láayli'… láayli' ti'alu kanáantik bey esten... bey… bey u estenu u sáaludo' beyo', pwes esten... u toj óolalo',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "I ten xane' pwes kin ts'áaik tayer xan, le tayer xan kin ts'áaik xano' láayli' xan esten... láayli'… láayli' ti'al u kanáantik bey esten... bey… bey u estén u saludo' beyo', pwes esten... u toj óolalo'ob,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "y también pues imparto talleres, el taller que doy también… también… esten… también es para que cuiden así estén… asi… así su salud, pues estén… su bienestar,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 181755,
+      "end_time_ms": 203160,
+      "num_slots": 1,
+      "text": " tialu estenin in, tialu kanáanko' beyo' pwes kin ts'áak ya'a’ beyo', ya'a… ya'a klaase beyo' pus yaan oorae' e teemaso' u ti'a esten... ti'a ba'ax ken u meet esten wa yaan táankabi ti'o' wa bixu foormailu prebeniirko' ee... u síintomasij, esten... ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tial u estén in, tial u kanáanko'ob beyo' pwes kin ts'áaik ya'ab beyo', ya'ab… ya'ab klaase beyo' pus yaan oorae' le teemaso' u ti'al esten... ti'al ba'ax ken u meet wa yaan táankabil ti’ob wa bix u foormail u prebeniirko'ob ee... u síintomasij, esten..."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "para estén… para que se cuiden así pues doy varias así, varias… varias clases así pues a veces los temas son para saber qué hacer si tienen diarrea o la forma de cómo prevenir… los síntomas estén… "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 203310,
+      "end_time_ms": 205685,
+      "num_slots": 1,
+      "text": "yéete ba'ax kenu meeto' wa yaan ti'o'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "yéetel ba'ax ken u meeto'ob wa yaan ti'ob."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Y que hacer en caso de que lo tengan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 206290,
+      "end_time_ms": 220905,
+      "num_slots": 1,
+      "text": "Em... bey xan esten... bey xan wa xan, wa xan esten... bix ya'ala kin ts'áak xane e ti'a… ti’a esten... prebensyoon ti'a kaanser serbiko uteriino wa kaanser de maama.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Em... bey xan esten... bey xan wa xan, wa xan esten... bix ya'ala’al kin ts'áaik xan le ti'al… ti’al esten... prebensyoon ti'al kaanser seerbiko uteriino wa kaanser de maama."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Em… así también estén… si tambien, si también estén… cómo se dice, doy también sobre estén… para este… prevención para el cáncer cérvicouterino o cáncer de mama."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 221495,
+      "end_time_ms": 224895,
+      "num_slots": 1,
+      "text": "Pwes esten... pwes tu láakle teemaso' beyo',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pwes esten... pwes tu láakal le teemaso'ob beyo',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues estén… pues todos esos temas así, "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 225460,
+      "end_time_ms": 243490,
+      "num_slots": 1,
+      "text": "esten... kin ts'áaku u, bweno ya'a… ya'abe teemas beyo' mixu p'éelili'i', pwes esten... kaasi tu láaka bey… bey ti'alu toj esten toj óolalo’ob beyo’ pus, pus kin ts'aaik beyo' y esten... e teemaso' je'elo' pus kaada esten... kaada doos meses xan kin ts'áaik xan ti'o'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "esten... kin ts'áaik u, bweno ya'ab… ya'ab le teemas beyo' mix jump'éelili'i', pwes esten... kaasi tu láakal bey… bey ti'al u toj esten toj óolalo'ob beyo' pus, pus kin ts'áaik beyo' y esten... le teemaso'ob je'elo' pus kaada esten... kaada doos meses xan kin ts'áaik xan ti'ob."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "estén… doy también el, bueno muchos… muchos temas así no solo es uno, pues estén… casi todo así… así es para su esten bienestar así pues, pues lo doy así y estén… los temas pues cada estén… cada dos meses se los imparto también."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 244155,
+      "end_time_ms": 281025,
+      "num_slots": 1,
+      "text": "Esten... kin máano'on xan esten... yéete… yéetelu u láak' e… e  promotooras beyo' elo' u k'aaba'o' leti'obe' esten... promotooras boluntaaryas, e promotooras boluntaaryas tuno' pwes kin estenin in kin much'ka… kin much'ta yéete leeti'ob beyo' pwes, pus kik máano'on bey esten... bey  pwess jootaki naj beyo', le ken máanko'on jootaki naj beyo' pwes kik iko'on xane' wa tumen esten... pus wa láaj… wa láaj liimpyo xanu’u soolaro' xan wa xan laj esten... wa mina'anu jaltuni wa esten.. wa… wa u míismo’ob wa u páakmo’ob. ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Esten... kin máano'on xan esten... yéetel… yéetel u láak' e… e  promotooras beyo' lelo' u k'aaba'ob leti'obe' esten... promotooras boluntaaryas, e promotooras boluntaaryas tuno' pwes kin esten in kin much'ka, kin much'ta yéetel leti'ob beyo' pwes… pus kik máano'on bey esten... bey  pus jootaki naj beyo', le ken máanko'on jootaki naj beyo' pwes kik iko'on xane' wa tumen esten... pus wa láaj… wa láaj liimpyo u soolaro' xan esten... wa mina'an u jaltuni wa esten.. wa esten wa… wa u míismo’ob wa u páakmo’ob."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Estén… bueno pasamos también estén… con… con otras e… e… promotoras así, ellas se llaman estén… promotoras voluntarias, las promotoras voluntarias entonces pue nos juntamos con ellas, pues… pues pasamos estén… pasamos de casa en casa, cuando pasamos de casa en casa pues checamos también si estén… pues si esta todo limpio su terreno esten… si no tiene charcos o… estén si… si lo tienen barrido o chapeado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 281500,
+      "end_time_ms": 298045,
+      "num_slots": 1,
+      "text": " Meen esten... kik a'ak xan ti'obe' pus ma wa ma' u míismo'obe' pus ka’u míisto'ob wa yaan esten jaltuno'obe' pus kik ' a'ako'on ti'ob pus… pus ka u estenu u laj but'o' men wa ma'e' pus, pus ti' ku estenu ti' ku xíiti beye k'oxlo' beyo' ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Meen esten... kik a'ak xan ti'obe' pus ma wa ma' u míismo'obe' pus ka’ u míisto'ob wa yaan esten jaltuno'obe' pus kik ' a'ako'on ti'ob pus… pus ka u esten u… u láaj but'o’ob men wa ma'e' pus… pus ti' ku esten u ti' ku xíiti beye k'oxlo'ob beyo'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "porque estén… les decimos también que si no, si no lo tienen barrido pues que lo barran si hay estén charcos pues les decimos pues… pues que lo estén que… que lo tapen todo porque si no pues… pues ahí estén ahí brotan los mosquitos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 298255,
+      "end_time_ms": 306550,
+      "num_slots": 1,
+      "text": "Entonses la'atene' pwes kik a'ako'on ti' beyo pus k'a'abetu u manteneerko' bey… bey liimpyo bey esten bey ich  soolaro' beyo'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Entonses la'atene' pwes kik a'ako'on ti' beyo’ pus k'a'abet u manteneerko'ob bey… bey liimpyo bey esten bey ich  soolaro' beyo'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Entonces por eso pues les decimos así que deben mantener su terreno así… así limpio esten así limpio dentro de su terreno."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 308000,
+      "end_time_ms": 339160,
+      "num_slots": 1,
+      "text": "i esten... i pwes tene' utsin wike meyaj kin meetik beyo' men pus ya'a ba'a ts'o'okin kanik xan beyo' pwese' ee... ee... ya'a… ya'a ba'a ts'o'okin kanik beyo' pwes ti' tene' laj… laj esten... laj túumbentak  men tene' ka’ ookene' pwes mix… mix  ba'alin wooe bey… bey ti’ estene e aseerka bey  ti' u.... ti' u estenu u toj óolal máak beyo' pus… pwes chene, chenu chan p'íit in wooje beyo' pero pus desde ka ookene' pus bo'orasa' esten... pus ya'a’ esten ya’a’ ba’a ts'o'okin kanki'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "i esten... i pwes tene' uts in wik le meyaj kin meetik beyo' men pus ya'ab ba'al  ts'o'ok in kanik xan beyo' pwese' ee... ee... ya'ab… ya'ab ba'al ts'o'ok in kanik beyo' pwes ti' tene' láaj… láaj esten... laj túumbentak  men tene' ka’ ooken tene' pwes mix… mix  ba'al in woojel bey… bey ti’ estene le aseerka bey  ti' u.... ti' u esten u toj óolal máak beyo' pus… pwes chen le, chen u chan p'íit in wooje beyo' pero pus desde ka ookene' pus beorasa' esten... pus ya'ab esten ya’ab ba’al ts'o'ok in kaniki'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Y estén… y pues a mí me gusta este trabajo que hago así porque pues he aprendido muchas cosas pues e… e… muchas… muchas cosas ya aprendí así, pues para mí todas… todas estén… todas son nuevas porque cuando entré pues no… no sabía nada acerca así de… de estén salud de las personas pues… pues solo… solo un poco sabía, pero pues desde que entré pues ahora estén… pues esten he aprendido muchas cosas. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 339615,
+      "end_time_ms": 342995,
+      "num_slots": 1,
+      "text": "Te' tin kanaj xan in ts'áa xan esten... inyeksyoonesi,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Te' tin kanaj xan in ts'áa xan esten... inyeksyoonesi,\n\nTe' tin kanaj xan in ts'áa xan esten... inyeksyoonesi,\n\nTe' tin kanaj xan in ts'áa xan esten... inyeksyoonesi,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ahí aprendí también a poner inyecciones,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 343295,
+      "end_time_ms": 357245,
+      "num_slots": 1,
+      "text": "kin ts'áak xan inyeksyoones xan ti'a esten... em... kin ts'áak inyeksyoones bey yaan oora wa ku ts'áaba ti'o' esten... ku ts'áaba ti' leti'ob beyo' pus ku taalo'obe' pus kin… kin ts'áak ti' leeti’ob beyo'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "kin ts'áaik xan inyeksyoones xan ti'al esten... em... kin ts'áaik inyeksyoones bey yaan oora wa ku ts'áabal ti'ob esten... ku ts'áaba ti' leti'ob beyo' pus ku taalo'obe' pus kin… kin ts'áaik ti' leti’ob beyo'. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pongo inyecciones también para estén… em… pongo inyecciones así a veces les dan estén… les dan a ellos así pues vienen pues se… se los pongo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 357955,
+      "end_time_ms": 369240,
+      "num_slots": 1,
+      "text": "Ku taalo' kin inyektaarto', yaan oorae' esken... yaan oorae' ts'aak, yaan oorae' este chen bitamiina pus kin estenin in pwes ki’in ts'áak xan ti'o' bey xano'. ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ku taalo'ob ka in inyektaarto'ob, yaan oorae' esken... yaan oorae' ts'aak, yaan oorae' este chen bitamiina pus kin esten in pwes ki in ts'áaik xan ti'ob bey xano'. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Vienen para que los inyecte, a veces estén… a veces es medicamento, a veces solo este vitamina pues se los estén… pues se los pongo también."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 370450,
+      "end_time_ms": 378750,
+      "num_slots": 1,
+      "text": "Pus utsin wilik xan bey xano' men pwes ti' tin kanaj xani' men ten xane’  ka ookene’ pwes ma'in wooje xani' pero esten te' tin kanaji'i’,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pus uts in wilik xan bey xano' tumen pwes ti' tin kanaj xani' men ten xane’ ka ookene’ pwes ma'in woojel xani' pero esten te' tin kanaji'i,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues me gusta así porque pues ahí lo aprendí también porque  cuando yo entré pues no lo sabía pero estén ahí lo aprendí,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 379200,
+      "end_time_ms": 389005,
+      "num_slots": 1,
+      "text": "i esten... bey xan tokaarnak u taasa'a xan ten esten... bey yaan oora chen taasa’ak ten éeridas beyo pwes yaan oora beyo' pus kin p'o'ik xan,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "i esten... bey xan chen tokaarnak u taasa'al xan ten esten... bey yaan oora chen taasa’ak ten éeridas beyo’ pwes yaan oora beyo' pwes kin p'o'ik xan, "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "y estén… así también cuando a veces me traen estén… cuando a veces me traen heridas así pues a veces lo lavo también, "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 389355,
+      "end_time_ms": 392545,
+      "num_slots": 1,
+      "text": "yaan éeridas mejentak, yaan éeridas nuuktak pwes",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "yaan éeridas mejentak, yaan éeridas nuuktak pwes. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "hay heridas pequeñas, hay heridas grandes pues. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 393105,
+      "end_time_ms": 401540,
+      "num_slots": 1,
+      "text": "pus tene' ma'ak ts'o'ok u suuktali’in p'o'ik mix esten... tene' mix saajken ti' k'i'iki' mix esten... mix ba'a beyo',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pus tene' ma'ak ts'o'ok u suuktal in p'o'ik mix esten... tene' mix saajken ti' k'i'iki' mix esten... mix ba'al beyo',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pues yo creo que ya me acostumbré a lavarlo no estén… yo no le tengo miedo a la sangre ni… ni a nada así"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 401850,
+      "end_time_ms": 404115,
+      "num_slots": 1,
+      "text": "suuk, ts'o'ok u suukta tenin p'o'ik beyo'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": ""
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 405240,
+      "end_time_ms": 410700,
+      "num_slots": 1,
+      "text": "In wik éeridas nuuktake' pus ma’, mix tin wik wa saajken ti' je'elin p'o'oláantke'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "In wik éeridas nuuktake' pus ma’, mix tin wik wa saajaken ti' je'el in p'o'oláantike'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Al ver heridas grandes pues no, no siento si me da miedo a los lavo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 411865,
+      "end_time_ms": 436000,
+      "num_slots": 1,
+      "text": "I esten... i pwes beyo' tene' esten... leti' in dedikáarminba ti' beyo' men esten... men pwes, utsin wik beyo', la'atene' esten... la'ene' kex ma' de, kex bweno, kex ma' de bo'olbilene' pero pwes komo utsin wike' pus esten pwes ti'aneni' y esten... i tak borase' tene' pus… pus te' kin meyaj beyo' , leti' kin meyáajtik beyo'. ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "I esten... i pwes beyo' tene' esten... leti' in dedikáarminba ti' beyo' tumen esten... tumen pwes, uts in wilik beyo', la'atene' esten... la'ene' kex ma' de, kex bweno, kex ma' de bo'olbilene' pero pwes komo uts in wilike' pus esten pwes tianeni' y esten... i tak beorase' tene' pus…  pus te' kin meyaj beyo' , leti' kin meyáajtik beyo'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Y estén… y pues así yo estén… a eso me dedico porque estén… porque pues me gusta así, por eso estén… porque aunque no sea de, aunque bueno, no es de paga, pero pues como me gusta ahí estoy y estén… y pues hasta ahora yo pues… pues yo ahí trabajo así y es lo que trabajo. "
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

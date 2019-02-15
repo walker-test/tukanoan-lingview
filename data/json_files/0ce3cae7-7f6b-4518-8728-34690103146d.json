@@ -1,0 +1,1886 @@
+{
+  "metadata": {
+    "timed": true,
+    "story ID": "0ce3cae7-7f6b-4518-8728-34690103146d",
+    "title": {
+      "_default": "2018_11_4_U_xooki'_ka'ach_úuch_Dulce_Requena"
+    },
+    "media": {
+      "audio": "",
+      "video": "2018_11_4_U_xooki'_ka'ach_úuch_Dulce_Requena.mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "2/13/2019",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "2018_11_4_U_xooki'_ka'ach_úuch_Dulce_Requena.eaf",
+    "source_filetype": "ELAN",
+    "tier IDs": {
+      "T1": {
+        "name": "H1_Transcripción",
+        "subdivided": false
+      },
+      "T2": {
+        "name": "H2_Transcripción",
+        "subdivided": false
+      },
+      "T3": {
+        "name": "H1_Maya",
+        "subdivided": false
+      },
+      "T4": {
+        "name": "H2_Maya",
+        "subdivided": false
+      },
+      "T5": {
+        "name": "H1_Traducción",
+        "subdivided": false
+      },
+      "T6": {
+        "name": "H2_Traducción",
+        "subdivided": false
+      }
+    },
+    "speaker IDs": {
+      "S1": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T1"
+      },
+      "S2": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T2"
+      }
+    }
+  },
+  "sentences": [
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 150,
+      "end_time_ms": 14018,
+      "num_slots": 1,
+      "text": "E.. estee jay... tin chan paalile' ku ya'akin maama ti' tene' be'ela'e' yanin estelin in tu'uxkech eskweela yo'osala aila a kanke xooko' ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "E… estee jay... tin chan paalile' ku ya'alik in maama ti' tene' be'ela'e' yaan in estel in tu'uxkech eskweela yo'osal a aila a kanik le xooko'."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "E… Este… cuando yo era niña me decía mi mamá, hoy te voy a mandar en la escuela para que aprendas a leer.  "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 15018,
+      "end_time_ms": 28188,
+      "num_slots": 1,
+      "text": "Peroo le úucho'  pus estee jaay ma'atech u k'u'ubu winik kiinder chen ken este káajka bisa'aj xooke' primaaryaili' ka bisa'aj xooke'  ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Peroo le úucho' pus estee jaay ma'atech u k'u'ubul winik kiinder chen ken káajak a bisa'al xooke' primaaryaili' ka bisa'al xooke',"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Anteriormente pues no te inscribían en el kinder, cuando empezabas a estudiar era directamente en la primaria,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 28273,
+      "end_time_ms": 28839,
+      "num_slots": 1,
+      "text": "Mmm",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Mmm"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 28867,
+      "end_time_ms": 40093,
+      "num_slots": 1,
+      "text": "myeentrase' pus laas syeete dee la manyaanae' ku péeksa'a káampana beya' ku bin winik, ku bisa'a winik te'ej xooko' ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "myeentrase' pus laas syeete dee la manyaanae' ku péeksa'al káampana beya' ku bin winik, ku bisa'al winik te'ej xooko'."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "mientras tanto tocaban la campana a las siete de la mañana para que se fuera las personas, así se llevaba a la gente a estudiar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 40301,
+      "end_time_ms": 41566,
+      "num_slots": 1,
+      "text": "¿Ta juntun ka binj xook?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Ta juun tun ka binj xook?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Iba sola en la escuela?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 41679,
+      "end_time_ms": 46301,
+      "num_slots": 1,
+      "text": "Estee le ka'aj bisaj k'u'bileno' lelo' yetin maama,",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Estee le ka'aj bisa’ab k'u'bileno' lelo' yéetel in maama,"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando me fueron a inscribir fue con mi mamá,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 46377,
+      "end_time_ms": 47377,
+      "num_slots": 1,
+      "text": "¿A maamaj bisech?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿A maamaj bisech?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Su mamá la llevó?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 47357,
+      "end_time_ms": 51640,
+      "num_slots": 1,
+      "text": "peroo ka'aj tinkanaj tu'uxane eskweela beyo' puselo' tin juun kin bin ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "peroo ka'aj tin kanaj tu'uxan le eskweela beyo' pus lelo' tin juun kin bin"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero cuando aprendí donde estaba la escuela pues yo iba sola"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 51829,
+      "end_time_ms": 58583,
+      "num_slots": 1,
+      "text": "E chen oojko'on laas syeete delaamanyaanae' kin jóolo'one' laas oonse",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le chen oojko'on laas syeete dee laa manyaanae' kin jóolo'one' laas oonse."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Entramos a las siete de la mañana y salimos a las once. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 59301,
+      "end_time_ms": 74018,
+      "num_slots": 1,
+      "text": "Le chen jóoko'on laas oonseo' pus chen jaana kin bininmeto'one' ken ts'o'jke'  kin meetkin táareao'on en kaasa beyo', ku ka' péeksa'a káampanae'  laas treese' ti'alo'on jóok'o laas siinko  ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le chen jóoko'on laas oonseo' pus chen jaanal kin bin in meeto'one' ken ts'o'ojke' kin meetik in táareao'on en kaasa beyo', ku ka' péeksa'al káampanae' laas treese' ti'alo'on jóok'ol laas siinko.  "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando salimos a las once solo vamos a comer, terminando hacemos nuestra tarea en casa, se toca nuevamente la campana a las tres para que salgamos a las cinco. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 74792,
+      "end_time_ms": 93414,
+      "num_slots": 1,
+      "text": "Mmm... pus ti'e je'e k'iino'o' je'elo' myentrase' pus tene' min kanik ka'ach beyo', chen kin bin te'ej eskweelao' peroo pus le úucho' ma'aj sufisyeente le u nu'ukuli xook je'en bix bejla'e'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Mmm... pus ti' le je'el k'iino'ob je'elo' myentrase' pus tene' min kanik ka'ach beyo', chen kin bin te'ej eskweelao' peroo pus le úucho' ma' sufisyeente le u nu'ukulil xook je'en bix bejla'e'."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si... pues en aquellos tiempos yo no aprendía, solo iba en la escuela, pero anteriormente no era suficiente las herramientas para el estudio como lo es actualmente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 93490,
+      "end_time_ms": 101339,
+      "num_slots": 1,
+      "text": "Be'ela'e' pus ya'abu u nu'ukuli xook ku ts'aaba ti'alu xook máak, le úucho' ma'.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Be'ela'e' pus ya'ab u nu'ukulil xook ku ts'aabal ti'al u… u xook máak, le úucho' ma'."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Actualmente te dan muchas facilidades para… para el estudio de las personas, anteriormente no. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 93490,
+      "end_time_ms": 101339,
+      "num_slots": 1,
+      "text": "Mmm",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Mmm"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 101603,
+      "end_time_ms": 111942,
+      "num_slots": 1,
+      "text": "Chen lete'e papajtsilo'obo' leti' manik, kwaaderno, láapiso'ob. Le libroso'obo' pus ma' chuka'ani pus mun taaj.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Chen leti’e le papajtsilo'obo' leti' manik, kwaaderno, láapiso'ob. Le libroso'obo' pus ma' chuka'ani pus mun taaj."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Los que compraban eran los padres, el compraba cuaderno y lápiz. Los libros no estaban completos pues no venían.  "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 112150,
+      "end_time_ms": 122226,
+      "num_slots": 1,
+      "text": "\nElo' chen yo' primeero', yo' seguundo, yo' terseero, kwaarto, kiinto, seekstoe' le je'elo’ yana bin Espiitae' ti'a ka'a… ka'ajayla xookej.  ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Elo' chen yo' primeero', yo' seguundo, yo' terseero, kwaarto, kiinto, seekstoe' le je'elo’ yaan a bin Espiitae' ti'al ka'a… ka'a jayla xooke."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Solo era en primero, segundo y tercero, cuarto, quinto y sexto tenías que ir en Espita para que lo estudiaras.   "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 122311,
+      "end_time_ms": 123726,
+      "num_slots": 1,
+      "text": "¿Chen yo' terseero ku náakaj?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Chen yo' terseero ku náaka?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Solo llegaba en tercero?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 123754,
+      "end_time_ms": 140735,
+      "num_slots": 1,
+      "text": "Jaan... te'ej… te'e uchin xook teno' chen yo' terseer graado xooknajen teen, pero pus tene' ti'ele… le estele le xook tin meetaj beey este primeero, seguundo yete terseeroo' pus tene' ka'aka'teen tin réepetiirtaj. ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan... te'ej… uchin xook teno' chen yo' terseer graado xooknajen teen, pero pus tene' ti'e le… le estele le xook tin meetaj beey este primeero, seguundo yete terseeroo' pus tene' ka'aka'teen tin réepetiirta. "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si… cuando yo estudie’ solo llegue hasta el tercer grado, pero pues durante… durante mi estudio en primero, segundo y tercero estuve dos veces en cada grado."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 140629,
+      "end_time_ms": 141346,
+      "num_slots": 1,
+      "text": "Ka'aka'téen ",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka'a ka' téen"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "De a dos veces"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 141357,
+      "end_time_ms": 153037,
+      "num_slots": 1,
+      "text": "Ka'aka' téen tin réepetiirtaj yo'sak beyo' pus tene' letu'ux ts'i'in máan beyo' pus tene'jach séebin wikin ka' máani', tumen pus ts'i'in yáax xokik beyo' jaan.  ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka'a ka’ téen tin réepetiirta yo'sak beyo' pus tene' le tu'ux ts'i’ 'in máan beyo' pus tene'jach séeb in wilik in ka' máani', tumen pus ts'o'ok in yáax xokik beyo' jaan. "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Lo repetí dos veces, por eso donde yo había cursado lo veía muy fácil estudiar, porque pues ya lo había hecho así.  "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 153094,
+      "end_time_ms": 153490,
+      "num_slots": 1,
+      "text": "Jmm",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jmm"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 153452,
+      "end_time_ms": 162867,
+      "num_slots": 1,
+      "text": "Despwese' kin ka' ooko ti' u jee, peroo pwes komoo na'anu jee graadoe' pwes yanin ka'a réepetiirtik, tumen pwes na'anu jee grado beyo' jaan.   ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Despwese' kin ka' ooko ti' u jeel, peroo pwes komoo na'an u jeeL graadoe' pwes yaan in ka' réepetiirtik tumen pwes na'an u jee grado beyo' jaan."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Después yo entraba a otro grado, pero como no había otro grado lo volvía a repetir, porque no había otro grado así.   "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 163263,
+      "end_time_ms": 169131,
+      "num_slots": 1,
+      "text": "Pus ti'e le le óoxp'e graado beyo' pus tene' seys anyos tin xokaj .",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pus ti' le… le… le óoxp'éel graado beyo' pus tene' seeys aanyos tin xoka. "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues en los… los… los tres grados pues yo lo estudie seis años."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 169433,
+      "end_time_ms": 183377,
+      "num_slots": 1,
+      "text": "Pero tene' pus tin xokaje... este...  tin kanajele liibro espanyool beyo', tin kanajele jayle… le… e… libro ti'a este… jayle nuumeros romaanos. ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pero tene' pus tin xokaje... este...  tin kanaje le liibro espanyool beyo', tin kanaje le jayle… le… e libro ti'al este… jayle nuumeros romaanos. "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pero yo aprendí… este… aprendí sobre el libro de español, aprendí sobre… el… el libro para este… los números romanos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 183622,
+      "end_time_ms": 184075,
+      "num_slots": 1,
+      "text": "Jmm ",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jmm"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 184168,
+      "end_time_ms": 187866,
+      "num_slots": 1,
+      "text": "Tin kanaje nuumeros araabigoso'.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tin kanaj le nuumeros araabigoso'."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Aprendí sobre los números arábigos. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 187905,
+      "end_time_ms": 188357,
+      "num_slots": 1,
+      "text": "Jaan ",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 188284,
+      "end_time_ms": 195036,
+      "num_slots": 1,
+      "text": "Tin kanaj xane... estele… le nuumeros desimaales tu'ux ka séeparaarkele nuumeroso'obo'. ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tin kanaj xan le... este le… le nuumeros desimaales tu'ux ka séeparaarke le nuumeroso'obo'. "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "También aprendí… este… sobre los números decimales donde separabas a los números."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 195074,
+      "end_time_ms": 195452,
+      "num_slots": 1,
+      "text": "Jaan ",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 195508,
+      "end_time_ms": 202961,
+      "num_slots": 1,
+      "text": "Mmm... tene' le nuumeros romaanoso' lelo' jachin woojej, tak tu beejla'ile' tene' in wooje tu láaka. ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Mmm... tene' le nuumeros romaanoso' lelo' jach in woojel, tak tu beejla'ile' tene' in woojel tu láaka."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si… yo sé mucho sobre los números romanos, hasta en la actualidad se todo. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 203018,
+      "end_time_ms": 203415,
+      "num_slots": 1,
+      "text": "Jaan ",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 203451,
+      "end_time_ms": 220150,
+      "num_slots": 1,
+      "text": "Jaan... ka'ansa'abenin xooktake… le… le jayle… le… le bixu… u estelu séepararta'a kada páalabra beyo'. Yaan puntoikooma, yaan áasento, yaan signo de preguunta, signo dee áadmirasyoon. ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan... ka'ansa'aben in xook tak le… le… le jayle… le… le bix u… u estel u séepararta'al kada páalabra beyo'. Yaan puunto i kooma, yaan áasento, yaan siigno de preguunta, siigno de áadmirasyoon."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si… también me ensañaron sobre… como… como… como se debía… como… como se debía… este de usar los signos de puntuación para separar una palabra. Había punto y coma, había acento, había signos de pregunta y signo de admiración.  "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 220187,
+      "end_time_ms": 220602,
+      "num_slots": 1,
+      "text": "Jaan",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 220641,
+      "end_time_ms": 239396,
+      "num_slots": 1,
+      "text": "Jaan... pwes tu láakle je'elo' beyo' tin laj… tin laj xokaj mmm... myentrase' pus este jay, bey tun p'áatik beyo', pus tene' tin jaylin in estudyaar beyo', tin xokik jaan.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan... pwes tu láakal le je'elo' beyo' tin laj… tin laj xokaj mmm... myentrase' pus este jay, bey tun p'áatik beyo' pus tene' tin jay in estudyaar beyo' tin xokik jaan."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si… pues todo eso había… habia leído si… mientras tanto así, se había quedado así, pues yo estaba estudiando así, estaba cursando.  "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 239433,
+      "end_time_ms": 239867,
+      "num_slots": 1,
+      "text": "Jaan ",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 239867,
+      "end_time_ms": 252905,
+      "num_slots": 1,
+      "text": "Myentrase' pus tene' láaka le liibros ts'a'an ti' teen beyo' u k'aaba'e' estee jaay aritmeetika, jeometriiya, káaligrafiya, estee espanyool",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Myentrase' pus tene' láaka le liibros ts'a'an ti' teen beyo' u k'aaba'e' estee jaay aritmeetika, jeometriiya, káaligrafiya, estee espanyool,  "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Mientras tanto los libros que me habían dado así se llamaban este aritmética, geometría, caligrafía, este español,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 252923,
+      "end_time_ms": 253338,
+      "num_slots": 1,
+      "text": "Jaan ",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 253325,
+      "end_time_ms": 259697,
+      "num_slots": 1,
+      "text": "jaan... estee jay lengwa náasyonaal, jaan… istorya i sibiismo.",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "jaan... estee jay lengwa náasyonaal, jaan… istorya i sibiismo.  "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "si… este lengua nacional, si… historia y civismo. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 259753,
+      "end_time_ms": 260376,
+      "num_slots": 1,
+      "text": "Jaan ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 259753,
+      "end_time_ms": 260376,
+      "num_slots": 1,
+      "text": "Jaan ",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 261395,
+      "end_time_ms": 275980,
+      "num_slots": 1,
+      "text": "Pwes yanu kwáaderno enblaanko xan tu'ux kin in ts'íitko'on u estelu… jaylu u respweestas beye preguuntaso'obo' men pwes yanu… u leksyoonesi beyo' pus ts'o'okin reépasarko'on ts'i'in kanko'on tak déememoryai beyo'.  ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pwes yaan u kwáaderno een blaanko xan tu'ux kin in ts'íitiko'on u estel u… jaylu u respweestas beye preguuntaso'obo' men pwes yaan u… u leksyoonesi beyo' pus ts'o'ok in reépasarko'on, ts'i' in kanko'on tak déememoryail beyo'.  "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues teníamos un cuaderno en blanco donde escribíamos este… las respuestas de las preguntas, porque pues tenía las… las lecciones así, pues ya lo habíamos repasado, ya lo sabíamos de memoria así. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 276169,
+      "end_time_ms": 276622,
+      "num_slots": 1,
+      "text": "Mmm",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Mmm"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 276716,
+      "end_time_ms": 286584,
+      "num_slots": 1,
+      "text": "Mene' pus to'one' chen ts'áabak ti' to'one' táarea en kaasa beyo' pus to'one' ku ya'ala'a to'on mene máaestro beyo' e táarea een kaasa beyo' déememooryai, ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Mene' pus to'one' chen ts'áabak ti' to'on le táarea en kaasa beyo' pus to'one' ku ya'ala'al to'on mene máaestro beyo' le táarea een kaasa beyo' déememooryail, "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Porque cuando nos dejaban tarea para la casa pues el maestro nos decía que era tarea de memoria, "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 287226,
+      "end_time_ms": 290565,
+      "num_slots": 1,
+      "text": "yanin xojko'on déememooryai yanin k'ubko'on. ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "yaan in xokiko'on déememooryail yaan in k'ubiko'on. "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "teníamos que leerlo y así lo íbamos a entregar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 290584,
+      "end_time_ms": 290999,
+      "num_slots": 1,
+      "text": "Jaan",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 291150,
+      "end_time_ms": 304810,
+      "num_slots": 1,
+      "text": "Jaan… yanik k'ubik myentrase' pus to'one'... beytunin meetko', pus chen ts'o'okok ken xiken tin naaji, ts'o'okin jaana ts'o'ok ba'a beya' kin kutle' ko'olin káajkin… in réepasaarte, in xoke in xoke, in xokej, in p'ajtin jo'o.  ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan… yaan ik k'ubik myentrase' pus to'one'... beytun in meetiko', pus chen ts'o'okok ken xiken tin naaji, ts'o'ok in jaanal ts'o'ok ba'al beya' kin kutle' ko'ol in káajal in… in réepasaarte, in xoke, in xoke, in xokej, in p'at tin jo'ol.  "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si… lo teníamos que entregar, mientras tanto nosotros…  yo lo hacía así, pues cuando terminaba me iba en mi casa, al terminar de comer me siento y empiezo a… a repasar, leo tantas veces hasta memorizarlo."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 304896,
+      "end_time_ms": 305367,
+      "num_slots": 1,
+      "text": "Jaan ",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 305452,
+      "end_time_ms": 318622,
+      "num_slots": 1,
+      "text": "e chen k'uchken tu ka'aten tu jo'olojile' e máaestroo' leti'e' chen kenin bisin liibroo' ti' beya' ku waltike tu'ux tu máarkartaj teno' tene' ko'olin wa'alik, ko’olin wa’alik déememooryail.  ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le chen k'uchuken tu ka'aten tu jo'olojile' le máaestroo' leti'e' chen ken in bis in liibro ti' beya' ku waltike tu'ux tu máarkartaj teno' tene' ko'ol in wa'alik, ko’ol in wa’alik déememooryail.  "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Al día siguiente al llegar en la escuela le llevo el libro al maestro, busca la página donde él me había marcado y yo lo digo, lo digo de memoria."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 318641,
+      "end_time_ms": 319131,
+      "num_slots": 1,
+      "text": "Jaan",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 319263,
+      "end_time_ms": 330451,
+      "num_slots": 1,
+      "text": "Jaan... wa ma' tin meete' le je'elo' pus tene' yanin este… yanin ka' beetik tu ka'aten ka' beeyak kin in ts'o'oksik ti'a ki'in k'ube. ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan... wa ma' tin meete' le je'elo' pus tene' yaan in este… yaan in ka' beetik tu ka'aten ka' beeyak in ts'o'oksik ti'al ki'in k'ube. "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si… sino lo hice pues yo este… tengo que hacerlo y terminarlo para entregar. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 330508,
+      "end_time_ms": 330867,
+      "num_slots": 1,
+      "text": "Jaan",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 330838,
+      "end_time_ms": 332536,
+      "num_slots": 1,
+      "text": "Jaan. Menelo' laj beyo', ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan. Men lelo' laj beyo',"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si. Porque todo es así,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 332593,
+      "end_time_ms": 333215,
+      "num_slots": 1,
+      "text": "Laj beyo' ",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Laj beyo'"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Todo es así"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 333244,
+      "end_time_ms": 336093,
+      "num_slots": 1,
+      "text": "laj beyu beeta'a ti'e paalalo'obo' ... jaan",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "laj beey u beeta'al ti' le paalalo'obo' ... jaan. "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "sí… así les hacían a todos los niños."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 336083,
+      "end_time_ms": 339234,
+      "num_slots": 1,
+      "text": "¿Peroo este… peroo teche' ka wáanta'a ta naajij?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Peroo este… peroo teche' ka wáanta'al ta naajil?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Pero este… a usted la ayudaban en su casa?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 339924,
+      "end_time_ms": 344773,
+      "num_slots": 1,
+      "text": "Pwes abeesese' kin wáanta'a, ka'ach min kanke le xooko' lelo' sii kin wáanta'a,  ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pwes abeesese' kin wáanta'al, ka'ach min kanke le xooko' lelo' sii kin wáanta'al,  "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues a veces me ayudaban, cuando no sabía leer eso sí me ayudaban, "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 344848,
+      "end_time_ms": 345225,
+      "num_slots": 1,
+      "text": "Jmm",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jmm"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 345206,
+      "end_time_ms": 353866,
+      "num_slots": 1,
+      "text": "jaan... kin wáanta'alin k'aj óote leetraso'obo' peero istikyaaj xan tin kani, pero le ka'atin kanaj beya' pweselo' tin juun.  ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "jaan... kin wáanta'al in k'aj óolte leetraso'obo' peero istikyaaj xan tin kani, pero le ka'at in kanaj beya' pweselo' tin juun.  "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "si… me ayudaban a reconocer las letras, pero tuve dificultades para aprender, pero cuando lo aprendí pues lo hacía sola."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 353980,
+      "end_time_ms": 354395,
+      "num_slots": 1,
+      "text": "Jaan ",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 354395,
+      "end_time_ms": 360527,
+      "num_slots": 1,
+      "text": "Ka'a ti'ale máaes... le ken ya'ale máaestro chenu máarkarte ts'íib beya' tene' yanin k'ubik déememooryail.  ",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka'a ti'ale máaes... le ken ya'al le máaestro chen u máarkarte ts'íib beya' tene' yaan in k'ubik déememooryail.  "
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando el maestro… cuando el maestro decía que iba a dejar tarea yo tenía que entregarlo de memoria."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 360546,
+      "end_time_ms": 360980,
+      "num_slots": 1,
+      "text": "Jmm",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jmm"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Si"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 361008,
+      "end_time_ms": 364650,
+      "num_slots": 1,
+      "text": "Peroo beyo' pus yanin wilik tu'ux ku u…",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Peroo beyo' pus yaan in wilik tu'ux ku u…"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pero así pues tengo que ver donde… "
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

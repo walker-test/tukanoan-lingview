@@ -1,0 +1,1340 @@
+{
+  "metadata": {
+    "timed": true,
+    "story ID": "64ab3e2c-090d-4555-a39c-d29b4e0ceb59",
+    "title": {
+      "_default": "2018_11_22_Basura_Gervacio_Couoh"
+    },
+    "media": {
+      "audio": "",
+      "video": "2018_11_22_Basura_Gervacio_Couoh.mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "2/13/2019",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "2018_11_22_Basura_Gervacio_Couoh.eaf",
+    "source_filetype": "ELAN",
+    "tier IDs": {
+      "T1": {
+        "name": "H1_Transcripción",
+        "subdivided": false
+      },
+      "T2": {
+        "name": "H1_Maya",
+        "subdivided": false
+      },
+      "T3": {
+        "name": "H1_Traducción",
+        "subdivided": false
+      }
+    },
+    "speaker IDs": {
+      "S1": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T1"
+      }
+    }
+  },
+  "sentences": [
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 4320,
+      "end_time_ms": 12610,
+      "num_slots": 1,
+      "text": "e bejla'ile', ken jo'okin máani... in wila' bix u yúuchul ba'alo'o way, way póopola'e',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "le bejla'ile', ken jo'ok in máan in... wila' bix u yúuchul ba'alo'ob way Popola'e',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "hoy en dia, cuando salgo a caminar a ver lo que sucede en Popola',"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 13250,
+      "end_time_ms": 18000,
+      "num_slots": 1,
+      "text": "ku k'a'ajaten bixe le, e kuxtal úucho',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ku k'a'ajaten bix le kuxtal úucho',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "recuerdo como era la vida de antes,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 19530,
+      "end_time_ms": 23920,
+      "num_slots": 1,
+      "text": "men úuche' na'ane ba'a ku ya'ala plaastikoso',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "men úuche na'ane le ba'al ku ya'ala'al plaastikoso',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "porque hace tiempo no existian los plasticos,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 26390,
+      "end_time_ms": 35030,
+      "num_slots": 1,
+      "text": "óoli' tu láakal le e,  ba'alo' ku jóok'ol ti'al u xiixel u jaanal maak, u xiixel u meyaj máake',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "óoli' tu láakal le ba'alo'ob ku jóok'ol ti'al u xiixel u jaanal máak, u xiixel u meyaj máake',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "casi todos los residuos que salen de la comida y del trabajo del hombre,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 35060,
+      "end_time_ms": 40380,
+      "num_slots": 1,
+      "text": "láaj, láaj náatural osea láaj ba'alo'o ku taal ti' lu'um.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "láaj náatural, osea láaj ba'alo'ob ku taal ti' lu'um."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "todo es natural, es decir son cosas que provienen de la tierra."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 41950,
+      "end_time_ms": 43860,
+      "num_slots": 1,
+      "text": "up'ée téen tun tako'on p'uuje',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "jump'éel téen tun ko'on p'uuje',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "en una ocasión cuando híbamos de caza,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 45460,
+      "end_time_ms": 49280,
+      "num_slots": 1,
+      "text": "ka'a máanen tu p'éel kajtal, náach waye', nach way popla'e',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ka'a máanen ti' jump'éel kajtal, náach waye', náach way Popola'e',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pase por un rancho, lejos de aqui de Popola,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 50070,
+      "end_time_ms": 55960,
+      "num_slots": 1,
+      "text": "peero leti' u u ik k'uchle'",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "peero leti' ik k'uchle'"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero cuando llegamos,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 56930,
+      "end_time_ms": 61410,
+      "num_slots": 1,
+      "text": "esten táan k taale' ka' tin, aantes ik k'uchu tu'ux kajakba le wiinko'",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "táan ik taale' ka' tin, aantes ik k'uchul tu'ux kajakbal le wíiniko'"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "estabamos viniendo, antes de que lleguemos donde vive el señor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 62130,
+      "end_time_ms": 67670,
+      "num_slots": 1,
+      "text": "te' nikikba bey estelu sóol, u sóol este k'úumi',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "te' nikikbaj... u sóol k'úumi',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "alli estaba esparcida... la cascara de calabaza"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 69110,
+      "end_time_ms": 72030,
+      "num_slots": 1,
+      "text": "e k'úum tuno' jach ku ch'úuyu te' koolo',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "le k'úum tuno' jach ku ch'úuyul te' koolo',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "la calabaza que abunda en la milpa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 72720,
+      "end_time_ms": 78060,
+      "num_slots": 1,
+      "text": "ku cha'akal tune', ts'o'okle' ku láaj k'óoya'alu nooye k'uumo',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ku cha'akal tune', ts'o'okole' ku láaj k'óoya'al u nooy le k'úumo',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "se cuece, despues se extrae la pulpa de la calabaza,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 78930,
+      "end_time_ms": 84520,
+      "num_slots": 1,
+      "text": "ku ts'aaba tu jaant k'éek'en...ku nojo, nukuch máak, nojoch máak yaan kaja, kajakba te'elo',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ku ts'áabal tu jaant k'éek'en...nojoch máak kajakbal te'elo',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "se le da los cochinos para que coman...ancianos viven alli,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 85130,
+      "end_time_ms": 89800,
+      "num_slots": 1,
+      "text": "yaan ku tséentik k'éek'en, peero ya'a quiince, veeinte, treeinta k'éek'en ku ts'éentik,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "yaaan ku tséentik k'éek'en, pero ya'ab quiince, veeinte, treeinta k'éek'en ku ts'éentik,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "hay cerdos que alimenta, pero son quince, veinte, treinta cochinos,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 91150,
+      "end_time_ms": 97960,
+      "num_slots": 1,
+      "text": "peero ma' chéene k'úum ku ts'áakti'o'  pwes ku ts'áak xi'imti', ku ts'áaik iisti', makal, ts'íim ba'alo'o ku jóok'ol te'e tu koolo',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero ma' chéen k'úum ku ts'áaikti'o' ku ts'áaik xi'im ti', ku ts'áaik iisti', makal, ts'íim ba'alo'ob ku jóok'ol te'el tu koolo',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero no solo la calabaza les da, también  maiz, camote, ñame, yuca, cosas que salen de su milpa,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 100070,
+      "end_time_ms": 108760,
+      "num_slots": 1,
+      "text": "e, e bey tuno' u sóole k'úumo', lelo' pwes kóomo ke ma' ba'a de, de u beetma wíinke',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "le bey tuno' u sóol le k'umo', lelo' kóomo' ma' ba'al de u beetmaj wíinke',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "como la cascara de calabaza, no es algo hecho por el hombre,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 108780,
+      "end_time_ms": 117600,
+      "num_slots": 1,
+      "text": "sino ke jóok' te' u taa lu'um direektoje', ku pwes ken la'abke', ken xiixake', ku suut lu'umi ka'aten,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "sino ke te' u taal lu'um direeektoje', ken la'abke', ken xiixake', ku suut lu'umil ka'aten,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "sino que proviene de la tierra, cuando se deteriore, se haga pedazos, regresa a la tierra,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 119210,
+      "end_time_ms": 124860,
+      "num_slots": 1,
+      "text": "laayli' te' kajtalo', ka' k'ucho'on tu'ux nikikba jolo'och beya', jool ich na,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "laayli' te' kajtalo', ka' k'ucho'on tu'ux nikikbaj jolo'och beya', jool ich naal,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "en el mismo lugar, llegamos donde habia mazorca en la entrada de la casa, una entrada de elotes,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 125730,
+      "end_time_ms": 130000,
+      "num_slots": 1,
+      "text": "ba'axe' ts'o'oku láaj xiixta, ts'u p'áata  bey sóoskile', úuchben,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ba'axe' ts'o'ok u láaj xiixtaj, ts'u p'áataj bey sóoskile', úuchben,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero ya se habia deshecho, quedó como el soskil, estaba antiguo,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 130650,
+      "end_time_ms": 138230,
+      "num_slots": 1,
+      "text": "chéen liki'il u péeksa'a máanle ba'alche'o' yóok'olo', kaaxo'o', úulmo'o', k'éek'en, peek', ba'alo'obe',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chéen liki'il u péeksa'al máan le ba'alcheo'ob yóok'olo', kaaxo'ob, úulmo'ob, k'éek'en, peek', ba'alo'obe',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "cuando los animales mueven y pasan encima, gallinas, pavos, cochino, perro y demás,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 138920,
+      "end_time_ms": 144070,
+      "num_slots": 1,
+      "text": "ku xiixtal le'e, u sóol le nal beyo' le jolo'ocho'",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ku xiixtal u sóol le nal beyo', le jolo'ocho',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "se deshace la cascara del elote, la mazorca,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 144980,
+      "end_time_ms": 149640,
+      "num_slots": 1,
+      "text": "e bey tuno' tun biin u k'asta', e ken la'abak tun xano', ku p'áata xan laayli' lu'ume',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "le bey tuno' tun biin u k'asta', le ken la'abak tun xano', ku p'áatal xan laayli' lu'ume',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "asi se va pudriendo y cuando va hechando a perder, se vuelve nuevamente en tierra,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 151820,
+      "end_time_ms": 155640,
+      "num_slots": 1,
+      "text": "e lelo', ku k'a'ajaten tune' e bejla'ila',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "le lelo', ku k'a'ajaten tune' le bejla'ila',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "recuerdo entonces que en la actualidad,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 156840,
+      "end_time_ms": 160310,
+      "num_slots": 1,
+      "text": "ken jo'oka máan, tu jo'okaj, tu jo'okaajo'obe',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ken jo'ok a máan, tu jo'okaajo'obe',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "cuando caminas por la salida de las comunidades,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 160930,
+      "end_time_ms": 169690,
+      "num_slots": 1,
+      "text": "chuup yéete boteeyas de plaastiko, yéete boolsas de plaastiko wa ma'e' de biidryo,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chuup yéetel boteeyas de plaastiko, yéete boolsas de plaastiko wa ma'e' de biidryo,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "estan llenos de botellas de plastico, bolsas de plastico  sino de vidrio,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 170720,
+      "end_time_ms": 173140,
+      "num_slots": 1,
+      "text": "pero ba'alo'o ma'un k'asta, te' nika'ani',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero ba'alo'ob ma'un k'astal, te' nika'ani',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "son cosas que no se hechan a perder, estan alli arinconados "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 175050,
+      "end_time_ms": 181520,
+      "num_slots": 1,
+      "text": "lúugar u lu'umtale', ku p'áata niktale', ku k'askuntke lu'um tu'ux ku yaantalo',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "lúugar u lu'umtale', ku p'áatal niktale', ku k'askuntke lu'um tu'ux ku yaantalo',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "en vez de que se vuelva tierra, se queda arrinconado y hecha a perder el suelo en donde esta,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 182340,
+      "end_time_ms": 187720,
+      "num_slots": 1,
+      "text": "u maas k'aasile' wa yaan taku yaala'u e ba'alo' yaan te' boteeyaso',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "u maas k'aasile' wa yaan tak u yaala' ba'alo'ob yaan te boteeyaso',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "lo peor seria que se quede algo de lo que contienen,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 188410,
+      "end_time_ms": 193120,
+      "num_slots": 1,
+      "text": "je'en bixe clooro, gaas, gáasoliina, estem...",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "je'el bix le clooro, gaas, gáasoliina..."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "asi como el cloro, gas, la gasolina..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 193630,
+      "end_time_ms": 197830,
+      "num_slots": 1,
+      "text": "ee u tu láakal ba'alo' bey ku bu'ut'u te' boteeyaso', láaj te' ku p'áatli'",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tu láakal ba'alo'ob bey ku bu'ut'ul te' boteeyaso', láaj te' ku p'áatli'"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "todo con lo que se rellena las botellas, alli se queda"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 198670,
+      "end_time_ms": 202040,
+      "num_slots": 1,
+      "text": "u jela'ani tune kuxtal bejla'ila',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "u jela'anil tun le kuxtal bejla'ila',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "lo diferente de la vida de ahora,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 202380,
+      "end_time_ms": 209500,
+      "num_slots": 1,
+      "text": "pwes puuro kontaminasyoon, puuro ku k'askúuntke lu'uma', ku k'askuntik iik', ku p'áata mu kuxta le che'o' utso'",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pwes puuro kontaminasyoon, ku k'askúuntike lu'uma', ku k'askuntik iik', ku p'áatal mu kuxtal le che'ob uts'o',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "es pura contaminación, hecha a perder el suelo, el aire, los arboles no se desarrollan bien,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 209700,
+      "end_time_ms": 215210,
+      "num_slots": 1,
+      "text": "ku p'áata mix tun, u ma'un u kajta, kajtalo' xan ya'akach mejen ba'alo'o ti',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ku páatal... ma'un kajtalo'ob xan ya'abkach mejen ba'alo'ob ti',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ya no pueden... vivir insectos dentro,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 216240,
+      "end_time_ms": 224190,
+      "num_slots": 1,
+      "text": "e tune' tu'ux ku k'astalu sóole nalo'bo', u sóol bakal este.. e bixu sóole k'úumo' tu láakal ba'alo' bey ku pu'ulu",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "le tune' tu'ux ku k'astal u sóol le nalo'obo', u sóol bakal... le bix u sóol le k'úumo' tu láakal ba'alo'ob bey ku pu'uluj,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "entonces en donde se hechan a perder los huesos del elote... como la cascara de calabaza, todo lo que se desecha,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 225040,
+      "end_time_ms": 228800,
+      "num_slots": 1,
+      "text": "láaj, láaj lu'um u suuto',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "láaj lu'um u suuto',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "todo lo que se vuelve todo tierra,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 229650,
+      "end_time_ms": 234440,
+      "num_slots": 1,
+      "text": "tu ts'u' xan myeentras ke tun ka'aliki, tun k'astalo'be',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tu ts'u myeentras tun k'astalo'obe',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "en su interior mientras de descomponen,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 235020,
+      "end_time_ms": 241880,
+      "num_slots": 1,
+      "text": "yaan mejen ba'alo' ku kuxtalo' ichi, mejen xk'uruch, mejen máas, mejen xnook'ol, ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "yaan mejen ba'alo'ob ku kuxtalo'ob ichij, mejen xk'uuruch, mejen máas, mejen xnook'ol,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "hay pequeños animales que viven dentro, cucarachas, grillos, gusanitos,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 242470,
+      "end_time_ms": 249790,
+      "num_slots": 1,
+      "text": "ba'alo' ku yaantle leti'o' miismo leti' k'askuntik leti' beetku u, u p'áata tun lu'umi ka'aten,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ba'alo'ob ku yaantle leti'o'ob miismo k'askuntik, leti' beetik u p'áatal lu'umil ka'aten,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "los mismos animales que viven alli, la deshacen y la convierten en tierra nuvamente,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 250450,
+      "end_time_ms": 255760,
+      "num_slots": 1,
+      "text": "...leti' tune le e ba'a de plaastiko pwes lelo' ma' táan, ma'un p'áata beyo',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "...leti' tun le ba'al de plaastiko pwes lelo'... ma'un p'áata beyo',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "....el plastico...no queda asi,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 256405,
+      "end_time_ms": 258495,
+      "num_slots": 1,
+      "text": "men ku jach ku xáantalu ka' k'asta,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "men ku jach ku xáantal u ka' k'astal,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "porque tarda en descomponerse otra vez,,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 258980,
+      "end_time_ms": 263080,
+      "num_slots": 1,
+      "text": "beejla' k'iine' leti' tunu jela'anile kuxtal úucho' yéetele kuxtal bejla'a,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "beejla'a k'iine' leti' tun u jela'anil le kuxtal úucho' yéetel le kuxtal bejla'a,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "en la actualidad, esa es la dierencia de la vida de antes,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 263970,
+      "end_time_ms": 268310,
+      "num_slots": 1,
+      "text": "le u  jach ma'alo kuxtalo' lete' maas k'aas bejla'ila',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "le jach ma'alob kuxtalo' lete' maas k'aas bejla'ila',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "la buena vida es la peor hoy en dia,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 268340,
+      "end_time_ms": 271920,
+      "num_slots": 1,
+      "text": "la'atene' lúugar u yuutste lelo', tun binu maas k'asta.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "la'atene' lúugar u yuutste lelo', tun biin u maas k'astal."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "por eso en vez de mejorar, esta empeorando. "
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

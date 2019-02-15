@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2019-02-01T23:20:48-06:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <MEDIA_DESCRIPTOR EXTRACTED_FROM="file:///C:/Users/User/Desktop/WA'AK'ÁAN.mp4" MEDIA_URL="file:///C:/Users/User/Desktop/WA'AK'ÁAN.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./WA'AK'ÁAN.wav"/>
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///C:/Users/User/Desktop/WA'AK'ÁAN.mp4" MIME_TYPE="video/mp4" RELATIVE_MEDIA_URL="./WA'AK'ÁAN.mp4"/>
+        <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:d1b0f3c1-4a3d-4377-b50d-c6f26cfcf28f</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">66</PROPERTY>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="3455"/>
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="9260"/>
+        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="10650"/>
+        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="13345"/>
+        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="14355"/>
+        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="25185"/>
+        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="26250"/>
+        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="32335"/>
+        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="33500"/>
+        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="62655"/>
+        <TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="63950"/>
+        <TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="72015"/>
+        <TIME_SLOT TIME_SLOT_ID="ts13" TIME_VALUE="73955"/>
+        <TIME_SLOT TIME_SLOT_ID="ts14" TIME_VALUE="85955"/>
+        <TIME_SLOT TIME_SLOT_ID="ts15" TIME_VALUE="88365"/>
+        <TIME_SLOT TIME_SLOT_ID="ts16" TIME_VALUE="104695"/>
+        <TIME_SLOT TIME_SLOT_ID="ts17" TIME_VALUE="106150"/>
+        <TIME_SLOT TIME_SLOT_ID="ts18" TIME_VALUE="109820"/>
+        <TIME_SLOT TIME_SLOT_ID="ts19" TIME_VALUE="110600"/>
+        <TIME_SLOT TIME_SLOT_ID="ts20" TIME_VALUE="124095"/>
+        <TIME_SLOT TIME_SLOT_ID="ts21" TIME_VALUE="126450"/>
+        <TIME_SLOT TIME_SLOT_ID="ts22" TIME_VALUE="143995"/>
+        <TIME_SLOT TIME_SLOT_ID="ts23" TIME_VALUE="145980"/>
+        <TIME_SLOT TIME_SLOT_ID="ts24" TIME_VALUE="169780"/>
+        <TIME_SLOT TIME_SLOT_ID="ts25" TIME_VALUE="171570"/>
+        <TIME_SLOT TIME_SLOT_ID="ts26" TIME_VALUE="177750"/>
+        <TIME_SLOT TIME_SLOT_ID="ts27" TIME_VALUE="179905"/>
+        <TIME_SLOT TIME_SLOT_ID="ts28" TIME_VALUE="197120"/>
+        <TIME_SLOT TIME_SLOT_ID="ts29" TIME_VALUE="198400"/>
+        <TIME_SLOT TIME_SLOT_ID="ts30" TIME_VALUE="214615"/>
+        <TIME_SLOT TIME_SLOT_ID="ts31" TIME_VALUE="216205"/>
+        <TIME_SLOT TIME_SLOT_ID="ts32" TIME_VALUE="232595"/>
+        <TIME_SLOT TIME_SLOT_ID="ts33" TIME_VALUE="232595"/>
+        <TIME_SLOT TIME_SLOT_ID="ts34" TIME_VALUE="262140"/>
+        <TIME_SLOT TIME_SLOT_ID="ts35" TIME_VALUE="263900"/>
+        <TIME_SLOT TIME_SLOT_ID="ts36" TIME_VALUE="280110"/>
+        <TIME_SLOT TIME_SLOT_ID="ts37" TIME_VALUE="282600"/>
+        <TIME_SLOT TIME_SLOT_ID="ts38" TIME_VALUE="289360"/>
+        <TIME_SLOT TIME_SLOT_ID="ts39" TIME_VALUE="290760"/>
+        <TIME_SLOT TIME_SLOT_ID="ts40" TIME_VALUE="306415"/>
+        <TIME_SLOT TIME_SLOT_ID="ts41" TIME_VALUE="307595"/>
+        <TIME_SLOT TIME_SLOT_ID="ts42" TIME_VALUE="323660"/>
+        <TIME_SLOT TIME_SLOT_ID="ts43" TIME_VALUE="325795"/>
+        <TIME_SLOT TIME_SLOT_ID="ts44" TIME_VALUE="334425"/>
+    </TIME_ORDER>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="TRANSCRIPCIÓN" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H1_Transcripción">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+                <ANNOTATION_VALUE>Tene' in k'aaba'ae' Marcela, in éedade' de trentainweebe anyos,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+                <ANNOTATION_VALUE>in dedikáarminba' ti' wa' k'áan.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts6">
+                <ANNOTATION_VALUE>¿Tu'ux kin manku iiloi? saki', ¿ba'ax kóoloresi?, segun ba'ax kóoloresi ku k'áata'a tene' leti' kin in máak'antik.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" TIME_SLOT_REF1="ts7" TIME_SLOT_REF2="ts8">
+                <ANNOTATION_VALUE>Chen ts'o'ojke' kin abisaarke e persoona k'áatmilo' ku taalu ch'a'e'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a5" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
+                <ANNOTATION_VALUE>I bix… esten... ku taalu cha'e' wa segun máaxti' utschaj tu yiche' pwes ku komunikaarkuba ti' máax u jeelu k'ajóolale' ku taalu yil waye' kin máak'antik in woojen ba'ax... ya'abu klaasesi dibuujos u kóoloresi yéete bixu u máak'anan a ka'axik yaan ba'aj.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
+                <ANNOTATION_VALUE>Yana táan óotik mu' k'astaj, men wa ku k'astale' ku… ku kóochtalu yáamo'. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a7" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts14">
+                <ANNOTATION_VALUE>I pus e persoonas ku taa iko' yéete k’a'wa'mayormeente way ku taalo'obe', yaan ku taa p'iste'i', Káalak'op.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts15" TIME_SLOT_REF2="ts16">
+                <ANNOTATION_VALUE>Je'e ba'ax kóolorilu u… u k'áato'obe' pwes leti' kin in máak'antik i ¿ba’ax esten tamaanyoi? de oocho, de dyees wa de doose.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a9" TIME_SLOT_REF1="ts17" TIME_SLOT_REF2="ts18">
+                <ANNOTATION_VALUE>Chen leti' kin in dedikáarkinbi in máak'antej,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a10" TIME_SLOT_REF1="ts19" TIME_SLOT_REF2="ts20">
+                <ANNOTATION_VALUE>chen tso'okok ba'alin beet, in líimpyarkin naay, ba'ax beya' leti' kin in meetik men chen leti' in chan, chen leti' in chan meyaj te' way ichnáaje'. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a11" TIME_SLOT_REF1="ts21" TIME_SLOT_REF2="ts22">
+                <ANNOTATION_VALUE>Le beetke' pus ya'a máak ts'u'u k'a´'óotkin meyaje' pus ku taalu yileno' yaan ts'u'u taa esten... tu ka'alak'o'opi ikene' k'áatik wa je'elin máak'anke' pus tin wa'aj ti'e' je'ele'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a12" TIME_SLOT_REF1="ts23" TIME_SLOT_REF2="ts24">
+                <ANNOTATION_VALUE>chen tunin in ts'o'okse e le de doose je'ela' pos leti' kenin máak'ante ts'oke' yanu túu… yanu tu esten... k'awa'i' ts'u'u taa ikene' u k'áatu p'ée de dyeesi' leti' tun keni’in… in máak'antej, kex jujump'íiti' pero tu binubin.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a13" TIME_SLOT_REF1="ts25" TIME_SLOT_REF2="ts26">
+                <ANNOTATION_VALUE>U kóolori tuno', u kóoloresi ma' in… in mani' pero yanin binin manej, ¿tu'ux kin manik? saki',</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a14" TIME_SLOT_REF1="ts27" TIME_SLOT_REF2="ts28">
+                <ANNOTATION_VALUE>buka'aju máateryali kenin manej ti'u kweerpoi, ti' u kaal yéete esten... ti'ilin in esten... estenin in… in esten... in káajsik. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a15" TIME_SLOT_REF1="ts29" TIME_SLOT_REF2="ts30">
+                <ANNOTATION_VALUE>¿I bixu káajba? yanin yáax k'axik te' paache che'o' u ts'oke' yanin kanki k'axu sa’a’chi' men wa me' chen… chen to'ok'ajku u ti'ilu káajbalo' ku k'asta tene' pus yanin wik bex kenin in...</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a16" TIME_SLOT_REF1="ts31" TIME_SLOT_REF2="ts32">
+                <ANNOTATION_VALUE>Ka káajene' pos xaan tin wilin kanik pero asta  ka tin in kanin káajsu u… u ti'lu k'áaxa tak ti'lu  ts'o'okoj u estenu u kweerpoi, tu láaka beyo'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a17" TIME_SLOT_REF1="ts33" TIME_SLOT_REF2="ts34">
+                <ANNOTATION_VALUE>Pus tene' chen leti' in, in chan meyaj, pus chen náajkin wóolin in wak', in wak'in k'aane'  pus kin chan chitaj, chen náajkin wóo chitle' pus kin ka líik'ij, chen leti' ki’in dedikáarkinbaj pus chen bey… bey jach  k'a'ana'ano' pus yanin wikin in ts'o'oksik sée men wa ma'a'e' ken taak ilbi wa ma' ts'o'ojke' pwes ka'amáal ken taa ilbij.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a18" TIME_SLOT_REF1="ts35" TIME_SLOT_REF2="ts36">
+                <ANNOTATION_VALUE>Este ni’in... la'aj… la’a chenin láaj k'ubláantej, p'aata ten óoxp'eli’in u binin máak'antik ka béeyakin in láaj k'ubke e… e k'a'anin k'u’láanko'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a19" TIME_SLOT_REF1="ts37" TIME_SLOT_REF2="ts38">
+                <ANNOTATION_VALUE>Láaj difereentes dibujos y láaj difereentes kóoloresu u k'áatko' ten, </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a20" TIME_SLOT_REF1="ts39" TIME_SLOT_REF2="ts40">
+                <ANNOTATION_VALUE>ti'e' je'elo' pus tu ya'alo'obe' yanu komunikaarkubáaob ti' u jeel máaxu k'aóolo'obe' men ya'ab bin persoonas taaku manku k'aano'be' pwes na'an tu'ux, yaan tu'ux ku ko'ono bine’ pero ma' je'e bix ku déebe seere', </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a21" TIME_SLOT_REF1="ts41" TIME_SLOT_REF2="ts42">
+                <ANNOTATION_VALUE>Le beetik tune' tu ya'alo' tene' wa kin meyajtike' ku taalu yileno'obe' kia'ako ten ba'ax… ba'ax kóolorilu k'áato'obe' pwes kin manik te' esten... saki'o' te' kin manki',</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a22" TIME_SLOT_REF1="ts43" TIME_SLOT_REF2="ts44">
+                <ANNOTATION_VALUE>Le beetke' pus chen leti' kin chan dedikáarkinbaj ti' tu láaka, chen leti' in chan meyaj.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="TRADUCCIÓN" PARENT_REF="H1_Transcripción" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H1_Maya">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a23" ANNOTATION_REF="a1">
+                <ANNOTATION_VALUE>Tene' in k'aaba'ae' Marcela, in éedade' de tereyntanweebe anyos,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a24" ANNOTATION_REF="a2">
+                <ANNOTATION_VALUE>In dedikáarminba ti' wa' k'áan.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a25" ANNOTATION_REF="a3">
+                <ANNOTATION_VALUE>¿Tu'ux kin manik u iiloi? saki', ¿ba'ax kóoloresi?, segun ba'ax kóoloresi ku k'áata'al tene' leti' kin in máak'antik.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a26" ANNOTATION_REF="a4">
+                <ANNOTATION_VALUE>Chen ts'o'ojke' kin abisaarke le persoona k'áatmilo' ku taal u ch'a'e'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a27" ANNOTATION_REF="a5">
+                <ANNOTATION_VALUE>I bix esten... ku taal u cha'e' wa segun máax ti' utschaj tu yiche' pwes ku komunikaarkuba ti' máax u jeel u k'ajóolale' ku taal u yil waye' kin máak'antik in woojen ba'ax... ya'ab u klaasesi dibuujos u kóoloresi yéetel bix u máa k'anan a ka'axik yaan ba'a.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a28" ANNOTATION_REF="a6">
+                <ANNOTATION_VALUE>Yaan a táan óotik ma' u k'astaj, men wa ku k'astale' ku… ku kóochtal u yáamo'ob. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a29" ANNOTATION_REF="a7">
+                <ANNOTATION_VALUE>I pus le persoonas ku taal iko' mayormeente way ku taalo'obe', yaan ku taal p'iste'i', Káalak'op yéetel k’a'wa'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a30" ANNOTATION_REF="a8">
+                <ANNOTATION_VALUE>Je'el ba'ax kóolori u… u k'áato'obe' pwes leti' kin in máak'antik i ¿ba’ax esten tamaanyoi? de oocho, de dyees wa de doose.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a31" ANNOTATION_REF="a9">
+                <ANNOTATION_VALUE>Chen leti' kin in dedikáarkinbi in máak'antej,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a32" ANNOTATION_REF="a10">
+                <ANNOTATION_VALUE>chen tso'okok ba'al in beet, in líimpyartik in naay, ba'ax beya' leti' kin meetik tumen chen leti' in chan, chen leti' in chan meyaj te' way ichnáaje'. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a33" ANNOTATION_REF="a11">
+                <ANNOTATION_VALUE>Le beetike' pus ya'ab máak ts'o’ok u k'ajóoltik in meyaje' pus ku taal u yileno' yaan ts'o’ok u taal esten... juntúul ka'alak'o'opi taal ikene' ku k'áatik wa je'el in máak'anke' pus tin wa'alaj ti'e' je'ele'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a34" ANNOTATION_REF="a12">
+                <ANNOTATION_VALUE>chen tun in in ts'o'oks le de doose je'ela' pos leti' ken in máak'a’ante ts'oke' yaan juntúul… yaan juntúul esten... k'awa'i' ts'o’ok u taal ikene' u k'áat jump'éel de dyeesiseeysi' leti' tun ken in… ken in máak'antej, kex jujump'íiti' pero tu bin u bin.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a35" ANNOTATION_REF="a13">
+                <ANNOTATION_VALUE>U kóolori tuno', u kóoloresi ma' in… in mani' pero yaan in binin manej, ¿tu'ux kin manik? saki',</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a36" ANNOTATION_REF="a14">
+                <ANNOTATION_VALUE>buka'aj u máateryali ken in manej ti' u kweerpoil, ti' u kaal yéetel esten... ti'il in… in esten... esten in… in… in esten... in káajsik.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a37" ANNOTATION_REF="a15">
+                <ANNOTATION_VALUE>¿I bix u káajba? yaan in yáax k'axik te' paach le che'o' u ts'oke' yaan in kanik in k'ax u sa'a’chi' men wa ma'e’ chen… chen to'ok'ajak u ti'il u káajbalo' ku k'astal tene' pus yaan in wik bix ken in… in...</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a38" ANNOTATION_REF="a16">
+                <ANNOTATION_VALUE>Ka káajene' pos xaan tin wilaj in kanik pero asta  ka tin  kana in káajs u… u… u ti'al u k'áaxal tak ti'al u  ts'o'okol u esten u kweerpoil, tu láaka beyo'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a39" ANNOTATION_REF="a17">
+                <ANNOTATION_VALUE>Pus tene' chen leti' in, in chan meyaj, pus chen náajkin wóol in wak', in wak' in k'aane'  pus kin chan chitaj, chen náajkin wóol chitle' pus kin ka líik'ij, chen leti' kin in dedikáarkinbaj pus chen bey… bey jach  k'a'ana'ano' pus yaan in wik in… in ts'o'oksik séeb men wa ma' le chen taak ilbi wa ma' ts'o'ojke' pwes ka'amáal ken taal ilbij.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a40" ANNOTATION_REF="a18">
+                <ANNOTATION_VALUE>Esten in... la'aj… la’a chen in láaj k'ubláantej, p'aatal ten óoxp'el in u bin in máak'antik ka béeyak in láaj k'ubik le k'a'ana’an in k'ubl'a'antiko'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a41" ANNOTATION_REF="a19">
+                <ANNOTATION_VALUE>Láaj difereentes dibujos y láaj difereentes kóoloresu u k'áatko' ten,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a42" ANNOTATION_REF="a20">
+                <ANNOTATION_VALUE>ti'al le je'elo' pus tu ya'alo'obe' yaan u komunikaarkubáaob ti' u jeel máax u k'ajóolo'obe' men ya'ab bin persoonas taak u manik u k'aano'be' pwes na'an tu'ux, yaan tu'ux ku ko'onol bine’ pero ma' je'en bix ku déebe seere', </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a43" ANNOTATION_REF="a21">
+                <ANNOTATION_VALUE>Le beetik tune' tu ya'alo'ob tene' wa kin meyajtike' ku taal u yileno'obe' ku ya'ako’ob ten ba'ax… ba'ax kóolori u k'áato'obe' pwes kin manik te' esten... saki'o' te' kin maniki',</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a44" ANNOTATION_REF="a22">
+                <ANNOTATION_VALUE>Le beetike' pus chen leti' kin chan dedikáarkinbaj ti' tu láakal, chen leti' in chan meyaj.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="PALABRA" PARENT_REF="H1_Maya" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H1_Morfema"/>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="PALABRA" PARENT_REF="H1_Morfema" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H1_Glosa"/>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="TRADUCCIÓN" PARENT_REF="H1_Maya" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H1_Traducción">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a45" ANNOTATION_REF="a23">
+                <ANNOTATION_VALUE>Mi nombre es Marcela, mi edad es de treinta y nueve años,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a46" ANNOTATION_REF="a24">
+                <ANNOTATION_VALUE>Me dedico al urdido de hamaca.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a47" ANNOTATION_REF="a25">
+                <ANNOTATION_VALUE>¿Dónde compro el hilo? en Valladolid, ¿de qué colores? según de qué color pidan eso compro.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a48" ANNOTATION_REF="a26">
+                <ANNOTATION_VALUE>Después aviso a la persona que lo tiene pedido y o viene a buscar.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a49" ANNOTATION_REF="a27">
+                <ANNOTATION_VALUE>Como estén… viene a buscarlo si hubo alguien que le gustó pues se comunica con alguien más que conoce y lo viene a ver aquí y lo hago, se qué… muchas clases de dibujos y colores y cómo se hace, se amarra o cosas así.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a50" ANNOTATION_REF="a28">
+                <ANNOTATION_VALUE>Debes cuidar que no se eche a perder, porque si se echa a perder se… se queda ancho entre sí.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a51" ANNOTATION_REF="a29">
+                <ANNOTATION_VALUE>Y pues las personas que vienen a verlo mayormente aquí vienen, hay quienes vienen de Piste, Xcalacoop, y Kaua.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a52" ANNOTATION_REF="a30">
+                <ANNOTATION_VALUE>Cualquier color que… que pidan pues eso hago y estén… ¿de qué tamaño? de ocho, de diez o de doce.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a53" ANNOTATION_REF="a31">
+                <ANNOTATION_VALUE>Solo eso me dedico a hacer, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a54" ANNOTATION_REF="a32">
+                <ANNOTATION_VALUE>cuando termino mis pendientes, limpiar mi casa, o cosas así eso hago, porque solo ese, solo ese trabajito hago aquí en mi casa.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a55" ANNOTATION_REF="a33">
+                <ANNOTATION_VALUE>Por eso pues hay muchas `personas que conocen mi trabajo pues vienen a verme, hay quienes ya vinieron estén… uno de Xcalacoop me vino a ver, me pidió si le hago uno pues le dije que sí.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a56" ANNOTATION_REF="a34">
+                <ANNOTATION_VALUE>Cuando termine entonces este de doce pues ese voy a hacer también, hay un… hay un estén… de Kaua que ya me vino a ver y quiere uno de dieciséis,  ese… ese voy a hacer entonces aunque poco a poco pero hay va</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a57" ANNOTATION_REF="a35">
+                <ANNOTATION_VALUE>Los colores entonces, los colores no los he comprado, pero voy a ir a comprarlo ¿dónde lo compro? En Valladolid,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a58" ANNOTATION_REF="a36">
+                <ANNOTATION_VALUE>cuánto material voy a comprar para el cuerpo, para los brazos y estén… para que… que... estén… estén que… que… esten que lo empiece. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a59" ANNOTATION_REF="a37">
+                <ANNOTATION_VALUE>¿Cómo empieza? Primero lo amarro alrededor de la madera, después debo aprender a amarrar la orilla porque si no cuando… cuando se enreda al empezar se me echa a perder pues voy a ver como lo… lo…     </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a60" ANNOTATION_REF="a38">
+                <ANNOTATION_VALUE>Cuando empecé pues vi lento aprenderlo, pero hasta que aprendí a empezar y terminar la parte del cuerpo, todo fue así.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a61" ANNOTATION_REF="a39">
+                <ANNOTATION_VALUE>Pues yo solo eso trabajo, cuando me fastidio de urdir mi hamaca pues me acuesto, cuando me fastidio de estar acostada me levanto solo a eso me dedico, solo si… solo si es muy urgente veo terminarlo rápido porque si no cuando me vengan a ver y no ha terminado pues dos veces me van a venir a ver.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a62" ANNOTATION_REF="a40">
+                <ANNOTATION_VALUE>Estén hasta… hasta entregarlo todo, solo me faltan tres por hacer para entregar los que necesito entregar. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a63" ANNOTATION_REF="a41">
+                <ANNOTATION_VALUE>Todos los dibujos son diferentes y todos los colores que me piden son diferentes,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a64" ANNOTATION_REF="a42">
+                <ANNOTATION_VALUE>para eso pues dijeron que se iban a comunicar con otras personas que conocían, porque hay muchas personas que quieren comprar sus hamacas pues no hay donde, que hay lugares en donde se venden pero no es como debe ser.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a65" ANNOTATION_REF="a43">
+                <ANNOTATION_VALUE>Entonces por eso me dijeron que si a lo trabajo me vienen a ver y me dicen que… que color quieren, pues lo compro en estén… Valladolid, ahí lo compro.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a66" ANNOTATION_REF="a44">
+                <ANNOTATION_VALUE>Por eso pues solo a eso me dedico en todo, solo ese es mi trabajo.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="TRANSCRIPCIÓN" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="TRADUCCIÓN" TIME_ALIGNABLE="false"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="PALABRA" TIME_ALIGNABLE="false"/>
+    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>

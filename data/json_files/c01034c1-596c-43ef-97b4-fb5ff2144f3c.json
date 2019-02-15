@@ -1,0 +1,590 @@
+{
+  "metadata": {
+    "timed": true,
+    "story ID": "c01034c1-596c-43ef-97b4-fb5ff2144f3c",
+    "title": {
+      "_default": "2018_28_10 u tsikbal Fernanda_ Pedro cocom[1]"
+    },
+    "media": {
+      "audio": "",
+      "video": "2018_28_10 u tsikbal Fernanda_ Pedro cocom[1].mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "2/13/2019",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "2018_28_10 u tsikbal Fernanda_ Pedro cocom[1].eaf",
+    "source_filetype": "ELAN",
+    "tier IDs": {
+      "T1": {
+        "name": "H1_Transcripción",
+        "subdivided": false
+      },
+      "T2": {
+        "name": "H1_Maya",
+        "subdivided": false
+      },
+      "T3": {
+        "name": "H1_Traducción",
+        "subdivided": false
+      }
+    },
+    "speaker IDs": {
+      "S1": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T1"
+      }
+    }
+  },
+  "sentences": [
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 945,
+      "end_time_ms": 2240,
+      "num_slots": 1,
+      "text": "In k'aaba'e' Fernanda.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "In k'aaba'e' Fernanda.In k'aaba'e' Fernanda."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Me llamo Fernanda."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 2725,
+      "end_time_ms": 6305,
+      "num_slots": 1,
+      "text": "Pwes tene' tin meyaj, tin xook xan.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pwes tene' tin meyaj, tin xook xan."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": ".Pues yo estoy trabajando y también estoy estudiando."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 6955,
+      "end_time_ms": 14115,
+      "num_slots": 1,
+      "text": "De téempranoe' tin meyaj, de taardee' chen… chenu ts'áa las doose' tin jóok'o tin meyaje' ti'al in bin xook las trees.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "De téempranoe' tin meyaj, de taardee' chen… chen u ts'áa las doose' tin jóok'ol tin meyaje' ti'al in bin xook las trees."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Por las mañanas trabajo, de tarde cuando… cuando da las dos estoy saliendo de mi trabajo para ir a clases a las tres."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 15395,
+      "end_time_ms": 18605,
+      "num_slots": 1,
+      "text": "Tene' esten...  ta'aytak in tso'oksik in bachiyeer.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tene' esten...  ta'aytak in tso'oksik in bachiyeer."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Yo estoy por terminar mi bachiller."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 19555,
+      "end_time_ms": 24100,
+      "num_slots": 1,
+      "text": "Chen ts'o'ojkin ba… in bachiyeere' pwes tin tuklikin in xojkin káareraj.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Chen ts'o'okok in ba… in bachiyeere' pwes tin tukultik in in xokik in káarera."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando termine mi bachiller pues pienso estudiar mi carrera."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 25600,
+      "end_time_ms": 32840,
+      "num_slots": 1,
+      "text": "Pwes te' bachiyeero' utsi ya'ab ba'a ts'o'okin meetki', utsi ya'a esten... ya'a ba'alob ts'okin kanik, ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pwes te' bachiyeero' utsi ya'ab ba'al ts'o'ok in meetiki', utsi ya'ab esten... ya'ab ba'alob ts'o'ok in kanik, "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues en el bachiller he hecho muchas cosas, muchas cosas estén… he aprendido muchas cosas,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 33250,
+      "end_time_ms": 49525,
+      "num_slots": 1,
+      "text": "bey xan esten... bey xan yaan esten, ma' chen yo'osa esten kaamba esten ku ye'esa'a to'oni' yanu jee ba'a in wet xookilo'obe' yéete ba'ax kin meetik yéetelo'obe' pwes esten mun tu'ubu ten.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "bey xan esten... bey xan yaan esten, ma' chen yo'osal esten kaamba esten ku ye'esa'al to'oni' yan u jeel ba'ax in wet xookilo'obe' yéetel ba'ax kin meetik yéetelo'obe' pwes esten mun tu'ubul ten."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "así también estén… así también este no solo esten es aprender lo que nos enseñan, hay otras cosas con mis compañeros, cosas que hago con ellos pues este  no olvido."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 50995,
+      "end_time_ms": 69675,
+      "num_slots": 1,
+      "text": "Em... jach esten… jach ki'imak in wóol bey ta'aytakin ts'o'okskin in bachiyeera' yo'osa men tu… men xan tu apoyaarkenin maama, tu apoyaarkenin suku'uno'ob esten... um... ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Em... jach esten… jach ki'imak in wóol bey ta'aytak in ts'o'oksik in… in bachiyeera' yo'osal men tu… men xan tu apoyaarken in maama, tu apoyaarken in suku'uno'ob esten... um... "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "em… estoy muy… muy contenta así en que ya casi termino mi… mi bachiller porque también me… porque me apoyan por mi mamá, me apoyan mis hermanos estén… um…"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 73850,
+      "end_time_ms": 82290,
+      "num_slots": 1,
+      "text": "Pwes bertáase' tin tuklitko'on xan komoke u tyeempoi nabidaade' pwes tin tuklitko'on ik meetko'on ya'a’ ba'alob xan.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pwes bertáase' tin tuklitiko'on xan komo ke u tyeempoil nabidaade' pwes tin tuklitiko'on ik meetiko'on ya'ab ba'alob xan. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues ahora como es tiempo de navidad pues estamos pensando hacer muchas cosas también."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 82805,
+      "end_time_ms": 88095,
+      "num_slots": 1,
+      "text": "Esten... tin tuklitko'on ik meetko'on u p'ée seena yo'osal éetelin wet xookilo'on;",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Esten... tin tuklitiko'on ik meetiko'on jump'éel seena yo'osal yéetel in wet xookilo'on;"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Estén… estamos pensando hacer una cena con mis compañeros;"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 88650,
+      "end_time_ms": 104555,
+      "num_slots": 1,
+      "text": "em... tin meetko'on, tin tukliko'on xanin estenin in meetko'on kóonkursos ti'a k'aay yéete ti'a báaxa wa ba'alo' beyo' yo'osa pus in dibertiirkinbáaon men pus u ts'ook anyo esten yanikilo'on te bachiyeero'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "em... tin meetiko'on, tin tukultiko'on xan in estén… in meetiko'on kóonkursos ti'al k'aay yéetel ti'al báaxaj wa ba'alo'ob beyo' yo'osal pus in dibertiirkinbáaon men pus u ts'ook aanyo esten yanikilo'on ti’ le bachiyeero'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Em… estamos haciendo, pensando hacer estén… hacer concursos de canto y de juegos o cosas así para divertirnos porque pues es el último año que estamos en el bachiller."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 104675,
+      "end_time_ms": 129365,
+      "num_slots": 1,
+      "text": "um... komoke esten pwes yaan oorae’ min ka… min ka esten... min ka’ disfrutaarkone p'ée diya beyo' pwes to'one' taakin meetko'on yo'osa beyo' mu' tu'ubu to'on, yaan to'on ba'a, ya'a’ ba'a yanin tsikbáato'on ti' u jee… ti' u jee paalalo' wa ti'u, ti'obin maama wa bixi yo'osa beyo' esten u yiko'obe' pwes... ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "um... komoke esten pwes yaan oorae’ min ka… min ka esten... min ka’ disfrutaarkone jump'éel diya beyo' pwes to'one' taak in meetiko'on yo'osal beyo' mu’ tu'ubul to'on, yaan to'on ba'ax, ya'ab ba'ax yaan in tsikbáato'on ti' u jeel… ti' u jeel paalalo'ob wa ti' u… ti'ob in maama wa bixi yo'osal beyo' esten u yiko'obe' pwes..."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "um… como estén pues a veces ya no… ya no estén… ya no vamos a volver a disfrutar otro día así pues por eso nosotros queremos hacer así para que así no lo olvidemos, tenemos con que, muchas cosas que platicar a otros… a otros muchachos o a… a mi mamá o así para que vean pues… "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 129655,
+      "end_time_ms": 137235,
+      "num_slots": 1,
+      "text": "tin kankin disfrutaarto'on estenin in, u p'ée etaapa yaniko'on yéete… yéetelin júubentud wa bixi.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tin kanik in disfrutaarto'on esten in, jump'éel etaapa yaniko'on yéetel… yéetelin júubentud wa bixi.\n\ntin kanik in disfrutaarto'on esten in, jump'éel etaapa yaniko'on yéetel… yéetelin júubentud wa bixi.\n\ntin kanik in disfrutaarto'on esten in, jump'éel etaapa yaniko'on yéetel… yéetelin júubentud wa bixi."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "que aprendemos a disfrutar estén mi, una etapa en la que estamos con… con nuestra juventud y así."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 137610,
+      "end_time_ms": 160525,
+      "num_slots": 1,
+      "text": "Em... pwes chen ts'o'okok te'elo' pwes yaan xanin jóolo'on de bakasyoonesij pwes esten... in wa'ake' tene' yanin meyaj yo'osalin juntarku p'íit taak'in yo'osa beyo' chen ka… ka oojko'one' pwes yaan wa yaan gaastos k'a'abetin meetik eskweelae' pwes min jach ilik esten difiisil,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Em... pwes chen ts'o'okok te'elo' pwes yaan xan in jóok'lo'on de bakasyoonesij pwes esten... in wa'alike' tene' yan in meyaj yo'osal in juntartik u p'íit taak'in yo'osal beyo' chen ka… ka oojko'one' pwes yaan wa yaan gaastos k'a'abet in meetik eskweelae' pwes min jach ilik esten difiisil,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Em… pues cuando termine así pues vamos a salir de vacaciones pues estén… creo que yo voy a trabajar para juntar un poco de dinero para que así cuando, cuando entremos pues si necesito hacer gastos en la escuela pues no lo voy a ver muy difícil,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 161500,
+      "end_time_ms": 172170,
+      "num_slots": 1,
+      "text": "yéete xan esten... pwes wa yaanu jee ba'alob k'a'abet tene' wa tin maamae' pus ju béeyta xanin ts'áaik ti'e' yo'osa beyo' min jach iko'on wa, wa difiisil beyo'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "yéetel xan esten... pwes wa yaan u jeel ba'alob k'a'abet tene' wa tin maamae' pus je’el béeytal xan in ts'áaik ti'e' yo'osal beyo' min jach iko'on wa… wa difiisil beyo'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Y también estén… pues si hay otras cosas que necesito o mi mamá pues puedo dárselo también para que así no lo veamos si… si es difícil así."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 173705,
+      "end_time_ms": 181005,
+      "num_slots": 1,
+      "text": "Em...  ba'ax u jee xane' pwes... um...",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Em...  ba'ax u jeel xane' pwes... um..."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Em… pues otra cosa también pues… um…"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 184945,
+      "end_time_ms": 203285,
+      "num_slots": 1,
+      "text": " Tin tuklitik xan estenin in meetik ya'a ba'a te' nabidaada' pero esten... min wooje wa je'elu ts'áaik ten tyeempoi', yaan esten... yaan mejen detaayes taak in meetik ti' in wet xookilo' wa… wa bixi, ti'a in t'oxik te' diyao'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tin tuklitik xan esten in meetik ya'ab ba'ax te' nabidaada' pero esten... min woojel wa je'el u ts'áaik ten tyeempoi', yaan esten... yaan mejen detaayes taak in meetik ti' in wet xookilo'ob wa… wa bixi, ti'al in t'oxik te' diyao'. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Estoy pensando también estén… hacer muchas cosas para esta navidad pero estén… no sé si me dé tiempo, hay estén… tengo pequeños detalles que quiero hacer para mis compañeros o… o algo así, para repartirlo ese día.\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 204180,
+      "end_time_ms": 210944,
+      "num_slots": 1,
+      "text": "taakin tin tuklitikin meetik mejen kaajas wa bixi ti'alin síik.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "taakin tin tuklitik in meetik mejen kaajas wa bixi ti'al in síik."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Quiero, estoy pensando hacer cajitas o algo así para regalar."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

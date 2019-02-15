@@ -1,0 +1,710 @@
+{
+  "metadata": {
+    "timed": true,
+    "story ID": "d1b0f3c1-4a3d-4377-b50d-c6f26cfcf28f",
+    "title": {
+      "_default": "WA'AK'ÁAN"
+    },
+    "media": {
+      "audio": "",
+      "video": "WA'AK'ÁAN.mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "2/13/2019",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "WA'AK'ÁAN.eaf",
+    "source_filetype": "ELAN",
+    "tier IDs": {
+      "T1": {
+        "name": "H1_Transcripción",
+        "subdivided": false
+      },
+      "T2": {
+        "name": "H1_Maya",
+        "subdivided": false
+      },
+      "T3": {
+        "name": "H1_Traducción",
+        "subdivided": false
+      }
+    },
+    "speaker IDs": {
+      "S1": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T1"
+      }
+    }
+  },
+  "sentences": [
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 3455,
+      "end_time_ms": 9260,
+      "num_slots": 1,
+      "text": "Tene' in k'aaba'ae' Marcela, in éedade' de trentainweebe anyos,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tene' in k'aaba'ae' Marcela, in éedade' de tereyntanweebe anyos,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Mi nombre es Marcela, mi edad es de treinta y nueve años,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 10650,
+      "end_time_ms": 13345,
+      "num_slots": 1,
+      "text": "in dedikáarminba' ti' wa' k'áan.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "In dedikáarminba ti' wa' k'áan."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Me dedico al urdido de hamaca."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 14355,
+      "end_time_ms": 25185,
+      "num_slots": 1,
+      "text": "¿Tu'ux kin manku iiloi? saki', ¿ba'ax kóoloresi?, segun ba'ax kóoloresi ku k'áata'a tene' leti' kin in máak'antik.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Tu'ux kin manik u iiloi? saki', ¿ba'ax kóoloresi?, segun ba'ax kóoloresi ku k'áata'al tene' leti' kin in máak'antik."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Dónde compro el hilo? en Valladolid, ¿de qué colores? según de qué color pidan eso compro."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 26250,
+      "end_time_ms": 32335,
+      "num_slots": 1,
+      "text": "Chen ts'o'ojke' kin abisaarke e persoona k'áatmilo' ku taalu ch'a'e'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Chen ts'o'ojke' kin abisaarke le persoona k'áatmilo' ku taal u ch'a'e'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Después aviso a la persona que lo tiene pedido y o viene a buscar."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 33500,
+      "end_time_ms": 62655,
+      "num_slots": 1,
+      "text": "I bix… esten... ku taalu cha'e' wa segun máaxti' utschaj tu yiche' pwes ku komunikaarkuba ti' máax u jeelu k'ajóolale' ku taalu yil waye' kin máak'antik in woojen ba'ax... ya'abu klaasesi dibuujos u kóoloresi yéete bixu u máak'anan a ka'axik yaan ba'aj.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "I bix esten... ku taal u cha'e' wa segun máax ti' utschaj tu yiche' pwes ku komunikaarkuba ti' máax u jeel u k'ajóolale' ku taal u yil waye' kin máak'antik in woojen ba'ax... ya'ab u klaasesi dibuujos u kóoloresi yéetel bix u máa k'anan a ka'axik yaan ba'a."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Como estén… viene a buscarlo si hubo alguien que le gustó pues se comunica con alguien más que conoce y lo viene a ver aquí y lo hago, se qué… muchas clases de dibujos y colores y cómo se hace, se amarra o cosas así."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 63950,
+      "end_time_ms": 72015,
+      "num_slots": 1,
+      "text": "Yana táan óotik mu' k'astaj, men wa ku k'astale' ku… ku kóochtalu yáamo'. ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Yaan a táan óotik ma' u k'astaj, men wa ku k'astale' ku… ku kóochtal u yáamo'ob. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Debes cuidar que no se eche a perder, porque si se echa a perder se… se queda ancho entre sí."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 73955,
+      "end_time_ms": 85955,
+      "num_slots": 1,
+      "text": "I pus e persoonas ku taa iko' yéete k’a'wa'mayormeente way ku taalo'obe', yaan ku taa p'iste'i', Káalak'op.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "I pus le persoonas ku taal iko' mayormeente way ku taalo'obe', yaan ku taal p'iste'i', Káalak'op yéetel k’a'wa'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Y pues las personas que vienen a verlo mayormente aquí vienen, hay quienes vienen de Piste, Xcalacoop, y Kaua."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 88365,
+      "end_time_ms": 104695,
+      "num_slots": 1,
+      "text": "Je'e ba'ax kóolorilu u… u k'áato'obe' pwes leti' kin in máak'antik i ¿ba’ax esten tamaanyoi? de oocho, de dyees wa de doose.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Je'el ba'ax kóolori u… u k'áato'obe' pwes leti' kin in máak'antik i ¿ba’ax esten tamaanyoi? de oocho, de dyees wa de doose."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cualquier color que… que pidan pues eso hago y estén… ¿de qué tamaño? de ocho, de diez o de doce."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 106150,
+      "end_time_ms": 109820,
+      "num_slots": 1,
+      "text": "Chen leti' kin in dedikáarkinbi in máak'antej,",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Chen leti' kin in dedikáarkinbi in máak'antej,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Solo eso me dedico a hacer, "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 110600,
+      "end_time_ms": 124095,
+      "num_slots": 1,
+      "text": "chen tso'okok ba'alin beet, in líimpyarkin naay, ba'ax beya' leti' kin in meetik men chen leti' in chan, chen leti' in chan meyaj te' way ichnáaje'. ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chen tso'okok ba'al in beet, in líimpyartik in naay, ba'ax beya' leti' kin meetik tumen chen leti' in chan, chen leti' in chan meyaj te' way ichnáaje'. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "cuando termino mis pendientes, limpiar mi casa, o cosas así eso hago, porque solo ese, solo ese trabajito hago aquí en mi casa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 126450,
+      "end_time_ms": 143995,
+      "num_slots": 1,
+      "text": "Le beetke' pus ya'a máak ts'u'u k'a´'óotkin meyaje' pus ku taalu yileno' yaan ts'u'u taa esten... tu ka'alak'o'opi ikene' k'áatik wa je'elin máak'anke' pus tin wa'aj ti'e' je'ele'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le beetike' pus ya'ab máak ts'o’ok u k'ajóoltik in meyaje' pus ku taal u yileno' yaan ts'o’ok u taal esten... juntúul ka'alak'o'opi taal ikene' ku k'áatik wa je'el in máak'anke' pus tin wa'alaj ti'e' je'ele'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Por eso pues hay muchas `personas que conocen mi trabajo pues vienen a verme, hay quienes ya vinieron estén… uno de Xcalacoop me vino a ver, me pidió si le hago uno pues le dije que sí."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 145980,
+      "end_time_ms": 169780,
+      "num_slots": 1,
+      "text": "chen tunin in ts'o'okse e le de doose je'ela' pos leti' kenin máak'ante ts'oke' yanu túu… yanu tu esten... k'awa'i' ts'u'u taa ikene' u k'áatu p'ée de dyeesi' leti' tun keni’in… in máak'antej, kex jujump'íiti' pero tu binubin.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chen tun in in ts'o'oks le de doose je'ela' pos leti' ken in máak'a’ante ts'oke' yaan juntúul… yaan juntúul esten... k'awa'i' ts'o’ok u taal ikene' u k'áat jump'éel de dyeesiseeysi' leti' tun ken in… ken in máak'antej, kex jujump'íiti' pero tu bin u bin."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando termine entonces este de doce pues ese voy a hacer también, hay un… hay un estén… de Kaua que ya me vino a ver y quiere uno de dieciséis,  ese… ese voy a hacer entonces aunque poco a poco pero hay va"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 171570,
+      "end_time_ms": 177750,
+      "num_slots": 1,
+      "text": "U kóolori tuno', u kóoloresi ma' in… in mani' pero yanin binin manej, ¿tu'ux kin manik? saki',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "U kóolori tuno', u kóoloresi ma' in… in mani' pero yaan in binin manej, ¿tu'ux kin manik? saki',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Los colores entonces, los colores no los he comprado, pero voy a ir a comprarlo ¿dónde lo compro? En Valladolid,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 179905,
+      "end_time_ms": 197120,
+      "num_slots": 1,
+      "text": "buka'aju máateryali kenin manej ti'u kweerpoi, ti' u kaal yéete esten... ti'ilin in esten... estenin in… in esten... in káajsik. ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "buka'aj u máateryali ken in manej ti' u kweerpoil, ti' u kaal yéetel esten... ti'il in… in esten... esten in… in… in esten... in káajsik."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "cuánto material voy a comprar para el cuerpo, para los brazos y estén… para que… que... estén… estén que… que… esten que lo empiece. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 198400,
+      "end_time_ms": 214615,
+      "num_slots": 1,
+      "text": "¿I bixu káajba? yanin yáax k'axik te' paache che'o' u ts'oke' yanin kanki k'axu sa’a’chi' men wa me' chen… chen to'ok'ajku u ti'ilu káajbalo' ku k'asta tene' pus yanin wik bex kenin in...",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿I bix u káajba? yaan in yáax k'axik te' paach le che'o' u ts'oke' yaan in kanik in k'ax u sa'a’chi' men wa ma'e’ chen… chen to'ok'ajak u ti'il u káajbalo' ku k'astal tene' pus yaan in wik bix ken in… in..."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Cómo empieza? Primero lo amarro alrededor de la madera, después debo aprender a amarrar la orilla porque si no cuando… cuando se enreda al empezar se me echa a perder pues voy a ver como lo… lo…     "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 216205,
+      "end_time_ms": 232595,
+      "num_slots": 1,
+      "text": "Ka káajene' pos xaan tin wilin kanik pero asta  ka tin in kanin káajsu u… u ti'lu k'áaxa tak ti'lu  ts'o'okoj u estenu u kweerpoi, tu láaka beyo'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka káajene' pos xaan tin wilaj in kanik pero asta  ka tin  kana in káajs u… u… u ti'al u k'áaxal tak ti'al u  ts'o'okol u esten u kweerpoil, tu láaka beyo'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando empecé pues vi lento aprenderlo, pero hasta que aprendí a empezar y terminar la parte del cuerpo, todo fue así."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 232595,
+      "end_time_ms": 262140,
+      "num_slots": 1,
+      "text": "Pus tene' chen leti' in, in chan meyaj, pus chen náajkin wóolin in wak', in wak'in k'aane'  pus kin chan chitaj, chen náajkin wóo chitle' pus kin ka líik'ij, chen leti' ki’in dedikáarkinbaj pus chen bey… bey jach  k'a'ana'ano' pus yanin wikin in ts'o'oksik sée men wa ma'a'e' ken taak ilbi wa ma' ts'o'ojke' pwes ka'amáal ken taa ilbij.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pus tene' chen leti' in, in chan meyaj, pus chen náajkin wóol in wak', in wak' in k'aane'  pus kin chan chitaj, chen náajkin wóol chitle' pus kin ka líik'ij, chen leti' kin in dedikáarkinbaj pus chen bey… bey jach  k'a'ana'ano' pus yaan in wik in… in ts'o'oksik séeb men wa ma' le chen taak ilbi wa ma' ts'o'ojke' pwes ka'amáal ken taal ilbij."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues yo solo eso trabajo, cuando me fastidio de urdir mi hamaca pues me acuesto, cuando me fastidio de estar acostada me levanto solo a eso me dedico, solo si… solo si es muy urgente veo terminarlo rápido porque si no cuando me vengan a ver y no ha terminado pues dos veces me van a venir a ver."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 263900,
+      "end_time_ms": 280110,
+      "num_slots": 1,
+      "text": "Este ni’in... la'aj… la’a chenin láaj k'ubláantej, p'aata ten óoxp'eli’in u binin máak'antik ka béeyakin in láaj k'ubke e… e k'a'anin k'u’láanko'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Esten in... la'aj… la’a chen in láaj k'ubláantej, p'aatal ten óoxp'el in u bin in máak'antik ka béeyak in láaj k'ubik le k'a'ana’an in k'ubl'a'antiko'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Estén hasta… hasta entregarlo todo, solo me faltan tres por hacer para entregar los que necesito entregar. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 282600,
+      "end_time_ms": 289360,
+      "num_slots": 1,
+      "text": "Láaj difereentes dibujos y láaj difereentes kóoloresu u k'áatko' ten, ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Láaj difereentes dibujos y láaj difereentes kóoloresu u k'áatko' ten,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Todos los dibujos son diferentes y todos los colores que me piden son diferentes,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 290760,
+      "end_time_ms": 306415,
+      "num_slots": 1,
+      "text": "ti'e' je'elo' pus tu ya'alo'obe' yanu komunikaarkubáaob ti' u jeel máaxu k'aóolo'obe' men ya'ab bin persoonas taaku manku k'aano'be' pwes na'an tu'ux, yaan tu'ux ku ko'ono bine’ pero ma' je'e bix ku déebe seere', ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ti'al le je'elo' pus tu ya'alo'obe' yaan u komunikaarkubáaob ti' u jeel máax u k'ajóolo'obe' men ya'ab bin persoonas taak u manik u k'aano'be' pwes na'an tu'ux, yaan tu'ux ku ko'onol bine’ pero ma' je'en bix ku déebe seere', "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "para eso pues dijeron que se iban a comunicar con otras personas que conocían, porque hay muchas personas que quieren comprar sus hamacas pues no hay donde, que hay lugares en donde se venden pero no es como debe ser."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 307595,
+      "end_time_ms": 323660,
+      "num_slots": 1,
+      "text": "Le beetik tune' tu ya'alo' tene' wa kin meyajtike' ku taalu yileno'obe' kia'ako ten ba'ax… ba'ax kóolorilu k'áato'obe' pwes kin manik te' esten... saki'o' te' kin manki',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le beetik tune' tu ya'alo'ob tene' wa kin meyajtike' ku taal u yileno'obe' ku ya'ako’ob ten ba'ax… ba'ax kóolori u k'áato'obe' pwes kin manik te' esten... saki'o' te' kin maniki',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Entonces por eso me dijeron que si a lo trabajo me vienen a ver y me dicen que… que color quieren, pues lo compro en estén… Valladolid, ahí lo compro."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 325795,
+      "end_time_ms": 334425,
+      "num_slots": 1,
+      "text": "Le beetke' pus chen leti' kin chan dedikáarkinbaj ti' tu láaka, chen leti' in chan meyaj.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le beetike' pus chen leti' kin chan dedikáarkinbaj ti' tu láakal, chen leti' in chan meyaj."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Por eso pues solo a eso me dedico en todo, solo ese es mi trabajo."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,950 @@
+{
+  "metadata": {
+    "timed": true,
+    "story ID": "5af2f066-41d6-472b-90bf-eccb84b13e5a",
+    "title": {
+      "_default": "U TS'AA XOOK FELIPE MOO"
+    },
+    "media": {
+      "audio": "",
+      "video": "U TS'AA XOOK FELIPE MOO.mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "2/13/2019",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "U TS'AA XOOK FELIPE MOO.eaf",
+    "source_filetype": "ELAN",
+    "tier IDs": {
+      "T1": {
+        "name": "H1_Transcripción",
+        "subdivided": false
+      },
+      "T2": {
+        "name": "H1_Maya",
+        "subdivided": false
+      },
+      "T3": {
+        "name": "H1_Traducción",
+        "subdivided": false
+      }
+    },
+    "speaker IDs": {
+      "S1": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T1"
+      }
+    }
+  },
+  "sentences": [
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 2360,
+      "end_time_ms": 6100,
+      "num_slots": 1,
+      "text": "Tene' in k'aaba'e' Felipe te' in taa tu kaajil muchukuxkaje' tu munisipyoi chank'oom.Tene' in k'aaba'e' Felipe te' in taa tu kaajil muchukuxkaje' tu munisipyoi chank'oom.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tene' in k'aaba'e' Felipe te' in taal tu kaajil muchukuxkaje' tu munisipyoil chank'oom."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Yo me llamo Felipe vengo del poblado de Muchukuxkaj del municipio de Chankom."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 7900,
+      "end_time_ms": 13910,
+      "num_slots": 1,
+      "text": ".Bike'en in tsikbat te'ex o'osalu experyeensyai yanchajten ka tin meeti tenin serbiisyo komunitaaryo tu kaajil kokail ti' konaafej.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Bike'en in tsikbat te'ex yo'osal u experyeensyail yanchaj ten ka tin meetaj ten in serbiisyo komunitaaryo tu kaajil kokail ti' konaafej."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "voy a hablarles sobre la experiencia que tuve cuando realicé mi servicio comunitario en el poblado Kokail en CONAFE."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 15305,
+      "end_time_ms": 22215,
+      "num_slots": 1,
+      "text": "Ka yáax k'uchene' tu… te' kaajo', ba'ax tin yáax beete' pus yáax binenin wile estene e presideentaile eskweelao',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka yáax k'uchene' tu… te' kaajo', ba'ax tin yáax beete' pus yáax binen in wil le estene le presideentail le eskweelao',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando llegué por primera vez, en la comunidad, lo que hice primero fue pues primero ir a ver a la presidenta de la escuela,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 23155,
+      "end_time_ms": 30740,
+      "num_slots": 1,
+      "text": "chen ba'ale' pwes ku yanta techu u saajaki men mixu puul meyajnakech yéete mejen paala mix yéete paadres de fáamilya.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chen ba'ale' pwes ku yantal tech u saajakil men mix jumpuul meyajnakech yéetel mejen paalal mix yéetel paadres de fáamilya."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "sin embargo, pues te da miedo porque ninguna vez trabajaste con niños pequeños ni con padres de familia."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 31445,
+      "end_time_ms": 38470,
+      "num_slots": 1,
+      "text": "Komoke chen todabiya chen paalen tene' ku yanta techu p'ée… u p'ée nojoch tuukul ka wa'ale' pwes ba'ax kun úuchu ma'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Komo ke chen toodabiya chen paalen tene' ku yantal tech jump'éel… jump'éel nojoch tuukul ka wa'ale' pwes ba'ax kun úuchul ma'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Como que todavía solo era un jovencito y te viene un… un gran pensamiento para decir pues a ver qué pasa no."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 39945,
+      "end_time_ms": 56855,
+      "num_slots": 1,
+      "text": ".Ka tun an yax binene', binen in wilej ka tu ya'aj tene' maestro wa ts'o'ok a k'uchle' ka ik meyajto'on jump'éel réeunyoon, ka laj júuntarnaj tu láakle papaso'obo' ka tu ya'alo' tene' wa teen ts'o'ok in k'uchu bine' esten te' miismo diyao' pus yanu déesignaarta'a ten tu'ux ken p'áataj, ka tya'alo' tun ten máax naay ken bin.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka tun jan yáax binene', binen in wilej ka tu ya'aj tene' “maestro wa ts'o'ok a k'uchule' ka ik meyajto'on jump'éel réeunyoon”, ka laj júuntarnaj tu láakal le papaso'obo' ka tu ya'alo'ob tene' wa teen ts'o'ok in k'uchul bine' esten te' miismo diyao' pus yan u déesignaarta'al ten tu'ux ken p'áataj, ka tu ya'alo'ob tun ten máax naay ken bin."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Entones cuando fui por primera vez, fui a verla y me dijo “maestro si ya llegaste hacemos una reunión”, se juntaron todos los papás y me dijeron si yo ya había llegado, ese mismo día pues designarían donde me iba a quedar, y entonces me dijeron en casa de quién iba a ir. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 58000,
+      "end_time_ms": 62340,
+      "num_slots": 1,
+      "text": "Ka ts'o'oke' ka sáaschaje' ka yáax kajin ts'áak tune xooko',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka ts'o'oke' ka sáaschaje' ka yáax kaj in ts'áaik tun le xooko',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Luego al amanecer empecé a dar las clases por primera vez,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 63113,
+      "end_time_ms": 65213,
+      "num_slots": 1,
+      "text": "ka in laj k'ajóolte mejen paalalo'obo', oocho mejen paala tokaarnaj ten.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ka tin láaj k'ajóolte mejen paalalo'obo', oocho mejen paalal tokaarnaj ten."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "conocí a todos los niños, me tocó ocho niñitos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 66695,
+      "end_time_ms": 73670,
+      "num_slots": 1,
+      "text": "Pus u jaajile' em... p'ée níibel yaniko' uts men láaju yoojlo'o’ ts'íib', máas o meenos abansaado le ku kaniko'ob xook.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pus u jaajile' em... jump'éel níibel yaniko' uts men láaj u yoojlo'ob ts'íib', máas o meenos abansaado le ku kaniko'ob xook."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues la verdad em… los que están en primer nivel están bien, porque todos saben escribir, más o menos avanzado los que saben leer."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 74255,
+      "end_time_ms": 85155,
+      "num_slots": 1,
+      "text": "U k'aaba' e mejen paalalo'obo' pwes... Victor, Karla, Josmar, an... Joselin, Alexander, Victoria, Yair yéete Yanet, letu k'aaba' tune mejen paala tokaarnaj teno'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "U k'aaba' e mejen paalalo'obo' pwes... Victor, Karla, Josmar, an... Joselin, Alexander, Victoria, Yair yéetel Yanet, leti’ u k'aaba' tun le mejen paalal tokaarnaj teno'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Los nombres de los niñitos pues… Victor, Karla, Josmar, an… Joselin, Alexander, Victoria, Yair, y Yanet, esos son los nombres de los niñitos que me tocaron.’"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 86670,
+      "end_time_ms": 91600,
+      "num_slots": 1,
+      "text": "Te yáax… te' yáax k'iinak beyo' pus leti’obe’ sajko'o’ ti' teen men ma' u k'ajóoleno'obi',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Te’ yáax… te' yáax k'iinak beyo' pus leti’obe’ sajako'ob ti' teen men ma' u k'ajóoleno'obi',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "El primer… el primer día así pues ellos me tenían miedo porque no me conocían,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 92570,
+      "end_time_ms": 104405,
+      "num_slots": 1,
+      "text": "em...  bey tun uchu máane k'iino'obo', ka ts'o'oku enu jump'éel meese' tu sigyeente meesile' pwes ka wike' an... ku taa taku méek'eche mejen paalalo'obo' jump'ée ba'a pus ma’ suukan techi' pwes ekstraanyo.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "em...  bey tun uchik u máane k'iino'obo', ka ts'o'ok u enu jump'éel meese' tu sigyeente meesile' pwes ka wike' an... ku taal tak u méek'ech le mejen paalalo'obo' jump'éel ba'al pus ma’ suukan techi' pwes ekstraanyo."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "em... entonces así pasaron los días, cuando terminó un mes, en el siguiente mes pues ves an... que vienen a abrazarte los niñitos, algo de lo que pues no estás acostumbrado pues es extraño."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 105755,
+      "end_time_ms": 112750,
+      "num_slots": 1,
+      "text": "Chen taako'obe' pus ku méek'kecho'ob ku ya'ako' teche' maestro, yaan oorae' tyoorai táan ts'áake' xooko' ku tu'ubu tyo'obe' ku ya'ako' teche' papaj ma maama beyu ya'ako' techo',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Chen taako'obe' pus ku méek'kecho'ob ku ya'ako'ob teche' maestro, yaan oorae' tu yoorail táan ts'áaik le xooko' ku tu'ubul ti'obe' ku ya'ako'ob teche' papaj ma maama bey u ya'ako'ob techo',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando vienen pues te abrazan y te dicen maestro, algunas veces a la hora de las clases se les olvida y te dicen papá o mamá así te dicen,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 114290,
+      "end_time_ms": 124985,
+      "num_slots": 1,
+      "text": "am... ka k'uch tunu k'iini ti' am... nobyeembre bweno ti' septyeembre nobyeembre pus ku meeta' desfiile, pus tene' kin meetik desfiiles yéetelo' ya'abkach ba'a tin meeto'on yéetelo' .",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "am... ka k'uch túun u k'iinil ti' am... nobyeembre bweno ti' septyeembre nobyeembre pus ku meeta'al desfiile, pus tene' kin meetik desfiiles yéetelo'ob ya'abkach ba'al tin meeto'on yéetelo'ob ."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "am... cuando llegó el día de am... noviembre bueno de septiembre noviembre pues se hace el desfile, pues yo hice desfile con ellos, muchas cosas realice con ellos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 125600,
+      "end_time_ms": 136175,
+      "num_slots": 1,
+      "text": "U p'ée aktibidaad máan uts tin wilaj tene' lete' tiale jaanal pixano' tin meyajta yéetelo'obo' men tene' tin kaajale' jela'anin wik… jela'anin wiku meeta'a, ka tin xookin preepa tu kaajil chank'oome' yaana ten bix… bix uchin wiku beeta'a.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jump'éel aktibidaad máan uts tin wilaj tene' lete' ti’al le jaanal pixano' tin meyajtal yéetelo'obo' men tene' tin kaajale' jela'an in wik… jela'an in wik u meeta'al, ka tin xooka in preepa tu kaajil chank'oome' yaanal ten bix… bix uchik in wik u beeta'al."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Una actividad que me gustó mucho fue la del jaanal pixan que realice con ellos porque yo en mi comunidad lo veo diferente… veo que lo hacen diferente, cuando estudié mi preparatoria en la comunidad de Chankom vi como… vi que lo hicieron diferente."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 137000,
+      "end_time_ms": 167175,
+      "num_slots": 1,
+      "text": "Te' tun te chan kaaj jela'an xanu meetko' leti'o'. Leti'obe' ku laj béestirta'ale mejen paalalob de saku nook'o'obo', ma to wa'alaj ba'ax k'iin kena meete' chenu k'axo'obe chan… chenin il ts'o'oku k'a'axle  naj mene estene... paadres de fáamilyao' beya' ka laj taasa'abe mejen paalalo'obo', laj béestidoo’ túun pero ba'alile' u chan desben, bweno u béentajai' te'elo' meene mejen paalalo'obo' utsile' ku laj máanu k'aato'ob ba'a bey te' te’ tu'uxun naaye mejen nukuch máako’ob, ma meeta' píib, ma duulsei k'úum, iis tu láaka beyo' , ku máanu k'aato'ob beyo' leti' túun kun ts'áabi te' áaltaro'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Te' tun te chan kaaj je'elo' jela'an xan u beetiko'ob leti'ob. Leti'obe' ku laj béestirta'ale mejen paalalob de sak u nook'o'obo', ma ta wa'alaj ba'ax k'iin ken a meete' chen u k'axo'ob le chan… chen in wil ts'o'ok u k'a'axa le  naj mene estene... paadres de fáamilyao' beya' ka láaj taasa'ab le mejen paalalo'obo', laj béestidoo’ pero ba'alile' u chan desben, bweno u béentajail te'elo' meen le mejen paalalo'obo' yutsile' ku láaj máan u k'aato'ob ba'ax bey te… te’ tu'ux yan u naay le mejen nukuch máako’obo’, ma meeta'ab píib, ma duulsei k'úum, iis tu láakal beyo' , ku máan u k'aato'ob beyo' leti' túun kun ts'áabi te' áaltaro'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ahí entonces en esa pequeña comunidad lo hacen diferente también.  \nEllos visten a todos los niños con ropa blanca, si dices cuando lo vas a realizar cuando amarran… cuando veo que ya se ha amarrado la casa por... los padres de familia entonces traen a todos los niños, todos vestidos pero la desventaja, bueno la ventaja ahí es que los niños van a pedir todo en la casa de los abuelitos, si se hizo pib, o dulce de calabaza, camote, absolutamente todo pasan a pedir, eso es lo que se pone en el altar\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 168405,
+      "end_time_ms": 184250,
+      "num_slots": 1,
+      "text": ".Ba'axu láa xan  uts tin wile' pus chen meeta'ak e aktibidaado' e paadres de fáamillyao' leti'obe' mun importaaro' ma na'anu mejen paala te'elo' ma yane', tu láakle kaaj ku taalo' ku júuntarko'obe' ku meetkobu nobeenai tu láaka ts'o'oke' ku chen t'o'oxo tu láakle ba'ax meeta'abo' ti'a xan tu láaka jachu p'éel… jachup'ée aktibiidad jats'uts ten tin wilaj.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ba'ax u láak’ xan uts tin wile' pus chen meeta'ak le aktibidaado' le paadres de fáamillyao' leti'obe' mun importaarti'ob ma na'an u mejen paala te'elo' ma yaan, tu láakal le kaaj ku taalo' ku júuntarko'obe' ku meetiko’ob u nobeenai tu láakal chen ts'o'ojke' ku chen t'o'oxol tu láakal le ba'ax meeta'abo' ti'al xan tu láakal jach jump'éel… jach jump'éel aktibiidad jats'uts ten tin wilaj."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Otra cosa que me gustó pues cuando se hace la actividad con los padres de familia, a ellos no les importa si están sus niños allí, toda la comunidad que viene se reúnen  para hacer la novena, todos al terminar se reparte todo lo que se hizo para todos, de verdad es una… una actividad que me gustó mucho. "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 185360,
+      "end_time_ms": 203905,
+      "num_slots": 1,
+      "text": "U la' p'ée ba'ale' jach jump'éel kaaj ku tráatarkech um... beyu paarteech ti' leti'obe' beyu l'áak'echo'obe' beyu yiku iijoecho'obe' men u la'a p'ée aktibiidade' lete' ka, chen káajkene... primeero de disyeembre asta doose de disyeembreo' te' kóokailo' sáansamalu kíinsa'a k'éeke'ni'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "U láak’ jump'éel ba'ale' jach jump'éel kaaj ku tráatarkech um... bey u paarteech ti' leti'obe' bey u l'áak'echo'obe' bey u yik u iijoecho'obe' men u láak’ jump'éel aktibiidade' lete' ka, chen káajake estene e... primeero de disyeembre asta doose de disyeembreo' te' kóokailo' sáansamal u kíinsa'al k'éeke'ni'. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Otra cosa es que en verdad es una comunidad que me trato um.. como parte de ellos como si fueras su familia así te ven, porque otra actividad fue cuando, cuando empieza estén e...el primero de diciembre hasta el 12 de diciembre, ahí en Kokail todos los día se mataba el cochino."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 204995,
+      "end_time_ms": 223370,
+      "num_slots": 1,
+      "text": " Chen kíinsake k'éek'en sáansamalo' pwes am... tak kex ma' ta  ts'áak xook tu mejen paalalo'ob beya' ku t'ankecho' jaana, chenu ya'alo' teche' “maestro ko'ox jaana” pus yana bini', doose dyaas tun yanu tookara jaantik am... le bu'uli bak', chooch, táaman, reyeeno, kochiniita, lete' bey ku ts'áaba tech sáansamalo', p'áat jach uts ten tin wili lelo'. ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Chen kíinsak le k'éek'en sáansamalo' pwes am... tak kex ma' táan ts'áaik xook ti' u mejen paalalo'ob beya' ku t'ankecho'ob jaanal, chen u ya'alo'ob teche' “maestro ko'ox jaanal” pus yaan a bini', doose dyaas túun yan u tokaar a jaantik am... le bu'uli bak', chooch, táaman, reyeeno, kochiniita, lete' bey ku ts'áabal a jaant sáansamalo', p'áat jach uts tin wili ten le je’elo'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando se mata al cochino cada día pues am... aún cuando no le estás dando clases a sus niños te hablan para comer, cuando te dicen “maestro vamos a comer” pues tienes que ir, doce días entonces te va tocar comer am... el frijol con puerco, morcilla, hígado, relleno, cochinita, eso te dan de comer todos esos días, me gustó bastante allí.\n "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 223995,
+      "end_time_ms": 242440,
+      "num_slots": 1,
+      "text": "Pus beytun uchu séegire aanyobo' asta ka, ka xan a'alatene' am... pus yanin p'atke kaajo' tumen te' conafeo' ts'o'oku ya'ala tene'  yani… yani yani...yani, a'ala ten wa je'elin beetkinba kapasitadoorile' pero chen ba'ale' u p'éelu desbentaajaile' a'ala tene' yanin p'atke mejen paalalo' aanteso',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pus bey túun uch ku séegire anyoobo' asta ka… ka xan  a'alab tene' am... pus yan in p'atke kaajo' tumen te' conafeo' ts'o'ok u ya'alal tene'  yaan in… yaan in...yaan in, a'alab ten wa je'el in beetik in báa kapasitadoorile' pero chen ba'ale' jump'éel u desbentaajaile' a'alab tene' yan in p'atike mejen paalalo'ob aanteso',"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues así siguió el año, hasta que… hasta que me dijeron am... pues que tengo que dejar la comunidad porque en CONAFE me dijeron que estén me dijeron...tengo que, me dijeron que si podía ser capacitador sin embargo una desventaja que me dijeron es que tengo que dejar a los niños antes,\n"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 242705,
+      "end_time_ms": 251605,
+      "num_slots": 1,
+      "text": " myéentras tune' tu láakle ba'alob kin meetko'on yéetelo'obo' pus kox a'ake' chen ko'on, chen bey ko'on pule' ma', men mas ma' tun séerbir to'on, ka' túun tin wale' ma'táan mix tin aseptaartik , ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "myéentras tune' tu láakal le ba'alob ts'o'ok in meetko'on yéetelo'obo' pus a'ake' chen ko'on, chen bey ko'on pule' ma', men mas ma' tun séerbir to'on, ka' túun tin wale' ma'atáan mix tin aseptaartik ,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "mientras tanto todo lo que había hecho con ellos pues es como que, es como que lo echáramos no, porque, no nos sirvió entonces, entonces dije que no que no lo aceptaría,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 252425,
+      "end_time_ms": 255705,
+      "num_slots": 1,
+      "text": "ka je'elen tun te' kóomunidad beyo' pus ka séegirnajeni'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ka je'elen tun te' kóomunidad beyo' pus ka séegirnajeni'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "y entonces me quedé en la comunidad y pues le seguí."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 257565,
+      "end_time_ms": 274240,
+      "num_slots": 1,
+      "text": "Te', te' yáax primer aanyo pwes ya'a ba'a tin kani', tin kanaj meyaj yéetele paadres de fáamilyao', tin seguundo aanyo tune' pwes maas uts uchku bin ten men ts'o'oku yanta ten kóonfyansa yéetelo', ts'o'oku yanta ten um... ko'ox a'ake ba'a'la'... ya'ab ba'a ts'o'okin k’ajóotik te' bixu ka'ansa' mejen paala, ka'achile' u p'ée ba'a ma'in woojli'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Te', te' yáax primer aanyo pwes ya'ab ba'al tin kani', tin kanaj meyaj yéetel le paadres de fáamilyao', tin seguundo aanyo tune' pwes maas uts uch ku bin ten tumen ts'o'ok u yantal ten kóonfyansa yéetelo'ob, ts'o'ok u yantal ten um... ko'ox a'ake ba'a'la'... ya'ab ba'ax ts'o'ok in k’ajóotik te' bix u ka'ansa'al mejen paalal, ka'achile' jump'éel ba'al ma' in woojeli'. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "En, en el primer año pues aprendí muchas cosas, aprendí a trabajar con padres de familia, en el segundo año entonces pues me fue muy bien porque ya había confianza con ellos, ya había tenido...como decirlo...muchas cosas aprendí de la enseñanza con los niños, antes era algo que no sabía."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 276000,
+      "end_time_ms": 282365,
+      "num_slots": 1,
+      "text": "Tin seguundo aanyoe' pwes yanchaj tenu óoprtunidadilin bino'on tak yéetele mejen paalalo' te' soona áarkeolojika chichen tak te'e tin biso'ono’obi',",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tin seguundo aanyoe' pwes yanchaj ten u óoprtunidadil in bino'on ko'ox a'ak tak yéetel le mejen paalalo'ob te' soona áarkeolojika chichen tak te'e tin biso'ono’obi',\n"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "En mi segundo año pues tuve la oportunidad de ir con los niños a la zona arqueológica de Chichen Itza, hasta allí los llevamos,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 284300,
+      "end_time_ms": 294800,
+      "num_slots": 1,
+      "text": "tumen yo'osalu máas k'aóotko’obu entoorno ko'ox a'a'ke' le xooko' ma' déebe seeru ts'áaba chen ich sáaloni' k'a'abet u jo'osale mejen paalalo'ob yo'salu eksperimentaarko' tu láakle ba'a yan ajan ko'ox a'ake' tu alrededooro'obo'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tumen yo'osal u máas k'ajóotik u entoorno’ob ko'ox a'alike' le xooko' ma' déebe ser u ts'áabal chen ich sáaloni' k'a'abéet u jo'osal le mejen paalalo'ob yo'sal u eksperimentaartiko'ob tu láakal le ba'ax yan ajan ko'ox a'ake' tu alrededooro'obo'."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "para que conocieran más su entorno digamos entonces que las clases no solo deben ser en el salón, sino que es necesario que los niños los saquen para que experimenten todo lo que hay digamos a su alrededor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 295995,
+      "end_time_ms": 306165,
+      "num_slots": 1,
+      "text": "Bey tun uchak xan ik bisko'onobo' pus tin júuntartikbáaon yéetelin kompanyeerso'obo' yetu tu máaestro xan ku ts'áa xook tu kaajil xa'anla'  yéetelu tu xch'úupa ku ts'aa xook tu kaajil xk'a'atun, ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Bey tun uchak xan ik bisko'onobo' pus tin júuntartikbáaon yéetel in kompanyeerso'obo' yéetel u túul máaestro xan ku ts'áa xook tu kaajil xa'anla' yéetel juntúul xch'úupal ku ts'aa xook tu kaajil xk'a'atun,"
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Así entonces los llevamos pues nos juntamos con nuestros compañeros y con un maestro que da clases en la comunidad de Xanla y con una joven que da clases en la comunidad de Xkatun,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 307215,
+      "end_time_ms": 318775,
+      "num_slots": 1,
+      "text": "ka tin múuchkíinsibáaone' ka bino'on t'aan yéetele presideenteo' ka tu ya'alaj to'one' pus je'elu yáanko'one' tu túuxtaj to'onu p'ée kamyoneeta, ki ik meeto'on u liistaile' mejen paala ko'on biso'obo' ka xan tik a'alo'on ka tun tik laj biso'ono'. ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ka tin múuchkíinsibáaone' ka bino'on t'aan yéetel le presideenteo' ka tu ya'alaj to'one' pus je'el u yáantiko'one' tu túuxtaj to'on jump'éel kamyoneeta, ki tik meeto'on u liistail le mejen paalal ko'on biso'obo' ka xan tik a'alo'on ka tun tik laj biso'ono'ob."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Entonces nos juntamos y fuimos a hablar con el presidente y nos dijo que si nos iba a ayudar nos envió una camioneta, teníamos que hacer la lista de los niños que íbamos a llevar y entonces los llevamos a todos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 319000,
+      "end_time_ms": 329215,
+      "num_slots": 1,
+      "text": "Ka k'ucho'on te' komunidaad xan tu'ux kin ts'áa xooko' ka tin wa'alaj ti'o' pus yanu preparaarkubáaob ku méet esten u ko'ox a'ake' u yo'oche mejen paalalo'obo' ku biso' pus men te'elo' ko'oj ba'ali'.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka k'ucho'on te' komunidaad xan tu'ux kin ts'áak xooko' ka tin wa'alaj ti'ob pus yaan u preparaarkubáaob ku méet esten u ko'ox a'ake' u yo'och le mejen paalalo'obo' ku biso'ob pus tumen te'elo' ko'oj ba'ali'. "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando llegamos a la comunidad donde doy clases les dije entonces pues tienen que prepararse que se haga estén digamos la comida de los niños para que llevaran pues allí las cosas son caras."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 330410,
+      "end_time_ms": 338800,
+      "num_slots": 1,
+      "text": "Ka sáaschaj tune' pus ka ooko'on ch'a'abi to'on mene kamyono', ka máano'on xan tu kaaji xk'a'atun in ch'a'in kompayeera yéetel áalumnoso' pus ka bino'on te kaajo', ",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka sáaschaj tune' pus ka ooko'on ch'a'abi to'on men le kamyono', ka máano'on xan tu kaajil xk'a'atun in ch'a'in kompayeera yéetel áalumnoso'ob pus ka bino'on te kaajo', "
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando amaneció pues entraron por nosotros con la camioneta, pasamos también por Xkatun por nuestra compañera y sus alumnos y pues fuimos a esa comunidad,"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 340335,
+      "end_time_ms": 346495,
+      "num_slots": 1,
+      "text": "te' k'iin tuno' pus jach jump'ée jach uts tin wilaj men a… óoxp'ee eskweela bey conbibiirnajo’.",
+      "dependents": [
+        {
+          "tier": "T2",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "te' k'iin tuno' pus jach jump'éel jach uts tin wilaj men a… óoxp'éel eskweela bey conbibiirnajo’."
+            }
+          ]
+        },
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ese día pues de verdad fue un de verdad me encantó porque… fueron tres escuelas así que convivieron. "
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

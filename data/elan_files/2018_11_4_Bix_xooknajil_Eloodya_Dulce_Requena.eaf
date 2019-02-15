@@ -1,0 +1,2294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2019-01-18T00:46:26-06:00" FORMAT="3.0" VERSION="3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <MEDIA_DESCRIPTOR MEDIA_URL="file:///C:/Users/carlosmauricio/Desktop/Transcripciones y traducciones de documentación linguistica/2018_11_4_Bix_xooknajil_Eloodya_Dulce_Requena/2018_11_4_Bix_xooknajil_Eloodya_Dulce_Requena.wav" MIME_TYPE="audio/x-wav" RELATIVE_MEDIA_URL="./2018_11_4_Bix_xooknajil_Eloodya_Dulce_Requena.wav"/>
+        <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:9a7ff585-5505-4c8b-8c36-d723f43a1ead</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">398</PROPERTY>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="5780"/>
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="11250"/>
+        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="11780"/>
+        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="16430"/>
+        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="16970"/>
+        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="16970"/>
+        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="17670"/>
+        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="17670"/>
+        <TIME_SLOT TIME_SLOT_ID="ts9" TIME_VALUE="17850"/>
+        <TIME_SLOT TIME_SLOT_ID="ts10" TIME_VALUE="21330"/>
+        <TIME_SLOT TIME_SLOT_ID="ts11" TIME_VALUE="21560"/>
+        <TIME_SLOT TIME_SLOT_ID="ts12" TIME_VALUE="30710"/>
+        <TIME_SLOT TIME_SLOT_ID="ts13" TIME_VALUE="30730"/>
+        <TIME_SLOT TIME_SLOT_ID="ts14" TIME_VALUE="31030"/>
+        <TIME_SLOT TIME_SLOT_ID="ts15" TIME_VALUE="31260"/>
+        <TIME_SLOT TIME_SLOT_ID="ts16" TIME_VALUE="36050"/>
+        <TIME_SLOT TIME_SLOT_ID="ts17" TIME_VALUE="36300"/>
+        <TIME_SLOT TIME_SLOT_ID="ts18" TIME_VALUE="36740"/>
+        <TIME_SLOT TIME_SLOT_ID="ts19" TIME_VALUE="36760"/>
+        <TIME_SLOT TIME_SLOT_ID="ts20" TIME_VALUE="39370"/>
+        <TIME_SLOT TIME_SLOT_ID="ts21" TIME_VALUE="39400"/>
+        <TIME_SLOT TIME_SLOT_ID="ts22" TIME_VALUE="39880"/>
+        <TIME_SLOT TIME_SLOT_ID="ts23" TIME_VALUE="39920"/>
+        <TIME_SLOT TIME_SLOT_ID="ts24" TIME_VALUE="48800"/>
+        <TIME_SLOT TIME_SLOT_ID="ts25" TIME_VALUE="49880"/>
+        <TIME_SLOT TIME_SLOT_ID="ts26" TIME_VALUE="53780"/>
+        <TIME_SLOT TIME_SLOT_ID="ts27" TIME_VALUE="54100"/>
+        <TIME_SLOT TIME_SLOT_ID="ts28" TIME_VALUE="63560"/>
+        <TIME_SLOT TIME_SLOT_ID="ts29" TIME_VALUE="64020"/>
+        <TIME_SLOT TIME_SLOT_ID="ts30" TIME_VALUE="68630"/>
+        <TIME_SLOT TIME_SLOT_ID="ts31" TIME_VALUE="68670"/>
+        <TIME_SLOT TIME_SLOT_ID="ts32" TIME_VALUE="69010"/>
+        <TIME_SLOT TIME_SLOT_ID="ts33" TIME_VALUE="69030"/>
+        <TIME_SLOT TIME_SLOT_ID="ts34" TIME_VALUE="69440"/>
+        <TIME_SLOT TIME_SLOT_ID="ts35" TIME_VALUE="69650"/>
+        <TIME_SLOT TIME_SLOT_ID="ts36" TIME_VALUE="74100"/>
+        <TIME_SLOT TIME_SLOT_ID="ts37" TIME_VALUE="74110"/>
+        <TIME_SLOT TIME_SLOT_ID="ts38" TIME_VALUE="81370"/>
+        <TIME_SLOT TIME_SLOT_ID="ts39" TIME_VALUE="81390"/>
+        <TIME_SLOT TIME_SLOT_ID="ts40" TIME_VALUE="82580"/>
+        <TIME_SLOT TIME_SLOT_ID="ts41" TIME_VALUE="82585"/>
+        <TIME_SLOT TIME_SLOT_ID="ts42" TIME_VALUE="84290"/>
+        <TIME_SLOT TIME_SLOT_ID="ts43" TIME_VALUE="84325"/>
+        <TIME_SLOT TIME_SLOT_ID="ts44" TIME_VALUE="85640"/>
+        <TIME_SLOT TIME_SLOT_ID="ts45" TIME_VALUE="85910"/>
+        <TIME_SLOT TIME_SLOT_ID="ts46" TIME_VALUE="87820"/>
+        <TIME_SLOT TIME_SLOT_ID="ts47" TIME_VALUE="87930"/>
+        <TIME_SLOT TIME_SLOT_ID="ts48" TIME_VALUE="88295"/>
+        <TIME_SLOT TIME_SLOT_ID="ts49" TIME_VALUE="88320"/>
+        <TIME_SLOT TIME_SLOT_ID="ts50" TIME_VALUE="90175"/>
+        <TIME_SLOT TIME_SLOT_ID="ts51" TIME_VALUE="90488"/>
+        <TIME_SLOT TIME_SLOT_ID="ts52" TIME_VALUE="104654"/>
+        <TIME_SLOT TIME_SLOT_ID="ts53" TIME_VALUE="104661"/>
+        <TIME_SLOT TIME_SLOT_ID="ts54" TIME_VALUE="105055"/>
+        <TIME_SLOT TIME_SLOT_ID="ts55" TIME_VALUE="105267"/>
+        <TIME_SLOT TIME_SLOT_ID="ts56" TIME_VALUE="108717"/>
+        <TIME_SLOT TIME_SLOT_ID="ts57" TIME_VALUE="108746"/>
+        <TIME_SLOT TIME_SLOT_ID="ts58" TIME_VALUE="109154"/>
+        <TIME_SLOT TIME_SLOT_ID="ts59" TIME_VALUE="109176"/>
+        <TIME_SLOT TIME_SLOT_ID="ts60" TIME_VALUE="109725"/>
+        <TIME_SLOT TIME_SLOT_ID="ts61" TIME_VALUE="110982"/>
+        <TIME_SLOT TIME_SLOT_ID="ts62" TIME_VALUE="128849"/>
+        <TIME_SLOT TIME_SLOT_ID="ts63" TIME_VALUE="128999"/>
+        <TIME_SLOT TIME_SLOT_ID="ts64" TIME_VALUE="129466"/>
+        <TIME_SLOT TIME_SLOT_ID="ts65" TIME_VALUE="129565"/>
+        <TIME_SLOT TIME_SLOT_ID="ts66" TIME_VALUE="142865"/>
+        <TIME_SLOT TIME_SLOT_ID="ts67" TIME_VALUE="142866"/>
+        <TIME_SLOT TIME_SLOT_ID="ts68" TIME_VALUE="144250"/>
+        <TIME_SLOT TIME_SLOT_ID="ts69" TIME_VALUE="144666"/>
+        <TIME_SLOT TIME_SLOT_ID="ts70" TIME_VALUE="146840"/>
+        <TIME_SLOT TIME_SLOT_ID="ts71" TIME_VALUE="146840"/>
+        <TIME_SLOT TIME_SLOT_ID="ts72" TIME_VALUE="146840"/>
+        <TIME_SLOT TIME_SLOT_ID="ts73" TIME_VALUE="147640"/>
+        <TIME_SLOT TIME_SLOT_ID="ts74" TIME_VALUE="147640"/>
+        <TIME_SLOT TIME_SLOT_ID="ts75" TIME_VALUE="147656"/>
+        <TIME_SLOT TIME_SLOT_ID="ts76" TIME_VALUE="149932"/>
+        <TIME_SLOT TIME_SLOT_ID="ts77" TIME_VALUE="149973"/>
+        <TIME_SLOT TIME_SLOT_ID="ts78" TIME_VALUE="150390"/>
+        <TIME_SLOT TIME_SLOT_ID="ts79" TIME_VALUE="150515"/>
+        <TIME_SLOT TIME_SLOT_ID="ts80" TIME_VALUE="153890"/>
+        <TIME_SLOT TIME_SLOT_ID="ts81" TIME_VALUE="153999"/>
+        <TIME_SLOT TIME_SLOT_ID="ts82" TIME_VALUE="160349"/>
+        <TIME_SLOT TIME_SLOT_ID="ts83" TIME_VALUE="160349"/>
+        <TIME_SLOT TIME_SLOT_ID="ts84" TIME_VALUE="161532"/>
+        <TIME_SLOT TIME_SLOT_ID="ts85" TIME_VALUE="161565"/>
+        <TIME_SLOT TIME_SLOT_ID="ts86" TIME_VALUE="162982"/>
+        <TIME_SLOT TIME_SLOT_ID="ts87" TIME_VALUE="163015"/>
+        <TIME_SLOT TIME_SLOT_ID="ts88" TIME_VALUE="163599"/>
+        <TIME_SLOT TIME_SLOT_ID="ts89" TIME_VALUE="163682"/>
+        <TIME_SLOT TIME_SLOT_ID="ts90" TIME_VALUE="168582"/>
+        <TIME_SLOT TIME_SLOT_ID="ts91" TIME_VALUE="168749"/>
+        <TIME_SLOT TIME_SLOT_ID="ts92" TIME_VALUE="176699"/>
+        <TIME_SLOT TIME_SLOT_ID="ts93" TIME_VALUE="176782"/>
+        <TIME_SLOT TIME_SLOT_ID="ts94" TIME_VALUE="177182"/>
+        <TIME_SLOT TIME_SLOT_ID="ts95" TIME_VALUE="177191"/>
+        <TIME_SLOT TIME_SLOT_ID="ts96" TIME_VALUE="183391"/>
+        <TIME_SLOT TIME_SLOT_ID="ts97" TIME_VALUE="183399"/>
+        <TIME_SLOT TIME_SLOT_ID="ts98" TIME_VALUE="183949"/>
+        <TIME_SLOT TIME_SLOT_ID="ts99" TIME_VALUE="184049"/>
+        <TIME_SLOT TIME_SLOT_ID="ts100" TIME_VALUE="188815"/>
+        <TIME_SLOT TIME_SLOT_ID="ts101" TIME_VALUE="188932"/>
+        <TIME_SLOT TIME_SLOT_ID="ts102" TIME_VALUE="196749"/>
+        <TIME_SLOT TIME_SLOT_ID="ts103" TIME_VALUE="197082"/>
+        <TIME_SLOT TIME_SLOT_ID="ts104" TIME_VALUE="207665"/>
+        <TIME_SLOT TIME_SLOT_ID="ts105" TIME_VALUE="207715"/>
+        <TIME_SLOT TIME_SLOT_ID="ts106" TIME_VALUE="208182"/>
+        <TIME_SLOT TIME_SLOT_ID="ts107" TIME_VALUE="208182"/>
+        <TIME_SLOT TIME_SLOT_ID="ts108" TIME_VALUE="211282"/>
+        <TIME_SLOT TIME_SLOT_ID="ts109" TIME_VALUE="211298"/>
+        <TIME_SLOT TIME_SLOT_ID="ts110" TIME_VALUE="212748"/>
+        <TIME_SLOT TIME_SLOT_ID="ts111" TIME_VALUE="212798"/>
+        <TIME_SLOT TIME_SLOT_ID="ts112" TIME_VALUE="219598"/>
+        <TIME_SLOT TIME_SLOT_ID="ts113" TIME_VALUE="219599"/>
+        <TIME_SLOT TIME_SLOT_ID="ts114" TIME_VALUE="220048"/>
+        <TIME_SLOT TIME_SLOT_ID="ts115" TIME_VALUE="220065"/>
+        <TIME_SLOT TIME_SLOT_ID="ts116" TIME_VALUE="228715"/>
+        <TIME_SLOT TIME_SLOT_ID="ts117" TIME_VALUE="228765"/>
+        <TIME_SLOT TIME_SLOT_ID="ts118" TIME_VALUE="229082"/>
+        <TIME_SLOT TIME_SLOT_ID="ts119" TIME_VALUE="229098"/>
+        <TIME_SLOT TIME_SLOT_ID="ts120" TIME_VALUE="231115"/>
+        <TIME_SLOT TIME_SLOT_ID="ts121" TIME_VALUE="231149"/>
+        <TIME_SLOT TIME_SLOT_ID="ts122" TIME_VALUE="231149"/>
+        <TIME_SLOT TIME_SLOT_ID="ts123" TIME_VALUE="232866"/>
+        <TIME_SLOT TIME_SLOT_ID="ts124" TIME_VALUE="232866"/>
+        <TIME_SLOT TIME_SLOT_ID="ts125" TIME_VALUE="233382"/>
+        <TIME_SLOT TIME_SLOT_ID="ts126" TIME_VALUE="238932"/>
+        <TIME_SLOT TIME_SLOT_ID="ts127" TIME_VALUE="239132"/>
+        <TIME_SLOT TIME_SLOT_ID="ts128" TIME_VALUE="239365"/>
+        <TIME_SLOT TIME_SLOT_ID="ts129" TIME_VALUE="239416"/>
+        <TIME_SLOT TIME_SLOT_ID="ts130" TIME_VALUE="242449"/>
+        <TIME_SLOT TIME_SLOT_ID="ts131" TIME_VALUE="242649"/>
+        <TIME_SLOT TIME_SLOT_ID="ts132" TIME_VALUE="243049"/>
+        <TIME_SLOT TIME_SLOT_ID="ts133" TIME_VALUE="243090"/>
+        <TIME_SLOT TIME_SLOT_ID="ts134" TIME_VALUE="245148"/>
+        <TIME_SLOT TIME_SLOT_ID="ts135" TIME_VALUE="245173"/>
+        <TIME_SLOT TIME_SLOT_ID="ts136" TIME_VALUE="245698"/>
+        <TIME_SLOT TIME_SLOT_ID="ts137" TIME_VALUE="245865"/>
+        <TIME_SLOT TIME_SLOT_ID="ts138" TIME_VALUE="248082"/>
+        <TIME_SLOT TIME_SLOT_ID="ts139" TIME_VALUE="248082"/>
+        <TIME_SLOT TIME_SLOT_ID="ts140" TIME_VALUE="252482"/>
+        <TIME_SLOT TIME_SLOT_ID="ts141" TIME_VALUE="252749"/>
+        <TIME_SLOT TIME_SLOT_ID="ts142" TIME_VALUE="253899"/>
+        <TIME_SLOT TIME_SLOT_ID="ts143" TIME_VALUE="253899"/>
+        <TIME_SLOT TIME_SLOT_ID="ts144" TIME_VALUE="254382"/>
+        <TIME_SLOT TIME_SLOT_ID="ts145" TIME_VALUE="254614"/>
+        <TIME_SLOT TIME_SLOT_ID="ts146" TIME_VALUE="264898"/>
+        <TIME_SLOT TIME_SLOT_ID="ts147" TIME_VALUE="264941"/>
+        <TIME_SLOT TIME_SLOT_ID="ts148" TIME_VALUE="265299"/>
+        <TIME_SLOT TIME_SLOT_ID="ts149" TIME_VALUE="265324"/>
+        <TIME_SLOT TIME_SLOT_ID="ts150" TIME_VALUE="267882"/>
+        <TIME_SLOT TIME_SLOT_ID="ts151" TIME_VALUE="267882"/>
+        <TIME_SLOT TIME_SLOT_ID="ts152" TIME_VALUE="268265"/>
+        <TIME_SLOT TIME_SLOT_ID="ts153" TIME_VALUE="268316"/>
+        <TIME_SLOT TIME_SLOT_ID="ts154" TIME_VALUE="278099"/>
+        <TIME_SLOT TIME_SLOT_ID="ts155" TIME_VALUE="278132"/>
+        <TIME_SLOT TIME_SLOT_ID="ts156" TIME_VALUE="278548"/>
+        <TIME_SLOT TIME_SLOT_ID="ts157" TIME_VALUE="278548"/>
+        <TIME_SLOT TIME_SLOT_ID="ts158" TIME_VALUE="279865"/>
+        <TIME_SLOT TIME_SLOT_ID="ts159" TIME_VALUE="279982"/>
+        <TIME_SLOT TIME_SLOT_ID="ts160" TIME_VALUE="280399"/>
+        <TIME_SLOT TIME_SLOT_ID="ts161" TIME_VALUE="280424"/>
+        <TIME_SLOT TIME_SLOT_ID="ts162" TIME_VALUE="280424"/>
+        <TIME_SLOT TIME_SLOT_ID="ts163" TIME_VALUE="280499"/>
+        <TIME_SLOT TIME_SLOT_ID="ts164" TIME_VALUE="285807"/>
+        <TIME_SLOT TIME_SLOT_ID="ts165" TIME_VALUE="286082"/>
+        <TIME_SLOT TIME_SLOT_ID="ts166" TIME_VALUE="286532"/>
+        <TIME_SLOT TIME_SLOT_ID="ts167" TIME_VALUE="286565"/>
+        <TIME_SLOT TIME_SLOT_ID="ts168" TIME_VALUE="292216"/>
+        <TIME_SLOT TIME_SLOT_ID="ts169" TIME_VALUE="292248"/>
+        <TIME_SLOT TIME_SLOT_ID="ts170" TIME_VALUE="293798"/>
+        <TIME_SLOT TIME_SLOT_ID="ts171" TIME_VALUE="293807"/>
+        <TIME_SLOT TIME_SLOT_ID="ts172" TIME_VALUE="297990"/>
+        <TIME_SLOT TIME_SLOT_ID="ts173" TIME_VALUE="298049"/>
+        <TIME_SLOT TIME_SLOT_ID="ts174" TIME_VALUE="298566"/>
+        <TIME_SLOT TIME_SLOT_ID="ts175" TIME_VALUE="298582"/>
+        <TIME_SLOT TIME_SLOT_ID="ts176" TIME_VALUE="311082"/>
+        <TIME_SLOT TIME_SLOT_ID="ts177" TIME_VALUE="311107"/>
+        <TIME_SLOT TIME_SLOT_ID="ts178" TIME_VALUE="311524"/>
+        <TIME_SLOT TIME_SLOT_ID="ts179" TIME_VALUE="311532"/>
+        <TIME_SLOT TIME_SLOT_ID="ts180" TIME_VALUE="312616"/>
+        <TIME_SLOT TIME_SLOT_ID="ts181" TIME_VALUE="312648"/>
+        <TIME_SLOT TIME_SLOT_ID="ts182" TIME_VALUE="313066"/>
+        <TIME_SLOT TIME_SLOT_ID="ts183" TIME_VALUE="313082"/>
+        <TIME_SLOT TIME_SLOT_ID="ts184" TIME_VALUE="321282"/>
+        <TIME_SLOT TIME_SLOT_ID="ts185" TIME_VALUE="321648"/>
+        <TIME_SLOT TIME_SLOT_ID="ts186" TIME_VALUE="331365"/>
+        <TIME_SLOT TIME_SLOT_ID="ts187" TIME_VALUE="331465"/>
+        <TIME_SLOT TIME_SLOT_ID="ts188" TIME_VALUE="331815"/>
+        <TIME_SLOT TIME_SLOT_ID="ts189" TIME_VALUE="331832"/>
+        <TIME_SLOT TIME_SLOT_ID="ts190" TIME_VALUE="337715"/>
+        <TIME_SLOT TIME_SLOT_ID="ts191" TIME_VALUE="337732"/>
+        <TIME_SLOT TIME_SLOT_ID="ts192" TIME_VALUE="337998"/>
+        <TIME_SLOT TIME_SLOT_ID="ts193" TIME_VALUE="338017"/>
+        <TIME_SLOT TIME_SLOT_ID="ts194" TIME_VALUE="349565"/>
+        <TIME_SLOT TIME_SLOT_ID="ts195" TIME_VALUE="349699"/>
+        <TIME_SLOT TIME_SLOT_ID="ts196" TIME_VALUE="350166"/>
+        <TIME_SLOT TIME_SLOT_ID="ts197" TIME_VALUE="350166"/>
+        <TIME_SLOT TIME_SLOT_ID="ts198" TIME_VALUE="351482"/>
+        <TIME_SLOT TIME_SLOT_ID="ts199" TIME_VALUE="351574"/>
+        <TIME_SLOT TIME_SLOT_ID="ts200" TIME_VALUE="352141"/>
+        <TIME_SLOT TIME_SLOT_ID="ts201" TIME_VALUE="352258"/>
+        <TIME_SLOT TIME_SLOT_ID="ts202" TIME_VALUE="356950"/>
+        <TIME_SLOT TIME_SLOT_ID="ts203" TIME_VALUE="356991"/>
+        <TIME_SLOT TIME_SLOT_ID="ts204" TIME_VALUE="357933"/>
+        <TIME_SLOT TIME_SLOT_ID="ts205" TIME_VALUE="357940"/>
+        <TIME_SLOT TIME_SLOT_ID="ts206" TIME_VALUE="360674"/>
+        <TIME_SLOT TIME_SLOT_ID="ts207" TIME_VALUE="360882"/>
+        <TIME_SLOT TIME_SLOT_ID="ts208" TIME_VALUE="367698"/>
+        <TIME_SLOT TIME_SLOT_ID="ts209" TIME_VALUE="368449"/>
+        <TIME_SLOT TIME_SLOT_ID="ts210" TIME_VALUE="378632"/>
+        <TIME_SLOT TIME_SLOT_ID="ts211" TIME_VALUE="379299"/>
+        <TIME_SLOT TIME_SLOT_ID="ts212" TIME_VALUE="380632"/>
+        <TIME_SLOT TIME_SLOT_ID="ts213" TIME_VALUE="380715"/>
+        <TIME_SLOT TIME_SLOT_ID="ts214" TIME_VALUE="381049"/>
+        <TIME_SLOT TIME_SLOT_ID="ts215" TIME_VALUE="381149"/>
+        <TIME_SLOT TIME_SLOT_ID="ts216" TIME_VALUE="389882"/>
+        <TIME_SLOT TIME_SLOT_ID="ts217" TIME_VALUE="389966"/>
+        <TIME_SLOT TIME_SLOT_ID="ts218" TIME_VALUE="390382"/>
+        <TIME_SLOT TIME_SLOT_ID="ts219" TIME_VALUE="390399"/>
+        <TIME_SLOT TIME_SLOT_ID="ts220" TIME_VALUE="396599"/>
+        <TIME_SLOT TIME_SLOT_ID="ts221" TIME_VALUE="396632"/>
+        <TIME_SLOT TIME_SLOT_ID="ts222" TIME_VALUE="396949"/>
+        <TIME_SLOT TIME_SLOT_ID="ts223" TIME_VALUE="397015"/>
+        <TIME_SLOT TIME_SLOT_ID="ts224" TIME_VALUE="400132"/>
+        <TIME_SLOT TIME_SLOT_ID="ts225" TIME_VALUE="400132"/>
+        <TIME_SLOT TIME_SLOT_ID="ts226" TIME_VALUE="400682"/>
+        <TIME_SLOT TIME_SLOT_ID="ts227" TIME_VALUE="401315"/>
+        <TIME_SLOT TIME_SLOT_ID="ts228" TIME_VALUE="404182"/>
+        <TIME_SLOT TIME_SLOT_ID="ts229" TIME_VALUE="404232"/>
+        <TIME_SLOT TIME_SLOT_ID="ts230" TIME_VALUE="404516"/>
+        <TIME_SLOT TIME_SLOT_ID="ts231" TIME_VALUE="404648"/>
+        <TIME_SLOT TIME_SLOT_ID="ts232" TIME_VALUE="414699"/>
+        <TIME_SLOT TIME_SLOT_ID="ts233" TIME_VALUE="414798"/>
+        <TIME_SLOT TIME_SLOT_ID="ts234" TIME_VALUE="415265"/>
+        <TIME_SLOT TIME_SLOT_ID="ts235" TIME_VALUE="415299"/>
+        <TIME_SLOT TIME_SLOT_ID="ts236" TIME_VALUE="417916"/>
+        <TIME_SLOT TIME_SLOT_ID="ts237" TIME_VALUE="417982"/>
+        <TIME_SLOT TIME_SLOT_ID="ts238" TIME_VALUE="418682"/>
+        <TIME_SLOT TIME_SLOT_ID="ts239" TIME_VALUE="418699"/>
+        <TIME_SLOT TIME_SLOT_ID="ts240" TIME_VALUE="425616"/>
+        <TIME_SLOT TIME_SLOT_ID="ts241" TIME_VALUE="425632"/>
+        <TIME_SLOT TIME_SLOT_ID="ts242" TIME_VALUE="425898"/>
+        <TIME_SLOT TIME_SLOT_ID="ts243" TIME_VALUE="426099"/>
+        <TIME_SLOT TIME_SLOT_ID="ts244" TIME_VALUE="429282"/>
+        <TIME_SLOT TIME_SLOT_ID="ts245" TIME_VALUE="429415"/>
+        <TIME_SLOT TIME_SLOT_ID="ts246" TIME_VALUE="429882"/>
+        <TIME_SLOT TIME_SLOT_ID="ts247" TIME_VALUE="431549"/>
+        <TIME_SLOT TIME_SLOT_ID="ts248" TIME_VALUE="439116"/>
+        <TIME_SLOT TIME_SLOT_ID="ts249" TIME_VALUE="439148"/>
+        <TIME_SLOT TIME_SLOT_ID="ts250" TIME_VALUE="439582"/>
+        <TIME_SLOT TIME_SLOT_ID="ts251" TIME_VALUE="439648"/>
+        <TIME_SLOT TIME_SLOT_ID="ts252" TIME_VALUE="441149"/>
+        <TIME_SLOT TIME_SLOT_ID="ts253" TIME_VALUE="441149"/>
+        <TIME_SLOT TIME_SLOT_ID="ts254" TIME_VALUE="441448"/>
+        <TIME_SLOT TIME_SLOT_ID="ts255" TIME_VALUE="441682"/>
+        <TIME_SLOT TIME_SLOT_ID="ts256" TIME_VALUE="452315"/>
+        <TIME_SLOT TIME_SLOT_ID="ts257" TIME_VALUE="452382"/>
+        <TIME_SLOT TIME_SLOT_ID="ts258" TIME_VALUE="452699"/>
+        <TIME_SLOT TIME_SLOT_ID="ts259" TIME_VALUE="452732"/>
+        <TIME_SLOT TIME_SLOT_ID="ts260" TIME_VALUE="455166"/>
+        <TIME_SLOT TIME_SLOT_ID="ts261" TIME_VALUE="455199"/>
+        <TIME_SLOT TIME_SLOT_ID="ts262" TIME_VALUE="455599"/>
+        <TIME_SLOT TIME_SLOT_ID="ts263" TIME_VALUE="455649"/>
+        <TIME_SLOT TIME_SLOT_ID="ts264" TIME_VALUE="456216"/>
+        <TIME_SLOT TIME_SLOT_ID="ts265" TIME_VALUE="457057"/>
+        <TIME_SLOT TIME_SLOT_ID="ts266" TIME_VALUE="461955"/>
+        <TIME_SLOT TIME_SLOT_ID="ts267" TIME_VALUE="462468"/>
+        <TIME_SLOT TIME_SLOT_ID="ts268" TIME_VALUE="462907"/>
+    </TIME_ORDER>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="TRANSCRIPCIÓN" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H1_Transcripción">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1" TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts2">
+                <ANNOTATION_VALUE>Myentras tune' pwes tene' ya'ab... ya'ab tin kanaj beyo', pus beey tin kanij xook beyo'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a2" TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts4">
+                <ANNOTATION_VALUE>Jaan... ya'ab tin... tin kanaj bey tye’ese máaestro beyo', tin... tin laj kanaj.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3" TIME_SLOT_REF1="ts6" TIME_SLOT_REF2="ts8">
+                <ANNOTATION_VALUE>Jaaj</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a4" TIME_SLOT_REF1="ts9" TIME_SLOT_REF2="ts10">
+                <ANNOTATION_VALUE>Tin lak kanaj beyo', pus... bey tin kani le xooko'. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a5" TIME_SLOT_REF1="ts11" TIME_SLOT_REF2="ts12">
+                <ANNOTATION_VALUE>Jmmm... bejla'e' lelo' pus... maas jats'uts mene' laj... laj estee... u… u laj modeernos tak. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a6" TIME_SLOT_REF1="ts14" TIME_SLOT_REF2="ts16">
+                <ANNOTATION_VALUE>Peroe úucho' lelo' ma', le je’elo’pus ta k'a' ka laj ts'íitik tu láakaj.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a7" TIME_SLOT_REF1="ts18" TIME_SLOT_REF2="ts20">
+                <ANNOTATION_VALUE>E'esa'an to'on bixtaku ts'íibta'ale kaartao'. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a12" TIME_SLOT_REF1="ts22" TIME_SLOT_REF2="ts24">
+                <ANNOTATION_VALUE>Jaan... lelo' puse maestroso'obo' letio'obo' ya'ab ba'as... ba'axo'ob ku ye'esko'ob beyo'. Jaan, ya'ab ba'axo'ob ku ye'esko'ob.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a13" TIME_SLOT_REF1="ts25" TIME_SLOT_REF2="ts26">
+                <ANNOTATION_VALUE>Beey xan tak bejla'e', chen ba'axe' pus bejla'e' pwes diferente, </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a14" TIME_SLOT_REF1="ts27" TIME_SLOT_REF2="ts28">
+                <ANNOTATION_VALUE>bela'e' yaan... este... ts'u maas na'akle teeknolojiya beyo', pus maas ya'a' ba'a difereente, enkambyo le úucho' pus na'an; </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a15" TIME_SLOT_REF1="ts29" TIME_SLOT_REF2="ts30">
+                <ANNOTATION_VALUE>peroo pus la'ayli' beey xano', ku kanik máak xook.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a16" TIME_SLOT_REF1="ts32" TIME_SLOT_REF2="ts34">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a17" TIME_SLOT_REF1="ts37" TIME_SLOT_REF2="ts38">
+                <ANNOTATION_VALUE>Leti'e le... jayle le... e... le...  liibro lengwa náasyonaal, leti'e espanyool ma'ako'.  </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a18" TIME_SLOT_REF1="ts41" TIME_SLOT_REF2="ts43">
+                <ANNOTATION_VALUE>Leti' jach maas ustinwich. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a19" TIME_SLOT_REF1="ts45" TIME_SLOT_REF2="ts46">
+                <ANNOTATION_VALUE>Pwes lete'e istooryaso'obo'…</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a20" TIME_SLOT_REF1="ts48" TIME_SLOT_REF2="ts50">
+                <ANNOTATION_VALUE>istooryaso'obo'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a21" TIME_SLOT_REF1="ts51" TIME_SLOT_REF2="ts52">
+                <ANNOTATION_VALUE>Estee, lete'e je'en bixtakee... le aalgoe le... jayle le... istoorya y sibiismoo', mene je'elo' pus estee ti’ yaan xane le ti' le le... le... le liibro matemaatikaso',</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a22" TIME_SLOT_REF1="ts54" TIME_SLOT_REF2="ts56">
+                <ANNOTATION_VALUE>leti'e ku... aritmeetikailo'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a23" TIME_SLOT_REF1="ts59" TIME_SLOT_REF2="ts60">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a24" TIME_SLOT_REF1="ts61" TIME_SLOT_REF2="ts62">
+                <ANNOTATION_VALUE>Leti'e le liibros beyo' pus… pus tene' ustinwich tumen ya'ab ba'alo'ob kin wilik xan te'ej li… liibro dee aritmeetikao', tu'ux ka… ka wilik... este… le… tu'ux ku ka'ansa'a ti' máake enteeroo', meedyo, enteero,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a25" TIME_SLOT_REF1="ts65" TIME_SLOT_REF2="ts66">
+                <ANNOTATION_VALUE>estee kwaarto. Tu'ux ka kanik tak tu'uxenle... le ku ts'íita'a take kya'ako'o' estee...jay ti'e le je'e beyo' ma lete'e tu'ux kya'ak tak siliindro.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a26" TIME_SLOT_REF1="ts68" TIME_SLOT_REF2="ts70">
+                <ANNOTATION_VALUE>Jaan... Jeometriya... jeometriya.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a27" TIME_SLOT_REF1="ts72" TIME_SLOT_REF2="ts74">
+                <ANNOTATION_VALUE></ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a38" TIME_SLOT_REF1="ts75" TIME_SLOT_REF2="ts77">
+                <ANNOTATION_VALUE>Jaan... leti'e je'e beyo'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a39" TIME_SLOT_REF1="ts78" TIME_SLOT_REF2="ts80">
+                <ANNOTATION_VALUE>Jaan, leti'e je'e bey tin kanlantaj beyo'. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a40" TIME_SLOT_REF1="ts81" TIME_SLOT_REF2="ts82">
+                <ANNOTATION_VALUE>pwes este... ya'ab ba'a jujump'íit ba'a' tin kanaj beyo' pero pwes yaan ts'u’u tu'ubu xan teni'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a41" TIME_SLOT_REF1="ts85" TIME_SLOT_REF2="ts86">
+                <ANNOTATION_VALUE>Komo ts'u'u t'íile'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a42" TIME_SLOT_REF1="ts91" TIME_SLOT_REF2="ts92">
+                <ANNOTATION_VALUE>Pus abeesese' yaan oorae' pus yan xane' usticho'ob, yan xane' pus... yaan oorae' ku báaxlo'ob.  </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a43" TIME_SLOT_REF1="ts95" TIME_SLOT_REF2="ts96">
+                <ANNOTATION_VALUE>Myentrase' pus mun jach ts'íiko'ob atensyoon beyo', pus yaanin wet xooko'obo' yaan tu kano'obi.'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a44" TIME_SLOT_REF1="ts101" TIME_SLOT_REF2="ts102">
+                <ANNOTATION_VALUE>Aan lo' ku yanta, ku yante konkursoso', ku selebraarta'a estee beintikwaatro dee febrero, </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a45" TIME_SLOT_REF1="ts103" TIME_SLOT_REF2="ts104">
+                <ANNOTATION_VALUE>estee ku selebraarta'a xan estee... e... este... dyesiseys de septyeembre.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a46" TIME_SLOT_REF1="ts107" TIME_SLOT_REF2="ts108">
+                <ANNOTATION_VALUE>Jaan... ku selebraarta'a beeinte de nobyeembre. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a47" TIME_SLOT_REF1="ts110" TIME_SLOT_REF2="ts112">
+                <ANNOTATION_VALUE>To'on ka'ach úuch tin paalilo'one' chen jo'ku u meeta'a le... e ku ya'ala'a úucho' fyeestisiita</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a48" TIME_SLOT_REF1="ts114" TIME_SLOT_REF2="ts117">
+                <ANNOTATION_VALUE>fyeestisiita ku organsisaarke máaestro beyo', pus aantese'  to'one' ku jaylu u meetkin kanko'onj ook'oot.  </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a49" TIME_SLOT_REF1="ts119" TIME_SLOT_REF2="ts120">
+                <ANNOTATION_VALUE>Pero ten úuche' jach kin resitaar.  </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a50" TIME_SLOT_REF1="ts122" TIME_SLOT_REF2="ts124">
+                <ANNOTATION_VALUE>Jach kin resitaar.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a51" TIME_SLOT_REF1="ts125" TIME_SLOT_REF2="ts126">
+                <ANNOTATION_VALUE>Jaan… le chen ya'ale máaestro beeyanin resitaaro' tene' ensegiida tene' utstinwich.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a52" TIME_SLOT_REF1="ts127" TIME_SLOT_REF2="ts128">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a53" TIME_SLOT_REF1="ts129" TIME_SLOT_REF2="ts130">
+                <ANNOTATION_VALUE>Jam... kin wa'ik ka'u… u ka'ansenin kiik beyo'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a54" TIME_SLOT_REF1="ts133" TIME_SLOT_REF2="ts135">
+                <ANNOTATION_VALUE>pus in kiike' leti'e' ku ka'ansken.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a55" TIME_SLOT_REF1="ts137" TIME_SLOT_REF2="ts138">
+                <ANNOTATION_VALUE>déememooryail in... in k'ubik. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a56" TIME_SLOT_REF1="ts141" TIME_SLOT_REF2="ts142">
+                <ANNOTATION_VALUE>¿Ba'ax yo'la kin t'aan?</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a57" TIME_SLOT_REF1="ts145" TIME_SLOT_REF2="ts146">
+                <ANNOTATION_VALUE>Pwes mentun tene' ustin in jaylin in xiknin wu'uyke le istooryaso'obo', je'en bix take tu'ux... take le u presentark'ajle báanderao'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a58" TIME_SLOT_REF1="ts148" TIME_SLOT_REF2="ts150">
+                <ANNOTATION_VALUE>tu'ux yane le… e aagilao'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a59" TIME_SLOT_REF1="ts152" TIME_SLOT_REF2="ts154">
+                <ANNOTATION_VALUE>Jaan... lelo' pus kya'ako'obe’ este tu'uxane aagilao' kya'ako'obo’, estee jay tenochtitlan bin ku representaartik.  </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a60" TIME_SLOT_REF1="ts157" TIME_SLOT_REF2="ts158">
+                <ANNOTATION_VALUE>Jaan. Tenochtilaan,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a61" TIME_SLOT_REF1="ts160" TIME_SLOT_REF2="ts161">
+                <ANNOTATION_VALUE>leti' ku representaartik, leti' yanti' eskuudo ti' je'en ba'axake'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a62" TIME_SLOT_REF1="ts162" TIME_SLOT_REF2="ts164">
+                <ANNOTATION_VALUE>leti' ku representaartik, leti' yanti' eskuudo ti' je'en ba'axake... ts'a'ani beyo'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a63" TIME_SLOT_REF1="ts166" TIME_SLOT_REF2="ts168">
+                <ANNOTATION_VALUE>Jaan, ten tune' ustuntinwich chenin wile baandera tun bey cheninwile aagila beya' tene' ustinwich.  </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a64" TIME_SLOT_REF1="ts171" TIME_SLOT_REF2="ts172">
+                <ANNOTATION_VALUE>
+Jaan yo'lale je'elo', men pus u… u kin resitaartu p'ee beyo'.
+</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a65" TIME_SLOT_REF1="ts175" TIME_SLOT_REF2="ts176">
+                <ANNOTATION_VALUE>Ku ya'akin kiik ti' tene' "lelo' yana wa'aik uts menelo' pus yana a pakke' baanderao' tumene baanderao' leti'e ku signifikaartik tu'ux tu jo'saj libertaad estee Migeel idaalgo i kostiila" ki</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a66" TIME_SLOT_REF1="ts179" TIME_SLOT_REF2="ts181">
+                <ANNOTATION_VALUE>u ya'akin kiik. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a67" TIME_SLOT_REF1="ts183" TIME_SLOT_REF2="ts184">
+                <ANNOTATION_VALUE>Ku ya'ak ti' tene' myentrase' "la'ake' pus yana a wa'ake u p'e resitasyoon ti'e le jayle... e baandera beyo'" </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a68" TIME_SLOT_REF1="ts185" TIME_SLOT_REF2="ts186">
+                <ANNOTATION_VALUE>tu'ux ka... jayla a kóomemoraartik beye báanderao' mene je'elo' tu'ux tu'ux jok'a'an libertaad, tu'ux tu'ux yanilo'on liibreon bejla'e', </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a69" TIME_SLOT_REF1="ts188" TIME_SLOT_REF2="ts191">
+                <ANNOTATION_VALUE>mene úucho' pus esklabituud bine', pus mun paajtu kanik  bin xook u iijos óotsi,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a70" TIME_SLOT_REF1="ts193" TIME_SLOT_REF2="ts194">
+                <ANNOTATION_VALUE>enkambyo orase' pus je'elu páajtle' nomaas ke ba'axtune' pus wa man ts'íika wóo ti'e' pus ma' xan táan kanik, pero wa xan ka'a ts'áa wóo xan ti' beyo' pus je'ela na'atke', ja'a kanke'.   </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a98" TIME_SLOT_REF1="ts197" TIME_SLOT_REF2="ts198">
+                <ANNOTATION_VALUE>Je xana meetke'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a99" TIME_SLOT_REF1="ts200" TIME_SLOT_REF2="ts203">
+                <ANNOTATION_VALUE>Mmm... pus... láakle beyo' beyo' pus bey tin kanilo',</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a100" TIME_SLOT_REF1="ts205" TIME_SLOT_REF2="ts206">
+                <ANNOTATION_VALUE>jujump'íiti... jaan. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a101" TIME_SLOT_REF1="ts209" TIME_SLOT_REF2="ts213">
+                <ANNOTATION_VALUE>Pwes in suk'une' leti'e' xooknaj xan beyo' leti'e' este tu xokaj mi.... mi este... mi la'ayli' xan beey graado tu xokaj in suku'uno', terseero men na'anu jee.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a102" TIME_SLOT_REF1="ts214" TIME_SLOT_REF2="ts216">
+                <ANNOTATION_VALUE>Jaan... na'anu jee pero leti'e' je'e xoonaj de nooche... estee klasee estee bix ya'ala'a dee nooche... estee noktuurno. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a103" TIME_SLOT_REF1="ts218" TIME_SLOT_REF2="ts220">
+                <ANNOTATION_VALUE>Jaan. Leti'e' laas syeete dee laa nooche ku... ku bin te xook beyo' yete kib, </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a104" TIME_SLOT_REF1="ts222" TIME_SLOT_REF2="ts224">
+                <ANNOTATION_VALUE>ku t'a'ke kiibo' ko'olu... u... u ts'íibo'ob.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a105" TIME_SLOT_REF1="ts227" TIME_SLOT_REF2="ts229">
+                <ANNOTATION_VALUE>Chen yeete kibu t'a'mo'ob beyo' yete ku yiku tsíibo'ob</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a106" TIME_SLOT_REF1="ts230" TIME_SLOT_REF2="ts232">
+                <ANNOTATION_VALUE>In suku'une' leti'e' tu mas chan kanaj beyo' mii... mii u anyo wa anyo i meedyo tun xook beyo', kaj bine máaestro kaj káambyarnajo' ka'aj ch'éenu xook dee nooche.   </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a107" TIME_SLOT_REF1="ts235" TIME_SLOT_REF2="ts236">
+                <ANNOTATION_VALUE>Jaan. Beey tu kanilo', leti'e' maas tuxan tu chan kanaj ,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a108" TIME_SLOT_REF1="ts239" TIME_SLOT_REF2="ts240">
+                <ANNOTATION_VALUE>tu chan kanaj xan. Awrin kiik xano' le je'elo' pus chen beey naakik in xooko', chen beey naakik xan leti'o'. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a109" TIME_SLOT_REF1="ts242" TIME_SLOT_REF2="ts244">
+                <ANNOTATION_VALUE>Yooe ts'íib, u yooe xook, beey xan teen in wooe ts'íib in wooe xook. </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a110" TIME_SLOT_REF1="ts247" TIME_SLOT_REF2="ts248">
+                <ANNOTATION_VALUE>Pus tene' ji'in ts'íib xan dee beey dee estee... dee máanuskriitao' ,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a111" TIME_SLOT_REF1="ts250" TIME_SLOT_REF2="ts253">
+                <ANNOTATION_VALUE>ji'in ts'íib xan dee moolde xane'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a112" TIME_SLOT_REF1="ts254" TIME_SLOT_REF2="ts256">
+                <ANNOTATION_VALUE>jaan... je'e xane'... mmm... pus ji'in... ji'in wa'ik xane espanyool xano', je'e xanin pus idyooma to'on beyo' pus maaya,</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a113" TIME_SLOT_REF1="ts258" TIME_SLOT_REF2="ts261">
+                <ANNOTATION_VALUE>mmm... pus je'e xanin espanyoole'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a114" TIME_SLOT_REF1="ts262" TIME_SLOT_REF2="ts264">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a115" TIME_SLOT_REF1="ts266" TIME_SLOT_REF2="ts267">
+                <ANNOTATION_VALUE>De nada.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="TRANSCRIPCIÓN" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H2_Transcripción">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a8" TIME_SLOT_REF1="ts5" TIME_SLOT_REF2="ts7">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a9" TIME_SLOT_REF1="ts13" TIME_SLOT_REF2="ts15">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a10" TIME_SLOT_REF1="ts17" TIME_SLOT_REF2="ts19">
+                <ANNOTATION_VALUE>Beey</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a11" TIME_SLOT_REF1="ts21" TIME_SLOT_REF2="ts23">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a28" TIME_SLOT_REF1="ts31" TIME_SLOT_REF2="ts33">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a29" TIME_SLOT_REF1="ts35" TIME_SLOT_REF2="ts36">
+                <ANNOTATION_VALUE>¿Ba'ax maas uts ka'achtawich a beetik a kanik  te'ej eskweelalo'? </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a30" TIME_SLOT_REF1="ts39" TIME_SLOT_REF2="ts40">
+                <ANNOTATION_VALUE>¿Leti'e espanyoolo'?</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a31" TIME_SLOT_REF1="ts42" TIME_SLOT_REF2="ts44">
+                <ANNOTATION_VALUE>¿Ba'ax ustawicha kanki'?</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a32" TIME_SLOT_REF1="ts47" TIME_SLOT_REF2="ts49">
+                <ANNOTATION_VALUE>Aaa...</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a33" TIME_SLOT_REF1="ts53" TIME_SLOT_REF2="ts55">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a34" TIME_SLOT_REF1="ts57" TIME_SLOT_REF2="ts58">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a35" TIME_SLOT_REF1="ts63" TIME_SLOT_REF2="ts64">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a36" TIME_SLOT_REF1="ts67" TIME_SLOT_REF2="ts69">
+                <ANNOTATION_VALUE>Jaan. Figuuras jeomeetrikas </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a37" TIME_SLOT_REF1="ts71" TIME_SLOT_REF2="ts73">
+                <ANNOTATION_VALUE>Jeometriya</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a71" TIME_SLOT_REF1="ts76" TIME_SLOT_REF2="ts79">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a72" TIME_SLOT_REF1="ts83" TIME_SLOT_REF2="ts84">
+                <ANNOTATION_VALUE>Jaan... anlelo' beey</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a73" TIME_SLOT_REF1="ts87" TIME_SLOT_REF2="ts88">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a74" TIME_SLOT_REF1="ts89" TIME_SLOT_REF2="ts90">
+                <ANNOTATION_VALUE>¿Kuxtunu u jeela wetxooko'obo' leti'ob xane' ustichu xooko'ob leti'o'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a75" TIME_SLOT_REF1="ts93" TIME_SLOT_REF2="ts94">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a76" TIME_SLOT_REF1="ts97" TIME_SLOT_REF2="ts98">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a77" TIME_SLOT_REF1="ts99" TIME_SLOT_REF2="ts100">
+                <ANNOTATION_VALUE>¿Ku yantlan tun estee kóonkursos te'e ka'ach tan xook ka'achi?</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a78" TIME_SLOT_REF1="ts105" TIME_SLOT_REF2="ts106">
+                <ANNOTATION_VALUE>Jaa</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a79" TIME_SLOT_REF1="ts109" TIME_SLOT_REF2="ts111">
+                <ANNOTATION_VALUE>Beeinte de nobyeembre </ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a80" TIME_SLOT_REF1="ts113" TIME_SLOT_REF2="ts115">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a81" TIME_SLOT_REF1="ts116" TIME_SLOT_REF2="ts118">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a82" TIME_SLOT_REF1="ts121" TIME_SLOT_REF2="ts123">
+                <ANNOTATION_VALUE>Jach ka resitaar</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a83" TIME_SLOT_REF1="ts131" TIME_SLOT_REF2="ts132">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a84" TIME_SLOT_REF1="ts134" TIME_SLOT_REF2="ts136">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a85" TIME_SLOT_REF1="ts139" TIME_SLOT_REF2="ts140">
+                <ANNOTATION_VALUE>¿Ba'ax tun yo'la ka kanik resitaar, ba'ax... ba'ax yo'la ka t'aan?</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a86" TIME_SLOT_REF1="ts143" TIME_SLOT_REF2="ts144">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a87" TIME_SLOT_REF1="ts147" TIME_SLOT_REF2="ts149">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a88" TIME_SLOT_REF1="ts151" TIME_SLOT_REF2="ts153">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a89" TIME_SLOT_REF1="ts155" TIME_SLOT_REF2="ts156">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a90" TIME_SLOT_REF1="ts159" TIME_SLOT_REF2="ts163">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a91" TIME_SLOT_REF1="ts165" TIME_SLOT_REF2="ts167">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a92" TIME_SLOT_REF1="ts169" TIME_SLOT_REF2="ts170">
+                <ANNOTATION_VALUE>¿Yo'la tune je'e ka resitaaro'?</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a93" TIME_SLOT_REF1="ts173" TIME_SLOT_REF2="ts174">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a94" TIME_SLOT_REF1="ts177" TIME_SLOT_REF2="ts178">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a95" TIME_SLOT_REF1="ts180" TIME_SLOT_REF2="ts182">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a96" TIME_SLOT_REF1="ts187" TIME_SLOT_REF2="ts189">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a97" TIME_SLOT_REF1="ts190" TIME_SLOT_REF2="ts192">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a116" TIME_SLOT_REF1="ts195" TIME_SLOT_REF2="ts196">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a117" TIME_SLOT_REF1="ts199" TIME_SLOT_REF2="ts201">
+                <ANNOTATION_VALUE>Anlo' beyo'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a118" TIME_SLOT_REF1="ts202" TIME_SLOT_REF2="ts204">
+                <ANNOTATION_VALUE>Beey ta kanilo'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a119" TIME_SLOT_REF1="ts207" TIME_SLOT_REF2="ts208">
+                <ANNOTATION_VALUE>Tech... yete ¿Icha láak'o'obe' chen teech náaka xook tak te'elo' wa tu láak'o'obe'  laj xooknajo'ob xan?</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a120" TIME_SLOT_REF1="ts210" TIME_SLOT_REF2="ts211">
+                <ANNOTATION_VALUE>Terseero</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a121" TIME_SLOT_REF1="ts212" TIME_SLOT_REF2="ts215">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a122" TIME_SLOT_REF1="ts217" TIME_SLOT_REF2="ts219">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a123" TIME_SLOT_REF1="ts221" TIME_SLOT_REF2="ts223">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a124" TIME_SLOT_REF1="ts225" TIME_SLOT_REF2="ts226">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a125" TIME_SLOT_REF1="ts228" TIME_SLOT_REF2="ts231">
+                <ANNOTATION_VALUE>Yeete</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a126" TIME_SLOT_REF1="ts233" TIME_SLOT_REF2="ts234">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a127" TIME_SLOT_REF1="ts237" TIME_SLOT_REF2="ts238">
+                <ANNOTATION_VALUE>Maas tu kanaj</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a128" TIME_SLOT_REF1="ts241" TIME_SLOT_REF2="ts243">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a129" TIME_SLOT_REF1="ts245" TIME_SLOT_REF2="ts246">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a130" TIME_SLOT_REF1="ts249" TIME_SLOT_REF2="ts251">
+                <ANNOTATION_VALUE>Je'ele'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a131" TIME_SLOT_REF1="ts252" TIME_SLOT_REF2="ts255">
+                <ANNOTATION_VALUE>Je'e xane'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a132" TIME_SLOT_REF1="ts257" TIME_SLOT_REF2="ts259">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a133" TIME_SLOT_REF1="ts260" TIME_SLOT_REF2="ts263">
+                <ANNOTATION_VALUE>Je'e xane'</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a134" TIME_SLOT_REF1="ts265" TIME_SLOT_REF2="ts268">
+                <ANNOTATION_VALUE>Ma'alo', jach dyoos bo'otik ikla tsibatik ti' tene tsikbala'.</ANNOTATION_VALUE>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="TRADUCCIÓN" PARENT_REF="H1_Transcripción" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H1_Maya">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a135" ANNOTATION_REF="a1">
+                <ANNOTATION_VALUE>Myentras tune' pwes tene' ya'ab... ya'ab tin kanaj beyo', pus beey tin kanij xook beyo'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a136" ANNOTATION_REF="a2">
+                <ANNOTATION_VALUE>Jaan... ya'ab tin... tin kanaj bey tu ye’ese máaestro beyo', tin... tin laj kanaj.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a137" ANNOTATION_REF="a3">
+                <ANNOTATION_VALUE>Jaaj</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a138" ANNOTATION_REF="a4">
+                <ANNOTATION_VALUE>Tin laj kanaj beyo', pus... bey tin kani le xooko'. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a139" ANNOTATION_REF="a5">
+                <ANNOTATION_VALUE>Jmmm... bejla'e' lelo’ pus... maas jats'uts mene' laj… laj estee... u… u laj modeernos tak. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a140" ANNOTATION_REF="a6">
+                <ANNOTATION_VALUE>Pero úucho' lelo’ ma', le je’elo’ pus ta k'ab ka laj ts'íitik tu láakaj. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a141" ANNOTATION_REF="a7">
+                <ANNOTATION_VALUE>E'esa'an ti’ to'on bix tak u ts'íibta'al le kaartao'</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a142" ANNOTATION_REF="a12">
+                <ANNOTATION_VALUE>Jaan... lelo' puse maestroso'obo' letio'obo' ya'ab ba'as... ba'axo'ob ku ye'esiko'ob beyo'. Jaan, ya'ab ba'axo'ob ku ye'esiko'ob.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a143" ANNOTATION_REF="a13">
+                <ANNOTATION_VALUE>Beey xan tak bejla'e', chen ba'axe' pus bejla'e' pwes diferente</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a144" ANNOTATION_REF="a14">
+                <ANNOTATION_VALUE>bejla'e' yaan... este... ts'u maas na'akal le teeknolojiya beyo', pus maas ya'ab ba'a difereente, en kambyo le úucho' pus na'an; </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a145" ANNOTATION_REF="a15">
+                <ANNOTATION_VALUE>peroo pus la'ayli' beey xano', ku kanik máak xook.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a146" ANNOTATION_REF="a16">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a147" ANNOTATION_REF="a17">
+                <ANNOTATION_VALUE>Leti'e le... jayle le... le... le...  liibro lengwa náasyonaal, leti'e espanyool ma'ako'.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a148" ANNOTATION_REF="a18">
+                <ANNOTATION_VALUE>Leti' jach maas utstinwich. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a149" ANNOTATION_REF="a19">
+                <ANNOTATION_VALUE>Pwes lete'e istooryaso'obo'…</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a150" ANNOTATION_REF="a20">
+                <ANNOTATION_VALUE>istooryaso'obo'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a151" ANNOTATION_REF="a21">
+                <ANNOTATION_VALUE>Estee, lete'e je'en bix take le... le aalgoe le... jayle le... istoorya y sibiismoo', mene je'elo' pus estee ti’ yaan xane le ti' le le... le... le liibro matemaatikaso',</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a152" ANNOTATION_REF="a22">
+                <ANNOTATION_VALUE>leti' le ku... aritmeetikailo'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a153" ANNOTATION_REF="a23">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a154" ANNOTATION_REF="a24">
+                <ANNOTATION_VALUE>leti' le le liibros beyo' pus… pus tene' ustinwich tumen ya'ab ba'alo'ob kin wilik xan te'ej li… liibro dee aritmeetikao', tu'ux ka… ka wilik... este… le… tu'ux ku ka'ansa'a ti' máake enteeroo', meedyo, enteero,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a155" ANNOTATION_REF="a25">
+                <ANNOTATION_VALUE>estee kwaarto. Tu'ux ka kanik tak tu'uxen le... le ku ts'íibta'al tak le kya'ako'o' estee... jay ti' le le je'el beyo' ma lete'e tu'ux kya'ak tak siliindro.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a156" ANNOTATION_REF="a26">
+                <ANNOTATION_VALUE>Jaan... Jeometriya... jeometriya.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a157" ANNOTATION_REF="a38">
+                <ANNOTATION_VALUE>Jaan... leti' le je'e beyo'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a158" ANNOTATION_REF="a39">
+                <ANNOTATION_VALUE>Jaan, leti' le je'e bey tin kanlantaj beyo'. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a159" ANNOTATION_REF="a40">
+                <ANNOTATION_VALUE>pwes este... ya'ab ba'al jujump'íit ba'al tin kanaj beyo' pero pwes yaan ts'u’u tu'ubu xan teni'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a160" ANNOTATION_REF="a41">
+                <ANNOTATION_VALUE>Komo ts'u'u t'íile' </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a161" ANNOTATION_REF="a42">
+                <ANNOTATION_VALUE>Pus abeesese' yaan oorae' pus yan xane' ustuyicho'ob, yan xane' pus... yaan oorae' ku báaxalo'ob.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a162" ANNOTATION_REF="a43">
+                <ANNOTATION_VALUE>Myentrase' pus mun jach ts'íiko'ob atensyoon beyo', pus yaan in wet xooko'obo' yaan tu kano'obi'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a163" ANNOTATION_REF="a44">
+                <ANNOTATION_VALUE>Aan lo' ku yanta 	ku yante konkursoso', ku selebraarta'al estee beintikwaatro dee febrero, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a164" ANNOTATION_REF="a45">
+                <ANNOTATION_VALUE>estee ku selebraarta'al xan estee... e... este... dyesiseys de septyeembre.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a165" ANNOTATION_REF="a46">
+                <ANNOTATION_VALUE>Jaan... ku selebraarta'al beeinte de nobyeembre. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a166" ANNOTATION_REF="a47">
+                <ANNOTATION_VALUE>To'on ka'ach úuch tin paalilo'one' chen jo'ku u meeta'a le... e ku ya'ala'a úucho' fyeestisiita, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a167" ANNOTATION_REF="a48">
+                <ANNOTATION_VALUE>fyeestisiita ku organsisaarke máaestro beyo', pus aantese' to'one' ku jaylu u meetik in kanko'onj ook'oot.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a168" ANNOTATION_REF="a49">
+                <ANNOTATION_VALUE>Pero ten úuche' jach kin resitaar.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a169" ANNOTATION_REF="a50">
+                <ANNOTATION_VALUE>Jach kin resitaar.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a170" ANNOTATION_REF="a51">
+                <ANNOTATION_VALUE>Jaan… le chen ya'al le máaestro beey yanin resitaaro' tene' ensegiida tene' utstinwich.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a171" ANNOTATION_REF="a52">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a172" ANNOTATION_REF="a53">
+                <ANNOTATION_VALUE>Jam... kin wa'alik ka' u… u ka'ansen in kiik beyo', </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a173" ANNOTATION_REF="a54">
+                <ANNOTATION_VALUE>pus in kiike' leti'e' ku ka'ansiken,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a174" ANNOTATION_REF="a55">
+                <ANNOTATION_VALUE>déememooryail in... in k'ubik. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a175" ANNOTATION_REF="a56">
+                <ANNOTATION_VALUE>¿Ba'ax yo'lal kin t'aan?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a176" ANNOTATION_REF="a57">
+                <ANNOTATION_VALUE>Pwes mentun tene' ustin in jaylin in xikin in wu'uyke le istooryaso'obo', je'en bix take tu'ux... tak le le u presentark'ajal le báanderao',  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a177" ANNOTATION_REF="a58">
+                <ANNOTATION_VALUE>tu'ux yane le… le aagilao'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a178" ANNOTATION_REF="a59">
+                <ANNOTATION_VALUE>Jaan... lelo' pus ku ya'ake' este tu'uxan le aagilao' ku ya'ako', estee jay tenochtitlaan bin ku representaartik.  
+</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a179" ANNOTATION_REF="a60">
+                <ANNOTATION_VALUE>Jaan. Tenochtilaan,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a180" ANNOTATION_REF="a62">
+                <ANNOTATION_VALUE>leti' ku representaartik, leti' yanti' eskuudo ti' je'en ba'axake'... ts'a'ani beyo'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a181" ANNOTATION_REF="a63">
+                <ANNOTATION_VALUE>Jaan, ten tune' ustuntinwich chen in wil le baandera tun bey chen in wil le aagila beya' tene' ustinwich.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a182" ANNOTATION_REF="a64">
+                <ANNOTATION_VALUE>Jaan yo'lal le je'elo', men pus u… u kin resitaart u p'éel beyo'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a183" ANNOTATION_REF="a65">
+                <ANNOTATION_VALUE>Ku ya'ak in kiik ti' tene' "lelo' yan a wa'alik uts tumen lelo' pus yan a a pakke' baanderao' tumene baanderao' leti'e ku signifikaartik tu'ux tu jo'saj libertaad estee Migeel idaalgo i kostiila" ki </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a184" ANNOTATION_REF="a66">
+                <ANNOTATION_VALUE>u ya'ak in kiik. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a185" ANNOTATION_REF="a67">
+                <ANNOTATION_VALUE>Ku ya'ak ti' tene' myentrase' "la'ake' pus yana a wa'ake u p'e resitasyoon ti'e le jayle... e baandera beyo'" </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a186" ANNOTATION_REF="a68">
+                <ANNOTATION_VALUE>tu'ux ka... jayla a kóomemoraartik beye báanderao' mene je'elo' tu'ux tu'ux jok'a'an libertaad, tu'ux tu'ux yanilo'on liibreon bejla'e',</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a187" ANNOTATION_REF="a69">
+                <ANNOTATION_VALUE>mene úucho' pus esklabituud bine', pus mun páajtal u kanik  bin xook u iijos óotsil,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a188" ANNOTATION_REF="a70">
+                <ANNOTATION_VALUE>enkambyo orase' pus je'el u páajtale' nomaas ke ba'axtune' pus wa man ts'íika wóo ti'e' pus ma' xan táan kanik, pero wa xan ka'a ts'áa wóo xan ti' beyo' pus je'el a na'atike', ja'a kanike'.   </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a189" ANNOTATION_REF="a98">
+                <ANNOTATION_VALUE>Je’el xan a meetike'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a190" ANNOTATION_REF="a99">
+                <ANNOTATION_VALUE>Mmm... pus... láaka le beyo' beyo' pus bey tin kanilo',</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a191" ANNOTATION_REF="a100">
+                <ANNOTATION_VALUE>jujump'íiti... jaan. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a339" ANNOTATION_REF="a101">
+                <ANNOTATION_VALUE>Pwes in suk'une' leti'e' xooknaj xan beyo' leti'e' este tu xokaj mi.... mi este... mi la'ayli' xan beey graado tu xokaj in suku'uno', terseero men na'anu jeel.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a340" ANNOTATION_REF="a102">
+                <ANNOTATION_VALUE>Jaan… na'anu jeel pero leti'e' je'e xooknaj de nooche... estee klasee estee bix ya'ala'al dee nooche... estee noktuurno. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a341" ANNOTATION_REF="a103">
+                <ANNOTATION_VALUE>Jaan. Leti'e' laas syeete dee laa nooche ku… ku bin te xook beyo' yetel kib, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a342" ANNOTATION_REF="a104">
+                <ANNOTATION_VALUE>ku t'a'k’e kiibo' ko'ol u... u... u ts'íibo'ob.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a343" ANNOTATION_REF="a105">
+                <ANNOTATION_VALUE>Chen yeetel kib u t'a'mo'ob beyo' yetel ku yik u tsíibo'ob.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a344" ANNOTATION_REF="a106">
+                <ANNOTATION_VALUE>In suku'une' leti'e' tu maas chan kanaj beyo' mii... mii u anyo wa anyo i meedyo tun xook beyo', kaj bine máaestro kaj káambyarnajo' ka'aj ch'éen u xook dee nooche.   </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a345" ANNOTATION_REF="a107">
+                <ANNOTATION_VALUE>Jaan. Beey tu kanilo', leti'e' maas tuxan chan kanaj, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a346" ANNOTATION_REF="a108">
+                <ANNOTATION_VALUE>tu chan kanaj xan. Awra in kiik xano' le je'elo' pus chen beey naakik in xooko', chen beey naakik xan leti'o'. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a347" ANNOTATION_REF="a109">
+                <ANNOTATION_VALUE>Yoojel ts'íib, u yoojel xook, beey xan teen in woojel ts'íib in woojel xook. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a348" ANNOTATION_REF="a110">
+                <ANNOTATION_VALUE>Pus tene' ji'in ts'íib xan dee beey dee estee... dee máanuskriitao' ,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a349" ANNOTATION_REF="a111">
+                <ANNOTATION_VALUE>ji'in ts'íib xan dee moolde xane'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a350" ANNOTATION_REF="a112">
+                <ANNOTATION_VALUE>jaan... je'el xane'... mmm... pus ji'in… ji'in wa'alik xan le espanyool xano', je'el xan in pus idyooma to'on beyo' pus maaya,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a351" ANNOTATION_REF="a113">
+                <ANNOTATION_VALUE>mmm... pus je'el xan in espanyoole'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a352" ANNOTATION_REF="a114">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a353" ANNOTATION_REF="a115">
+                <ANNOTATION_VALUE>De nada.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="TRADUCCIÓN" PARENT_REF="H2_Transcripción" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H2_Maya">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a192" ANNOTATION_REF="a8">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a193" ANNOTATION_REF="a9">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a194" ANNOTATION_REF="a10">
+                <ANNOTATION_VALUE>Beey</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a195" ANNOTATION_REF="a11">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a196" ANNOTATION_REF="a28">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a197" ANNOTATION_REF="a29">
+                <ANNOTATION_VALUE>¿Ba'ax maas uts ka'ach ta wich a beetik, a kanik te'ej eskweelalo'? </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a198" ANNOTATION_REF="a30">
+                <ANNOTATION_VALUE>¿Leti' le espanyoolo'?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a199" ANNOTATION_REF="a31">
+                <ANNOTATION_VALUE>¿Ba'ax ustawich a kanki'?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a200" ANNOTATION_REF="a32">
+                <ANNOTATION_VALUE>Aaa...</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a201" ANNOTATION_REF="a33">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a202" ANNOTATION_REF="a34">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a203" ANNOTATION_REF="a35">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a204" ANNOTATION_REF="a36">
+                <ANNOTATION_VALUE>Jaan. Figuuras jeomeetrikas </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a205" ANNOTATION_REF="a37">
+                <ANNOTATION_VALUE>Jeometriya</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a206" ANNOTATION_REF="a71">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a207" ANNOTATION_REF="a72">
+                <ANNOTATION_VALUE>Jaan... an lelo' beey</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a208" ANNOTATION_REF="a73">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a209" ANNOTATION_REF="a74">
+                <ANNOTATION_VALUE>¿Kuxtun u u jeel a wet xooko'obo' leti'ob xane' ustuyich u xooko'ob leti'ob? </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a210" ANNOTATION_REF="a75">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a211" ANNOTATION_REF="a76">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a212" ANNOTATION_REF="a77">
+                <ANNOTATION_VALUE>¿Ku yantalan tun estee kóonkursos te'e ka'ach tan xook ka'achi?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a213" ANNOTATION_REF="a78">
+                <ANNOTATION_VALUE>Jaa</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a214" ANNOTATION_REF="a79">
+                <ANNOTATION_VALUE>Beeinte de nobyeembre</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a215" ANNOTATION_REF="a80">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a216" ANNOTATION_REF="a81">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a217" ANNOTATION_REF="a82">
+                <ANNOTATION_VALUE>Jach ka resitaar</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a218" ANNOTATION_REF="a83">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a219" ANNOTATION_REF="a84">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a220" ANNOTATION_REF="a85">
+                <ANNOTATION_VALUE>¿Ba'ax tun yo'lal ka kanik resitaar, ba'ax... ba'ax yo'lal ka t'aan?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a221" ANNOTATION_REF="a86">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a222" ANNOTATION_REF="a87">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a223" ANNOTATION_REF="a88">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a224" ANNOTATION_REF="a89">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a225" ANNOTATION_REF="a90">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a226" ANNOTATION_REF="a91">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a227" ANNOTATION_REF="a92">
+                <ANNOTATION_VALUE>¿Yo'lal tune je'el ka resitaaro'?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a228" ANNOTATION_REF="a93">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a229" ANNOTATION_REF="a94">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a230" ANNOTATION_REF="a95">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a231" ANNOTATION_REF="a96">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a232" ANNOTATION_REF="a97">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a233" ANNOTATION_REF="a116">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a234" ANNOTATION_REF="a117">
+                <ANNOTATION_VALUE>Anlo' beyo'</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a235" ANNOTATION_REF="a118">
+                <ANNOTATION_VALUE>Beey ta kanilo'</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a236" ANNOTATION_REF="a119">
+                <ANNOTATION_VALUE>Tech... yetel ¿Icha láak'o'obe' chen teech náaka xook tak te'elo' wa tu láaklo'obe' laj xooknajo'ob xan?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a354" ANNOTATION_REF="a120">
+                <ANNOTATION_VALUE>Terseero</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a355" ANNOTATION_REF="a121">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a356" ANNOTATION_REF="a122">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a357" ANNOTATION_REF="a123">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a358" ANNOTATION_REF="a124">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a359" ANNOTATION_REF="a125">
+                <ANNOTATION_VALUE>Yéetel</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a360" ANNOTATION_REF="a126">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a361" ANNOTATION_REF="a127">
+                <ANNOTATION_VALUE>Maas tu kanaj</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a362" ANNOTATION_REF="a128">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a363" ANNOTATION_REF="a129">
+                <ANNOTATION_VALUE>Jmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a364" ANNOTATION_REF="a130">
+                <ANNOTATION_VALUE>Je'ele'</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a365" ANNOTATION_REF="a131">
+                <ANNOTATION_VALUE>Je'el xane'</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a366" ANNOTATION_REF="a132">
+                <ANNOTATION_VALUE>Mmm</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a367" ANNOTATION_REF="a133">
+                <ANNOTATION_VALUE>Je'el xane'</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a368" ANNOTATION_REF="a134">
+                <ANNOTATION_VALUE>Ma'alo', jach dyoos bo'otik ikla tsibatik ti' tene tsikbala'.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="PALABRA" PARENT_REF="H1_Maya" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H1_Morfema"/>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="PALABRA" PARENT_REF="H1_Morfema" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H1_Glosa"/>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="PALABRA" PARENT_REF="H2_Maya" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H2_Morfema"/>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="PALABRA" PARENT_REF="H2_Morfema" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H2_Glosa"/>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="TRADUCCIÓN" PARENT_REF="H1_Maya" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H1_Traducción">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a237" ANNOTATION_REF="a135">
+                <ANNOTATION_VALUE>Mientras tanto pues yo… aprendí mucho, así aprendí a leer.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a238" ANNOTATION_REF="a136">
+                <ANNOTATION_VALUE>Si… Aprendí mucho…  de lo que enseñó el maestro, aprendí todo.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a239" ANNOTATION_REF="a137">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a240" ANNOTATION_REF="a138">
+                <ANNOTATION_VALUE>Así aprendí mucho, pues… así aprendí a leer.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a241" ANNOTATION_REF="a139">
+                <ANNOTATION_VALUE>Si… en la actualidad pues… es mucho mejor porque todo… todo este… está moderno.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a242" ANNOTATION_REF="a140">
+                <ANNOTATION_VALUE>Anteriormente no era así, eso pues en tu mano escribías todo.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a243" ANNOTATION_REF="a141">
+                <ANNOTATION_VALUE>También nos enseñaron como escribir la carta. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a244" ANNOTATION_REF="a142">
+                <ANNOTATION_VALUE>Si…  eso pues los maestros enseñan muchas cosas… cosas que enseñan. Si, enseñan muchas cosas.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a245" ANNOTATION_REF="a143">
+                <ANNOTATION_VALUE>También en la actualidad, solo que hoy en día pues es diferente,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a246" ANNOTATION_REF="a144">
+                <ANNOTATION_VALUE>Hoy en día si hay… este… ha mejorado la tecnología, hay muchas cosas que son diferentes, en cambio anteriormente no había; </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a247" ANNOTATION_REF="a145">
+                <ANNOTATION_VALUE>Pero también así era, aprendías a leer.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a248" ANNOTATION_REF="a146">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a249" ANNOTATION_REF="a147">
+                <ANNOTATION_VALUE>Era el… el… el… el… el… libro lengua nacional, creo que era el español.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a250" ANNOTATION_REF="a148">
+                <ANNOTATION_VALUE>Era el que me gustaba más. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a251" ANNOTATION_REF="a149">
+                <ANNOTATION_VALUE>Pues las historias…</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a252" ANNOTATION_REF="a150">
+                <ANNOTATION_VALUE>Historias.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a253" ANNOTATION_REF="a151">
+                <ANNOTATION_VALUE>Este, así como también… algo de… de… historia y civismo, porque pues este allá se encuentra también el… el… el libro de matemáticas,  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a254" ANNOTATION_REF="a152">
+                <ANNOTATION_VALUE>es lo que se conoce como aritmética. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a255" ANNOTATION_REF="a153">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a256" ANNOTATION_REF="a154">
+                <ANNOTATION_VALUE>Son los libros pues… pues a mi me gustan porque aprendo muchas cosas en el libro… el libro de aritmética, donde… donde observas… este… donde…  donde se les enseña a las personas sobre el entero, medio,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a257" ANNOTATION_REF="a155">
+                <ANNOTATION_VALUE>este cuarto. Donde aprendes donde está… donde se aprende lo que se le conoce este… en ese tema es donde habla sobre el cilindro.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a258" ANNOTATION_REF="a156">
+                <ANNOTATION_VALUE>Si... geometría... geometría. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a259" ANNOTATION_REF="a157">
+                <ANNOTATION_VALUE>Si… Eso.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a260" ANNOTATION_REF="a158">
+                <ANNOTATION_VALUE>Si, esos son los que aprendí.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a261" ANNOTATION_REF="a159">
+                <ANNOTATION_VALUE>Pues este… aprendí muchas cosas, pero hay cosas que ya no recuerdo.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a262" ANNOTATION_REF="a160">
+                <ANNOTATION_VALUE>Como ya pasó el tiempo.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a263" ANNOTATION_REF="a161">
+                <ANNOTATION_VALUE>Pues a veces a algunos si les gusta, hay unos pues… que a veces se ponen a jugar.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a264" ANNOTATION_REF="a162">
+                <ANNOTATION_VALUE>Mientras tanto pues no ponían mucha atención, pues hay quienes si aprendieron. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a265" ANNOTATION_REF="a163">
+                <ANNOTATION_VALUE>Ah sí había, si había concursos, se celebraba este el veinticuatro de febrero,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a266" ANNOTATION_REF="a164">
+                <ANNOTATION_VALUE>También se celebraba este… el… el… este… dieciséis de septiembre.  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a267" ANNOTATION_REF="a165">
+                <ANNOTATION_VALUE>Si… Se celebra el veinte de noviembre.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a268" ANNOTATION_REF="a166">
+                <ANNOTATION_VALUE>Cuando éramos niños cuando se hacía… lo que se le llamaba fiestecita,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a269" ANNOTATION_REF="a167">
+                <ANNOTATION_VALUE>el maestro organizaba fiestecita, pero antes nos enseñaba a bailar. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a270" ANNOTATION_REF="a168">
+                <ANNOTATION_VALUE>Yo anteriormente recitaba mucho.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a271" ANNOTATION_REF="a169">
+                <ANNOTATION_VALUE>Recitaba mucho.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a272" ANNOTATION_REF="a170">
+                <ANNOTATION_VALUE>Si. Cuando el maestro me preguntaba si quería recitar enseguida decía que si. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a273" ANNOTATION_REF="a171">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a274" ANNOTATION_REF="a172">
+                <ANNOTATION_VALUE>Si, le digo a mi hermana que me enseñe,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a275" ANNOTATION_REF="a173">
+                <ANNOTATION_VALUE>Pues mi hermana me enseñaba,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a276" ANNOTATION_REF="a174">
+                <ANNOTATION_VALUE>lo entregaba de memoria.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a277" ANNOTATION_REF="a175">
+                <ANNOTATION_VALUE>¿Sobre qué hablo?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a278" ANNOTATION_REF="a176">
+                <ANNOTATION_VALUE>Pues porque a mí me gusta escuchar las historias, como por ejemplo donde… se presentaba la bandera,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a279" ANNOTATION_REF="a177">
+                <ANNOTATION_VALUE>Donde está el águila. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a280" ANNOTATION_REF="a178">
+                <ANNOTATION_VALUE>Si… dicen que donde está el águila, este representa Tenochtitlan. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a281" ANNOTATION_REF="a179">
+                <ANNOTATION_VALUE>Si. Tenochtitlaan,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a282" ANNOTATION_REF="a180">
+                <ANNOTATION_VALUE>eso representa, el resguarda en cualquier cosa... así está puesto.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a283" ANNOTATION_REF="a181">
+                <ANNOTATION_VALUE>Si, a mí me gustaba al mirar la bandera y me gustaba mirar el águila. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a284" ANNOTATION_REF="a182">
+                <ANNOTATION_VALUE>Si por eso, porque pues recito uno así. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a285" ANNOTATION_REF="a183">
+                <ANNOTATION_VALUE>Mi hermana me decía “eso tienes que decirlo bien, porque vas a mirar a la bandera, porque la bandera significa la libertad por la que lucho este Miguel Hidalgo y costilla”  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a286" ANNOTATION_REF="a184">
+                <ANNOTATION_VALUE>decía mi hermana. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a287" ANNOTATION_REF="a185">
+                <ANNOTATION_VALUE>Me decía mientras tanto “por eso pues dirás una recitación a la… la bandera”  </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a288" ANNOTATION_REF="a186">
+                <ANNOTATION_VALUE>donde se conmemora la bandera, porque eso representa la libertad donde ahora somos libres,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a289" ANNOTATION_REF="a187">
+                <ANNOTATION_VALUE>Porque anteriormente había esclavitud, puesno podían estudiar los hijos de los pobres, </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a290" ANNOTATION_REF="a188">
+                <ANNOTATION_VALUE>ahora si se puede, solo que, si no le hechas ganas pues tampoco aprendes, pero si le hechas ganas puedes aprender. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a291" ANNOTATION_REF="a189">
+                <ANNOTATION_VALUE>También lo puedes hacer.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a292" ANNOTATION_REF="a190">
+                <ANNOTATION_VALUE>Todo eso así lo aprendí,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a293" ANNOTATION_REF="a191">
+                <ANNOTATION_VALUE>Si, poco a poco</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a369" ANNOTATION_REF="a339">
+                <ANNOTATION_VALUE>Mi hermano también estudio el mismo grado, estudio tercero porque no había otro grado.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a370" ANNOTATION_REF="a340">
+                <ANNOTATION_VALUE>Si… no había otro grado, pero el estudió por la noche, era clase nocturna. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a371" ANNOTATION_REF="a341">
+                <ANNOTATION_VALUE>Si. Él iba a la escuela a las siete de la noche con la vela,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a372" ANNOTATION_REF="a342">
+                <ANNOTATION_VALUE>Prendían la vela y hacían la tarea.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a373" ANNOTATION_REF="a343">
+                <ANNOTATION_VALUE>Solo con la vela prendida veían la tarea. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a374" ANNOTATION_REF="a344">
+                <ANNOTATION_VALUE>Mi hermano aprendió un poquito más, estuvo estudiando como año o año y medio, cuando se fue el maestro dejó de estudiar por la noche.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a375" ANNOTATION_REF="a345">
+                <ANNOTATION_VALUE>Si. Así aprendió, el aprendió un poco más,   </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a376" ANNOTATION_REF="a346">
+                <ANNOTATION_VALUE>aprendió un poco. En cambio, mi hermana llego hasta donde yo estudie, allá llegó también. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a377" ANNOTATION_REF="a347">
+                <ANNOTATION_VALUE>Sabe escribir y sabe leer, también yo se escribir y se leer.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a378" ANNOTATION_REF="a348">
+                <ANNOTATION_VALUE>Yo puedo escribir de manuscrita ,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a379" ANNOTATION_REF="a349">
+                <ANNOTATION_VALUE>también puedo escribir de molde.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a380" ANNOTATION_REF="a350">
+                <ANNOTATION_VALUE>Si…también… si… pues puedo hablar el español, si porque pues el maya es nuestro idioma,</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a381" ANNOTATION_REF="a351">
+                <ANNOTATION_VALUE>Si… también puedo hablar en español</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a382" ANNOTATION_REF="a352">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a383" ANNOTATION_REF="a353">
+                <ANNOTATION_VALUE>De nada.</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER ANNOTATOR="[APELLIDO, NOMBRE]" LINGUISTIC_TYPE_REF="TRADUCCIÓN" PARENT_REF="H2_Maya" PARTICIPANT="[APELLIDO, NOMBRE]" TIER_ID="H2_Traducción">
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a294" ANNOTATION_REF="a192">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a295" ANNOTATION_REF="a193">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a296" ANNOTATION_REF="a194">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a297" ANNOTATION_REF="a195">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a298" ANNOTATION_REF="a196">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a299" ANNOTATION_REF="a197">
+                <ANNOTATION_VALUE>¿Qué era lo que más te gustaba hacer y aprender en la escuela?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a300" ANNOTATION_REF="a198">
+                <ANNOTATION_VALUE>¿Es el español?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a301" ANNOTATION_REF="a199">
+                <ANNOTATION_VALUE>¿Qué era lo que le gustaba aprender?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a302" ANNOTATION_REF="a200">
+                <ANNOTATION_VALUE>Ah...</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a303" ANNOTATION_REF="a201">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a304" ANNOTATION_REF="a202">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a305" ANNOTATION_REF="a203">
+                <ANNOTATION_VALUE>Jaan</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a306" ANNOTATION_REF="a204">
+                <ANNOTATION_VALUE>Si. Figuras geometricas </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a307" ANNOTATION_REF="a205">
+                <ANNOTATION_VALUE>Geometría</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a308" ANNOTATION_REF="a206">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a309" ANNOTATION_REF="a207">
+                <ANNOTATION_VALUE>Si... así es</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a310" ANNOTATION_REF="a208">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a311" ANNOTATION_REF="a209">
+                <ANNOTATION_VALUE>¿A sus compañeros también les gustaba estudiar?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a312" ANNOTATION_REF="a210">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a313" ANNOTATION_REF="a211">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a314" ANNOTATION_REF="a212">
+                <ANNOTATION_VALUE>¿Había este concurso allá cuando estudiaba?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a315" ANNOTATION_REF="a213">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a316" ANNOTATION_REF="a214">
+                <ANNOTATION_VALUE>Veinte de noviembre</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a317" ANNOTATION_REF="a215">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a318" ANNOTATION_REF="a216">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a319" ANNOTATION_REF="a217">
+                <ANNOTATION_VALUE>Recitaba mucho</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a320" ANNOTATION_REF="a218">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a321" ANNOTATION_REF="a219">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a322" ANNOTATION_REF="a220">
+                <ANNOTATION_VALUE>¿Sobre qué tema aprende a recitar, sobre… que prepara su recitación?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a323" ANNOTATION_REF="a221">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a324" ANNOTATION_REF="a222">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a325" ANNOTATION_REF="a223">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a326" ANNOTATION_REF="a224">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a327" ANNOTATION_REF="a225">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a328" ANNOTATION_REF="a226">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a329" ANNOTATION_REF="a227">
+                <ANNOTATION_VALUE>¿Recitaba sobre eso?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a330" ANNOTATION_REF="a228">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a331" ANNOTATION_REF="a229">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a332" ANNOTATION_REF="a230">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a333" ANNOTATION_REF="a231">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a334" ANNOTATION_REF="a232">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a335" ANNOTATION_REF="a233">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a336" ANNOTATION_REF="a234">
+                <ANNOTATION_VALUE>Así es</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a337" ANNOTATION_REF="a235">
+                <ANNOTATION_VALUE>Así aprendió </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a338" ANNOTATION_REF="a236">
+                <ANNOTATION_VALUE>¿Entre sus hermanos usted es la única que estudió o también sus hermanos estudiaron?</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a384" ANNOTATION_REF="a354">
+                <ANNOTATION_VALUE>Tercero </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a385" ANNOTATION_REF="a355">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a386" ANNOTATION_REF="a356">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a387" ANNOTATION_REF="a357">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a388" ANNOTATION_REF="a358">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a389" ANNOTATION_REF="a359">
+                <ANNOTATION_VALUE>Si con eso</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a390" ANNOTATION_REF="a360">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a391" ANNOTATION_REF="a361">
+                <ANNOTATION_VALUE>Aprendió un poco mas </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a392" ANNOTATION_REF="a362">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a393" ANNOTATION_REF="a363">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a394" ANNOTATION_REF="a364">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a395" ANNOTATION_REF="a365">
+                <ANNOTATION_VALUE>Si, también </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a396" ANNOTATION_REF="a366">
+                <ANNOTATION_VALUE>Si</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a397" ANNOTATION_REF="a367">
+                <ANNOTATION_VALUE>Si, también</ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+        <ANNOTATION>
+            <REF_ANNOTATION ANNOTATION_ID="a398" ANNOTATION_REF="a368">
+                <ANNOTATION_VALUE>Muy bien, muchas gracias por hacerme esta plática. </ANNOTATION_VALUE>
+            </REF_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="TRANSCRIPCIÓN" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Association" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="TRADUCCIÓN" TIME_ALIGNABLE="false"/>
+    <LINGUISTIC_TYPE CONSTRAINTS="Symbolic_Subdivision" GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="PALABRA" TIME_ALIGNABLE="false"/>
+    <CONSTRAINT DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+</ANNOTATION_DOCUMENT>

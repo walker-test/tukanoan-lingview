@@ -1,0 +1,3876 @@
+{
+  "metadata": {
+    "timed": true,
+    "story ID": "0c3e47aa-aa11-4ebb-86eb-58987bfdcbcf",
+    "title": {
+      "_default": "2018_12_06_Casarse_Luis_Cahum"
+    },
+    "media": {
+      "audio": "",
+      "video": "2018_12_06_Casarse_Luis_Cahum.mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "2/13/2019",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "2018_12_06_Casarse_Luis_Cahum.eaf",
+    "source_filetype": "ELAN",
+    "tier IDs": {
+      "T1": {
+        "name": "H1_Transcripción",
+        "subdivided": false
+      },
+      "T2": {
+        "name": "H2_Transcripción",
+        "subdivided": false
+      },
+      "T3": {
+        "name": "H1_Maya",
+        "subdivided": false
+      },
+      "T4": {
+        "name": "H2_Maya",
+        "subdivided": false
+      },
+      "T5": {
+        "name": "H1_Traducción",
+        "subdivided": false
+      },
+      "T6": {
+        "name": "H2_Traducción",
+        "subdivided": false
+      }
+    },
+    "speaker IDs": {
+      "S1": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T1"
+      },
+      "S2": {
+        "name": "[APELLIDO, NOMBRE]",
+        "tier": "T2"
+      }
+    }
+  },
+  "sentences": [
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 1075,
+      "end_time_ms": 3825,
+      "num_slots": 1,
+      "text": "Tuláaka ba'a ku ts'a'ala jante' máan wa'ake' \"min jaantik\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tuláakal ba'al ku ts'áabal a jaante' máan wa'alike' \"míin jaantik\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "De todo lo que te daban a comer no decías \"no lo como\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 4851,
+      "end_time_ms": 9629,
+      "num_slots": 1,
+      "text": "bejla'a, esteje'...chak kex chéenu p'íit chaay ba'a a jante', \"aa, míin jantik\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "bejla'e', estene'...chak kex chéen jump'íit chaay ba'al a jaante', \"aa, míin jaantik\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "hoy, esten...cuece aunque solo un poco de chaya para que comas o algo así, \"ah, no lo como\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 10259,
+      "end_time_ms": 11233,
+      "num_slots": 1,
+      "text": "Ula' ba'ax u je",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "U láak ba'ax u jeel"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Otra cosa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 11388,
+      "end_time_ms": 20869,
+      "num_slots": 1,
+      "text": "yab máake' ku jantik tsajbi k'úum, ku jantik tsajbi chay, ku jantik ts'úuk chakbi chay. Ka'ach úuche' u jana máake' chéen ts'áan chakbi péeron",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ya'ab máake' ku jaantik tsajbil k'úum, ku jaantik tsajbil chaay, ku jaantik ts'úuk chakbil chaay. Ka'ach úuchile' u jaanal máake' chéen ts'áan chakbil péeron"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "muchas personas comen calabaza frita, comen chaya frita, comen chaya cocida [caldo]. Antiguamente la comida era espelón cocido"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 20934,
+      "end_time_ms": 24779,
+      "num_slots": 1,
+      "text": "ts'úuk k'utbi p'aak, bu'ul, ba'ale' leti' ku jaanta'a. Mas...",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ts'úuk k'utbil p'aak, bu'ul, ba'ale' leeti' ku jaanta'al. Maas..."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tomado tamulado, frijol, cosas así se comían. Era más..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 24830,
+      "end_time_ms": 35661,
+      "num_slots": 1,
+      "text": "pero beoritasa', chéen ts'aa...chéen ts'áa ti', chéen u k'áate' chéen je' [ruido], leti' betke' ilalex buka'aj klasesi k'oja'ani xan ku ts'a'aya ti' winik",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero beoritasa', chéen a ts'áaj...chéen a ts'áaj ti', chéen u k'áate' chéen je' [ruido], leeti' beetike' ilale'ex buka'aj klaasesi k'oja'anil xan ku tsa'ayal ti' wíinik"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero ahora, cuando le das...cuando le das, solo quiere huevo [ruido], por eso fíjense cuántas clases de enfermedades le da a las personas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 36545,
+      "end_time_ms": 46935,
+      "num_slots": 1,
+      "text": "Tumene' man jantik kex chéen ts'an chakbi mix ib, mix bu'ul. Ka'ach uche' ¿ba'ax u janal óotsil máakob beyo'? Jach chen leti', le betik xane' na'an k'oja'ani",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tumene' máan jaantik kex chéen ts'áan chakbil mix iib, mix bu'ul. Ka'ach úuchile' ¿ba'ax u jaanal óotsil máako'ob beyo'? Jach chéen leeti', le beetik xane' mina'an k'oja'anil"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Porque no comes aunque sea solo ibes cocidos, ni frijol. Antes ¿cuál era la comida de la gente pobre? Solo eso, y por eso no había enfermedades"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 47558,
+      "end_time_ms": 49558,
+      "num_slots": 1,
+      "text": "Jach beyo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jach beeyo'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Así es"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 54480,
+      "end_time_ms": 56610,
+      "num_slots": 1,
+      "text": "Kach úuchi tune' ¿bixu...?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka'ach úuchil túune' ¿bix u...?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Y antes ¿cómo...?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 57116,
+      "end_time_ms": 63752,
+      "num_slots": 1,
+      "text": "¿...bix u beetke máako' xan ti'ilu béeytlu ts'o'oklu belo'obo' wa take papajtsilobo'?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿...bix u beetik le máako'ob xan uti'al u béeytal u ts'o'okol u beelo'obo' wa tak le papajtsilo'obo'?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿...cómo le hacían las personas para poderse casar o los papás?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 64038,
+      "end_time_ms": 67284,
+      "num_slots": 1,
+      "text": "Pwes ma'ak úuche' ma'ak ku ganarko' xan",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pwes ma'ak úuchile' ma'ak ku gáanartiko'ob xan"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues creo que antes lo ganaban también"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 67402,
+      "end_time_ms": 70973,
+      "num_slots": 1,
+      "text": "Tumen pwes kach úuch take', pwes jach ku yanta santo nal",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tumen pwes ka'ach úuch take', pwes jach ku yantal saanto nal"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Porque antiguamente, sí se daba cosecha del santo elote (también llamado santo gracia)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 71324,
+      "end_time_ms": 74311,
+      "num_slots": 1,
+      "text": "Jach ku yanta e u k'éek'en máaku tséente",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jach ku yantal le u k'éek'en máak u tséentej"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Sí había cochino para que uno criara"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 74466,
+      "end_time_ms": 77778,
+      "num_slots": 1,
+      "text": "Ka'ach úuche' pwes kasi ma' ya'a máake' chan yanu waakax",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka'ach úuchile' pwes kaasi ma' ya'ab máake' chan yaan u waakax"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Antes pues no muchas personas tenían ganado"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 78382,
+      "end_time_ms": 84142,
+      "num_slots": 1,
+      "text": "Ts'okle' entonses, óotsilin papaj leti' ka jo'op'u ts'o'okslanku belu ijas, úuche', iglesya beyo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ts'o'okole' entonses, óotsil in papaj leeti' ka jo'op' u ts'o'oksla'antik u beel u iijas, úuchile', igleesya beyo'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Y entonces, mi pobre papá cuando casó a sus hijas, en la iglesia así"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 84388,
+      "end_time_ms": 91298,
+      "num_slots": 1,
+      "text": "Pwes leti'e' lete le u ta'ani le k'éek'en, ke ixi'im, ke ba'alo' tu konaj ti'al u páajta u ts'o'oklu bel",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pwes leeti'e' leeti' le u taak'inil le k'éek'en, ke ixi'im, ke ba'alob tu konaj uti'al u páajtal u ts'o'okol u beelo'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues él con el dinero del cochicho, del maíz, de las cosas que vendió pudo casarlos [a sus hijos]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 91831,
+      "end_time_ms": 96077,
+      "num_slots": 1,
+      "text": "Kin wa'ik ti' nunka tu machin papaj, ka xi'iku p'axe tilu ts'o'oklu belo', men leti'obe'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Kin wa'alik ti' nuunka tu maach in papaj, ka xi'ik u p'aax uti'al u ts'o'okol u beelo'ob, men leeti'obe'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le digo que nunca agarró mi papá y se fue a prestar dinero para que se casen, porque ellos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 96181,
+      "end_time_ms": 98856,
+      "num_slots": 1,
+      "text": "Pwes kach úuch take' le santo xi'imo' je' xanu ma'anle'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pwes ka'ach úuch take' le saanto xi'imo' je'el xan u ma'anale'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pues antes también el santo maíz sí lo compraban"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 98986,
+      "end_time_ms": 103934,
+      "num_slots": 1,
+      "text": "Le k'e'eno' jach ju' ma'anle', tumen u chen bak'e'...ek a tséentika aalak'e, ku bisa'al",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le k'éek'eno' jach je'el u ma'anale', tumen u chéen bak'e'...ek a tséentik a aalak'e', ku bisa'al"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "El cochino sí se compraba, porque la carne...en que criabas a tus animales, le llevaban"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 104388,
+      "end_time_ms": 106051,
+      "num_slots": 1,
+      "text": "Komo beya' kasi mun ma'ana xan",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Komo beeya' kaasi múun ma'anal xan"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ahora casi no lo compran"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 106310,
+      "end_time_ms": 109908,
+      "num_slots": 1,
+      "text": "Kya'ako' tech laj tsats, kya'alale' páais k'eene' ma' utsi'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ku ya'aliko'ob teche' láaj tsaats, ku ya'alale' paayis k'éek'ene' ma' utsi'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Te dicen que es pura grasa, dicen que el cochino de país no está bueno"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 110038,
+      "end_time_ms": 112531,
+      "num_slots": 1,
+      "text": "Ts'o'oke tin wa'ik ti'obe' \"¿a wojle'exan ba'axe le...?\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ts'o'okole' tíin wa'alik ti'obe' \"¿a woojele'exan ba'ax le...?"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Y les digo \"¿saben qué es...?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 113245,
+      "end_time_ms": 119271,
+      "num_slots": 1,
+      "text": "\"¿...ba'axe le páais k'éek'en kyalalo'?\" ken ti', \"le páais k'éek'en kya'alal úucho', chéen ku jantik chéen k'úum yéete xi'im\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"¿...ba'ax le paayis k'éek'en ku ya'alalo'?\" ken ti', \"le paayis k'éek'en ku ya'alal úuchilo', chéen ku jaantik chéen k'úum yéetel ixi'im\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"¿...qué es el cochino de país que dicen?\" le dije, \"el cochino de país que decían antes, solo comía calabaza y maíz\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 119661,
+      "end_time_ms": 121246,
+      "num_slots": 1,
+      "text": "entonses kex polke'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "entoonses kex poloke'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "entonces aunque esté gordo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 121376,
+      "end_time_ms": 126947,
+      "num_slots": 1,
+      "text": "pwes yanu p'ée sabor kambiado ti' tumen ma'...ma' puru ampulas yéete ch'íijsani'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pwes yaan jump'éel sáabor káambyado ti' tumen ma'...ma' puru aampulas yéetel ch'íijsa'ani'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pues tiene un sabor cambiado porque no...no con puras ámpulas está crecido"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 127077,
+      "end_time_ms": 131259,
+      "num_slots": 1,
+      "text": "puru yéete k'áax ku jantik yéete ba'alo', yéete santo xi'im",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "puru yéetel k'áax ku jaantik yéetel ba'alob, yéetel saanto xi'im"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "puro con hierbas y otras cosas, con santo maíz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 131571,
+      "end_time_ms": 134973,
+      "num_slots": 1,
+      "text": "leti' metik kex yanu tsaatsele', pero múun tsayik k'oja'ani",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "leeti' meetik kex yaan u tsaatsele', pero múun tsayik k'oja'anil"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "y por eso aunque tenga grasa, pero no da enfermades"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 135363,
+      "end_time_ms": 137895,
+      "num_slots": 1,
+      "text": "tumen elo' bey ya'alale', esteje...",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tumen le lelo' beey u ya'alale', estene'..."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "porque eso dicen que es como, esten..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 138298,
+      "end_time_ms": 139921,
+      "num_slots": 1,
+      "text": "pwes limpyos beyo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pwes liimpyos beyo'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pues limpio así"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 140038,
+      "end_time_ms": 144727,
+      "num_slots": 1,
+      "text": "enkambyo, bejla'e kya'ala teche' \"le k'e'eno' ku ko'onlobo' chéenu ts'a'alantale ampulao ku se' nojochta\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "enkambyo, bejla'e' ku ya'alal teche' \"le k'éek'eno'ob ku ko'onolobo' chéen ku ts'áala'antal le aampulao' ku séeb nojochtal\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "en cambio, ahora te dicen \"los cochinos que venden ahora solo les ponen ámpulas para que crezcan rápido\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 144791,
+      "end_time_ms": 149064,
+      "num_slots": 1,
+      "text": "entonses ma' beyi', ma' beye ka'ach úucho'. Take óotsi kaxo'obo' chen jo'op'a tséenkobe'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "entoonses ma' beeyi', ma' beey le ka'ach úuchilo'o'. Tak le óotsil kaaxo'obo', chéen jo'op' a tséentiko'obe'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "entonces no así debe ser, no así era antiguamente. Hasta las pobres gallinas, cuando las criabas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 149324,
+      "end_time_ms": 155194,
+      "num_slots": 1,
+      "text": "chéen patyo ku máano', je'ebax kyikobe' túun jaanko', je'ebax k'áaxi ku' yilo'obe' túun luk'...ku luk'ko', táan ba'a",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chéen paatyo ku máano'o', je'eba'ax ku yiliko'obe' túun jaantiko'ob, je'eba'ax k'áaxil ka' u yilo'obe' túun luk'...ku luk'iko'ob, táan ba'al"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "solo en el patio andan, lo que vean lo están comiendo, cualquier hierba lo están tra...lo tragan, así están"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 155389,
+      "end_time_ms": 165714,
+      "num_slots": 1,
+      "text": "pos saludableo beyo', tak xan jentee' saludable, metke' yan máak a nobenta anyos ti', yan máak a ochenta anyos ti', yaane' chéen chan nojoch wíinki kiinsik",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pos saludaable beyo', tak xan jeentee' saludaable, meetike' yaan máak a nobeenta anyos ti', yaan máak a ocheenta anyos ti', yaane' chéen chan nojoch wíinikil kiinsik"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pues era saludable así, también la gente era saludable, por eso había personas de noveinta años, personas de ocheinta años, algunos solo su vejez los mataba"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 165895,
+      "end_time_ms": 172570,
+      "num_slots": 1,
+      "text": "pos leti' metke' tene' in wike' ka'ach úucho' pos mas chan uts, ma' bey bejla' beyo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pos leeti' meetike' tene' in wilike' ka'ach úuchilo' maas chan uts, ma' beey bejla' beyo'o'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pues por eso veo que antes era mejor, no como ahora así"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 173194,
+      "end_time_ms": 178129,
+      "num_slots": 1,
+      "text": "tak ma' byejoeche' ka kachaka bakelo'o' kya'ako' [risa]",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tak ma' byeejoeche' ka kachik a baakelo'ob ku ya'aliko'ob [risa]"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "aunque no estés viejo rompes tus huesos dicen [risa]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 180960,
+      "end_time_ms": 183545,
+      "num_slots": 1,
+      "text": "Yéete tune' ku ts'o'oksalu bele máakobo', pero...",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Yéetel túune' ku ts'o'oksal u beel le máako'obo', pero..."
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Entonces con ello casaban a las personas, pero..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 183856,
+      "end_time_ms": 189726,
+      "num_slots": 1,
+      "text": "¿bix túun ka'achu ts'áaba tak permiso ti' máak ti'ilu béeytu ts'o'oklu belo'?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿bix túun ka'ach u ts'áabal tak permiiso ti' máak uti'al u béeytal u ts'o'okol u beelo'?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿cómo se le daba permiso a alguien para que se pudiera casar?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 189986,
+      "end_time_ms": 194246,
+      "num_slots": 1,
+      "text": "pos u ya'ik óotsil in maamae' ka bin ts'a' permiso úuch bin u ts'o'oklu bel bine'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pos u ya'alik óotsil in maamae' ka bin ts'áab permiiso úuch bin u ts'o'okol u beel bine'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pues dice mi pobre mamá que cuando le dieron permiso para que se casara"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 194649,
+      "end_time_ms": 199428,
+      "num_slots": 1,
+      "text": "chéen bin tan bin u man, bin bin, bisa'abin cha'an tak menin abwe, in ma...abwuelae'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chéen bin táan bin u máan, bin bin, bisa'ab bin cha'an tak tumen in abwe, in ma...abweelae'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "que solo estaba andando, que fue, que la llevaron a gustar por mi abue, mi ma...abuela"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 200140,
+      "end_time_ms": 202205,
+      "num_slots": 1,
+      "text": "este...kajopu yila' bin men difunto in papaj",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "esten...ka jo'op' u yila'al bin men difuunto in papaj"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "esten...y la vieron por mi difunto papá"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 202428,
+      "end_time_ms": 205973,
+      "num_slots": 1,
+      "text": "ila'abin men esteje...beyo', kyik ma'ake', kyake' utstu yich",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ila'ab bin men esteje...beeyo', ku yilik ma'ake', ku ya'alike' uts tu yich"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "que la vieron esten...así, la vio, y dijo que le gustaba"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 206284,
+      "end_time_ms": 209700,
+      "num_slots": 1,
+      "text": "Pero ku ya'alabin ti'ob men dijunta bin in abwelae' \"¿máax esteje...?\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pero ku ya'alal bin ti'ob men dijuunta bin in abweelae' \"¿máax esteje...?\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pero que les decían por la difunta de mi abuela \"¿quién...?\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 210558,
+      "end_time_ms": 213584,
+      "num_slots": 1,
+      "text": "\"máax ka wikex yanu...up'ée máak meyji máake'\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"máax ka wilike'ex yaan u...jump'éel máak meeyajil máake'\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"quien vean que tiene su...un hombre que es hombre trabajador\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 213691,
+      "end_time_ms": 216158,
+      "num_slots": 1,
+      "text": "\"ma' chen kone ka wa'ala ts'o'okla bel yeteli'\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"ma' chéen konel ka wa'al a ts'o'okol a beel yéeteli'\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"no es en vano decir que te casarás con él\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 216635,
+      "end_time_ms": 218401,
+      "num_slots": 1,
+      "text": "\"tumen wa man metku kwentaile'\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"tumen wa máan meetik u kweentaile'\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"porque si no haces caso\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 218947,
+      "end_time_ms": 223012,
+      "num_slots": 1,
+      "text": "\"esteje'...chen xi'ike'...ka síikaba ti' utúu máak óotsi\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"estene'...chéen xi'ike'...ka síikabaj ti' juntúul máak óotsil\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"esten...cuando se vaya...te regalas a un hombre pobre\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 223622,
+      "end_time_ms": 226544,
+      "num_slots": 1,
+      "text": "Entonses leti' tun ti'e' ku ya'ake', ma'ake nukuch máako' úucho'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Entonses leeti' túun ti'e' ku ya'alike', ma'ak le nukuch máako'ob úuchilo'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Entonces ella decía, creo que las personas mayores antiguamente"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 226908,
+      "end_time_ms": 232233,
+      "num_slots": 1,
+      "text": "deke, esten...kenu yilo' bin máak chan yanu p'íitu modoe', ku aseptarko' bin tu ijao' bin, u ts'o'oklu bel bin",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "deke, esten...kéen u yilo'ob bin máak chan yaan jump'íit u moodoe', ku aseptarko'ob bin ti' u iijaob bin, u ts'o'okol u beel bin"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "de que, esten...cuando ven que alguien tiene la posibilidad [económica], lo aceptan para su hija, para que se casen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 232480,
+      "end_time_ms": 237999,
+      "num_slots": 1,
+      "text": "Tumen bine' ju' béeyta binu yanta ba'alu janto' bine', men bin yan...máa bey ya'ak dijunta in abwelae' úuche'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Tumen bine' je'el u béeytal bin u yantal ba'al u jaanto'ob bine', men bin yaan...máa beey u ya'alik dijuunta in abweela úuche'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Que porque sí podría haber para que coman, porque había...como decía mi abuela antiguamente"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 238674,
+      "end_time_ms": 247414,
+      "num_slots": 1,
+      "text": "\"Paalalex ken a wile'ex up'ée xi'ipa esteje'...pero limpyo, limpyoe', je' taka chinchipolkuntkexe', mixupeso yan tu boolsa\" ki",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Paalale'ex kéen a wile'ex jump'éel xi'ipal estene'...pero liimpyo, liimpyoe', je'el tak a chiinchinpolkúuntike'exe', mix u peeso yaan tu boolsa\" ki"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Chamacas cuando vean a un muchacho esten...pero limpio, limpio, hasta lo pueden poner de cabeza, ningún peso hay en su bolsillo\" decía"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 247635,
+      "end_time_ms": 252765,
+      "num_slots": 1,
+      "text": "\"ken a wilex utúu xi'ipal suusyo u máane'\" ki, \"yanu taak'in\" ki",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"kéen a wile'ex juntúul xi'ipal suusyo u máane'\" ki, \"yaan u taak'in\" ki"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"cuando ven a un muchacho que anda sucio\" decía, \"tiene dinero\" decía"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 252830,
+      "end_time_ms": 258986,
+      "num_slots": 1,
+      "text": "\"Leti' metke' ma' pajkex máak jach ts'its'iku pol, tumen leti'e mun meyaje', leti' metik limpyo\" ki in abwela",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Leeti' meetike' ma' paktike'ex máak jach ts'its'ikil u pool, tumen leeti'e' múun meyaje', leeti' meetik liimpyo\" ki in abweela"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Por eso no se fijen en alguien con el cabello muy arreglado, porque él no trabaja, por eso está limpio\" decía mi abuela"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 259207,
+      "end_time_ms": 265090,
+      "num_slots": 1,
+      "text": "Pos la'aten tune' ku ya'ala tun ti'o', pos ku...kya'ik bin dijunto in abwelo bine', \"lelo'...",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Pos la'aten túune' ku ya'alal túun ti'ob, pos ku...ku ya'alik dijuunto in abweelo bine', \"lelo'..."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Pues por eso entonces les decían, les...decía difunto de mi abuelo \"eso..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 265324,
+      "end_time_ms": 268220,
+      "num_slots": 1,
+      "text": "\"tene' ts'in aseptarku ts'okla bel yéetele xi'ipalo'\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"tene' ts'o'ok in aseptaartik u ts'o'okol a beel yéetel le xi'ipalo'\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"yo ya acepté que te cases con ese muchacho\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 268496,
+      "end_time_ms": 271067,
+      "num_slots": 1,
+      "text": "\"men ts'in wike' ju' béeytu tséenkeche'\" ki",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"men ts'o'ok in wilike' je'el u béeytal u tséentikeche'\" ki"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"porque ya vi que sí te puede dar de comer\" decía"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 271298,
+      "end_time_ms": 283337,
+      "num_slots": 1,
+      "text": "Kya'ik túun bin óotsilin maama bine', kya'ake' \"¿bix ken a kréertin síikinba ti'? Si tene' ma' uts tin wichi'\" ki bin ti'. \"¿Bix ku p'áata ma' utsta ta wich? Tumen tene' ts'in aseptartik\". K'as bey bin obligarbi binu beeta'a máake' ku ts'o'oklu beelo', ku ts'o'oksu' beelo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ku ya'alik túun bin óotsil in maama bine', ku ya'alike' \"¿bix ken a kréert in síikinbaj ti'? Si tene' ma' uts tin wichi'\" ki bin ti'. \"¿Bix ku p'áatal ma' uts ta wichi'? Tumen tene' ts'o'ok in aseptaartik\". K'as beey bin obligaarbil bin u beeta'al máake' ku ts'o'okol u beelo'ob, ku ts'o'oksal u beelo'ob"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Entonces decía mi pobre mamá, decía \"¿cómo crees que me regalaré a él? Si a mí no me gusta\" decía. \"¿Cómo es que no te gusta? Porque yo ya lo acepté\". Que era medio obligado en que se casaba alguien, en que casaban a alguien"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 283999,
+      "end_time_ms": 290895,
+      "num_slots": 1,
+      "text": "Bey ya'ako'. Kya'ako' tune' pwes ka'ach úuch bine' jach bin jats'utsu ts'o'oklu bel máak, men bine' jach bin ya'a ba'a bin ku bisa' ti' bin máak",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Beey u ya'aliko'ob. Ku ya'aliko'ob túune' pwes ka'ach úuch bine' jach bin jats'uts u ts'o'okol u beel máak, men bine' jach bin ya'ab ba'al bin ku bisa'al ti' bin máak"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Así dicen. Y dicen que antiguamente se casaban muy bonito las personas que porque le llevaban muchos regalos a la persona"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 290986,
+      "end_time_ms": 293051,
+      "num_slots": 1,
+      "text": "Ken xi'ikech k'áatbile'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Kéen xi'ikech k'áatbile'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando te van a pedir [la mano]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 293220,
+      "end_time_ms": 300012,
+      "num_slots": 1,
+      "text": "esten...ya'aba' ku bisa'a ti' up'ée mamatsi, chéen bin jo'op'a mana nook' ba'ale', laj ku k'u'ubul áalajas bin máak",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "esten...ya'ab ba'al ku bisa'al ti' jump'éel maamatsil, chéen bin jo'op' a máan a man a nook' ba'ale', láaj ku k'u'ubul u alaajas bin máak"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "esten...muchas cosas le llevaban a una mamá, que cuando andabas a comprar tu ropa y otras cosas, que se entregaban las alajas a la persona"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 300194,
+      "end_time_ms": 303869,
+      "num_slots": 1,
+      "text": "tumen bine' ka ganartik, tumen bine' tyilaj ch'úupalech tu ts'o'okla bel",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tumen bine' ka gáanartik, tumen bine' túun yila'al ch'úupalech túun ts'o'okol a beel"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "que porque te lo ganas, que porque están viendo que eres una señorita en que te estás casando"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 304376,
+      "end_time_ms": 307480,
+      "num_slots": 1,
+      "text": "kiob, kin wu'uyku ya'ako'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "kiob, kin wu'uyik u ya'aliko'ob"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "dicen, escucho que lo digan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 307791,
+      "end_time_ms": 312726,
+      "num_slots": 1,
+      "text": "Kin a'alik tun ti'e' \"pos ma'ak jaaju t'ane nukuch máakobo'\", pero jach ku kananku paalalo' xan",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Kin wa'alik túun ti'e' \"pos ma'ak jaaj u t'aan le nukuch máako'obo'\", pero jach ku kanáantik u paalalo'ob xan"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Entonces le digo \"pues creo que tienen razón los señores mayores\", pero cuidaban mucho a sus hijas también"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 313233,
+      "end_time_ms": 314947,
+      "num_slots": 1,
+      "text": "Jaj, beoraa' pos ma'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jaaj, beoraa' pos ma'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Sí, ahora pues no"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 315207,
+      "end_time_ms": 319363,
+      "num_slots": 1,
+      "text": "chéen kena wil tune'...pero ma' bajun tyempo ku ts'áaba xan ti'obi' ti'alu ts'o'oklu belo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chéen kéen a wil túune'...pero ma' bajun tyeempo ku ts'áabal xan ti'obi' uti'al u ts'o'okol u beelo'ob"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero cuando veas...pero no les daban mucho tiempo para que se casaran"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 319986,
+      "end_time_ms": 323973,
+      "num_slots": 1,
+      "text": "chéen ya' wa jayp'ée mese' leti'obe' tun ts'o'oksu belo' xan",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chéen ya'al wa jayp'éel meese' leti'obe' túun ts'o'oksal u beelo'ob xan"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "solo cuando pasen unos meses a ellos ya los están casando también"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 324272,
+      "end_time_ms": 325583,
+      "num_slots": 1,
+      "text": "beyu ya'ako' kin wu'uyik",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "beey u ya'aliko'ob kin wu'uyik"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "así escucho que digan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 327414,
+      "end_time_ms": 333051,
+      "num_slots": 1,
+      "text": "Ma'achu...u biskubao' anyos ma' je'ebix beorae', beorae' ku xáantalu biskubao'",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ma'atech u...u bisikubao' aanyos ma' je'ebix beorae', beorae' ku xáantal u bisikubaob"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "No se...no se llevan por años no como ahora, ahora tardan llevándose [noviazgo]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 332259,
+      "end_time_ms": 337428,
+      "num_slots": 1,
+      "text": "Jum, ku chen ts'ik tak tres, kwatro anyos ku biskubaobe' ku ts'o'oklu belo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Juum, ku chéen ts'áaik tak trees, kwaatro anyos ku bisikubaobe' ku ts'o'okol u beelo'ob"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Sí, dan tres, cuatro años llevándose y se casan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 338025,
+      "end_time_ms": 340895,
+      "num_slots": 1,
+      "text": "Pero tak beyo', yan ora ku jóok'o k'aas",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pero tak beeyo', yaan oora ku jóok'ol k'aas"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pero también así, a veces sale mal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 341896,
+      "end_time_ms": 347688,
+      "num_slots": 1,
+      "text": "Jum, enkambyo ka'ach úucho', pwes komo ken a siaba' bey ya'ala icha naji ka p'áata meyajo', pos teche'...",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Juum, enkaambyo ka'ach úuchilo', pwes koomo kéen a síijaba' beey u ya'alal ichil a naajil ka p'áatal meyajo', pues teche'..."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Sí, en cambio antes, pues como cuando te regalabas [casabas] dicen que te quedabas en la casa a trabajar, pues tú..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 348271,
+      "end_time_ms": 351674,
+      "num_slots": 1,
+      "text": "Ka'ach úuch bine' ma'ak ma' sajak take máako' bin xano', ku jats'ko' bin winik",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka'ach úuchil bine' ma'ak ma' saajak tak le máako'ob bin xano', ku jats'iko'ob bin winik"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Antes al parecer no tenían miedo las personas, que sí pegaban"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 352467,
+      "end_time_ms": 356727,
+      "num_slots": 1,
+      "text": "ka ja'ats'a bin, wa man líik'i tempranoe' ka ja'ats'a. Dijuunta in abwelae'...",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ka ja'ats'al bin, wa máan líik'il téempranoe' ka ja'ats'al. Dijuunta in abweelae'..."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "que te pegaban, si no te levantabas temprano te pegaban. Mi difunta abuela..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 356791,
+      "end_time_ms": 358545,
+      "num_slots": 1,
+      "text": "kyake' \"je'elo'...",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ku ya'alike' \"je'elo'..."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "decía \"ahí está..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 358661,
+      "end_time_ms": 367167,
+      "num_slots": 1,
+      "text": "\"ts'u ts'o'okla bee, chéen ba'axin wojlin wa'ale', beoritasa' ken sáasake' líik'en a metu yu'ulin ijo, líik'en a pat piimu jante, tumen leti'e yanu bin meya",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"ts'o'ok u ts'o'okol a beel, chéen ba'ax in woojel in wa'ale', beoritasa' kéen sáasake' líik'en a meet u yuk'ul in iijo, líik'en a pat piim u jaantej, tumen leeti'e' yaan u bin meyaj"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"ya te casaste, lo único que sabré decirte, que ahora cuando amanezca te levantas a hacerle su desayuno a mi hijo, te levantas a hacerle pimes [tortillas gruesas] para que coma, porque él irá a trabajar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 367305,
+      "end_time_ms": 370733,
+      "num_slots": 1,
+      "text": "ma' tun ch'uru' u nak'e' leti'e', teche' táan jana ka'akat orae', leti'e'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ma' túun ch'uuru' u nak'e'e' leeti'e', teche' táan jaanal ka'akat oorae', leeti'e'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "no que le esté sonando las tripas, y tu estés comiendo a cada rato, y él"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 371090,
+      "end_time_ms": 377038,
+      "num_slots": 1,
+      "text": "wi'ij tun...tun máan\", ku ya'alal ti'obe', pwes ma'ak leti' ku ya'alal ti'obe', le xan ku beetik leti'ob",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "wi'ij túun...túun máan\", ku ya'alal ti'obe', pwes ma'ak leeti' ku ya'alal ti'obe', le xan ku beetik leeti'ob"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "con hambre...está andando\", les dicen, pues eso les dicen, y eso hacen también"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 377350,
+      "end_time_ms": 385649,
+      "num_slots": 1,
+      "text": "tuláakle' yan...yanu kumplirko' xane', wa ma' xane' ku k'e'eylo' menu swegrao'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tuláakale' yaan...yaan u kúumplirtiko'ob xane', wa ma' xane' ku k'e'eyelo'ob men u sweegraob"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "todo tendrán que...tendrán que cumplirlo también, si no las regañan por sus suegras también"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 385843,
+      "end_time_ms": 390077,
+      "num_slots": 1,
+      "text": "Ma' sajak máaki'. \"Men in ts'o'oksmu bel\" kya'ik difunta in abwela",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ma' saajak máaki'. \"Men in ts'o'oksmaj u beel\" ku ya'alik difuunta in abwela"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "No tenían miedo. \"Porque la tengo casada\" decía mi difunta abuela"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 390220,
+      "end_time_ms": 393713,
+      "num_slots": 1,
+      "text": "\"yan to'on derecho ¿bajux a manku túu ch'uup\" kio' tun",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"yaan to'on déerecho ¿baajux a manik juntúul ch'uup\" kijo'ob túun"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"tenemos derecho ¿en cuánto puedes comprar una mujer\" decían entonces"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 394141,
+      "end_time_ms": 396622,
+      "num_slots": 1,
+      "text": "[Risa]",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "[Risa]"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "[Risa]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 399583,
+      "end_time_ms": 401258,
+      "num_slots": 1,
+      "text": "Jats'uts u bida máak",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jats'uts u biida máak"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Era bonita la vida de las personas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 401479,
+      "end_time_ms": 406115,
+      "num_slots": 1,
+      "text": "Ken bisa'ako' bin ku ma'anlu nook'o', bey uchu bisa'alin maama men in papajo', ku bisa'alo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Kéen bisa'akob bin ku ma'anal u nook'o'ob, beey úuch u bisa'al in maama men in papajo', ku bisa'alob"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando las llevan a comprar su ropa, así como llevaron a mi mamá por mi papá, las llevan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 406502,
+      "end_time_ms": 409866,
+      "num_slots": 1,
+      "text": "Ken xi'ik manbi je'ebax ti'ilu ts'o'oklu belobe', múuch' u laj bino'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Kéen xi'ik manbil je'ebax uti'al u ts'o'okol u beelo'obe', múuch u láaj bino'ob"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Cuando van a comprar lo que sea para la boda, van juntos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 409973,
+      "end_time_ms": 417233,
+      "num_slots": 1,
+      "text": "\"Ka kuchka moochila yéeta tak'ine', teche' ka bin tu paacho' y le chéen...le ba'ax ken u k'áate ch'úupalo'\" ki, estene'...",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Ka kuchik a mochiila yéetel a taak'ine', teche' ka bin tu paacho'ob y le chéen...le ba'ax ken u k'áat le ch'úupalo'\" ki, estene'..."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Cargas tu mochila con tu dinero, te vas con ellos y cuando...lo que pida la muchacha\" decía, esten..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 417960,
+      "end_time_ms": 426245,
+      "num_slots": 1,
+      "text": "...in maamae', li ku manbil túun, tumen teche' a ch'a'amu taak'ni ka bin. Bix wa ma' tu chukaj teche', pwes máan bin a mane [Risa]",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "in maamae', li ku manbil túun, tumen teche' a ch'a'amaj u taak'inil ka bin. Bix wa ma' tu chukaj teche', pwes máan bin a manej [Risa]"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "...mi mamá, eso se comprará entonces, porque tú tienes llevado el dinero. Si no te alcanza, pues no lo comprarás [Risa]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 426596,
+      "end_time_ms": 429570,
+      "num_slots": 1,
+      "text": "Jats'uts a wu'uyku tsikbatko' úuch bixu ts'o'oklu bel máak",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jats'uts a wu'uyik u tsikbaltiko'ob úuch bix u ts'o'okol u beel máak"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Se escucha bonito que platique cómo se casaban antiguamente las personas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 430596,
+      "end_time_ms": 434129,
+      "num_slots": 1,
+      "text": "pero jach, bejla'e' jach diferente",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero jach, bejla'e' jach difereente"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pero es muy, ahora es muy diferente"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 434492,
+      "end_time_ms": 439518,
+      "num_slots": 1,
+      "text": "tuláaka máake', asta bey in wóole', bey ts'u' p'áata bejla'e' na'an bo...kasi mixmáak u k'áat ts'o'oklu bel",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "tuláakal máake', asta beey in wóole', beey ts'o'ok u p'áatal bejla'e' na'an bo...kaasi mixmáak u k'áat ts'o'okol u beel"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "todas las personas, creo que, me parece que hoy en día casi ni hay bo...casi nadie se quiere casar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 440346,
+      "end_time_ms": 442048,
+      "num_slots": 1,
+      "text": "jach ya' máak chéen beyu biskubao'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "jach ya'ab máak chéen beey u bisikubao'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "muchas personas solo así se llevan [unión libre]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 444752,
+      "end_time_ms": 452739,
+      "num_slots": 1,
+      "text": "Enkambyo, ka'ach úuche' pwes chéen a'alak deke \"teche' yanu ts'o'okla bel, tumen mi'in k'áat ka' bisaba antes yéetli', ba'ax tumen utsta wiche', táan t'anik\" kya'alal",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Enkaambyo, ka'ach úuche' pwes chéen a'alak deke \"teche' yaan u ts'o'okol a beel, tumen mi'in k'áat ka bisabaj aantes yéeteli', ba'ax tumen uts ta wiche', t´áan t'anik\" ku ya'alal"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "En cambio, antes cuando decían que \"tú te casarás, porque no quiero que te lleves con ella antes, si porque te gusta, por eso la estás hablando\" decían"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 454025,
+      "end_time_ms": 456518,
+      "num_slots": 1,
+      "text": "Kyu'uko' xanu xibilo'obe', ku aseptarko' xan",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ku yu'ubiko'ob xan u xiibilo'obe', ku aseptaarko'ob xan"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Lo escuchaban los hombres, y aceptaban también"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 460454,
+      "end_time_ms": 461272,
+      "num_slots": 1,
+      "text": "Jela'an",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jela'an"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Era diferente"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 462636,
+      "end_time_ms": 463480,
+      "num_slots": 1,
+      "text": "Jum",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Juum"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Sí"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 463537,
+      "end_time_ms": 464719,
+      "num_slots": 1,
+      "text": "Ma' le de beorae'",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ma' le de beorae'"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "No como ahora"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 464970,
+      "end_time_ms": 467048,
+      "num_slots": 1,
+      "text": "Jach jaaj, jach jela'an",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Jach jaaj, jach jela'an"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Es muy cierto, es muy diferente"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 468297,
+      "end_time_ms": 469843,
+      "num_slots": 1,
+      "text": "¿Táan xook?",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Táan xook?"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Estás estudiando?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 469882,
+      "end_time_ms": 474194,
+      "num_slots": 1,
+      "text": "Táan, bweno...sáam ts'okokin xook, beorae' meyaj kin beetik",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Táan, bweeno...sáam ts'o'okok in xook, beorae' meyaj kin beetik"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Sí, bueno...ya terminé de estudiar, ahora trabajo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 474648,
+      "end_time_ms": 475402,
+      "num_slots": 1,
+      "text": "Aa",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Aa"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ah"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 475570,
+      "end_time_ms": 476700,
+      "num_slots": 1,
+      "text": "Táan in meyaj xan",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Táan in meyaj xan"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "También estoy trabajando"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 480245,
+      "end_time_ms": 488375,
+      "num_slots": 1,
+      "text": "¿Le ka'ach úucho' yaan e ch'uupo' wa e xiibo' ku obligarta'alo' ts'o'oklu belo' kex ma' utstu yicho'?",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Le ka'ach úucho' yaan le ch'uupo'ob wa le xiibo'ob ku obligaarta'alob ts'o'okol u beelo'ob kex ma' uts tu yicho'obo'?"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "¿Antes había de las mujeres o varones que los obligaban a casarse aunque no les gustara?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 488609,
+      "end_time_ms": 491038,
+      "num_slots": 1,
+      "text": "Le jach mas úuch, mas úuch kya'alalo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Le jach mas úuch, mas úuch ku ya'alalo'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Hace más tiempo, hace tiempo como decían"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 491155,
+      "end_time_ms": 492623,
+      "num_slots": 1,
+      "text": "\"Palitsil\" ki",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Paalitsil\" ki"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Esclavitud\" decían"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 494038,
+      "end_time_ms": 497220,
+      "num_slots": 1,
+      "text": "Pero wa túun jaj wa túun ma', tene' beyin wa'ik, to'one' ma' k ilmelo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pero wa túun jaaj wa túun ma', tene' beey in wa'alik, to'one' ma' k wilmaj lelo'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Pero a lo mejor es cierto o no, yo así lo platico, pero no lo tenemos visto nosotros"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 498233,
+      "end_time_ms": 500389,
+      "num_slots": 1,
+      "text": "Kya'ala bin ti' bin máak bin úuche'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ku ya'alal bin ti' bin máak bin úuche'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Que se le decía a la persona"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 500882,
+      "end_time_ms": 506687,
+      "num_slots": 1,
+      "text": "chichnech beyo' man wila'aj, man wila'aj, man wila'aj men mixmáak, chéen nojchakech bine'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chichanech beyo' máan wila'al, máan wila'al, máan wila'al men mixmáak, chéen nojochakech bine'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "de chica no te veían, no te veían, no te veían, que cuando crecieras"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 507350,
+      "end_time_ms": 509272,
+      "num_slots": 1,
+      "text": "ts'o'ok binu nojochtala kompanyero",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "ts'o'ok bin u nojochtal a kompanyeero"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "que ya habrá crecido tu compañero"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 510025,
+      "end_time_ms": 511896,
+      "num_slots": 1,
+      "text": "kio', kin wu'uyik ya'aku tsikbako'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "kijo', kin wu'uyik ya'alik u tsikbaltiko'ob"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "dicen, escuchó que lo platiquen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 512233,
+      "end_time_ms": 517493,
+      "num_slots": 1,
+      "text": "Ya despwes tune', chéen jo'oke xi'ipalo', chéen jo'oke' xch'úupalo', kya'alale' nikaj ts'o'oklu bel bin yéete bin",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ya despwees túune', chéen jóok'ok le xi'ipalo', chéen jóok'ok le xch'úupalo', ku ya'alal nika'aj ts'o'okol u beel bin yéetel bin"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ya después entonces, cuando salga el muchacho, cuando salga la muchacha, le dicen que se casará con él"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 519609,
+      "end_time_ms": 522531,
+      "num_slots": 1,
+      "text": "Chéen ts'o'ojke' ku ts'o'oklu belo' bin beyo', jaj",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Chéen ts'o'okoke' ku ts'o'okol u beelo'ob bin beyo', jaaj"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Y que después se casan así, sí"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 523077,
+      "end_time_ms": 526038,
+      "num_slots": 1,
+      "text": "pwes alfin tune', kya'ako' túune' estene'...",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pwes alfin túune', ku ya'aliko'ob túune' estene'..."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "pues al fin, dicen entonces esten..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 526843,
+      "end_time_ms": 535051,
+      "num_slots": 1,
+      "text": "esklaboi yani máak úuch beyo', mene' ken taka pareja, chéen take', chéen jo'osakech tech ch'úupaleche', tun ts'o'oksa bel yéete, a k'áate, ma' k'áati'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "esklaaboil yanil máak úuch beyo', mene' kéen taak a páareja, chéen taake', chéen jo'osakech teech ch'úupaleche', túun ts'o'oksal a beel yéetel, a k'áatej, ma' a k'áati'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "estaba como esclava una persona así, porque cuando llegaba tu pareja, cuando venía, cuando te sacaban a tí muchacha, te estaban casando con él, quisieras, o no quisieras"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 536012,
+      "end_time_ms": 540051,
+      "num_slots": 1,
+      "text": "Ku ts'o'oklu bel máak kio', kin wu'uyku tsikbako', pero ma' túun in woje wa bey u bisa'ali'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ku ts'o'okol u beel máak kiob, kin wu'uyik u tsikbaltiko'ob, pero ma' túun in woojel wa beey u bisa'ali'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Así cuentan que se casaban las personas, así escucho que lo platiquen, pero no sé si así se las llevaban"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 540791,
+      "end_time_ms": 543025,
+      "num_slots": 1,
+      "text": "Lelo' mas úuch bin ti' elo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Lelo' mas úuch bin ti' lelo'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Que eso es más antiguo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 543687,
+      "end_time_ms": 547687,
+      "num_slots": 1,
+      "text": "Úuchben nukuch máako' pwes...",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Úuchben nukuch máako', pwes..."
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Los señores antiguos, pues..."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 548417,
+      "end_time_ms": 552715,
+      "num_slots": 1,
+      "text": "chéen óostil dijuntas in abwelas ku k'as tsikbatko' ti' to'on leti' e je'elo'",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "chéen óotsil dijuuntas in abweelas ku k'as tsikbaltik ti' to'on leeti' le je'elo'"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "solo mis pobres abuelas difuntas nos medio platicaban que era así"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 554194,
+      "end_time_ms": 556999,
+      "num_slots": 1,
+      "text": "\"Pero in wilike' ka túun ts'áab libertade', ilawilej\" ki",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Pero in wilike' ka túun ts'áab libertaade', ilawilej\" ki"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"Pero yo veo que cuando dieron libertad entonces, fíjate\" decía"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 557466,
+      "end_time_ms": 560033,
+      "num_slots": 1,
+      "text": "\"le xch'uupo' beoritasa' ilala' ba'ax ku jach beetko'\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"le xch'uupo'ob beoritasa' ilawila' ba'ax ku jach beetiko'ob\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"las mujeres de ahora fíjate en qué tanto hacen\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 561817,
+      "end_time_ms": 564752,
+      "num_slots": 1,
+      "text": "\"ket enkambyo túun ka'ach úuche', le ken u ya'al le mamao', leti'\"",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"kéet enkaambyo túun ka'ach úuche', le ken u ya'al le maamao', leeti'\""
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "\"en cambio antes, lo que iba a decir la mamá, eso era [lo que se hacía]\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 566194,
+      "end_time_ms": 569129,
+      "num_slots": 1,
+      "text": "wa ma'e' ku ja'ats'a men u papaj, jum",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "wa ma'e' ku ja'ats'al men u papaj, juum"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "si no las pegaban por el papá, sí"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 574077,
+      "end_time_ms": 574921,
+      "num_slots": 1,
+      "text": "Bey ya'ala'",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Beey ya'alal"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Así decían"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 575038,
+      "end_time_ms": 575830,
+      "num_slots": 1,
+      "text": "Jum",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Juum"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Sí"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 579492,
+      "end_time_ms": 581791,
+      "num_slots": 1,
+      "text": "Bejla'a' wa chan ja'ats'ak máake', jum ku bin",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Bejla'a' wa chan ja'ats'ak máake', juum ku bin"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ahora si pegaran a alguien, se va"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 583090,
+      "end_time_ms": 585441,
+      "num_slots": 1,
+      "text": "[Risa] na'an binu leyi",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "[Risa] na'an bin u leeyil"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "[Risa] que no hay la ley"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 586415,
+      "end_time_ms": 588532,
+      "num_slots": 1,
+      "text": "Na'an binu leyilu ja'ats'a máak",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Na'an bin u leeyil u ja'ats'al máak"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Que no hay derecho de pegarle a alguien"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S2",
+      "tier": "T2",
+      "start_time_ms": 591337,
+      "end_time_ms": 593843,
+      "num_slots": 1,
+      "text": "Ka'achilako' u leyilu papajilo'",
+      "dependents": [
+        {
+          "tier": "T4",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Ka'achilako' u leeyil u papajilo'ob"
+            }
+          ]
+        },
+        {
+          "tier": "T6",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Antes era la ley de los papás"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 593895,
+      "end_time_ms": 596298,
+      "num_slots": 1,
+      "text": "U papajilob, jum",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "U papajilo'ob, juum"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "De los papás, sí"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "speaker": "S1",
+      "tier": "T1",
+      "start_time_ms": 596518,
+      "end_time_ms": 599700,
+      "num_slots": 1,
+      "text": "Bejla'a' na'an bin u leyilu ja'ats'a paalal",
+      "dependents": [
+        {
+          "tier": "T3",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Bejla'a' na'an bin u leeyil u ja'ats'al paalal"
+            }
+          ]
+        },
+        {
+          "tier": "T5",
+          "values": [
+            {
+              "start_slot": 0,
+              "end_slot": 1,
+              "value": "Que ahora no hay derecho de pegarle a los niños"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
