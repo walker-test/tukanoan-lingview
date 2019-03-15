@@ -78,17 +78,17 @@ export class Search extends React.Component {
                 <label for="searchInput">Search database:</label> <input id="searchInput" onInput={this.runSearch} type="text" />
                 <br />
                 <label>Select Fields:   </label>
-                <input id="T1" name="fields" type="checkbox" onInput={this.runSearch} />
+                <input id="T1" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H1_Transcripción</label>&nbsp;&nbsp;
-                <input id="T2" name="fields" type="checkbox" onInput={this.runSearch} />
+                <input id="T2" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H2_Transcripción</label>&nbsp;&nbsp;
-                <input id="T3" name="fields" type="checkbox" onInput={this.runSearch} />
+                <input id="T3" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H1_Maya</label>&nbsp;&nbsp;
-                <input id="T4" name="fields" type="checkbox" onInput={this.runSearch} />
+                <input id="T4" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H2_Maya</label>&nbsp;&nbsp;
-                <input id="T5" name="fields" type="checkbox" onInput={this.runSearch} />
+                <input id="T5" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H1_Traducción</label>&nbsp;&nbsp;
-                <input id="T6" name="fields" type="checkbox" onInput={this.runSearch} />
+                <input id="T6" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H2_Traducción</label>
                 <br />
                 <div id="searchResults">{results}</div>

@@ -39,8 +39,8 @@ export class StoryIndex extends React.Component {
             $('#indexTable').DataTable( {
                 data: storyList,
                 columns: [
-                    { title: "Title" },
-                    { title: "Author" },
+                    { title: "Título" },
+                    { title: "Hablante" },
                     { title: "Media" }
                 ]
             });
