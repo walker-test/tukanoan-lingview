@@ -7,9 +7,7 @@ function scrollIntoViewIfNeeded(target) {
     if (rect.top < 0) {
         target.scrollIntoView();
     } 
-}
-
-function sync(current_time) {
+} function sync(current_time) {
 	for (var i=0; i<ts_tag_array.length; i++) {
         // Somewhat hacky solution: decrease current_time by 0.001 to avoid highlighting before player starts
 		if ((current_time-0.001 >= parseFloat(ts_start_time_array[i])/1000.0) && (current_time <= parseFloat(ts_stop_time_array[i])/1000.0)) {
@@ -51,9 +49,9 @@ for (var i = 0; i < ts_tag_array.length; i++) {
 // Status: untested
 function jumpToTime(t) {
   try {
-    t = t + 2;
     media = document.querySelectorAll("[data-live='true']")[0];
     media.currentTime = t/1000;
+    console.log(media.currentTime);
   }
   catch(err) {
     console.log(err);
@@ -68,9 +66,13 @@ $(".timeStamp").click(function() {
 // Jump to timestamp:
 // Source: http://snydersoft.com/blog/2009/11/14/get-parameters-to-html-page-with-javascript/
 $( document ).ready(function() {
-    let qAt = document.URL.indexOf("?");
-    let startTime = Number(document.URL.substr(qAt+1));
-    console.log(startTime);
-    jumpToTime(startTime);
-    console.log(document.getElementById(startTime));
+    let query_index = document.URL.indexOf("?");
+    let startTime = Number(document.URL.substr(query_index+1));
+    media = document.querySelectorAll("[data-live='true']")[0];
+    media.oncanplay = function () {
+        this.currentTime = startTime / 1000;
+    }
+    //console.log(startTime);
+    //jumpToTime(startTime);
+    //console.log(document.getElementById(startTime));
 });
