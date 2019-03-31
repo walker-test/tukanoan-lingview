@@ -70,7 +70,7 @@ $(".timeStamp").click(function() {
 $( document ).ready(function() {
     let qAt = document.URL.indexOf("?");
     let startTime = Number(document.URL.substr(qAt+1));
-    jumpToTime(startTime);
     console.log(startTime);
+    jumpToTime(startTime);
     console.log(document.getElementById(startTime));
 });

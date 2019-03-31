@@ -40,10 +40,9 @@ export class Search extends React.Component {
             findAllMatches: true,
             tokenize: true,
             matchAllTokens: true,
-            threshold: 0,
-            location: 0,
+            threshold: 30,
             distance: 0,
-            maxPatternLength: 32,
+            maxPatternLength: 64,
             minMatchCharLength: 1,
             keys: fields
         };
