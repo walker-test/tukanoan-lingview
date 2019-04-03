@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "timed": true,
+    "timed": false,
     "story ID": "9fc95d36-5975-44a5-acbb-d0b9259c3c89",
     "title": {
       "_default": "U meyajil xa'ak' doña Cecilia"
     },
     "media": {
-      "audio": "grabación 1 u meyajil xa'ak' doña Cecilia.wav",
+      "audio": "",
       "video": ""
     },
     "languages": [],
@@ -25,27 +25,27 @@
     "xml_file_name": "grabación 1 u meyajil xa'ak' doña Cecilia.eaf",
     "source_filetype": "ELAN",
     "tier IDs": {
-      "T1": {
+      "H1_Transcripción": {
         "name": "H1_Transcripción",
         "subdivided": false
       },
-      "T2": {
+      "H2_Transcripción": {
         "name": "H2_Transcripción",
         "subdivided": false
       },
-      "T3": {
+      "H1_Maya": {
         "name": "H1_Maya",
         "subdivided": false
       },
-      "T4": {
+      "H2_Maya": {
         "name": "H2_Maya",
         "subdivided": false
       },
-      "T5": {
+      "H1_Traducción": {
         "name": "H1_Traducción",
         "subdivided": false
       },
-      "T6": {
+      "H2_Traducción": {
         "name": "H2_Traducción",
         "subdivided": false
       }
@@ -53,25 +53,25 @@
     "speaker IDs": {
       "S1": {
         "name": "[APELLIDO, NOMBRE]",
-        "tier": "T1"
+        "tier": "H1_Transcripción"
       },
       "S2": {
         "name": "[APELLIDO, NOMBRE]",
-        "tier": "T2"
+        "tier": "H2_Transcripción"
       }
     }
   },
   "sentences": [
     {
       "speaker": "S2",
-      "tier": "T2",
+      "tier": "H2_Transcripción",
       "start_time_ms": 2155,
       "end_time_ms": 2765,
       "num_slots": 1,
       "text": "Ka'an.",
       "dependents": [
         {
-          "tier": "T4",
+          "tier": "H2_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -81,7 +81,7 @@
           ]
         },
         {
-          "tier": "T6",
+          "tier": "H2_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -94,14 +94,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 4700,
       "end_time_ms": 10405,
       "num_slots": 1,
       "text": "E xa'ak'o' est ku séerbir ti'alu  u meeta'a ki'iwaj,",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -111,7 +111,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -124,14 +124,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 12195,
       "end_time_ms": 38200,
       "num_slots": 1,
       "text": "ku, kin preparaartke xa'ak'o' esten... kin ts'áaik aajo, pimyeenta, sebooya, esten... káanela, pimyeenta Tabaasko yéete komiino, óoreganoj, tu láakle je'elo' kin ts'áak ichij.",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -141,7 +141,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -154,14 +154,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 39300,
       "end_time_ms": 48365,
       "num_slots": 1,
       "text": "Ti'al u... máak'antik, tin ts'áak ich ki'iwaj ti'alu ts'áak u sáabor ti'e ki'iwajo', ",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -171,7 +171,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -184,14 +184,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 50560,
       "end_time_ms": 76500,
       "num_slots": 1,
       "text": "je'e bix ku beeta'ale e ki'iwajo', ku beeta'a eskabeeche, esten... chirmoole, reyenoj, esten... bisteek yéete, yéete tak óonsikil.",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -201,7 +201,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -214,14 +214,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 79950,
       "end_time_ms": 98005,
       "num_slots": 1,
       "text": "ya'abu klaasesi esten... ki'iwaj ku beeta'a yéete, e kin, chenin preparaarte' ti' u p'ée, un p'ée ka' kin juch'ik, úuchben , úuchben klaase e, e ka' tu'uxkin juch'ko'.",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -231,7 +231,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -244,14 +244,14 @@
     },
     {
       "speaker": "S2",
-      "tier": "T2",
+      "tier": "H2_Transcripción",
       "start_time_ms": 102895,
       "end_time_ms": 104515,
       "num_slots": 1,
       "text": "¿Tu'ux tun ta cha'e e ka'o'?",
       "dependents": [
         {
-          "tier": "T4",
+          "tier": "H2_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -261,7 +261,7 @@
           ]
         },
         {
-          "tier": "T6",
+          "tier": "H2_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -274,14 +274,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 105810,
       "end_time_ms": 121805,
       "num_slots": 1,
       "text": "Elo' aanimasin in, in sweegra p'atmij, leti'o' p'at ten  ti'ain in, in máak'antik xa'ak', tin juch'ik xa'ak' ka tu p'ato' ten.",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -291,7 +291,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -304,14 +304,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 122955,
       "end_time_ms": 124795,
       "num_slots": 1,
       "text": "utsi úuchben kensa tu'ux tu cha'o',",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -321,7 +321,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -334,14 +334,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 128595,
       "end_time_ms": 140695,
       "num_slots": 1,
       "text": "elo' ma' chen ma', ma' je'e bixe ku, ku ko'ono' ti', ti' áartesaniyaobo' elo' jach, jach de tuunich máak'anta'anik.",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -351,7 +351,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -364,14 +364,14 @@
     },
     {
       "speaker": "S2",
-      "tier": "T2",
+      "tier": "H2_Transcripción",
       "start_time_ms": 143055,
       "end_time_ms": 148885,
       "num_slots": 1,
       "text": "Le chena juch' tune xa'ak'o'¿ jayp'ée k'iin, ti'al jayp'ée k'iin ku estenu u séerbir tech?",
       "dependents": [
         {
-          "tier": "T4",
+          "tier": "H2_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -381,7 +381,7 @@
           ]
         },
         {
-          "tier": "T6",
+          "tier": "H2_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -394,14 +394,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 150050,
       "end_time_ms": 180605,
       "num_slots": 1,
       "text": "Pus bey ya'abo' ku ts'áak taku p'ée semaana pero wa ma'e' yaan oorae' chenu, chenu p'íit kin máak'anki' chen ti'alun p'íit ki'iwaj chen, yaan oorae' chenu p'ée aajo kin máak'anku xa'ak'ij, láaj ts'áaku u tu láakle ba'axo' ku bisko' chen ti'alu u p'ée chan ooya ki'iwaj kin máak'antik beyo', pus ma' ya'ab kin máak'anki'",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -411,7 +411,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -424,14 +424,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 181710,
       "end_time_ms": 188510,
       "num_slots": 1,
       "text": "wa kin máak'antik ya'abe' pus elo' ku, ku xáanta ten, ku beetik taku p'ée semaana.",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -441,7 +441,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -454,14 +454,14 @@
     },
     {
       "speaker": "S2",
-      "tier": "T2",
+      "tier": "H2_Transcripción",
       "start_time_ms": 191460,
       "end_time_ms": 194190,
       "num_slots": 1,
       "text": "¿Bixtunu u, u foorma a máak'antik le xa'ak'o'?",
       "dependents": [
         {
-          "tier": "T4",
+          "tier": "H2_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -471,7 +471,7 @@
           ]
         },
         {
-          "tier": "T6",
+          "tier": "H2_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -484,14 +484,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 196355,
       "end_time_ms": 214305,
       "num_slots": 1,
       "text": "¿Bixu foormai?, e aajo yan... yanin mukik, chenin muke' kin ts'íilik, ts'oke' kin, kin láaj p'ayláantik take sebooyao' kin láaj ts'áaki',",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -501,7 +501,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -514,14 +514,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 214305,
       "end_time_ms": 228400,
       "num_slots": 1,
       "text": "chen ts'o'okok in laj ts'áak beye ba'ax ku biske xa'ak'o' kin juch'ik te'ej ka'o', ku astu utsi tattale' kin ch'enkin juch'ik.",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -531,7 +531,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -544,14 +544,14 @@
     },
     {
       "speaker": "S2",
-      "tier": "T2",
+      "tier": "H2_Transcripción",
       "start_time_ms": 230760,
       "end_time_ms": 233305,
       "num_slots": 1,
       "text": "¿Le seboyao' che'che' xan chena ts'áai' wa ka mukik?",
       "dependents": [
         {
-          "tier": "T4",
+          "tier": "H2_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -561,7 +561,7 @@
           ]
         },
         {
-          "tier": "T6",
+          "tier": "H2_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -574,14 +574,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 233460,
       "end_time_ms": 237750,
       "num_slots": 1,
       "text": "Che' che', e seboyao' che' che' chéene aajo kin mukko'.",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -591,7 +591,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -604,14 +604,14 @@
     },
     {
       "speaker": "S2",
-      "tier": "T2",
+      "tier": "H2_Transcripción",
       "start_time_ms": 246255,
       "end_time_ms": 250805,
       "num_slots": 1,
       "text": "¿Je'elu páajtala wa'alik to'on túun bixa a, a ts'áaik le xa'ak' ichile' ki'iwajo'?",
       "dependents": [
         {
-          "tier": "T4",
+          "tier": "H2_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -621,7 +621,7 @@
           ]
         },
         {
-          "tier": "T6",
+          "tier": "H2_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -634,14 +634,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 253670,
       "end_time_ms": 277210,
       "num_slots": 1,
       "text": "pus segun ba'ax ki'iwaji, wa... wa yéete bisteeke' yanin in puk'ke xa'ak' yéete... yéete esten... náaraja wa yéete limon je'e ba'axe', wa yaan limone' yéete kin in  estenin puk'ke xa'ak'o' kin ts'áaik, kin ts'áaik ichile ki'iwajo',",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -651,7 +651,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -664,14 +664,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 279110,
       "end_time_ms": 287080,
       "num_slots": 1,
       "text": "pero esten... yaan xan kin máak'anke' chen, chen kin tsajke xa'ak'o' kin ts'áaik ichile ki'iwajo' ,",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -681,7 +681,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -694,14 +694,14 @@
     },
     {
       "speaker": "S1",
-      "tier": "T1",
+      "tier": "H1_Transcripción",
       "start_time_ms": 288305,
       "end_time_ms": 298565,
       "num_slots": 1,
       "text": "bix kin máak'antik take ej kaax de kaaldo, ej kaax de kaaldo pus kin tsajke xa'ak'o'  kin ts'áak ichij.",
       "dependents": [
         {
-          "tier": "T3",
+          "tier": "H1_Maya",
           "values": [
             {
               "start_slot": 0,
@@ -711,7 +711,7 @@
           ]
         },
         {
-          "tier": "T5",
+          "tier": "H1_Traducción",
           "values": [
             {
               "start_slot": 0,
@@ -724,7 +724,7 @@
     },
     {
       "speaker": "S2",
-      "tier": "T2",
+      "tier": "H2_Transcripción",
       "start_time_ms": 288305,
       "end_time_ms": 298565,
       "num_slots": 1,

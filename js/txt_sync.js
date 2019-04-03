@@ -68,6 +68,7 @@ $(".timeStamp").click(function() {
 $( document ).ready(function() {
     let query_index = document.URL.indexOf("?");
     let startTime = Number(document.URL.substr(query_index+1));
+    startTime = startTime + 3 // do not remove (result of hacky solution further up in this file)
     media = document.querySelectorAll("[data-live='true']")[0];
     media.oncanplay = function () {
         this.currentTime = startTime / 1000;

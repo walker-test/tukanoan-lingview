@@ -116,11 +116,11 @@ function preprocess(adocIn, pfsxIn, jsonFilesDir, xmlFileName, callback) {
     const newID = "T" + (i + 1).toString();
     const tier = tiers[i];
     const tierName = eafUtils.getTierName(tier);
-    jsonOut.metadata["tier IDs"][newID] = {
+    jsonOut.metadata["tier IDs"][tierName] = {
       name: tierName,
       subdivided: eafUtils.isTierSubdivided(tierName, tiers),
     };
-    tierIDsFromNames[tierName] = newID;
+    tierIDsFromNames[tierName] = tierName;
   }
   
   // TODO glom morphs if coming from FLEx?

@@ -89,17 +89,27 @@ export function SearchSentence({ sentence }) {
 	// Status: tested, working
 	let rowList = []; // to be output
 	const numSlots = sentence['num_slots'];
-	if (sentence['noTopRow'] == null || sentence['noTopRow'] === 'false') {
-		rowList.push(
-		  <tr data-tier={sentence['tier']}>
-		    <td colSpan={numSlots} className="topRow">{sentence['text']}</td>
-		  </tr>
-		);
-	}
+	//if (sentence['noTopRow'] == null || sentence['noTopRow'] === 'false') {
+	//	rowList.push(
+	//	  <tr data-tier={sentence['tier']}>
+	//	    <td colSpan={numSlots} className="topRow">{sentence['text']}</td>
+	//	  </tr>
+	//	);
+	//}
 	const dependents = sentence['dependents'];
 	// Add each dependent tier to the row list:
 	for (const tier of Object.keys(dependents)) {
-		rowList.push(<Row key={id.generate()} numSlots={numSlots} values={dependents[tier]} tier={tier} />);
+        if (dependents[tier][0] == undefined) {
+            // row is top row
+            rowList.push(
+              <tr data-tier={sentence['tier']}>
+                <td colSpan={numSlots} className="topRow">{sentence['text']}</td>
+              </tr>
+            );
+        } else {
+            // row is not top row
+            rowList.push(<Row key={id.generate()} numSlots={numSlots} values={dependents[tier]} tier={tier} />);
+        }
 	}
 
 	// Get URL:

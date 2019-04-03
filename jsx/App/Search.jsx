@@ -34,6 +34,8 @@ export class Search extends React.Component {
         document.getElementsByName("fields").forEach(function (e) {
             if (e.checked) fields.push(`dependents.${e.id}.value`);
         });
+        console.log(fields);
+        console.log(this.list);
 
         var options = {
             shouldSort: true,
@@ -70,24 +72,24 @@ export class Search extends React.Component {
     }
 
     render() {
-        console.log("rendering...");
         let results = this.state.searchResults;
+        console.log("rendering...");
         return (
             <div id="searchForm">
                 <label for="searchInput">Search database:</label> <input id="searchInput" onInput={this.runSearch} type="text" />
                 <br />
                 <label>Select Fields:   </label>
-                <input id="T1" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
+                <input id="H1_Transcripción" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H1_Transcripción</label>&nbsp;&nbsp;
-                <input id="T2" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
+                <input id="H2_Transcripción" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H2_Transcripción</label>&nbsp;&nbsp;
-                <input id="T3" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
+                <input id="H1_Maya" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H1_Maya</label>&nbsp;&nbsp;
-                <input id="T4" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
+                <input id="H2_Maya" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H2_Maya</label>&nbsp;&nbsp;
-                <input id="T5" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
+                <input id="H1_Traducción" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H1_Traducción</label>&nbsp;&nbsp;
-                <input id="T6" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
+                <input id="H2_Traducción" name="fields" type="checkbox" onInput={this.runSearch} defaultChecked />
                 <label>H2_Traducción</label>
                 <br />
                 <div id="searchResults">{results}</div>

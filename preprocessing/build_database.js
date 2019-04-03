@@ -52,9 +52,14 @@ function build_search() {
         "start_time_ms" : sentence["start_time_ms"],
         "dependents" : {}
       };
+      // Top level line not included in sentence.dependents so it has to be handled
+      // seperately
+      let tierName = sentence.tier;
+      reformatted["dependents"][tierName] = {"value": sentence.text};
+
       for (j in sentence["dependents"]) {
-          const tier = sentence["dependents"][j];
-          const tierName = tier.tier;
+          tier = sentence["dependents"][j];
+          tierName = tier.tier;
           reformatted["dependents"][tierName] = tier.values;
       }
       data.push(reformatted);
