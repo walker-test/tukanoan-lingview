@@ -34,9 +34,12 @@ function build_search() {
       const jsonPath = "data/json_files/" + jsonFileName;
       const f = JSON.parse(fs.readFileSync(jsonPath))
       const storyID = f.metadata["story ID"]
+      // not sure why _default isn't top level
+      const title = f.metadata["title"]["_default"]
       let newSentences = f["sentences"]
       for (sentence in newSentences) {
-          newSentences[sentence]["story"] = storyID;
+          newSentences[sentence]["story ID"] = storyID;
+          newSentences[sentence]["title"] = title;
       }
       sentences = sentences.concat(newSentences);
   }
@@ -48,7 +51,8 @@ function build_search() {
       let reformatted = {
         "num_slots" : sentence["num_slots"],
         "text" : sentence["text"],
-        "story" : sentence["story"],
+        "story ID" : sentence["story ID"],
+        "title" : sentence["title"],
         "start_time_ms" : sentence["start_time_ms"],
         "dependents" : {}
       };
