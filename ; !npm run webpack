@@ -7,10 +7,12 @@ export class Search extends React.Component {
     constructor(props) {
         super(props);
         this.state = { "searchResults": [] };
-        this.searchIndex = this.props.search_index;
-        console.log(this.props);
-        this.stories = this.props.stories;
-        this.runSearch = this.throttle(this.search, 300, this);
+        this.list = this.props.search_index;
+        this.runSearch = this.throttle(this.search, 500, this);
+    }
+
+    componentDidMount() {
+        let this.fuse = build_fuse()
     }
 
     throttle(fn, threshhold, scope) {
@@ -22,30 +24,29 @@ export class Search extends React.Component {
         var deferTimer;
         return function () {
             var context = scope || this;
-
-            var args = arguments;
             
             if (deferTimer) clearTimeout(deferTimer);
             deferTimer = setTimeout(function () {
-                return fn.apply(context, args);
+                return fn.apply(context);
             }, threshhold);
         };
     }
 
     build_fuse() {
+        let query = document.getElementById("searchInput").value;
         let fields = [];
         document.getElementsByName("fields").forEach(function (e) {
             if (e.checked) fields.push(`dependents.${e.id}.value`);
         });
         console.log(fields);
-        console.log(this.searchIndex);
+        console.log(this.list);
 
         var options = {
             shouldSort: true,
             findAllMatches: true,
             tokenize: true,
             matchAllTokens: true,
-            threshold: 15,
+            threshold: 30,
             distance: 0,
             maxPatternLength: 64,
             minMatchCharLength: 1,
@@ -53,17 +54,11 @@ export class Search extends React.Component {
         };
         
         console.log("running search over: " + fields);
-        return new Fuse(this.searchIndex, options)
+        return new Fuse(this.list, options) // "list" is the item array
     }
 
     search(rebuild=true) {
-        if (rebuild || !this.fuse) this.fuse = this.build_fuse();
-        let input = document.getElementById("searchInput");
-        if (input) {
-            var query = input.value;
-        } else {
-            return;
-        }
+        if (rebuild) this.fuse = build_fuse();
         let searchResult = this.fuse.search(query).slice(0, 25);
 
         console.log("Search result:");
@@ -83,45 +78,26 @@ export class Search extends React.Component {
         this.setState({ "searchResults": searchResults });
     }
 
-    handleInputChange() {
-        this.runSearch(false);
-    }
-
-    getTiers() {
-        let tiers = new Set();
-        for (const i in this.stories) {
-            const tierIDs = this.stories[i]['metadata']['tier IDs'];
-            for (const id in tierIDs) {
-                tiers.add(id);
-            }
-        }
-        return tiers
-    }
-
-    genCheckboxes () {
-        let checkboxes = [];
-        let tiers = this.getTiers();
-        console.log(tiers);
-        tiers.forEach((tier) => {
-            checkboxes.push(<label>{tier}</label>);
-            checkboxes.push(
-                <input id={tier} name="fields" type="checkbox" onChange={this.search.bind(this)} 
-                defaultChecked />
-            );
-            checkboxes.push(<span>&nbsp;&nbsp;</span>);
-        })
-        console.log(checkboxes);
-        return checkboxes
-    }
-
     render() {
         let results = this.state.searchResults;
         console.log("rendering...");
         return (
             <div id="searchForm">
-                <label for="searchInput">Search database:</label> <input id="searchInput" onChange={this.handleInputChange.bind(this)} type="text" />
+                <label for="searchInput">Search database:</label> <input id="searchInput" onInput={this.runSearch} type="text" />
                 <br />
-                {this.genCheckboxes()}
+                <label>Select Fields:   </label>
+                <input id="H1_Transcripción" name="fields" type="checkbox" onInput={this.runSearch(true)} defaultChecked />
+                <label>H1_Transcripción</label>&nbsp;&nbsp;
+                <input id="H2_Transcripción" name="fields" type="checkbox" onInput={this.runSearch(true)} defaultChecked />
+                <label>H2_Transcripción</label>&nbsp;&nbsp;
+                <input id="H1_Maya" name="fields" type="checkbox" onInput={this.runSearch(true)} defaultChecked />
+                <label>H1_Maya</label>&nbsp;&nbsp;
+                <input id="H2_Maya" name="fields" type="checkbox" onInput={this.runSearch(true)} defaultChecked />
+                <label>H2_Maya</label>&nbsp;&nbsp;
+                <input id="H1_Traducción" name="fields" type="checkbox" onInput={this.runSearch(true)} defaultChecked />
+                <label>H1_Traducción</label>&nbsp;&nbsp;
+                <input id="H2_Traducción" name="fields" type="checkbox" onInput={this.runSearch(true)} defaultChecked />
+                <label>H2_Traducción</label>
                 <br />
                 <div id="searchResults">{results}</div>
             </div>
