@@ -3,8 +3,6 @@ A web interface for viewing glossed ELAN and FLEx files, optionally with time-sy
 
 Front-end code written with [ReactJS](https://reactjs.org/).
 
-For a high-level description of the software, its potential uses, and the circumstances and design principles of its creation, see our [paper](http://nflrc.hawaii.edu/ldc/vol-14-2020/).
-
 ## Getting Started
 To begin using this site, you'll need to have NPM and Node.js installed. [Details can be found on the NPM website.](http://blog.npmjs.org/post/85484771375/how-to-install-npm) Then, clone this repository and run the command:
     npm install
@@ -24,3 +22,15 @@ To compile the JSX into JS, run:
 npm install --save-dev babel-plugin-transform-react-jsx -g
 babel --plugins transform-react-jsx text_display.jsx --out-file text_display.js
 ~~~~
+
+## Resources
+
+For a high-level description of the software, its potential uses, and the circumstances and design principles of its creation, see our [paper](http://hdl.handle.net/10125/24916).
+
+For how-to's and troubleshooting, check the [wiki](https://github.com/BrownCLPS/LingView/wiki). 
+
+Using LingView? We'd love to hear from you! You can reach us at [kalinda.pride@gmail.com](mailto:kalinda.pride@gmail.com). 
+
+Stuck? Start by reading our paper, browsing the wiki, and playing around with the software for an hour or two. If those don't solve your problem, [contact us](mailto:kalinda.pride@gmail.com). 
+
+Contributors welcome! 
