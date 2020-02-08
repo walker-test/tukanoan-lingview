@@ -3,6 +3,8 @@ A web interface for viewing glossed ELAN and FLEx files, optionally with time-sy
 
 Front-end code written with [ReactJS](https://reactjs.org/).
 
+For a high-level description of the software, its potential uses, and the circumstances and design principles of its creation, see our [paper](http://nflrc.hawaii.edu/ldc/vol-14-2020/) (published and made freely available in *Language Documentation and Conservation*).
+
 ## Getting Started
 To begin using this site, you'll need to have NPM and Node.js installed. [Details can be found on the NPM website.](http://blog.npmjs.org/post/85484771375/how-to-install-npm) Then, clone this repository and run the command:
     npm install
