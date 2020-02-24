@@ -40,7 +40,7 @@ function main(callback) {
 			"default": data["media"]["audio"],
 			"when":
 				function(answers) {
-					return (data["timed"]);
+					return (data["source_filetype"] === "ELAN");
 				},
 			"validate":	
 				function(response) {
@@ -62,7 +62,7 @@ function main(callback) {
 			"default": data["media"]["video"],
 			"when":
 				function(answers) {
-					return (data["timed"]);
+					return (data["source_filetype"] === "ELAN");
 				},
 			"validate":	
 				function(response) {
@@ -168,6 +168,7 @@ function main(callback) {
 		} else {
 			data["media"]["video"] = answers["mp4"];
 		}
+		data["timed"] = (data["media"]["audio"] != "") || (data["media"]["video"] != "");
 		
 		if (answers["description"]) {
 			data["description"] = answers["description"];
