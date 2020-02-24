@@ -25,7 +25,7 @@ babel --plugins transform-react-jsx text_display.jsx --out-file text_display.js
 
 ## Resources
 
-For a high-level description of the software, its potential uses, and the circumstances and design principles of its creation, see our [paper](http://hdl.handle.net/10125/24916).
+For an overview of the software, its potential uses, and the circumstances and design principles of its creation, see our [paper](http://hdl.handle.net/10125/24916).
 
 For how-to's and troubleshooting, check the [wiki](https://github.com/BrownCLPS/LingView/wiki). 
 
