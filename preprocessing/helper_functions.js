@@ -25,7 +25,7 @@ function getFlexMediaFilenames(itext) {
   let filenames = [];
   const mediaFiles = itext["media-files"];
   if (mediaFiles != null) {
-    const mediaList = getFlexMediaFilenames(itext);
+    const mediaList = mediaFiles[0].media;
     for (const media of mediaList) {
       filenames.push(media.$.location);
     }
