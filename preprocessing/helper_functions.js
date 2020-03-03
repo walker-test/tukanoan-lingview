@@ -21,6 +21,18 @@ function getFilenameFromPath(path) {
   return path.substring(begin, path.length);
 }
 
+function getFlexMediaFilenames(itext) {
+  let filenames = [];
+  const mediaFiles = itext.media-files
+  if (mediaFiles != null) {
+    const mediaList = getFlexMediaFilenames(itext);
+    for (const media of mediaList) {
+      filenames.push(media.$.location);
+    }
+  }
+  return filenames;
+}
+
 function verifyMedia(filename) {
   // I/P: filename, a .mp3 or .mp4 file
   // O/P: boolean, whether or not file exists in media_files directory
@@ -134,7 +146,7 @@ function improveFLExIndexData(path, storyID, itext) {
   if (metadata == null) { // file not in index previously
     // below is the starter data:
     metadata = {
-      "timed": false,
+      "timed": true,
       "story ID": storyID,
       "title": {
         "_default": ""
@@ -158,7 +170,7 @@ function improveFLExIndexData(path, storyID, itext) {
       "source_filetype": "FLEx"
     }
   }
-
+  
   // get title/source info
   const titlesAndSources = itext["item"];
   let titles = {};
@@ -182,6 +194,17 @@ function improveFLExIndexData(path, storyID, itext) {
     languages.push(language["$"]["lang"])
   }
   metadata["languages"] = languages;
+  
+  // fill in any missing audio/video files, if we can
+  let linkedMediaPaths = [];
+  let mediaDescriptors = itext.media-files[0].media;
+  if (mediaDescriptors != null) {
+    for (const mediaDesc of mediaDescriptors) {
+      linkedMediaPaths.push(mediaDesc.$.location);
+    }
+  }
+  updateMediaMetadata(filename, metadata, linkedMediaPaths)
+
   return metadata;
 }
 
