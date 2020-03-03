@@ -38,21 +38,25 @@ function getSentenceFreeGlosses(sentence) {
 }
 
 function getSentenceStartTime(sentence) {
-  const timeString = sentence.$.begin-time-offset
-  if (timeString == null) {
-    return null
-  } else {
-    return parseInt(timeString, 10)
+  const sentenceProperties = sentence.$;
+  if (sentenceProperties != null) {
+    const timeString = sentenceProperties['begin-time-offset'];
+    if (timeString != null) {
+      return parseInt(timeString, 10);
+    }
   }
+  return null;
 }
 
 function getSentenceEndTime(sentence) {
-  const timeString = sentence.$.end-time-offset
-  if (timeString == null) {
-    return null
-  } else {
-    return parseInt(timeString, 10)
+  const sentenceProperties = sentence.$;
+  if (sentenceProperties != null) {
+    const timeString = sentenceProperties['end-time-offset'];
+    if (timeString != null) {
+      return parseInt(timeString, 10);
+    }
   }
+  return null;
 }
 
 function getSentenceWords(sentence) {

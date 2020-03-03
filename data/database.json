@@ -9,7 +9,10 @@
         "es": "El negro",
         "_default": "Singo a'i"
       },
-      "media": {},
+      "media": {
+        "audio": "",
+        "video": ""
+      },
       "languages": [
         "con-Latn-EC",
         "en",
@@ -68,7 +71,10 @@
           "es": "El negro",
           "_default": "Singo a'i"
         },
-        "media": {},
+        "media": {
+          "audio": "",
+          "video": ""
+        },
         "languages": [
           "con-Latn-EC",
           "en",
@@ -121,6 +127,8 @@
       },
       "sentences": [
         {
+          "start_time_ms": null,
+          "end_time_ms": null,
           "num_slots": 13,
           "text": "Mingae dapa tsu va andeni singo a'ija canse'fa.",
           "dependents": [
@@ -327,6 +335,8 @@
           ]
         },
         {
+          "start_time_ms": null,
+          "end_time_ms": null,
           "num_slots": 8,
           "text": "Tayopi fae tsandie tsu an'bian tise du'shuma.",
           "dependents": [
@@ -513,6 +523,8 @@
           ]
         },
         {
+          "start_time_ms": null,
+          "end_time_ms": null,
           "num_slots": 14,
           "text": "Tsa du'shu tsu tise yaya cundyiye japa cundyi'je'choma atte.",
           "dependents": [
@@ -739,6 +751,8 @@
           ]
         },
         {
+          "start_time_ms": null,
+          "end_time_ms": null,
           "num_slots": 8,
           "text": "Tise yaya cundyi'je'fa tsu sin'an.",
           "dependents": [
@@ -885,6 +899,8 @@
           ]
         },
         {
+          "start_time_ms": null,
+          "end_time_ms": null,
           "num_slots": 38,
           "text": "Tsonsi tsama attepa yaya que cundyi'fa tsu sin'an qquen susi tise yaya in'jan, cuintsu tsa'caen injengembe camba tisu yaya cundyi'je'fama atte'ta singo a'ive daye.",
           "dependents": [
@@ -1401,6 +1417,8 @@
           ]
         },
         {
+          "start_time_ms": null,
+          "end_time_ms": null,
           "num_slots": 9,
           "text": "Tsa'caen in'jansi tsa du'shuja singove da.",
           "dependents": [
@@ -1567,6 +1585,8 @@
           ]
         },
         {
+          "start_time_ms": null,
+          "end_time_ms": null,
           "num_slots": 12,
           "text": "Tsa'caen singove dapa jai'ngae pushepa singove atapa.",
           "dependents": [
@@ -1753,6 +1773,8 @@
           ]
         },
         {
+          "start_time_ms": null,
+          "end_time_ms": null,
           "num_slots": 13,
           "text": "Tsa'ye tsu ja'ño pan singondeccuja va andeni canse'fa.",
           "dependents": [

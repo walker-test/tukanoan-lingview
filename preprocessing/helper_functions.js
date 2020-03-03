@@ -23,7 +23,7 @@ function getFilenameFromPath(path) {
 
 function getFlexMediaFilenames(itext) {
   let filenames = [];
-  const mediaFiles = itext.media-files
+  const mediaFiles = itext["media-files"];
   if (mediaFiles != null) {
     const mediaList = getFlexMediaFilenames(itext);
     for (const media of mediaList) {
@@ -61,8 +61,8 @@ function mediaSearch(filename, mediaType, mediaFiles, extension) {
   console.log("🚨  WARN: " + filename + " is missing correctly linked " + mediaType + ". Attemping to find link...");
   const shortFilename = filename.substring(0, filename.lastIndexOf('.'));
   const shortestFilename = filename.substring(0, filename.indexOf('.')); // more possible matches for .postflex.flextext files
-  const filenamesToTry = mediaFiles.concat([shortFilename + extension, shortestFilename + extension])
-  const mediaFile = findValidMedia(filenamesToTry)
+  const filenamesToTry = mediaFiles.concat([shortFilename + extension, shortestFilename + extension]);
+  const mediaFile = findValidMedia(filenamesToTry);
   if (mediaFile != null) {
     console.log("🔍  SUCCESS: Found matching " + mediaType + ": " + mediaFile);
   } else {
@@ -112,14 +112,14 @@ function updateMediaMetadata(filename, metadata, linkedMediaPaths) {
   
   // Media search
   if (needsAudio && !hasWorkingAudio) {
-    const audioFile = mediaSearch(filename, "audio", audioFiles, ".mp3")
+    const audioFile = mediaSearch(filename, "audio", audioFiles, ".mp3");
     if (audioFile != null) {
       hasWorkingAudio = true;
       metadata['media']['audio'] = audioFile;
     }
   }
   if (needsVideo && !hasWorkingVideo) {
-    const videoFile = mediaSearch(filename, "video", videoFiles, ".mp4")
+    const videoFile = mediaSearch(filename, "video", videoFiles, ".mp4");
     if (videoFile != null) {
       hasWorkingVideo = true;
       metadata['media']['video'] = videoFile;
@@ -129,7 +129,7 @@ function updateMediaMetadata(filename, metadata, linkedMediaPaths) {
   // Worst case scenario: no media
   if (!hasWorkingAudio && !hasWorkingVideo) {
     metadata['timed'] = false;
-    console.log("❌  ERROR: " + filename + " has no linked audio or video in the media_files directory. It will be processed as an untimed file and no audio, video, or time alignment will be displayed on the site.")
+    console.log("❌  ERROR: " + filename + " has no linked audio or video in the media_files directory. It will be processed as an untimed file and no audio, video, or time alignment will be displayed on the site.");
   }
 }
 
@@ -191,19 +191,14 @@ function improveFLExIndexData(path, storyID, itext) {
   let languages = [];
   const languageData = itext["languages"][0]["language"];
   for (const language of languageData) {
-    languages.push(language["$"]["lang"])
+    languages.push(language["$"]["lang"]);
   }
   metadata["languages"] = languages;
   
   // fill in any missing audio/video files, if we can
-  let linkedMediaPaths = [];
-  let mediaDescriptors = itext.media-files[0].media;
-  if (mediaDescriptors != null) {
-    for (const mediaDesc of mediaDescriptors) {
-      linkedMediaPaths.push(mediaDesc.$.location);
-    }
-  }
-  updateMediaMetadata(filename, metadata, linkedMediaPaths)
+  const linkedMediaPaths = getFlexMediaFilenames(itext);
+  const filename = getFilenameFromPath(path);
+  updateMediaMetadata(filename, metadata, linkedMediaPaths);
 
   return metadata;
 }
@@ -245,18 +240,18 @@ function improveElanIndexData(path, storyID, adoc) {
       "speakers": [],
       "xml_file_name": path,
       "source_filetype": "ELAN"
-    }
+    };
   }
 
   // get title/source info
   if (metadata['title']['_default'] === '') {
     const shortFilename = filename.substring(0, filename.lastIndexOf('.'));
-    metadata['title']['_default'] = shortFilename
+    metadata['title']['_default'] = shortFilename;
   }
 
   // get language info
   let speakers = new Set(); // to avoid duplicates
-  const tiers = adoc['TIER']
+  const tiers = adoc['TIER'];
   for (const tier of tiers) {
     if (tier['$']['PARTICIPANT']) {
       speakers.add(tier['$']['PARTICIPANT']);
