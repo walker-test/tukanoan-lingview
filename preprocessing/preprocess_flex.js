@@ -272,8 +272,10 @@ function getSentenceJson(sentence, tierReg, wordsTierID) {
   const freeGlossesJson = repackageFreeGlosses(freeGlosses, tierReg, slotNum);
   mergeTwoLayerDict(morphsJson, freeGlossesJson);
 
-  // "speaker, "start_time", and "end_time" omitted (they're only used on elan files)
+  // "speaker" omitted (only used on elan files)
   return ({
+    "start_time_ms": flexUtils.getSentenceStartTime(sentence), // can be null if file is untimed
+    "end_time_ms": flexUtils.getSentenceEndTime(sentence), // can be null if file is untimed
     "num_slots": slotNum,
     "text": getSentenceText(sentenceTokens),
     "dependents": getDependentsJson(morphsJson),

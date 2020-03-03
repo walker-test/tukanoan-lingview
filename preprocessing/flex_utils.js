@@ -37,6 +37,24 @@ function getSentenceFreeGlosses(sentence) {
   return freeGlosses;
 }
 
+function getSentenceStartTime(sentence) {
+  const timeString = sentence.$.begin-time-offset
+  if (timeString == null) {
+    return null
+  } else {
+    return parseInt(timeString, 10)
+  }
+}
+
+function getSentenceEndTime(sentence) {
+  const timeString = sentence.$.end-time-offset
+  if (timeString == null) {
+    return null
+  } else {
+    return parseInt(timeString, 10)
+  }
+}
+
 function getSentenceWords(sentence) {
   return sentence.words[0].word;
 }
@@ -80,6 +98,8 @@ module.exports = {
   getDocumentParagraphs: getDocumentParagraphs,
   getParagraphSentences: getParagraphSentences,
   getSentenceFreeGlosses: getSentenceFreeGlosses,
+  getSentenceStartTime: getSentenceStartTime,
+  getSentenceEndTime: getSentenceEndTime,
   getSentenceWords: getSentenceWords,
   getWordMorphs: getWordMorphs,
   getWordValue: getWordValue,
