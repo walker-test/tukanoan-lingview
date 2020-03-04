@@ -1,4 +1,4 @@
-/* functions for accessing data within FLEx's format (except parsed to JSON): */
+/* functions for accessing data within ELAN's format (except parsed to JSON): */
 
 // adoc - an annotation document
 // returns the hexadecimal code from the URN, or null if none was found

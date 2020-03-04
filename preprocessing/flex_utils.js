@@ -1,3 +1,5 @@
+/* functions for accessing data within FLEx's format (except parsed to JSON): */
+
 function getDocumentFirstWord(doc) {
   const firstParagraph = getDocumentParagraphs(doc)[0];
   const firstSentence = getParagraphSentences(firstParagraph)[0];
