@@ -284,15 +284,15 @@ function getSentenceJson(sentence, tierReg, wordsTierID) {
 
 // jsonIn - the JSON parse of the FLEx interlinear-text
 // jsonFilesDir - the directory for the output file describing this interlinear text
-// shortFileName - TODO delete unused parameter
+// fileName - TODO delete unused parameter
 // isoDict - an object correlating languages with ISO codes
 // callback - the function that will execute when the preprocessText function completes
 // updates the index and story files for this interlinear text, 
 //   then executes the callback
-function preprocessText(jsonIn, jsonFilesDir, shortFileName, isoDict, callback) {
+function preprocessText(jsonIn, jsonFilesDir, fileName, isoDict, callback) {
   let storyID = jsonIn.$.guid;
 
-  let metadata = helper.improveFLExIndexData(shortFileName + ".xml", storyID, jsonIn);
+  let metadata = helper.improveFLExIndexData(fileName, storyID, jsonIn);
   updateIndex(metadata, "data/index.json", storyID);
 
   const jsonOut = {
@@ -375,7 +375,7 @@ function preprocess_dir(xmlFilesDir, jsonFilesDir, isoFileName, callback) {
         };
         
         for (const text of texts) {
-          preprocessText(text, jsonFilesDir, xmlFileName.slice(0, -4), isoDict, singleTextCallback);
+          preprocessText(text, jsonFilesDir, xmlFileName, isoDict, singleTextCallback);
         }
       });
     });
