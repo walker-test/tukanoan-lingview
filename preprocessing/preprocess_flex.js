@@ -234,9 +234,10 @@ function repackageFreeGlosses(freeGlosses, tierReg, endSlot) {
 //   structured as in the FLEx file
 // tierReg - a tierRegistry object
 // wordsTierID - the ID which has been assigned to the words tier
+// hasTimestamps - whether the FLEx file contains a start and end value for each sentence
 // returns an object describing the sentence, 
 //   structured correctly for use by the website
-function getSentenceJson(sentence, tierReg, wordsTierID) {
+function getSentenceJson(sentence, tierReg, wordsTierID, hasTimestamps) {
   const morphsJson = {}; // tierID -> start_slot -> {"value": value, "end_slot": end_slot}
   morphsJson[wordsTierID] = {}; // FIXME words tier will show up even when the sentence is empty of words
 
@@ -272,14 +273,17 @@ function getSentenceJson(sentence, tierReg, wordsTierID) {
   const freeGlossesJson = repackageFreeGlosses(freeGlosses, tierReg, slotNum);
   mergeTwoLayerDict(morphsJson, freeGlossesJson);
 
-  // "speaker" omitted (only used on elan files)
-  return ({
-    "start_time_ms": flexUtils.getSentenceStartTime(sentence), // can be null if file is untimed
-    "end_time_ms": flexUtils.getSentenceEndTime(sentence), // can be null if file is untimed
+  let sentenceJson = {
     "num_slots": slotNum,
     "text": getSentenceText(sentenceTokens),
     "dependents": getDependentsJson(morphsJson),
-  });
+  };
+  if (hasTimestamps) {
+    sentenceJson.start_time_ms = flexUtils.getSentenceStartTime(sentence);
+    sentenceJson.end_time_ms = flexUtils.getSentenceEndTime(sentence);
+  }
+  // "speaker" omitted (only used on elan files)
+  return sentenceJson;
 }
 
 // jsonIn - the JSON parse of the FLEx interlinear-text
@@ -291,6 +295,8 @@ function getSentenceJson(sentence, tierReg, wordsTierID) {
 //   then executes the callback
 function preprocessText(jsonIn, jsonFilesDir, fileName, isoDict, callback) {
   let storyID = jsonIn.$.guid;
+  
+  const hasTimestamps = flexUtils.getSentenceStartTime(flexUtils.getDocumentFirstSentence(jsonIn)) != null
 
   let metadata = helper.improveFLExIndexData(fileName, storyID, jsonIn);
   updateIndex(metadata, "data/index.json", storyID);
@@ -306,7 +312,7 @@ function preprocessText(jsonIn, jsonFilesDir, fileName, isoDict, callback) {
 
   for (const paragraph of flexUtils.getDocumentParagraphs(jsonIn)) {
     for (const sentence of flexUtils.getParagraphSentences(paragraph)) {
-      jsonOut.sentences.push(getSentenceJson(sentence, tierReg, wordsTierID));
+      jsonOut.sentences.push(getSentenceJson(sentence, tierReg, wordsTierID, hasTimestamps));
     }
   }
 

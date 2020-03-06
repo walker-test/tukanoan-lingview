@@ -30,6 +30,18 @@ if (maxArgIndex < 2) {
   }
 }
 
+function hasTimestamps(uniqueId) {
+  const stories = DB.stories;
+  for (const story of stories) {
+    if (story.metadata["story ID"] == uniqueId) {
+      let firstSentence = story.sentences[0];
+      return firstSentence.start_time_ms != null;
+    }
+  }
+  // should never get here
+  return false;
+}
+
 function main(callback) {
 	inquirer.prompt([
 		// mp3
@@ -40,7 +52,7 @@ function main(callback) {
 			"default": data["media"]["audio"],
 			"when":
 				function(answers) {
-					return (data["source_filetype"] === "ELAN");
+					return hasTimestamps(filename);
 				},
 			"validate":	
 				function(response) {
@@ -62,7 +74,7 @@ function main(callback) {
 			"default": data["media"]["video"],
 			"when":
 				function(answers) {
-					return (data["source_filetype"] === "ELAN");
+					return hasTimestamps(filename);
 				},
 			"validate":	
 				function(response) {

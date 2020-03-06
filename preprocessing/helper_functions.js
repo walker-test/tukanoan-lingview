@@ -1,4 +1,5 @@
 const fs = require('fs');
+const flexUtils = require('./flex_utils'); // TODO use me more, and use eafUtils too, for stylistic consistency
 
 function getMetadataFromIndex(filename) {
   // I/P: filename, an XML or EAF file
@@ -142,11 +143,13 @@ function improveFLExIndexData(path, storyID, itext) {
 
   const date = new Date();
   const prettyDate = (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear();
+  
+  const hasTimestamps = flexUtils.getSentenceStartTime(flexUtils.getDocumentFirstSentence(jsonIn)) != null
 
   if (metadata == null) { // file not in index previously
     // below is the starter data:
     metadata = {
-      "timed": true,
+      "timed": hasTimestamps,
       "story ID": storyID,
       "title": {
         "_default": ""
@@ -198,8 +201,10 @@ function improveFLExIndexData(path, storyID, itext) {
   // fill in any missing audio/video files, if we can
   const linkedMediaPaths = getFlexMediaFilenames(itext);
   const filename = getFilenameFromPath(path);
-  updateMediaMetadata(filename, metadata, linkedMediaPaths);
-
+  if (hasTimestamps) {
+    updateMediaMetadata(filename, metadata, linkedMediaPaths);
+  }
+  
   return metadata;
 }
 

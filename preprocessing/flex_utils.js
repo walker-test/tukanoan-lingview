@@ -1,8 +1,12 @@
 /* functions for accessing data within FLEx's format (except parsed to JSON): */
 
-function getDocumentFirstWord(doc) {
+function getDocumentFirstSentence(doc) { 
   const firstParagraph = getDocumentParagraphs(doc)[0];
-  const firstSentence = getParagraphSentences(firstParagraph)[0];
+  return getParagraphSentences(firstParagraph)[0];
+}
+
+function getDocumentFirstWord(doc) {
+  const firstSentence = getDocumentFirstSentence(doc);
   return getSentenceWords(firstSentence)[0];
 }
 
@@ -100,6 +104,7 @@ function getFreeGlossValue(freeGloss) {
 }
 
 module.exports = {
+  getDocumentFirstSentence: getDocumentFirstSentence,
   getDocumentFirstWord: getDocumentFirstWord,
   getDocumentParagraphs: getDocumentParagraphs,
   getParagraphSentences: getParagraphSentences,
