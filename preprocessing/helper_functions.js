@@ -144,7 +144,7 @@ function improveFLExIndexData(path, storyID, itext) {
   const date = new Date();
   const prettyDate = (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear();
   
-  const hasTimestamps = flexUtils.getSentenceStartTime(flexUtils.getDocumentFirstSentence(jsonIn)) != null
+  const hasTimestamps = flexUtils.getSentenceStartTime(flexUtils.getDocumentFirstSentence(itext)) != null
 
   if (metadata == null) { // file not in index previously
     // below is the starter data:
