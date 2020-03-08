@@ -43,8 +43,8 @@ function updateIndex(metadata, indexFilePath, storyID) {
 //   where each morph token is an object structured as in FLEx
 // wordStartSlot - the timeslot index of the first morph token within its sentence
 // wordEndSlot - the timeslot index after the last morph token within its sentence
-function getGlommedValue(morphsThisTier, wordStartSlot, wordEndSlot) {
-  let glommedValue = '';
+function concatMorphs(morphsThisTier, wordStartSlot, wordEndSlot) {
+  let wordMorphsText = '';
   let maybeAddCompoundSeparator = false; // never add a separator before the first word
   for (let i = wordStartSlot; i < wordEndSlot; i++) {
     let nextValue = '***';
@@ -63,16 +63,16 @@ function getGlommedValue(morphsThisTier, wordStartSlot, wordEndSlot) {
 
     // insert compound-word separator if needed
     if (maybeAddCompoundSeparator && !isSeparator(nextValue.substring(0, 1))) {
-      glommedValue += '+';
+      wordMorphsText += '+';
     }
     if (!isSeparator(nextValue.substring(-1))) {
       maybeAddCompoundSeparator = true;
     }
 
-    glommedValue += nextValue;
+    wordMorphsText += nextValue;
   }
 
-  return glommedValue;
+  return wordMorphsText;
 }
 
 // word - the data associated with a single word of the source text, 
@@ -97,7 +97,7 @@ function getSentenceToken(word) {
 // sentenceTokens - a list of objects, each indicating how to represent
 //   one word within the sentence text
 // returns the sentence as a string with correct punctuation and spacing
-function getSentenceText(sentenceTokens) {
+function concatWords(sentenceTokens) {
   let sentenceText = "";
   let maybeAddSpace = false; // no space before first word
   for (const typedToken of sentenceTokens) {
@@ -149,7 +149,7 @@ function getDependentsJson(morphsJson) {
 function repackageMorphs(morphs, tierReg, startSlot) {
   // FLEx packages morph items by morpheme, not by type.
   // We handle this by first re-packaging all the morphs by type(a.k.a. tier),
-  // then concatenating(a.k.a. glomming) all the morphs of the same type.
+  // then concatenating all the morphs of the same type.
 
   // Repackaging step:
   const morphTokens = {};
@@ -179,7 +179,7 @@ function repackageMorphs(morphs, tierReg, startSlot) {
         morphsJson[tierID] = {};
       }
       morphsJson[tierID][startSlot] = {
-        "value": getGlommedValue(morphTokens[tierID], startSlot, slotNum),
+        "value": concatMorphs(morphTokens[tierID], startSlot, slotNum),
         "end_slot": slotNum
       };
     }
