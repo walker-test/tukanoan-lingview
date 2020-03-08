@@ -286,7 +286,7 @@ function getSentenceJson(sentence, tierReg, wordsTierID, hasTimestamps) {
     sentenceJson.start_time_ms = flexUtils.getSentenceStartTime(sentence);
     sentenceJson.end_time_ms = flexUtils.getSentenceEndTime(sentence);
   }
-  // "speaker" omitted (only used on elan files)
+  // TODO speakers, if available
   return sentenceJson;
 }
 

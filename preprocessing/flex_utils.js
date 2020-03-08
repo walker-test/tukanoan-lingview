@@ -104,6 +104,15 @@ function getSentenceEndTime(sentence) {
   return null;
 }
 
+// TODO use me
+function getSentenceSpeaker(sentence) {
+  const sentenceProperties = sentence.$;
+  if (sentenceProperties != null) {
+    return sentenceProperties.speaker;
+  }
+  return null;
+}
+
 function getSentenceWords(sentence) {
   if (sentence.words == null) {
     return [];
