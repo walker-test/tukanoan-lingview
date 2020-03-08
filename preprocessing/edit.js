@@ -170,15 +170,15 @@ function main(callback) {
 		}
 	// 
 	]).then(function (answers) {
-		if (answers["mp3"] == "blank") {
+		if (answers["audio"] == "blank") {
 			data["media"]["audio"] == "";
 		} else {
-			data["media"]["audio"] = answers["mp3"];
+			data["media"]["audio"] = answers["audio"];
 		}
-		if (answers["mp4"] == "blank") {
+		if (answers["video"] == "blank") {
 			data["media"]["video"] == "";
 		} else {
-			data["media"]["video"] = answers["mp4"];
+			data["media"]["video"] = answers["video"];
 		}
 		data["timed"] = (data["media"]["audio"] != "") || (data["media"]["video"] != "");
 		
