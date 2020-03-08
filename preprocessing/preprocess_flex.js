@@ -272,10 +272,14 @@ function getSentenceJson(sentence, tierReg, wordsTierID, hasTimestamps) {
   const freeGlosses = flexUtils.getSentenceFreeGlosses(sentence);
   const freeGlossesJson = repackageFreeGlosses(freeGlosses, tierReg, slotNum);
   mergeTwoLayerDict(morphsJson, freeGlossesJson);
+  let sentenceText = flexUtils.getSentenceTextIfNoWords(sentence);
+  if (sentenceText == null) {
+    sentenceText = concatWords(sentenceTokens)
+  }
 
   let sentenceJson = {
     "num_slots": slotNum,
-    "text": getSentenceText(sentenceTokens),
+    "text": sentenceText,
     "dependents": getDependentsJson(morphsJson),
   };
   if (hasTimestamps) {
@@ -296,8 +300,6 @@ function getSentenceJson(sentence, tierReg, wordsTierID, hasTimestamps) {
 function preprocessText(jsonIn, jsonFilesDir, fileName, isoDict, callback) {
   let storyID = jsonIn.$.guid;
   
-  const hasTimestamps = flexUtils.getSentenceStartTime(flexUtils.getDocumentFirstSentence(jsonIn)) != null
-
   let metadata = helper.improveFLExIndexData(fileName, storyID, jsonIn);
   updateIndex(metadata, "data/index.json", storyID);
 
@@ -306,10 +308,12 @@ function preprocessText(jsonIn, jsonFilesDir, fileName, isoDict, callback) {
     "sentences": []
   };
 
-  let textLang = flexUtils.getWordLang(flexUtils.getDocumentFirstWord(jsonIn));
+  let textLang = flexUtils.getDocumentSourceLang(jsonIn);
   const tierReg = new tierRegistry(isoDict);
   const wordsTierID = tierReg.maybeRegisterTier(textLang, "words", true);
 
+  const hasTimestamps = flexUtils.documentHasTimestamps(jsonIn);
+  
   for (const paragraph of flexUtils.getDocumentParagraphs(jsonIn)) {
     for (const sentence of flexUtils.getParagraphSentences(paragraph)) {
       jsonOut.sentences.push(getSentenceJson(sentence, tierReg, wordsTierID, hasTimestamps));

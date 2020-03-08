@@ -73,11 +73,13 @@ function mediaSearch(filename, mediaType, mediaFiles, extension) {
 }
 
 function updateMediaMetadata(filename, metadata, linkedMediaPaths) {
+  // Only call this function if the file contains timestamps.
   // I/P: filename, of the FLEx or ELAN file
   // I/P: metadata, a json object formatted for use on the site
   // I/P: linkedMediaPaths, a list of media file paths mentioned in the FLEx or ELAN file 
   // O/P: updates metadata by filling in any missing audio/video file names, if we can,
   //  and setting timed=false if we can't find any audio/video files
+  
   metadata['timed'] = true;
 
   const audioFile = metadata['media']['audio'];
@@ -134,6 +136,10 @@ function updateMediaMetadata(filename, metadata, linkedMediaPaths) {
   }
 }
 
+function getTitleFromFilename(filename) {
+  return filename.substring(0, filename.lastIndexOf('.'));
+}
+
 function improveFLExIndexData(path, storyID, itext) {
   // I/P: path, a string
   //      itext, an interlinear text, e.g., jsonIn["document"]["interlinear-text"][0]
@@ -144,15 +150,15 @@ function improveFLExIndexData(path, storyID, itext) {
   const date = new Date();
   const prettyDate = (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear();
   
-  const hasTimestamps = flexUtils.getSentenceStartTime(flexUtils.getDocumentFirstSentence(itext)) != null
-
+  const hasTimestamps = flexUtils.documentHasTimestamps(itext);
+  
   if (metadata == null) { // file not in index previously
     // below is the starter data:
     metadata = {
       "timed": hasTimestamps,
       "story ID": storyID,
       "title": {
-        "_default": ""
+        "_default": getTitleFromFilename(getFilenameFromPath(path)),
       },
       "media": {
         "audio": "",
@@ -175,26 +181,31 @@ function improveFLExIndexData(path, storyID, itext) {
   }
   
   // get title/source info
-  const titlesAndSources = itext["item"];
-  let titles = {};
-  let sources = {};
-  for (const current_title of titlesAndSources) {
-    if (current_title['$']['type'] === 'title') {
-      titles[(current_title["$"]["lang"])] = current_title["_"];
-    } else if (current_title['$']['type'] === 'source') {
-      sources[(current_title["$"]["lang"])] = current_title["_"];
+  let titlesAndSources = itext["item"];
+  if (titlesAndSources != null) {
+    let titles = {};
+    let sources = {};
+    for (const current_title of titlesAndSources) {
+      if (current_title['$']['type'] === 'title') {
+        titles[(current_title["$"]["lang"])] = current_title["_"];
+      } else if (current_title['$']['type'] === 'source') {
+        sources[(current_title["$"]["lang"])] = current_title["_"];
+      }
     }
+    titles["_default"] = metadata["title"]["_default"];
+    sources["_default"] = metadata["source"]["_default"];
+    metadata["title"] = titles;
+    metadata["source"] = sources;
   }
-  titles["_default"] = metadata["title"]["_default"];
-  sources["_default"] = metadata["source"]["_default"];
-  metadata["title"] = titles;
-  metadata["source"] = sources;
-
+  
   // get language info
   let languages = [];
-  const languageData = itext["languages"][0]["language"];
-  for (const language of languageData) {
-    languages.push(language["$"]["lang"]);
+  let itextLanguages = itext.languages;
+  if (itextLanguages != null) { // null on .flextext freshly exported from ELAN
+    const languageData = itextLanguages[0].language;
+    for (const language of languageData) {
+      languages.push(language["$"]["lang"]);
+    }
   }
   metadata["languages"] = languages;
   
@@ -226,7 +237,7 @@ function improveElanIndexData(path, storyID, adoc) {
       "timed": true,
       "story ID": storyID,
       "title": {
-        "_default": ""
+        "_default": getTitleFromFilename(filename),
       },
       "media": {
         "audio": "",
@@ -246,12 +257,6 @@ function improveElanIndexData(path, storyID, adoc) {
       "xml_file_name": path,
       "source_filetype": "ELAN"
     };
-  }
-
-  // get title/source info
-  if (metadata['title']['_default'] === '') {
-    const shortFilename = filename.substring(0, filename.lastIndexOf('.'));
-    metadata['title']['_default'] = shortFilename;
   }
 
   // get language info
