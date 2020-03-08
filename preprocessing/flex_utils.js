@@ -47,7 +47,7 @@ function getParagraphSentences(paragraph) {
 
 function getSentenceTextIfNoWords(sentence) {
   // After starting to gloss a sentence in FLEx, the "txt" tier disappears, 
-  // replaced by the individual "word"s. In that case, we return null.
+  // replaced by the individual <word>s. In that case, we return null.
   const textItem = getSentenceTextItemIfExists(sentence);
   if (textItem != null) {
     return getFreeGlossValue(textItem);

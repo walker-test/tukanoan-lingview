@@ -38,8 +38,7 @@ function hasTimestamps(uniqueId) {
       return firstSentence.start_time_ms != null;
     }
   }
-  // should never get here
-  return false;
+  return false; // we'll never get here
 }
 
 function main(callback) {
