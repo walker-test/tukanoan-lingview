@@ -72,9 +72,10 @@ function mediaSearch(filename, mediaType, mediaFiles, extension) {
   return mediaFile;
 }
 
-function updateMediaMetadata(filename, metadata, linkedMediaPaths) {
+function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
   // Only call this function if the file contains timestamps.
   // I/P: filename, of the FLEx or ELAN file
+  // I/P: storyId, the unique ID of this document
   // I/P: metadata, a json object formatted for use on the site
   // I/P: linkedMediaPaths, a list of media file paths mentioned in the FLEx or ELAN file 
   // O/P: updates metadata by filling in any missing audio/video file names, if we can,
@@ -132,7 +133,7 @@ function updateMediaMetadata(filename, metadata, linkedMediaPaths) {
   // Worst case scenario: no media
   if (!hasWorkingAudio && !hasWorkingVideo) {
     metadata['timed'] = false;
-    console.log("❌  ERROR: " + filename + " has no linked audio or video in the media_files directory. It will be processed as an untimed file and no audio, video, or time alignment will be displayed on the site.");
+    console.log("❌  ERROR: " + filename + " (unique ID: " + storyID + ") has no linked audio or video in the media_files directory. It will be processed as an untimed file and no audio, video, or time alignment will be displayed on the site.");
   }
 }
 
@@ -213,7 +214,7 @@ function improveFLExIndexData(path, storyID, itext) {
   const linkedMediaPaths = getFlexMediaFilenames(itext);
   const filename = getFilenameFromPath(path);
   if (hasTimestamps) {
-    updateMediaMetadata(filename, metadata, linkedMediaPaths);
+    updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths);
   }
   
   return metadata;
@@ -277,7 +278,7 @@ function improveElanIndexData(path, storyID, adoc) {
       linkedMediaPaths.push(mediaDesc['$']['MEDIA_URL']);
     }
   }
-  updateMediaMetadata(filename, metadata, linkedMediaPaths)
+  updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths)
 
   return metadata;
 }
