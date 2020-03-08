@@ -5,6 +5,7 @@ Functions for processing flex files into the json format used by the site.
 const fs = require('fs');
 const util = require('util');
 const parseXml = require('xml2js').parseString;
+const speakerRegistry = require('./speaker_registry').speakerRegistry;
 const tierRegistry = require('./tier_registry').tierRegistry;
 const helper = require('./helper_functions');
 const flexUtils = require('./flex_utils');
@@ -232,12 +233,13 @@ function repackageFreeGlosses(freeGlosses, tierReg, endSlot) {
 
 // sentence - an object describing a sentence of source text,
 //   structured as in the FLEx file
+// speakerReg - a map from speaker names to speaker IDs, which we'll add to if we find a new speaker
 // tierReg - a tierRegistry object
 // wordsTierID - the ID which has been assigned to the words tier
 // hasTimestamps - whether the FLEx file contains a start and end value for each sentence
 // returns an object describing the sentence, 
 //   structured correctly for use by the website
-function getSentenceJson(sentence, tierReg, wordsTierID, hasTimestamps) {
+function getSentenceJson(sentence, speakerReg, tierReg, wordsTierID, hasTimestamps) {
   const morphsJson = {}; // tierID -> start_slot -> {"value": value, "end_slot": end_slot}
   morphsJson[wordsTierID] = {}; // FIXME words tier will show up even when the sentence is empty of words
 
@@ -282,11 +284,18 @@ function getSentenceJson(sentence, tierReg, wordsTierID, hasTimestamps) {
     "text": sentenceText,
     "dependents": getDependentsJson(morphsJson),
   };
+  
   if (hasTimestamps) {
     sentenceJson.start_time_ms = flexUtils.getSentenceStartTime(sentence);
     sentenceJson.end_time_ms = flexUtils.getSentenceEndTime(sentence);
   }
-  // TODO speakers, if available
+  
+  let speaker = flexUtils.getSentenceSpeaker(sentence);
+  if (speaker != null) {
+    speakerReg.maybeRegisterSpeaker(speaker);
+    sentenceJson.speaker = speakerReg.getSpeakerID(speaker);
+  }
+  
   return sentenceJson;
 }
 
@@ -301,6 +310,8 @@ function preprocessText(jsonIn, jsonFilesDir, fileName, isoDict, callback) {
   let storyID = jsonIn.$.guid;
   
   let metadata = helper.improveFLExIndexData(fileName, storyID, jsonIn);
+  const speakerReg = new speakerRegistry();
+  metadata['speakers'] = speakerReg.getSpeakersList();
   updateIndex(metadata, "data/index.json", storyID);
 
   const jsonOut = {
@@ -316,11 +327,12 @@ function preprocessText(jsonIn, jsonFilesDir, fileName, isoDict, callback) {
   
   for (const paragraph of flexUtils.getDocumentParagraphs(jsonIn)) {
     for (const sentence of flexUtils.getParagraphSentences(paragraph)) {
-      jsonOut.sentences.push(getSentenceJson(sentence, tierReg, wordsTierID, hasTimestamps));
+      jsonOut.sentences.push(getSentenceJson(sentence, speakerReg, tierReg, wordsTierID, hasTimestamps));
     }
   }
 
   jsonOut.metadata['tier IDs'] = tierReg.getTiersJson();
+  jsonOut.metadata['speaker IDs'] = speakerReg.getSpeakersJson();
 
   const prettyString = JSON.stringify(jsonOut, null, 2);
   const jsonPath = jsonFilesDir + storyID + ".json";

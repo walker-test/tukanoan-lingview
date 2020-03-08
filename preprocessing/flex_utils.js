@@ -104,7 +104,6 @@ function getSentenceEndTime(sentence) {
   return null;
 }
 
-// TODO use me
 function getSentenceSpeaker(sentence) {
   const sentenceProperties = sentence.$;
   if (sentenceProperties != null) {
@@ -117,7 +116,13 @@ function getSentenceWords(sentence) {
   if (sentence.words == null) {
     return [];
   }
-  return sentence.words[0].word;
+  let wordList = sentence.words[0].word;
+  if (wordList == null) {
+    // this happens on .flextext files if some sentences, 
+    // but not this sentence, have been glossed
+    return [];
+  }
+  return wordList;
 }
 
 function getWordMorphs(word) {
@@ -163,6 +168,7 @@ module.exports = {
   getSentenceFreeGlosses: getSentenceFreeGlosses,
   getSentenceStartTime: getSentenceStartTime,
   getSentenceEndTime: getSentenceEndTime,
+  getSentenceSpeaker: getSentenceSpeaker,
   getSentenceWords: getSentenceWords,
   getWordMorphs: getWordMorphs,
   getWordValue: getWordValue,
