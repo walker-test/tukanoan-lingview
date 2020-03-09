@@ -8,7 +8,7 @@ LingView now supports .flextext files as source documents. (Flextext is the form
 
 ## Getting Started
 To begin using this site, you'll need to have NPM and Node.js installed. [Details can be found on the NPM website.](http://blog.npmjs.org/post/85484771375/how-to-install-npm) Then, clone this repository and run the command:
-    npm install
+    `npm install`
     
 This will install all the node modules required by our program. After making changes to a file, you'll need to bundle the code with [Webpack](https://webpack.js.org/). To do so, simply type the command "webpack" in the repository's root directory.
 
