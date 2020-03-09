@@ -9,7 +9,10 @@
         "es": "El negro",
         "_default": "Singo a'i"
       },
-      "media": {},
+      "media": {
+        "audio": "",
+        "video": ""
+      },
       "languages": [
         "con-Latn-EC",
         "en",
@@ -68,7 +71,10 @@
           "es": "El negro",
           "_default": "Singo a'i"
         },
-        "media": {},
+        "media": {
+          "audio": "",
+          "video": ""
+        },
         "languages": [
           "con-Latn-EC",
           "en",

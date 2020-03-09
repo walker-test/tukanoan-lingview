@@ -1,7 +1,24 @@
-function getDocumentFirstWord(doc) {
+/* functions for accessing data within FLEx's Verifiable Generic XML and .flextext formats 
+(after they've been parsed to JSON): */
+
+function getDocumentSourceLang(doc) {
+  const firstSentence = getDocumentFirstSentence(doc);
+  const firstWord = getSentenceWords(firstSentence)[0];
+  if (firstWord != null) {
+    return getWordLang(firstWord);
+  }
+  const textItem = getSentenceTextItemIfExists(firstSentence);
+  // since firstWord was null, assume textItem isn't
+  return textItem.$.lang;
+}
+
+function documentHasTimestamps(doc) {
+  return getSentenceStartTime(getDocumentFirstSentence(doc)) != null;
+}
+
+function getDocumentFirstSentence(doc) {
   const firstParagraph = getDocumentParagraphs(doc)[0];
-  const firstSentence = getParagraphSentences(firstParagraph)[0];
-  return getSentenceWords(firstSentence)[0];
+  return getParagraphSentences(firstParagraph)[0];
 }
 
 function getDocumentParagraphs(doc) {
@@ -9,18 +26,46 @@ function getDocumentParagraphs(doc) {
   const wrappedParagraphs = doc.paragraphs[0].paragraph;
   for (const wrappedParagraph of wrappedParagraphs) {
     if (wrappedParagraph.phrases == null) continue; // if this paragraph is empty, skip it instead of erroring
-    paragraphs.push(wrappedParagraph.phrases[0].word);
+    let paragraph = wrappedParagraph.phrases[0].word; // for Verifiable Generic XML
+    if (paragraph == null) {
+      paragraph = wrappedParagraph.phrases[0].phrase; // for .flextext
+    }
+    if (paragraph != null) {
+      paragraphs.push(paragraph);
+    }
   }
   return paragraphs;
 }
 
 function getParagraphSentences(paragraph) {
   let sentences = [];
-  for (const wrappedSentence of paragraph) {
-    if (wrappedSentence.words == null) continue; // if this sentence is empty, skip it instead of erroring
-    sentences.push(wrappedSentence); // breakdown within wrappedSentence.words[0].word; free glosses within wrappedSentence.item
+  for (const sentence of paragraph) {
+    sentences.push(sentence); // breakdown within wrappedSentence.words[0].word; free glosses within wrappedSentence.item
   }
   return sentences;
+}
+
+function getSentenceTextIfNoWords(sentence) {
+  // After starting to gloss a sentence in FLEx, the "txt" tier disappears, 
+  // replaced by the individual <word>s. In that case, we return null.
+  const textItem = getSentenceTextItemIfExists(sentence);
+  if (textItem != null) {
+    return getFreeGlossValue(textItem);
+  } else {
+    return null;
+  }
+}
+
+function getSentenceTextItemIfExists(sentence) {
+  // When exported from ELAN, the sentence's text is formatted like a free gloss, but with type="txt".
+  // Once someone starts glossing the sentence, that item disappears, replaced by individual words,
+  // in which case we return null. 
+  for (const gloss of sentence.item) {
+    if (gloss.$.type === "txt") {
+      return gloss;
+    }
+  }
+  return null;
 }
 
 function getSentenceFreeGlosses(sentence) {
@@ -31,14 +76,53 @@ function getSentenceFreeGlosses(sentence) {
       const glossValue = gloss._;
       if (glossValue != null) {
         freeGlosses.push(gloss);
-      }
-    } // else there's not actually a gloss here, just the metadata/placeholder for one
-  } // else it might be type "segnum" (sentence number) or similar; we'll ignore it
+      } // else there's not actually a gloss here, just the metadata/placeholder for one
+    } // else it might be type "segnum" (sentence number) or similar; we'll ignore it
+  }
   return freeGlosses;
 }
 
+function getSentenceStartTime(sentence) {
+  const sentenceProperties = sentence.$;
+  if (sentenceProperties != null) {
+    const timeString = sentenceProperties['begin-time-offset'];
+    if (timeString != null) {
+      return parseInt(timeString, 10);
+    }
+  }
+  return null;
+}
+
+function getSentenceEndTime(sentence) {
+  const sentenceProperties = sentence.$;
+  if (sentenceProperties != null) {
+    const timeString = sentenceProperties['end-time-offset'];
+    if (timeString != null) {
+      return parseInt(timeString, 10);
+    }
+  }
+  return null;
+}
+
+function getSentenceSpeaker(sentence) {
+  const sentenceProperties = sentence.$;
+  if (sentenceProperties != null) {
+    return sentenceProperties.speaker;
+  }
+  return null;
+}
+
 function getSentenceWords(sentence) {
-  return sentence.words[0].word;
+  if (sentence.words == null) {
+    return [];
+  }
+  let wordList = sentence.words[0].word;
+  if (wordList == null) {
+    // this happens on .flextext files if some sentences, 
+    // but not this sentence, have been glossed
+    return [];
+  }
+  return wordList;
 }
 
 function getWordMorphs(word) {
@@ -76,14 +160,18 @@ function getFreeGlossValue(freeGloss) {
 }
 
 module.exports = {
-  getDocumentFirstWord: getDocumentFirstWord,
+  getDocumentSourceLang: getDocumentSourceLang,
+  documentHasTimestamps: documentHasTimestamps,
   getDocumentParagraphs: getDocumentParagraphs,
   getParagraphSentences: getParagraphSentences,
+  getSentenceTextIfNoWords: getSentenceTextIfNoWords,
   getSentenceFreeGlosses: getSentenceFreeGlosses,
+  getSentenceStartTime: getSentenceStartTime,
+  getSentenceEndTime: getSentenceEndTime,
+  getSentenceSpeaker: getSentenceSpeaker,
   getSentenceWords: getSentenceWords,
   getWordMorphs: getWordMorphs,
   getWordValue: getWordValue,
-  getWordLang: getWordLang,
   getMorphTiers: getMorphTiers,
   getMorphPartOfSpeech: getMorphPartOfSpeech,
   getMorphTierValue: getMorphTierValue,

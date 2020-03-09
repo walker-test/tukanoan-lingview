@@ -30,6 +30,17 @@ if (maxArgIndex < 2) {
   }
 }
 
+function hasTimestamps(uniqueId) {
+  const stories = DB.stories;
+  for (const story of stories) {
+    if (story.metadata["story ID"] == uniqueId) {
+      let firstSentence = story.sentences[0];
+      return firstSentence.start_time_ms != null;
+    }
+  }
+  return false; // we'll never get here
+}
+
 function main(callback) {
 	inquirer.prompt([
 		// mp3
@@ -40,7 +51,7 @@ function main(callback) {
 			"default": data["media"]["audio"],
 			"when":
 				function(answers) {
-					return (data["source_filetype"] === "ELAN");
+					return hasTimestamps(filename);
 				},
 			"validate":	
 				function(response) {
@@ -62,7 +73,7 @@ function main(callback) {
 			"default": data["media"]["video"],
 			"when":
 				function(answers) {
-					return (data["source_filetype"] === "ELAN");
+					return hasTimestamps(filename);
 				},
 			"validate":	
 				function(response) {
@@ -158,15 +169,15 @@ function main(callback) {
 		}
 	// 
 	]).then(function (answers) {
-		if (answers["mp3"] == "blank") {
+		if (answers["audio"] == "blank") {
 			data["media"]["audio"] == "";
 		} else {
-			data["media"]["audio"] = answers["mp3"];
+			data["media"]["audio"] = answers["audio"];
 		}
-		if (answers["mp4"] == "blank") {
+		if (answers["video"] == "blank") {
 			data["media"]["video"] == "";
 		} else {
-			data["media"]["video"] = answers["mp4"];
+			data["media"]["video"] = answers["video"];
 		}
 		data["timed"] = (data["media"]["audio"] != "") || (data["media"]["video"] != "");
 		

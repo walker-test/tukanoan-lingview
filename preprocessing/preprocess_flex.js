@@ -5,6 +5,7 @@ Functions for processing flex files into the json format used by the site.
 const fs = require('fs');
 const util = require('util');
 const parseXml = require('xml2js').parseString;
+const speakerRegistry = require('./speaker_registry').speakerRegistry;
 const tierRegistry = require('./tier_registry').tierRegistry;
 const helper = require('./helper_functions');
 const flexUtils = require('./flex_utils');
@@ -43,8 +44,8 @@ function updateIndex(metadata, indexFilePath, storyID) {
 //   where each morph token is an object structured as in FLEx
 // wordStartSlot - the timeslot index of the first morph token within its sentence
 // wordEndSlot - the timeslot index after the last morph token within its sentence
-function getGlommedValue(morphsThisTier, wordStartSlot, wordEndSlot) {
-  let glommedValue = '';
+function concatMorphs(morphsThisTier, wordStartSlot, wordEndSlot) {
+  let wordMorphsText = '';
   let maybeAddCompoundSeparator = false; // never add a separator before the first word
   for (let i = wordStartSlot; i < wordEndSlot; i++) {
     let nextValue = '***';
@@ -63,16 +64,16 @@ function getGlommedValue(morphsThisTier, wordStartSlot, wordEndSlot) {
 
     // insert compound-word separator if needed
     if (maybeAddCompoundSeparator && !isSeparator(nextValue.substring(0, 1))) {
-      glommedValue += '+';
+      wordMorphsText += '+';
     }
     if (!isSeparator(nextValue.substring(-1))) {
       maybeAddCompoundSeparator = true;
     }
 
-    glommedValue += nextValue;
+    wordMorphsText += nextValue;
   }
 
-  return glommedValue;
+  return wordMorphsText;
 }
 
 // word - the data associated with a single word of the source text, 
@@ -97,7 +98,7 @@ function getSentenceToken(word) {
 // sentenceTokens - a list of objects, each indicating how to represent
 //   one word within the sentence text
 // returns the sentence as a string with correct punctuation and spacing
-function getSentenceText(sentenceTokens) {
+function concatWords(sentenceTokens) {
   let sentenceText = "";
   let maybeAddSpace = false; // no space before first word
   for (const typedToken of sentenceTokens) {
@@ -149,7 +150,7 @@ function getDependentsJson(morphsJson) {
 function repackageMorphs(morphs, tierReg, startSlot) {
   // FLEx packages morph items by morpheme, not by type.
   // We handle this by first re-packaging all the morphs by type(a.k.a. tier),
-  // then concatenating(a.k.a. glomming) all the morphs of the same type.
+  // then concatenating all the morphs of the same type.
 
   // Repackaging step:
   const morphTokens = {};
@@ -179,7 +180,7 @@ function repackageMorphs(morphs, tierReg, startSlot) {
         morphsJson[tierID] = {};
       }
       morphsJson[tierID][startSlot] = {
-        "value": getGlommedValue(morphTokens[tierID], startSlot, slotNum),
+        "value": concatMorphs(morphTokens[tierID], startSlot, slotNum),
         "end_slot": slotNum
       };
     }
@@ -232,11 +233,13 @@ function repackageFreeGlosses(freeGlosses, tierReg, endSlot) {
 
 // sentence - an object describing a sentence of source text,
 //   structured as in the FLEx file
+// speakerReg - a map from speaker names to speaker IDs, which we'll add to if we find a new speaker
 // tierReg - a tierRegistry object
 // wordsTierID - the ID which has been assigned to the words tier
+// hasTimestamps - whether the FLEx file contains a start and end value for each sentence
 // returns an object describing the sentence, 
 //   structured correctly for use by the website
-function getSentenceJson(sentence, tierReg, wordsTierID) {
+function getSentenceJson(sentence, speakerReg, tierReg, wordsTierID, hasTimestamps) {
   const morphsJson = {}; // tierID -> start_slot -> {"value": value, "end_slot": end_slot}
   morphsJson[wordsTierID] = {}; // FIXME words tier will show up even when the sentence is empty of words
 
@@ -271,26 +274,44 @@ function getSentenceJson(sentence, tierReg, wordsTierID) {
   const freeGlosses = flexUtils.getSentenceFreeGlosses(sentence);
   const freeGlossesJson = repackageFreeGlosses(freeGlosses, tierReg, slotNum);
   mergeTwoLayerDict(morphsJson, freeGlossesJson);
+  let sentenceText = flexUtils.getSentenceTextIfNoWords(sentence);
+  if (sentenceText == null) {
+    sentenceText = concatWords(sentenceTokens)
+  }
 
-  // "speaker, "start_time", and "end_time" omitted (they're only used on elan files)
-  return ({
+  let sentenceJson = {
     "num_slots": slotNum,
-    "text": getSentenceText(sentenceTokens),
+    "text": sentenceText,
     "dependents": getDependentsJson(morphsJson),
-  });
+  };
+  
+  if (hasTimestamps) {
+    sentenceJson.start_time_ms = flexUtils.getSentenceStartTime(sentence);
+    sentenceJson.end_time_ms = flexUtils.getSentenceEndTime(sentence);
+  }
+  
+  let speaker = flexUtils.getSentenceSpeaker(sentence);
+  if (speaker != null) {
+    speakerReg.maybeRegisterSpeaker(speaker);
+    sentenceJson.speaker = speakerReg.getSpeakerID(speaker);
+  }
+  
+  return sentenceJson;
 }
 
 // jsonIn - the JSON parse of the FLEx interlinear-text
 // jsonFilesDir - the directory for the output file describing this interlinear text
-// shortFileName - TODO delete unused parameter
+// fileName - TODO delete unused parameter
 // isoDict - an object correlating languages with ISO codes
 // callback - the function that will execute when the preprocessText function completes
 // updates the index and story files for this interlinear text, 
 //   then executes the callback
-function preprocessText(jsonIn, jsonFilesDir, shortFileName, isoDict, callback) {
+function preprocessText(jsonIn, jsonFilesDir, fileName, isoDict, callback) {
   let storyID = jsonIn.$.guid;
-
-  let metadata = helper.improveFLExIndexData(shortFileName + ".xml", storyID, jsonIn);
+  
+  let metadata = helper.improveFLExIndexData(fileName, storyID, jsonIn);
+  const speakerReg = new speakerRegistry();
+  metadata['speakers'] = speakerReg.getSpeakersList();
   updateIndex(metadata, "data/index.json", storyID);
 
   const jsonOut = {
@@ -298,17 +319,20 @@ function preprocessText(jsonIn, jsonFilesDir, shortFileName, isoDict, callback) 
     "sentences": []
   };
 
-  let textLang = flexUtils.getWordLang(flexUtils.getDocumentFirstWord(jsonIn));
+  let textLang = flexUtils.getDocumentSourceLang(jsonIn);
   const tierReg = new tierRegistry(isoDict);
   const wordsTierID = tierReg.maybeRegisterTier(textLang, "words", true);
 
+  const hasTimestamps = flexUtils.documentHasTimestamps(jsonIn);
+  
   for (const paragraph of flexUtils.getDocumentParagraphs(jsonIn)) {
     for (const sentence of flexUtils.getParagraphSentences(paragraph)) {
-      jsonOut.sentences.push(getSentenceJson(sentence, tierReg, wordsTierID));
+      jsonOut.sentences.push(getSentenceJson(sentence, speakerReg, tierReg, wordsTierID, hasTimestamps));
     }
   }
 
   jsonOut.metadata['tier IDs'] = tierReg.getTiersJson();
+  jsonOut.metadata['speaker IDs'] = speakerReg.getSpeakersJson();
 
   const prettyString = JSON.stringify(jsonOut, null, 2);
   const jsonPath = jsonFilesDir + storyID + ".json";
@@ -373,7 +397,7 @@ function preprocess_dir(xmlFilesDir, jsonFilesDir, isoFileName, callback) {
         };
         
         for (const text of texts) {
-          preprocessText(text, jsonFilesDir, xmlFileName.slice(0, -4), isoDict, singleTextCallback);
+          preprocessText(text, jsonFilesDir, xmlFileName, isoDict, singleTextCallback);
         }
       });
     });
