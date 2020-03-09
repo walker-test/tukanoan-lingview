@@ -3,6 +3,9 @@ A web interface for viewing glossed ELAN and FLEx files, optionally with time-sy
 
 Front-end code written with [ReactJS](https://reactjs.org/).
 
+## Update: FLEx-with-media support
+LingView now supports .flextext files as source documents. (Flextext is the format used for exporting a file from ELAN to FLEx or vice versa.) The new format can include timing information and can therefore be displayed with synced audio/video. 
+
 ## Getting Started
 To begin using this site, you'll need to have NPM and Node.js installed. [Details can be found on the NPM website.](http://blog.npmjs.org/post/85484771375/how-to-install-npm) Then, clone this repository and run the command:
     npm install
