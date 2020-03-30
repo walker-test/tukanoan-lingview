@@ -153,13 +153,35 @@ function improveFLExIndexData(path, storyID, itext) {
   
   const hasTimestamps = flexUtils.documentHasTimestamps(itext);
   
+  // get title/source info, part 1
+  let titlesAndSources = itext["item"];
+  let titles = {};
+  let sources = {};
+  if (titlesAndSources != null) {
+    for (const current_title of titlesAndSources) {
+      if (current_title['$']['type'] === 'title') {
+        titles[(current_title["$"]["lang"])] = current_title["_"];
+      } else if (current_title['$']['type'] === 'source') {
+        sources[(current_title["$"]["lang"])] = current_title["_"];
+      }
+    }
+  }
+  
   if (metadata == null) { // file not in index previously
+  
+    let defaultTitle = getTitleFromFilename(getFilenameFromPath(path));
+    // Uncomment the three lines below to use a particular language title 
+    // (in this case "es", Spanish) as the main title for newly added documents. 
+    // if (titles["es"] != null) {
+      // defaultTitle = titles["es"];
+    // }
+  
     // below is the starter data:
     metadata = {
       "timed": hasTimestamps,
       "story ID": storyID,
       "title": {
-        "_default": getTitleFromFilename(getFilenameFromPath(path)),
+        "_default": defaultTitle,
       },
       "media": {
         "audio": "",
@@ -181,23 +203,11 @@ function improveFLExIndexData(path, storyID, itext) {
     }
   }
   
-  // get title/source info
-  let titlesAndSources = itext["item"];
-  if (titlesAndSources != null) {
-    let titles = {};
-    let sources = {};
-    for (const current_title of titlesAndSources) {
-      if (current_title['$']['type'] === 'title') {
-        titles[(current_title["$"]["lang"])] = current_title["_"];
-      } else if (current_title['$']['type'] === 'source') {
-        sources[(current_title["$"]["lang"])] = current_title["_"];
-      }
-    }
-    titles["_default"] = metadata["title"]["_default"];
-    sources["_default"] = metadata["source"]["_default"];
-    metadata["title"] = titles;
-    metadata["source"] = sources;
-  }
+  // get title/source info, part 2
+  titles["_default"] = metadata["title"]["_default"];
+  sources["_default"] = metadata["source"]["_default"];
+  metadata["title"] = titles;
+  metadata["source"] = sources;
   
   // get language info
   let languages = [];
