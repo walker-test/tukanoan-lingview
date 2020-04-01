@@ -172,7 +172,7 @@ function improveFLExIndexData(path, storyID, itext) {
     let defaultTitle = getTitleFromFilename(getFilenameFromPath(path));
     // Uncomment the three lines below to use a particular language title 
     // (in this case "es", Spanish) as the main title for newly added documents. 
-    // if (titles["es"] != null) {
+    // if (titles["es"] != null && titles["es"] != "") {
       // defaultTitle = titles["es"];
     // }
   
