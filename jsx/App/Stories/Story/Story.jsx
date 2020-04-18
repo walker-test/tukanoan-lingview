@@ -1,16 +1,13 @@
 import { Sidebar } from './Sidebar/Sidebar.jsx';
 import { CenterPanel } from './Display/CenterPanel.jsx';
 import { Video } from './Sidebar/Video.jsx';
+import { setupTextSync } from '../../../../js/txt_sync';
 
 export class Story extends React.Component {
     componentDidMount() {
         // If there is a footer, i.e., if audio exists:
         if ($('#footer').length !== 0) {
-            $.ajax({
-                url: 'js/txt_sync.js',
-                dataType: 'script',
-            });
-
+            setupTextSync();
             // If video exists:
             if ($('#video').length !== 0) {
                 Video.show();
