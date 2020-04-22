@@ -1,4 +1,5 @@
-var path = require('path');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './jsx/AppContainer.jsx',
@@ -17,6 +18,21 @@ module.exports = {
         presets: ['es2015', 'react'],
         plugins: ['syntax-dynamic-import']
       }
+    }, {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
+    }, {
+      test: /\.(png|jpg)$/,
+      loader: 'url-loader'
     }]
-  }
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      React: 'react'
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
+  ]
 };

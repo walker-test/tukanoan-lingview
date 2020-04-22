@@ -3,6 +3,9 @@ import id from 'shortid';
 import { Link } from 'react-router-dom';
 import ReactDOMServer from 'react-dom/server';
 
+require('datatables.net-dt');
+import 'datatables.net-dt/css/jquery.dataTables.css';
+
 export class StoryIndex extends React.Component {
     componentDidMount() {
         const index = this.props.index;
