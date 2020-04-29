@@ -31,8 +31,14 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+
+    "rebuild-db": "node preprocessing/rebuild.js",
     "webpack": "webpack --config webpack.config.js",
-    "rebuild-db": "node preprocessing/rebuild.js"
+
+    "build-online": "npm run webpack",
+    "build-offline": "echo \"Error: not yet implemented; will modify ELAN files first before running webpack script\" && exit 1",
+    "bundle-online": "rm -rf dist/ && mkdir dist/ && cp --recursive index.html js/ css/ images/ dist/",
+    "bundle-offline": "npm run bundle-online && mkdir dist/data/ && cp --recursive data/media_files/ dist/"
   },
   "repository": {
     "type": "git",
