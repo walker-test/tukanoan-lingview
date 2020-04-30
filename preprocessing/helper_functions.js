@@ -1,4 +1,5 @@
 const fs = require('fs');
+const http = require('http');
 const flexUtils = require('./flex_utils'); // TODO use me more, and use eafUtils too, for stylistic consistency
 
 function getMetadataFromIndex(filename) {
@@ -66,10 +67,45 @@ function mediaSearch(filename, mediaType, mediaFiles, extension) {
   const mediaFile = findValidMedia(filenamesToTry);
   if (mediaFile != null) {
     console.log("🔍  SUCCESS: Found matching " + mediaType + ": " + mediaFile);
+  } else if (process.env.MISSING_MEDIA === 'link') {
+    console.log("🔗 Attempting to link media to remote storage...");
+    return remoteMediaSearch(filenamesToTry).remoteUrl;
+  } else if (process.env.MISSING_MEDIA === 'download') {
+    console.log("👇 Attempting to download media from remote storage...");
+    const remoteMedia = remoteMediaSearch(filenamesToTry);
+    if (remoteMedia.filename != null) {
+      const file = fs.createWriteStream(`data/media_files/${remoteMedia.filename}`); // maybe use 'path' module with __dirname
+      http.get(remoteMedia.remoteUrl.replace(/^https/, 'http'), (response) => {
+        response.pipe(file);
+      });
+    }
+    return remoteMedia.filename;
   } else {
+    if (typeof process.env.MISSING_MEDIA !== 'undefined') {
+      console.log("⚠ Unsupported value", process.env.MISSING_MEDIA, "for MISSING_MEDIA env variable.")
+    }
     console.log("❌  ERROR: Cannot find matching " + mediaType + " for " + shortFilename + ". ");
   }
   return mediaFile;
+}
+
+function remoteMediaSearch(filenamesToTry) {
+  let cachedRemoteMediaFiles;
+  try {
+    cachedRemoteMediaFiles = require('./TEMP_remote_media_index.json');
+  } catch (err) {
+    console.log(err);
+    console.log('Perhaps no remote media index was found; please run node preprocessing/fetch_remote_media_index.js first');
+    process.exit(1);
+  }
+  for (const filename of filenamesToTry) {
+    if (cachedRemoteMediaFiles.hasOwnProperty(filename)) {
+      console.log('🔍 Found!', cachedRemoteMediaFiles[filename]);
+      return { filename, remoteUrl: `https://drive.google.com/uc?id=${cachedRemoteMediaFiles[filename]}` };
+    }
+  }
+  console.log('❌ Could not find remotely!');
+  return { filename: null, remoteUrl: null };
 }
 
 function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {

@@ -7,8 +7,8 @@ require('datatables.net-dt');
 import 'datatables.net-dt/css/jquery.dataTables.css';
 
 export class StoryIndex extends React.Component {
-    componentDidMount() {
-        const index = this.props.index;
+    async componentDidMount() {
+        const index = (await import('../../data/index.json')).default;
         let storyList = [];
         for (const story in index) {
             if (index.hasOwnProperty(story)) {

@@ -2,9 +2,17 @@ import { Sidebar } from './Sidebar/Sidebar.jsx';
 import { CenterPanel } from './Display/CenterPanel.jsx';
 import { Video } from './Sidebar/Video.jsx';
 import { setupTextSync } from '../../../../js/txt_sync';
+import { Loader } from '../Loader.jsx';
 
 export class Story extends React.Component {
-    componentDidMount() {
+    constructor(props) {
+        super(props);
+        this.state = { story: null };
+      }
+    async componentDidMount() {
+        const storyJSON = await import(`../../../../data/json_files/${this.props.storyID}.json`);
+        this.setState({ story: storyJSON.default });
+
         // If there is a footer, i.e., if audio exists:
         if ($('#footer').length !== 0) {
             setupTextSync();
@@ -18,7 +26,11 @@ export class Story extends React.Component {
     }
 
     render() {
-        const story = this.props.story;
+        if (!this.state.story) {
+            return <Loader />;
+        }
+
+        const story = this.state.story;
         console.log(story);
         const sentences = story['sentences'];
         const timed = (story['metadata']['timed']);
@@ -31,7 +43,8 @@ export class Story extends React.Component {
             } else {
                 audioFile = media['video'];
             }
-            footer = <div id="footer"><audio data-live="true" controls controlsList="nodownload" id="audio" src={'data/media_files/' + audioFile}/></div>;
+            const audioFilePath = getMediaFilePath(audioFile);
+            footer = <div id="footer"><audio data-live="true" controls controlsList="nodownload" id="audio" src={audioFilePath}/></div>;
         }
         return (
             <div>
@@ -43,4 +56,8 @@ export class Story extends React.Component {
             </div>
         );
     }
+}
+
+export function getMediaFilePath(mediaFilename) {
+    return mediaFilename.toLowerCase().startsWith('https://drive.google.com') ? mediaFilename : `data/media_files/${mediaFilename}`;
 }

@@ -26,6 +26,23 @@ module.exports = {
       loader: 'url-loader'
     }]
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        default: false,
+        vendors: false,
+        common: {
+          name: 'common',
+          minChunks: 2,
+          chunks: 'async',
+          priority: 10,
+          reuseExistingChunk: true,
+          enforce: true
+        }
+      }
+    },
+    usedExports: true,
+  },
   plugins: [
     new webpack.ProvidePlugin({
       React: 'react'
