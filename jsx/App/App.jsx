@@ -9,8 +9,8 @@ export function App({ data }) {
     return (
         <div>
             <Route exact path="/" render={props => <LandingPage/>} />
-            <Route exact path="/index" render={props => <StoryIndex index={data.index} />} />
-            <Route path="/story" render={props => <Stories stories={data.stories} />} />
+            <Route exact path="/index" render={props => <StoryIndex />} />
+            <Route path="/story" render={props => <Stories />} />
         </div>
     );
 }

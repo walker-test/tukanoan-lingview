@@ -26,17 +26,15 @@
   "devDependencies": {
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "css-loader": "^3.5.2",
+    "node-fetch": "^2.6.0",
     "style-loader": "^1.1.4",
     "url-loader": "^4.1.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-
-    "rebuild-db": "node preprocessing/rebuild.js",
+    "rebuild-db-online": "node preprocessing/fetch_remote_media_index.js && MISSING_MEDIA=link node preprocessing/rebuild.js",
+    "rebuild-db-offline": "node preprocessing/fetch_remote_media_index.js && MISSING_MEDIA=download node preprocessing/rebuild.js",
     "webpack": "webpack --config webpack.config.js",
-
-    "build-online": "npm run webpack",
-    "build-offline": "echo \"Error: not yet implemented; will modify ELAN files first before running webpack script\" && exit 1",
     "bundle-online": "rm -rf dist/ && mkdir dist/ && cp --recursive index.html js/ css/ images/ dist/",
     "bundle-offline": "npm run bundle-online && mkdir dist/data/ && cp --recursive data/media_files/ dist/"
   },
