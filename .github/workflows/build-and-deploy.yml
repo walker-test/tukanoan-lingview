@@ -28,7 +28,7 @@ jobs:
         npm ci
         npm run rebuild-db-online
         npm run webpack
-        npm run bundle-online
+        npm run bundle
       env:
         CD: true # Continuous deployment
         GDRIVE_MEDIA_FOLDER_ID: ${{ secrets.GDRIVE_MEDIA_FOLDER_ID }}
