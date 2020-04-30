@@ -31,6 +31,8 @@ jobs:
         npm run bundle-online
       env:
         CD: true # Continuous deployment
+        GDRIVE_MEDIA_FOLDER_ID: ${{ secrets.GDRIVE_MEDIA_FOLDER_ID }}
+        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
