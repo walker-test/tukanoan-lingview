@@ -16,7 +16,7 @@ const status = {numJobs: 2};
 const whenDone = function () {
   status.numJobs--;
   if (status.numJobs <= 0) {
-    console.log('Done!');
+    console.log('Done building databases!');
     // console.log("Building database...");
     // db.build(jsonFilesDir, indexFileName, dbFileName);
   }

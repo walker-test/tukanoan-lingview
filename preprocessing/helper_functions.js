@@ -1,5 +1,7 @@
 const fs = require('fs');
-const http = require('http');
+const fetch = require('fetch-retry')(require('isomorphic-fetch'));
+const { promisify } = require('util');
+const streamPipeline = promisify(require('stream').pipeline);
 const flexUtils = require('./flex_utils'); // TODO use me more, and use eafUtils too, for stylistic consistency
 
 function getMetadataFromIndex(filename) {
@@ -74,10 +76,17 @@ function mediaSearch(filename, mediaType, mediaFiles, extension) {
     console.log("👇 Attempting to download media from remote storage...");
     const remoteMedia = remoteMediaSearch(filenamesToTry);
     if (remoteMedia.filename != null) {
-      const file = fs.createWriteStream(`data/media_files/${remoteMedia.filename}`); // maybe use 'path' module with __dirname
-      http.get(remoteMedia.remoteUrl.replace(/^https/, 'http'), (response) => {
-        response.pipe(file);
-      });
+      const destFilename = `data/media_files/${remoteMedia.filename}`; // maybe use 'path' module with __dirname
+      const srcUrl = remoteMedia.remoteUrl;
+      remoteMediaDownload(srcUrl, destFilename)
+        .then(() => {
+          console.log("👍 Successfuly downloaded media from remote storage:", destFilename);
+        })
+        .catch((err) => {
+          console.log(err);
+          console.log("👎 Failed to download media from remote storage:", destFilename, { srcUrl });
+          process.exit(1);
+        });
     }
     return remoteMedia.filename;
   } else {
@@ -106,6 +115,16 @@ function remoteMediaSearch(filenamesToTry) {
   }
   console.log('❌ Could not find remotely!');
   return { filename: null, remoteUrl: null };
+}
+async function remoteMediaDownload(url, dest) {
+  const response = await fetch(url, {
+    retries: 5,
+    retryDelay: 1000
+  });
+  if (!response.ok) {
+    throw new Error(`unexpected response ${response.statusText}`);
+  }
+  await streamPipeline(response.body, fs.createWriteStream(dest))
 }
 
 function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
