@@ -1,4 +1,6 @@
 node_modules
 .idea/
 dist/
+dist-online/
+dist-offline/
 preprocessing/TEMP*
