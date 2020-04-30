@@ -35,8 +35,7 @@
     "rebuild-db-online": "node preprocessing/fetch_remote_media_index.js && MISSING_MEDIA=link node preprocessing/rebuild.js",
     "rebuild-db-offline": "node preprocessing/fetch_remote_media_index.js && MISSING_MEDIA=download node preprocessing/rebuild.js",
     "webpack": "webpack --config webpack.config.js",
-    "bundle-online": "rm -rf dist/ && mkdir dist/ && cp --recursive index.html js/ css/ images/ dist/",
-    "bundle-offline": "npm run bundle-online && mkdir dist/data/ && cp --recursive data/media_files/ dist/"
+    "bundle": "rm -rf dist/ && mkdir dist/ && mkdir dist/media_files/ && cp --recursive index.html js/ css/ images/ data/media_files/ dist/"
   },
   "repository": {
     "type": "git",
