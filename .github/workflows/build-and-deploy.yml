@@ -34,7 +34,8 @@ jobs:
         npm run rebuild-db-offline
         npm run webpack
         npm run bundle
-        mv dist dist-offline
+        mkdir dist-offline
+        mv dist dist-offline/LingView
       env:
         CD: true # Continuous deployment
         GDRIVE_MEDIA_FOLDER_ID: ${{ secrets.GDRIVE_MEDIA_FOLDER_ID }}
