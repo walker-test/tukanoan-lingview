@@ -26,8 +26,8 @@ jobs:
     - name: npm install and build
       run: |
         npm ci
-        npm run rebuild-db
-        npm run build-online
+        npm run rebuild-db-online
+        npm run webpack
         npm run bundle-online
       env:
         CD: true # Continuous deployment
