@@ -101,10 +101,10 @@ function mediaSearch(filename, mediaType, mediaFiles, extension) {
 function remoteMediaSearch(filenamesToTry) {
   let cachedRemoteMediaFiles;
   try {
-    cachedRemoteMediaFiles = require('./TEMP_remote_media_index.json');
+    cachedRemoteMediaFiles = require('../data/remote_media_index.json');
   } catch (err) {
     console.log(err);
-    console.log('Perhaps no remote media index was found; please run node preprocessing/fetch_remote_media_index.js first');
+    console.log('Maybe no remote media index was found; please run node preprocessing/fetch_remote_media_index.js first');
     process.exit(1);
   }
   for (const filename of filenamesToTry) {
@@ -225,6 +225,7 @@ function improveFLExIndexData(path, storyID, itext) {
   if (metadata == null) { // file not in index previously
   
     let defaultTitle = getTitleFromFilename(getFilenameFromPath(path));
+    console.log(32332, path, defaultTitle);
     // Uncomment the three lines below to use a particular language title 
     // (in this case "es", Spanish) as the main title for newly added documents. 
     // if (titles["es"] != null && titles["es"] != "") {

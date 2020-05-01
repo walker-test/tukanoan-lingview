@@ -30,12 +30,12 @@ jobs:
         npm run rebuild-db-online
         npm run webpack
         npm run bundle
-        mv dist dist-online
+        mv bundle bundle-online
         npm run rebuild-db-offline
         npm run webpack
         npm run bundle
-        mkdir dist-offline
-        mv dist dist-offline/LingView
+        mkdir bundle-offline
+        mv bundle bundle-offline/LingView
       env:
         CD: true # Continuous deployment
         GDRIVE_MEDIA_FOLDER_ID: ${{ secrets.GDRIVE_MEDIA_FOLDER_ID }}
@@ -46,10 +46,10 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: dist-online # The folder the action should deploy.
+        FOLDER: bundle-online # The folder the action should deploy.
       
     - name: Save offline-compatible local version as an artifact
       uses: actions/upload-artifact@v2
       with:
         name: LingView-local
-        path: dist-offline
+        path: bundle-offline

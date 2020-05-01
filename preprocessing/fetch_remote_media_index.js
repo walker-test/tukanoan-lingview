@@ -1,15 +1,15 @@
-const fetch = require('node-fetch');
+const fetch = require('isomorphic-fetch');
 const { promises: { writeFile } } = require('fs');
 const path = require('path');
 
 async function remoteMediaSearchFetchSaveIndex() {
   const cachedRemoteMediaFiles = {};
-  if (typeof process.env.GDRIVE_MEDIA_FOLDER_ID === 'undefined') {
-    console.log('MISSING ENV VARIABLE: GDRIVE_MEDIA_FOLDER_ID');
-    process.exit(1);
-  }
   if (typeof process.env.GOOGLE_API_KEY === 'undefined') {
     console.log('MISSING ENV VARIABLE: GOOGLE_API_KEY');
+    process.exit(1);
+  }
+  if (typeof process.env.GDRIVE_MEDIA_FOLDER_ID === 'undefined') {
+    console.log('MISSING ENV VARIABLE: GDRIVE_MEDIA_FOLDER_ID');
     process.exit(1);
   }
 
@@ -24,6 +24,6 @@ async function remoteMediaSearchFetchSaveIndex() {
     }
     ({ nextPageToken } = json);
   }
-  await writeFile(path.join(__dirname, 'TEMP_remote_media_index.json'), JSON.stringify(cachedRemoteMediaFiles, null, '  '), 'utf8');
+  await writeFile(path.resolve(__dirname, '..', 'data', 'remote_media_index.json'), JSON.stringify(cachedRemoteMediaFiles, null, '  '), 'utf8');
 }
 (async () => await remoteMediaSearchFetchSaveIndex())();
