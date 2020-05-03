@@ -25,5 +25,6 @@ async function remoteMediaSearchFetchSaveIndex() {
     ({ nextPageToken } = json);
   }
   await writeFile(path.resolve(__dirname, '..', 'data', 'remote_media_index.json'), JSON.stringify(cachedRemoteMediaFiles, null, '  '), 'utf8');
+  console.log('✅ Updated remote_media_index.json!');
 }
 (async () => await remoteMediaSearchFetchSaveIndex())();
