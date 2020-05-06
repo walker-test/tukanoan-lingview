@@ -53,10 +53,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Use saved remote-media-index
-        uses: actions/download-artifact@v2
-        with:
-          name: remote-media-index
-          path: data/remote_media_index.json
+      uses: actions/download-artifact@v2
+      with:
+        name: remote-media-index
+        path: data/remote_media_index.json
 
     - name: Build online version
       run: |
@@ -91,10 +91,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
 
     - name: Use saved remote-media-index
-        uses: actions/download-artifact@v2
-        with:
-          name: remote-media-index
-          path: data/remote_media_index.json
+      uses: actions/download-artifact@v2
+      with:
+        name: remote-media-index
+        path: data/remote_media_index.json
 
     - name: Build offline-compatible local version
       run: |
