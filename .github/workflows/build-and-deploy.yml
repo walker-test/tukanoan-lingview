@@ -6,10 +6,8 @@ on:
       - production
 
 jobs:
-  build-and-deploy:
-
+  fetch-freeze-remote-media-index:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [12.x]
@@ -23,31 +21,92 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build online and offline-compatible local versions together
+    - name: npm install and run fetch-remote-media-index script
       run: |
         npm ci
         npm run fetch-remote-media-index
+      env:
+        CI: true # convention; to treat warnings as errors
+        GDRIVE_MEDIA_FOLDER_ID: ${{ secrets.GDRIVE_MEDIA_FOLDER_ID }}
+        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+      
+    - name: Save remote media index as an artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: remote-media-index
+        path: data/remote_media_index.json
+
+  build-and-deploy-online:
+    runs-on: ubuntu-latest
+    needs: fetch-freeze-remote-media-index
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1.4.2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Use saved remote-media-index
+        uses: actions/download-artifact@v2
+        with:
+          name: remote-media-index
+          path: data/remote_media_index.json
+
+    - name: Build online version
+      run: |
+        npm ci
         npm run rebuild-db-online
         npm run webpack
         npm run bundle
-        mv bundle bundle-online
-        npm run rebuild-db-offline
-        npm run webpack
-        npm run bundle
-        mkdir bundle-offline
-        mv bundle bundle-offline/LingView
       env:
-        CD: true # Continuous deployment
-        GDRIVE_MEDIA_FOLDER_ID: ${{ secrets.GDRIVE_MEDIA_FOLDER_ID }}
-        GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        CI: true # convention; to treat warnings as errors
 
     - name: Deploy online version to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages # The branch the action should deploy to.
-        FOLDER: bundle-online # The folder the action should deploy.
+        FOLDER: bundle # The folder the action should deploy.
+
+  build-and-save-online:
+    runs-on: ubuntu-latest
+    needs: fetch-freeze-remote-media-index
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
       
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1.4.2
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Use saved remote-media-index
+        uses: actions/download-artifact@v2
+        with:
+          name: remote-media-index
+          path: data/remote_media_index.json
+
+    - name: Build offline-compatible local version
+      run: |
+        npm ci
+        npm run rebuild-db-offline
+        npm run webpack
+        npm run bundle
+        mkdir bundle-offline
+        mv bundle bundle-offline/LingView
+      env:
+        CI: true # convention; to treat warnings as errors
+
     - name: Save offline-compatible local version as an artifact
       uses: actions/upload-artifact@v2
       with:
