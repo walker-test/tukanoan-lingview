@@ -33,7 +33,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fetch-remote-media-index": "node preprocessing/fetch_remote_media_index.js || echo \"Unable to sync remote media index. Skipping...\"",
+    "fetch-remote-media-index": "node preprocessing/fetch_remote_media_index.js",
     "rebuild-db-online": "MISSING_MEDIA=link node preprocessing/rebuild.js",
     "rebuild-db-offline": "MISSING_MEDIA=download node preprocessing/rebuild.js",
     "webpack": "webpack --config webpack.config.js",
