@@ -1,4 +1,7 @@
 const fs = require('fs');
+const fetch = require('fetch-retry')(require('isomorphic-fetch'));
+const { promisify } = require('util');
+const streamPipeline = promisify(require('stream').pipeline);
 const flexUtils = require('./flex_utils'); // TODO use me more, and use eafUtils too, for stylistic consistency
 
 function getMetadataFromIndex(filename) {
@@ -66,10 +69,62 @@ function mediaSearch(filename, mediaType, mediaFiles, extension) {
   const mediaFile = findValidMedia(filenamesToTry);
   if (mediaFile != null) {
     console.log("🔍  SUCCESS: Found matching " + mediaType + ": " + mediaFile);
+  } else if (process.env.MISSING_MEDIA === 'link') {
+    console.log("🔗 Attempting to link media to remote storage...");
+    return remoteMediaSearch(filenamesToTry).remoteUrl;
+  } else if (process.env.MISSING_MEDIA === 'download') {
+    console.log("👇 Attempting to download media from remote storage...");
+    const remoteMedia = remoteMediaSearch(filenamesToTry);
+    if (remoteMedia.filename != null) {
+      const destFilename = `data/media_files/${remoteMedia.filename}`; // maybe use 'path' module with __dirname
+      const srcUrl = remoteMedia.remoteUrl;
+      remoteMediaDownload(srcUrl, destFilename)
+        .then(() => {
+          console.log("👍 Successfuly downloaded media from remote storage:", destFilename);
+        })
+        .catch((err) => {
+          console.log(err);
+          console.log("👎 Failed to download media from remote storage:", destFilename, { srcUrl });
+          process.exit(1);
+        });
+    }
+    return remoteMedia.filename;
   } else {
+    if (typeof process.env.MISSING_MEDIA !== 'undefined') {
+      console.log("⚠ Unsupported value", process.env.MISSING_MEDIA, "for MISSING_MEDIA env variable.")
+    }
     console.log("❌  ERROR: Cannot find matching " + mediaType + " for " + shortFilename + ". ");
   }
   return mediaFile;
+}
+
+function remoteMediaSearch(filenamesToTry) {
+  let cachedRemoteMediaFiles;
+  try {
+    cachedRemoteMediaFiles = require('../data/remote_media_index.json');
+  } catch (err) {
+    console.log(err);
+    console.log('Maybe no remote media index was found; please run node preprocessing/fetch_remote_media_index.js first');
+    process.exit(1);
+  }
+  for (const filename of filenamesToTry) {
+    if (cachedRemoteMediaFiles.hasOwnProperty(filename)) {
+      console.log('🔍 Found!', cachedRemoteMediaFiles[filename]);
+      return { filename, remoteUrl: `https://drive.google.com/uc?id=${cachedRemoteMediaFiles[filename]}` };
+    }
+  }
+  console.log('❌ Could not find remotely!');
+  return { filename: null, remoteUrl: null };
+}
+async function remoteMediaDownload(url, dest) {
+  const response = await fetch(url, {
+    retries: 5,
+    retryDelay: 1000
+  });
+  if (!response.ok) {
+    throw new Error(`unexpected response ${response.statusText}`);
+  }
+  await streamPipeline(response.body, fs.createWriteStream(dest))
 }
 
 function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
@@ -170,6 +225,7 @@ function improveFLExIndexData(path, storyID, itext) {
   if (metadata == null) { // file not in index previously
   
     let defaultTitle = getTitleFromFilename(getFilenameFromPath(path));
+    console.log(32332, path, defaultTitle);
     // Uncomment the three lines below to use a particular language title 
     // (in this case "es", Spanish) as the main title for newly added documents. 
     // if (titles["es"] != null && titles["es"] != "") {
