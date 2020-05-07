@@ -13,9 +13,9 @@ async function remoteMediaSearchFetchSaveIndex() {
     process.exit(1);
   }
 
-  let nextPageToken = true;
-  while (nextPageToken) {
-    const res = await fetch(`https://www.googleapis.com/drive/v3/files?q=%27${process.env.GDRIVE_MEDIA_FOLDER_ID}%27+in+parents&key=${process.env.GOOGLE_API_KEY}`);
+  let nextPageToken = '';
+  do {
+    const res = await fetch(`https://www.googleapis.com/drive/v3/files?q=%27${process.env.GDRIVE_MEDIA_FOLDER_ID}%27+in+parents&key=${process.env.GOOGLE_API_KEY}&pageToken=${nextPageToken}`);
     const json = await res.json();
     for (const { kind, id, name } of json.files) {
       if (kind === 'drive#file') {
@@ -23,7 +23,7 @@ async function remoteMediaSearchFetchSaveIndex() {
       }
     }
     ({ nextPageToken } = json);
-  }
+  } while (nextPageToken);
   await writeFile(path.resolve(__dirname, '..', 'data', 'remote_media_index.json'), JSON.stringify(cachedRemoteMediaFiles, null, '  '), 'utf8');
   console.log('✅ Updated remote_media_index.json!');
 }
