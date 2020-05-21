@@ -29,7 +29,7 @@ jobs:
         npm run bundle
       env:
         CI: true # convention; to treat warnings as errors
-        REMOTE_MEDIA_PATH: ${{ secrets.REMOTE_MEDIA_PATH }}
+        REMOTE_MEDIA_PATH: https://cds.library.brown.edu/projects/yucatec/LingView/data/media_files/
 
     - name: Deploy online version to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -63,7 +63,7 @@ jobs:
         mv bundle bundle-offline/LingView
       env:
         CI: true # convention; to treat warnings as errors
-        REMOTE_MEDIA_PATH: ${{ secrets.REMOTE_MEDIA_PATH }}
+        REMOTE_MEDIA_PATH: https://cds.library.brown.edu/projects/yucatec/LingView/data/media_files/
 
     - name: Save offline-compatible local version as an artifact
       uses: actions/upload-artifact@v2
