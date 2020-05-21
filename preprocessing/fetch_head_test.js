@@ -9,9 +9,9 @@ async function fetchHeadTest(url) {
     retryDelay: 1000
   });
   if (!response.ok) {
-    console.warn('unexpected response', response.statusText);
+    console.warn('unexpected response', response.statusText, 'when checking url', url);
   }
   return response.ok;
 }
 
-module.exports = () => fetchHeadTest;
+module.exports = fetchHeadTest;

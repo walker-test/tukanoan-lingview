@@ -1,5 +1,5 @@
 const fs = require('fs');
-const syncFetchHeadTest = require('sync-rpc')(require.resolve('./fetch_head_test'));
+const syncFetchHeadTest = require('./syncify_util')(require.resolve('./fetch_head_test')); // require('sync-rpc')(require.resolve('./fetch_head_test'));
 const flexUtils = require('./flex_utils'); // TODO use me more, and use eafUtils too, for stylistic consistency
 
 function getMetadataFromIndex(filename) {
@@ -111,6 +111,7 @@ function remoteMediaSearch(filenamesToTry) {
     try {
       remoteUrlHeadSuccess = syncFetchHeadTest(remoteUrl);
     } catch (err) {
+      console.log(err);
       continue;
     }
     if (remoteUrlHeadSuccess) {
