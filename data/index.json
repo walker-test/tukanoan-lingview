@@ -57,5 +57,83 @@
     ],
     "xml_file_name": "20170804_kuke_chiste_FACQ.eaf",
     "source_filetype": "ELAN"
+  },
+  "2574a24d-ecc7-48cf-a843-72cccd571d0a": {
+    "timed": true,
+    "story ID": "2574a24d-ecc7-48cf-a843-72cccd571d0a",
+    "title": {
+      "_default": "Abandono de estudios"
+    },
+    "media": {
+      "audio": "Abandono de estudios.wav",
+      "video": "Abandono de estudios.mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "5/20/2020",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "Abandono de estudios.eaf",
+    "source_filetype": "ELAN"
+  },
+  "40b7b2bc-d9b0-4232-8541-fb7b5088f806": {
+    "timed": true,
+    "story ID": "40b7b2bc-d9b0-4232-8541-fb7b5088f806",
+    "title": {
+      "_default": "31 de diciembre"
+    },
+    "media": {
+      "audio": "31 de diciembre.wav",
+      "video": "31 de diciembre.mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "5/20/2020",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "31 de diciembre.eaf",
+    "source_filetype": "ELAN"
+  },
+  "22319937-5686-49d9-a010-85feb20ff094": {
+    "timed": true,
+    "story ID": "22319937-5686-49d9-a010-85feb20ff094",
+    "title": {
+      "_default": "Accidente"
+    },
+    "media": {
+      "audio": "Accidente.wav",
+      "video": "Accidente.mp4"
+    },
+    "languages": [],
+    "date_created": "",
+    "date_uploaded": "5/20/2020",
+    "source": {
+      "_default": ""
+    },
+    "description": "",
+    "genre": "",
+    "author": "",
+    "glosser": "",
+    "speakers": [
+      "[APELLIDO, NOMBRE]"
+    ],
+    "xml_file_name": "Accidente.eaf",
+    "source_filetype": "ELAN"
   }
 }
