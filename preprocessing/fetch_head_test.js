@@ -8,10 +8,10 @@ async function fetchHeadTest(url) {
     retries: 5,
     retryDelay: 1000
   });
-  if (!response.ok) {
-    console.warn('unexpected response', response.statusText, 'when checking url', url);
-  }
+  // if (!response.ok) {
+  //   console.warn('unexpected response', response.statusText, 'when checking url', url);
+  // }
   return response.ok;
 }
 
-module.exports = fetchHeadTest;
+module.exports = () => fetchHeadTest;

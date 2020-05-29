@@ -1,7 +1,6 @@
 const fs = require('fs');
 
-const { execSync } = require('child_process');
-const syncFetchHeadTest = url => JSON.parse(execSync(`if wget --spider "${url.replace(/(")/g, '\\$1')}" 2>/dev/null; then echo "true"; else echo "false"; fi`)); // require('./syncify_util')(require.resolve('./fetch_head_test')); // require('sync-rpc')(require.resolve('./fetch_head_test'));
+const syncFetchHeadTest = require('sync-rpc')(require.resolve('./fetch_head_test'));
 const flexUtils = require('./flex_utils'); // TODO use me more, and use eafUtils too, for stylistic consistency
 
 function getMetadataFromIndex(filename) {
