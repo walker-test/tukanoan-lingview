@@ -21,6 +21,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - name: Setup tmate session
+      uses: mxschmitt/action-tmate@v2
+
     - name: Build online version
       run: |
         npm ci
@@ -29,7 +32,7 @@ jobs:
         npm run bundle
       env:
         CI: true # convention; to treat warnings as errors
-        REMOTE_MEDIA_PATH: https://cds.library.brown.edu/projects/yucatec/LingView/data/media_files/
+        REMOTE_MEDIA_PATH: ${{ secrets.REMOTE_MEDIA_PATH }}
 
     - name: Deploy online version to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
