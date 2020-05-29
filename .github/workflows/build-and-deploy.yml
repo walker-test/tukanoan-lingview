@@ -31,6 +31,7 @@ jobs:
         npm run webpack
         npm run bundle
       env:
+        CI: true
         REMOTE_MEDIA_PATH: ${{ secrets.REMOTE_MEDIA_PATH }}
 
     - name: Deploy online version to GitHub Pages
@@ -64,6 +65,7 @@ jobs:
         mkdir bundle-offline
         mv bundle bundle-offline/LingView
       env:
+        CI: true
         REMOTE_MEDIA_PATH: ${{ secrets.REMOTE_MEDIA_PATH }}
 
     - name: Save offline-compatible local version as an artifact
