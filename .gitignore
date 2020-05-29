@@ -1,6 +1,8 @@
-node_modules
+node_modules/
 .idea/
 bundle/
 bundle-online/
 bundle-offline/
 build/
+data/json_files/
+data/index.json

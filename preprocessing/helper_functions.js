@@ -1,7 +1,6 @@
 const fs = require('fs');
-const fetch = require('fetch-retry')(require('isomorphic-fetch'));
-const { promisify } = require('util');
-const streamPipeline = promisify(require('stream').pipeline);
+
+const syncFetchHeadTest = require('sync-rpc')(require.resolve('./fetch_head_test'));
 const flexUtils = require('./flex_utils'); // TODO use me more, and use eafUtils too, for stylistic consistency
 
 function getMetadataFromIndex(filename) {
@@ -66,65 +65,63 @@ function mediaSearch(filename, mediaType, mediaFiles, extension) {
   const shortFilename = filename.substring(0, filename.lastIndexOf('.'));
   const shortestFilename = filename.substring(0, filename.indexOf('.')); // more possible matches for .postflex.flextext files
   const filenamesToTry = mediaFiles.concat([shortFilename + extension, shortestFilename + extension]);
-  const mediaFile = findValidMedia(filenamesToTry);
+  
+  let mediaFile = findValidMedia(filenamesToTry);
   if (mediaFile != null) {
     console.log("🔍  SUCCESS: Found matching " + mediaType + ": " + mediaFile);
-  } else if (process.env.MISSING_MEDIA === 'link') {
-    console.log("🔗 Attempting to link media to remote storage...");
-    return remoteMediaSearch(filenamesToTry).remoteUrl;
-  } else if (process.env.MISSING_MEDIA === 'download') {
-    console.log("👇 Attempting to download media from remote storage...");
-    const remoteMedia = remoteMediaSearch(filenamesToTry);
-    if (remoteMedia.filename != null) {
-      const destFilename = `data/media_files/${remoteMedia.filename}`; // maybe use 'path' module with __dirname
-      const srcUrl = remoteMedia.remoteUrl;
-      remoteMediaDownload(srcUrl, destFilename)
-        .then(() => {
-          console.log("👍 Successfuly downloaded media from remote storage:", destFilename);
-        })
-        .catch((err) => {
-          console.log(err);
-          console.log("👎 Failed to download media from remote storage:", destFilename, { srcUrl });
-          process.exit(1);
-        });
+  } else if (process.env.MISSING_MEDIA === 'ignore' || process.env.MISSING_MEDIA === 'link') {
+    console.log("🥽 Attempting to locate media in remote storage...");
+
+    let remoteMedia, erred = false;
+    try {
+      remoteMedia = remoteMediaSearch(filenamesToTry);
+    } catch (err) {
+      console.log('Error while trying to locate media in remote storage:', err);
+      erred = true;
     }
-    return remoteMedia.filename;
-  } else {
-    if (typeof process.env.MISSING_MEDIA !== 'undefined') {
-      console.log("⚠ Unsupported value", process.env.MISSING_MEDIA, "for MISSING_MEDIA env variable.")
+
+    if (erred || remoteMedia.filename == null) {
+      console.log("👎 Failed to find requested media in remote storage for any of:", filenamesToTry);
+    } else if (process.env.MISSING_MEDIA === 'ignore') {
+      console.log("🥽 FOUND! Adding to list of required media.");
+      mediaFile = remoteMedia.filename;
+      if (global.missingMediaFiles) global.missingMediaFiles.push(`${remoteMedia.filename} (at ${remoteMedia.remoteUrl})`);
+    } else if (process.env.MISSING_MEDIA === 'link') {
+      console.log("🥽 FOUND! Linking to remote url...");
+      mediaFile = remoteMedia.remoteUrl;
     }
+  } else if (typeof process.env.MISSING_MEDIA !== 'undefined') {
+    console.log("⚠ Unsupported value", process.env.MISSING_MEDIA, "for MISSING_MEDIA env variable.");
+  }
+
+  if (mediaFile == null) {
     console.log("❌  ERROR: Cannot find matching " + mediaType + " for " + shortFilename + ". ");
+    if (global.missingMediaFiles) global.missingMediaFiles.push(filenamesToTry);
   }
   return mediaFile;
 }
 
 function remoteMediaSearch(filenamesToTry) {
-  let cachedRemoteMediaFiles;
-  try {
-    cachedRemoteMediaFiles = require('../data/remote_media_index.json');
-  } catch (err) {
-    console.log(err);
-    console.log('Maybe no remote media index was found; please run node preprocessing/fetch_remote_media_index.js first');
-    process.exit(1);
+  if (!process.env.REMOTE_MEDIA_PATH || typeof process.env.REMOTE_MEDIA_PATH !== "string") {
+    throw new Error(`Unsupported value ${process.env.REMOTE_MEDIA_PATH} for REMOTE_MEDIA_PATH env variable.`);
   }
+
   for (const filename of filenamesToTry) {
-    if (cachedRemoteMediaFiles.hasOwnProperty(filename)) {
-      console.log('🔍 Found!', cachedRemoteMediaFiles[filename]);
-      return { filename, remoteUrl: `https://drive.google.com/uc?id=${cachedRemoteMediaFiles[filename]}` };
+    const remoteUrl = `${process.env.REMOTE_MEDIA_PATH.replace(/\/$/, '')}/${filename}`;
+    let remoteUrlHeadSuccess;
+    try {
+      remoteUrlHeadSuccess = syncFetchHeadTest(remoteUrl);
+    } catch (err) {
+      console.log(err);
+      continue;
+    }
+    if (remoteUrlHeadSuccess) {
+      console.log('🔍 Found!', remoteUrl);
+      return { filename, remoteUrl };
     }
   }
   console.log('❌ Could not find remotely!');
   return { filename: null, remoteUrl: null };
-}
-async function remoteMediaDownload(url, dest) {
-  const response = await fetch(url, {
-    retries: 5,
-    retryDelay: 1000
-  });
-  if (!response.ok) {
-    throw new Error(`unexpected response ${response.statusText}`);
-  }
-  await streamPipeline(response.body, fs.createWriteStream(dest))
 }
 
 function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
