@@ -35,8 +35,8 @@ jobs:
     steps:
       - name: Check out master
         uses: actions/checkout@v2
-          with:
-            ref: temp-master
+        with:
+          ref: temp-master
       - name: Merge upstream into master
         run: |
           git remote add upstream "https://github.com/$UPSTREAM.git"
