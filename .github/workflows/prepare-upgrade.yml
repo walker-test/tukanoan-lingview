@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       is-core: ${{ github.repository == env.upstream }}
+    steps:
+      - run: echo "Checking if repository is the upstream repository..."
   check-comment:
     runs-on: ubuntu-latest
     outputs:
