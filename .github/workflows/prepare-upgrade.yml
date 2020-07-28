@@ -2,7 +2,7 @@ name: Prepare Upgrade (Creates a PR to upgrade LingView core to the newest stabl
 
 env:
   upstream: BrownCLPS/LingView
-  upstream_branch: prodready # master
+  upstream_branch: master
   base_branch: master
   pr_branch: master-upgrade
 
