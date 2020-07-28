@@ -1,4 +1,6 @@
 const fs = require('fs');
+
+const syncFetchHeadTest = require('sync-rpc')(require.resolve('./fetch_head_test'));
 const flexUtils = require('./flex_utils'); // TODO use me more, and use eafUtils too, for stylistic consistency
 
 function getMetadataFromIndex(filename) {
@@ -53,25 +55,83 @@ function findValidMedia(filenames) {
   return null;
 }
 
-function mediaSearch(filename, mediaType, mediaFiles, extension) {
+function mediaSearch(filename, mediaType, mediaFiles, extensions) {
   // I/P: filename, the name of the ELAN or FLEx file
   // I/P: mediaType, which is either "video" or "audio", for printing to the command line
   // I/P: mediaFiles, a list of the media files that were linked in the ELAN or FLEx file
-  // I/P: extension, file extension for media files, including the leading period
+  // I/P: extensions, file extensions for media files, including the leading period (some iterable type, e.g. array or set)
   // O/P: the filename of the first valid media that was found, or null if none exists
   console.log("🚨  WARN: " + filename + " is missing correctly linked " + mediaType + ". Attemping to find link...");
   const shortFilename = filename.substring(0, filename.lastIndexOf('.'));
   const shortestFilename = filename.substring(0, filename.indexOf('.')); // more possible matches for .postflex.flextext files
-  const filenamesToTry = mediaFiles.concat([shortFilename + extension, shortestFilename + extension]);
-  const mediaFile = findValidMedia(filenamesToTry);
+  const filenamesToTry = mediaFiles;
+  for (const extension of extensions) {
+    filenamesToTry.push(shortFilename + extension);
+    filenamesToTry.push(shortestFilename + extension);
+  }
+  
+  let mediaFile = findValidMedia(filenamesToTry);
   if (mediaFile != null) {
     console.log("🔍  SUCCESS: Found matching " + mediaType + ": " + mediaFile);
-  } else {
+  } else if (process.env.MISSING_MEDIA === 'ignore' || process.env.MISSING_MEDIA === 'link') {
+    console.log("🥽 Attempting to locate media in remote storage...");
+
+    let remoteMedia, erred = false;
+    try {
+      remoteMedia = remoteMediaSearch(filenamesToTry);
+    } catch (err) {
+      console.log('Error while trying to locate media in remote storage:', err);
+      erred = true;
+    }
+
+    if (erred || remoteMedia.filename == null) {
+      console.log("👎 Failed to find requested media in remote storage for any of:", filenamesToTry);
+    } else if (process.env.MISSING_MEDIA === 'ignore') {
+      console.log("🥽 FOUND! Adding to list of required media.");
+      mediaFile = remoteMedia.filename;
+      if (global.missingMediaFiles) global.missingMediaFiles.push(`${remoteMedia.filename} (at ${remoteMedia.remoteUrl})`);
+    } else if (process.env.MISSING_MEDIA === 'link') {
+      console.log("🥽 FOUND! Linking to remote url...");
+      mediaFile = remoteMedia.remoteUrl;
+    }
+  } else if (typeof process.env.MISSING_MEDIA !== 'undefined') {
+    console.log("⚠ Unsupported value", process.env.MISSING_MEDIA, "for MISSING_MEDIA env variable.");
+  }
+
+  if (mediaFile == null) {
     console.log("❌  ERROR: Cannot find matching " + mediaType + " for " + shortFilename + ". ");
+    if (global.missingMediaFiles) global.missingMediaFiles.push(filenamesToTry);
   }
   return mediaFile;
 }
 
+function remoteMediaSearch(filenamesToTry) {
+  if (!process.env.REMOTE_MEDIA_PATH || typeof process.env.REMOTE_MEDIA_PATH !== "string") {
+    throw new Error(`Unsupported value ${process.env.REMOTE_MEDIA_PATH} for REMOTE_MEDIA_PATH env variable.`);
+  }
+
+  for (const filename of filenamesToTry) {
+    const remoteUrl = `${process.env.REMOTE_MEDIA_PATH.replace(/\/$/, '')}/${filename}`;
+    let remoteUrlHeadSuccess;
+    try {
+      remoteUrlHeadSuccess = syncFetchHeadTest(remoteUrl);
+    } catch (err) {
+      console.log(err);
+      continue;
+    }
+    if (remoteUrlHeadSuccess) {
+      console.log('🔍 Found!', remoteUrl);
+      return { filename, remoteUrl };
+    }
+  }
+  console.log('❌ Could not find remotely!');
+  return { filename: null, remoteUrl: null };
+}
+
+const TARGET_MEDIA_FILE_EXTENSIONS = {
+  audio: new Set(['.mp3', '.wav']),
+  video: new Set(['.mp4']),
+};
 function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
   // Only call this function if the file contains timestamps.
   // I/P: filename, of the FLEx or ELAN file
@@ -98,32 +158,28 @@ function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
   if (hasWorkingAudio && hasWorkingVideo) {
     return;
   }
-  let needsAudio = false;
-  let needsVideo = false;
-  let audioFiles = [];
-  let videoFiles = [];
+  const audioFiles = [];
+  const videoFiles = [];
   for (const mediaPath of linkedMediaPaths) {
     const mediaFilename = getFilenameFromPath(mediaPath);
     const fileExtension = mediaFilename.substring(mediaFilename.lastIndexOf('.')).toLowerCase();
-    if (fileExtension === '.mp3' || fileExtension === '.wav') {
+    if (TARGET_MEDIA_FILE_EXTENSIONS.audio.has(fileExtension)) {
       audioFiles.push(mediaFilename);
-      needsAudio = true;
-    } else if (fileExtension === '.mp4') {
+    } else if (TARGET_MEDIA_FILE_EXTENSIONS.video.has(fileExtension)) {
       videoFiles.push(mediaFilename);
-      needsVideo = true;
     }
   }
   
   // Media search
-  if (needsAudio && !hasWorkingAudio) {
-    const audioFile = mediaSearch(filename, "audio", audioFiles, ".mp3");
+  if (!hasWorkingAudio) {
+    const audioFile = mediaSearch(filename, "audio", audioFiles, TARGET_MEDIA_FILE_EXTENSIONS.audio);
     if (audioFile != null) {
       hasWorkingAudio = true;
       metadata['media']['audio'] = audioFile;
     }
   }
-  if (needsVideo && !hasWorkingVideo) {
-    const videoFile = mediaSearch(filename, "video", videoFiles, ".mp4");
+  if (!hasWorkingVideo) {
+    const videoFile = mediaSearch(filename, "video", videoFiles, TARGET_MEDIA_FILE_EXTENSIONS.video);
     if (videoFile != null) {
       hasWorkingVideo = true;
       metadata['media']['video'] = videoFile;
@@ -170,6 +226,7 @@ function improveFLExIndexData(path, storyID, itext) {
   if (metadata == null) { // file not in index previously
   
     let defaultTitle = getTitleFromFilename(getFilenameFromPath(path));
+    // console.log(32332, path, defaultTitle);
     // Uncomment the three lines below to use a particular language title 
     // (in this case "es", Spanish) as the main title for newly added documents. 
     // if (titles["es"] != null && titles["es"] != "") {

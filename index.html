@@ -11,14 +11,17 @@
 <body>
     <div id="navbar">
         <div id="navTitle">
-        LingView: ELAN and FLEx Web Display 
+            LingView: ELAN and FLEx Web Display
         </div>
         <ul id="navLinks">
-            <li><a href="#/index/">Index of Texts</a></li>
+             <li><a href="#/search/">Search</a></li>
+             <li><a href="#/about/">About</a></li>
+             <li><a href="#/glossary/">Glossary</a></li>
+             <li><a href="#/index/">Index of Texts</a></li>
         </ul>
     </div>
     <div id="main"></div>
-    <script src="js/bundle.js"></script>
+    <script src="build/bundle.js"></script>
     <script>
     if (window.location.hash == "" || window.location.hash == "/") {
         window.location.hash = "#/index/"

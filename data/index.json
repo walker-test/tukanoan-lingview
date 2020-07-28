@@ -30,7 +30,37 @@
     "glosser": "",
     "speakers": [],
     "xml_file_name": "103.xml",
-    "source_filetype": "FLEx"
+    "source_filetype": "FLEx",
+    "tier IDs": {
+      "T1": {
+        "name": "Palabra a'ingae (borman)",
+        "subdivided": true
+      },
+      "T2": {
+        "name": "Morfema (texto) a'ingae (borman)",
+        "subdivided": true
+      },
+      "T3": {
+        "name": "Morfema (forma típico) a'ingae (borman)",
+        "subdivided": true
+      },
+      "T4": {
+        "name": "Glosa de morfema inglés",
+        "subdivided": true
+      },
+      "T5": {
+        "name": "Frase inglés",
+        "subdivided": false
+      },
+      "T6": {
+        "name": "Frase español",
+        "subdivided": false
+      },
+      "T7": {
+        "name": "Frase a'ingae (borman)",
+        "subdivided": false
+      }
+    }
   },
   "1ed3d641-acd9-4466-811d-17c8ed59844c": {
     "timed": true,
@@ -56,6 +86,42 @@
       "Fausto Criollo"
     ],
     "xml_file_name": "20170804_kuke_chiste_FACQ.eaf",
-    "source_filetype": "ELAN"
+    "source_filetype": "ELAN",
+    "tier IDs": {
+      "Gloss": {
+        "name": "Gloss",
+        "subdivided": true
+      },
+      "Glosa": {
+        "name": "Glosa",
+        "subdivided": true
+      },
+      "Ortografía vieja": {
+        "name": "Ortografía vieja",
+        "subdivided": true
+      },
+      "Morfema": {
+        "name": "Morfema",
+        "subdivided": true
+      },
+      "English": {
+        "name": "English",
+        "subdivided": true
+      },
+      "Español": {
+        "name": "Español",
+        "subdivided": true
+      },
+      "A'ingae": {
+        "name": "A'ingae",
+        "subdivided": true
+      }
+    },
+    "speaker IDs": {
+      "S1": {
+        "name": "Fausto Criollo",
+        "tier": "--"
+      }
+    }
   }
 }
