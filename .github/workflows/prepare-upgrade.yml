@@ -6,10 +6,7 @@ env:
   base_branch: master
   pr_branch: master-upgrade
 
-on:
-  workflow_dispatch:
-      tags:
-        description: 'Make a pull request to upgrade LingView version'  
+on: workflow_dispatch 
 
 jobs:
   check-actor:
