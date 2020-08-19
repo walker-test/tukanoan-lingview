@@ -32,7 +32,7 @@ function isSeparator(char) {
 function isPunctuation(word) {
   if (word.item[0].$.type === "punct")  {
     wordElement = word.item[0]._;
-    if (wordElement && wordElement.match(/^[0-9a-zA-ZÀ-ú]+$/)) {
+    if (wordElement && wordElement.match(/^[0-9a-zA-ZÀ-ÿ]+$/)) {
       return false; 
     } 
   }
