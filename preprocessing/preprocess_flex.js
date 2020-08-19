@@ -32,9 +32,14 @@ function isSeparator(char) {
 function isPunctuation(word) {
   if (word.item[0].$.type === "punct")  {
     const wordElement = word.item[0]._;
+    // The Regex checks if the word contains digits or alpha letters.
+    // This expression also includes special characters, such as accented letters
+    // or other letters not existent in English. 
     if (wordElement && wordElement.match(/^[0-9a-zA-ZÀ-ÿ]+$/)) {
       return false; 
-    } 
+    } else {
+      return true; 
+    }
   }
   return false; 
 }

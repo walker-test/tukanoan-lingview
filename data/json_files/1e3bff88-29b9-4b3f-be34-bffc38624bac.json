@@ -65,8 +65,8 @@
   },
   "sentences": [
     {
-      "num_slots": 14,
-      "text": "Mingae dapa tsu va andeni singo a'ija canse'fa .",
+      "num_slots": 13,
+      "text": "Mingae dapa tsu va andeni singo a'ija canse'fa.",
       "dependents": [
         {
           "tier": "T1",
@@ -110,11 +110,6 @@
               "start_slot": 11,
               "end_slot": 13,
               "value": "canse'fa"
-            },
-            {
-              "start_slot": 13,
-              "end_slot": 14,
-              "value": "."
             }
           ]
         },
@@ -258,7 +253,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 14,
+              "end_slot": 13,
               "value": "How black people came to live in this land."
             }
           ]
@@ -268,7 +263,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 14,
+              "end_slot": 13,
               "value": "Cuando los negros vinieron a esta tierra."
             }
           ]
@@ -276,8 +271,8 @@
       ]
     },
     {
-      "num_slots": 9,
-      "text": "Tayopi fae tsandie tsu an'bian tise du'shuma .",
+      "num_slots": 8,
+      "text": "Tayopi fae tsandie tsu an'bian tise du'shuma.",
       "dependents": [
         {
           "tier": "T1",
@@ -316,11 +311,6 @@
               "start_slot": 6,
               "end_slot": 8,
               "value": "du'shuma"
-            },
-            {
-              "start_slot": 8,
-              "end_slot": 9,
-              "value": "."
             }
           ]
         },
@@ -449,7 +439,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 9,
+              "end_slot": 8,
               "value": "Long ago, a man had a boy."
             }
           ]
@@ -459,7 +449,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 9,
+              "end_slot": 8,
               "value": "Hace muchos años vivía un padre que tenía un niño."
             }
           ]
@@ -467,8 +457,8 @@
       ]
     },
     {
-      "num_slots": 15,
-      "text": "Tsa du'shu tsu tise yaya cundyiye japa cundyi'je'choma atte .",
+      "num_slots": 14,
+      "text": "Tsa du'shu tsu tise yaya cundyiye japa cundyi'je'choma atte.",
       "dependents": [
         {
           "tier": "T1",
@@ -517,11 +507,6 @@
               "start_slot": 13,
               "end_slot": 14,
               "value": "atte"
-            },
-            {
-              "start_slot": 14,
-              "end_slot": 15,
-              "value": "."
             }
           ]
         },
@@ -680,7 +665,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 15,
+              "end_slot": 14,
               "value": "The child's dad went to urinate, and he saw him urinate."
             }
           ]
@@ -690,7 +675,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 15,
+              "end_slot": 14,
               "value": "El padre del niño salió a orinar y el hijo estaba cerca donde su padre se fue a orinar."
             }
           ]
@@ -698,8 +683,8 @@
       ]
     },
     {
-      "num_slots": 9,
-      "text": "Tise yaya cundyi'je'fa tsu sin'an .",
+      "num_slots": 8,
+      "text": "Tise yaya cundyi'je'fa tsu sin'an.",
       "dependents": [
         {
           "tier": "T1",
@@ -728,11 +713,6 @@
               "start_slot": 6,
               "end_slot": 8,
               "value": "sin'an"
-            },
-            {
-              "start_slot": 8,
-              "end_slot": 9,
-              "value": "."
             }
           ]
         },
@@ -831,7 +811,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 9,
+              "end_slot": 8,
               "value": "His dad's penis was black."
             }
           ]
@@ -841,7 +821,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 9,
+              "end_slot": 8,
               "value": "El pene del papá era de color negro."
             }
           ]
@@ -849,8 +829,8 @@
       ]
     },
     {
-      "num_slots": 40,
-      "text": "Tsonsi tsama attepa yaya que cundyi'fa tsu sin'an qquen susi tise yaya in'jan , cuintsu tsa'caen injengembe camba tisu yaya cundyi'je'fama atte'ta singo a'ive daye .",
+      "num_slots": 38,
+      "text": "Tsonsi tsama attepa yaya que cundyi'fa tsu sin'an qquen susi tise yaya in'jan, cuintsu tsa'caen injengembe camba tisu yaya cundyi'je'fama atte'ta singo a'ive daye.",
       "dependents": [
         {
           "tier": "T1",
@@ -923,67 +903,57 @@
             {
               "start_slot": 19,
               "end_slot": 20,
-              "value": ","
+              "value": "cuintsu"
             },
             {
               "start_slot": 20,
               "end_slot": 21,
-              "value": "cuintsu"
-            },
-            {
-              "start_slot": 21,
-              "end_slot": 22,
               "value": "tsa'caen"
             },
             {
-              "start_slot": 22,
-              "end_slot": 24,
+              "start_slot": 21,
+              "end_slot": 23,
               "value": "injengembe"
             },
             {
-              "start_slot": 24,
-              "end_slot": 26,
+              "start_slot": 23,
+              "end_slot": 25,
               "value": "camba"
+            },
+            {
+              "start_slot": 25,
+              "end_slot": 26,
+              "value": "tisu"
             },
             {
               "start_slot": 26,
               "end_slot": 27,
-              "value": "tisu"
-            },
-            {
-              "start_slot": 27,
-              "end_slot": 28,
               "value": "yaya"
             },
             {
-              "start_slot": 28,
-              "end_slot": 32,
+              "start_slot": 27,
+              "end_slot": 31,
               "value": "cundyi'je'fama"
             },
             {
-              "start_slot": 32,
-              "end_slot": 34,
+              "start_slot": 31,
+              "end_slot": 33,
               "value": "atte'ta"
             },
             {
-              "start_slot": 34,
-              "end_slot": 35,
+              "start_slot": 33,
+              "end_slot": 34,
               "value": "singo"
             },
             {
-              "start_slot": 35,
-              "end_slot": 37,
+              "start_slot": 34,
+              "end_slot": 36,
               "value": "a'ive"
             },
             {
-              "start_slot": 37,
-              "end_slot": 39,
+              "start_slot": 36,
+              "end_slot": 38,
               "value": "daye"
-            },
-            {
-              "start_slot": 39,
-              "end_slot": 40,
-              "value": "."
             }
           ]
         },
@@ -1056,58 +1026,58 @@
               "value": "in'jan"
             },
             {
-              "start_slot": 20,
-              "end_slot": 21,
+              "start_slot": 19,
+              "end_slot": 20,
               "value": "cuintsu"
             },
             {
-              "start_slot": 21,
-              "end_slot": 22,
+              "start_slot": 20,
+              "end_slot": 21,
               "value": "tsa'caen"
             },
             {
-              "start_slot": 22,
-              "end_slot": 24,
+              "start_slot": 21,
+              "end_slot": 23,
               "value": "injenge=mbe"
             },
             {
-              "start_slot": 24,
-              "end_slot": 26,
+              "start_slot": 23,
+              "end_slot": 25,
               "value": "ca=mba"
+            },
+            {
+              "start_slot": 25,
+              "end_slot": 26,
+              "value": "tisu"
             },
             {
               "start_slot": 26,
               "end_slot": 27,
-              "value": "tisu"
-            },
-            {
-              "start_slot": 27,
-              "end_slot": 28,
               "value": "yaya"
             },
             {
-              "start_slot": 28,
-              "end_slot": 32,
+              "start_slot": 27,
+              "end_slot": 31,
               "value": "cundyi-'je='fa=ma"
             },
             {
-              "start_slot": 32,
-              "end_slot": 34,
+              "start_slot": 31,
+              "end_slot": 33,
               "value": "atte='ta"
             },
             {
-              "start_slot": 34,
-              "end_slot": 35,
+              "start_slot": 33,
+              "end_slot": 34,
               "value": "singo"
             },
             {
-              "start_slot": 35,
-              "end_slot": 37,
+              "start_slot": 34,
+              "end_slot": 36,
               "value": "a'i=ve"
             },
             {
-              "start_slot": 37,
-              "end_slot": 39,
+              "start_slot": 36,
+              "end_slot": 38,
               "value": "da=ye"
             }
           ]
@@ -1181,58 +1151,58 @@
               "value": "in'jan"
             },
             {
-              "start_slot": 20,
-              "end_slot": 21,
+              "start_slot": 19,
+              "end_slot": 20,
               "value": "cuintsu"
             },
             {
-              "start_slot": 21,
-              "end_slot": 22,
+              "start_slot": 20,
+              "end_slot": 21,
               "value": "tsa'caen"
             },
             {
-              "start_slot": 22,
-              "end_slot": 24,
+              "start_slot": 21,
+              "end_slot": 23,
               "value": "injenge=mbe"
             },
             {
-              "start_slot": 24,
-              "end_slot": 26,
+              "start_slot": 23,
+              "end_slot": 25,
               "value": "can=pa"
+            },
+            {
+              "start_slot": 25,
+              "end_slot": 26,
+              "value": "tisu"
             },
             {
               "start_slot": 26,
               "end_slot": 27,
-              "value": "tisu"
-            },
-            {
-              "start_slot": 27,
-              "end_slot": 28,
               "value": "yaya"
             },
             {
-              "start_slot": 28,
-              "end_slot": 32,
+              "start_slot": 27,
+              "end_slot": 31,
               "value": "cundyi-'je='fa=ma"
             },
             {
-              "start_slot": 32,
-              "end_slot": 34,
+              "start_slot": 31,
+              "end_slot": 33,
               "value": "atte=ta"
             },
             {
-              "start_slot": 34,
-              "end_slot": 35,
+              "start_slot": 33,
+              "end_slot": 34,
               "value": "singo"
             },
             {
-              "start_slot": 35,
-              "end_slot": 37,
+              "start_slot": 34,
+              "end_slot": 36,
               "value": "a'i=ve"
             },
             {
-              "start_slot": 37,
-              "end_slot": 39,
+              "start_slot": 36,
+              "end_slot": 38,
               "value": "da=ye"
             }
           ]
@@ -1301,53 +1271,53 @@
               "value": "dad"
             },
             {
-              "start_slot": 20,
-              "end_slot": 21,
+              "start_slot": 19,
+              "end_slot": 20,
               "value": "so that"
             },
             {
-              "start_slot": 21,
-              "end_slot": 22,
+              "start_slot": 20,
+              "end_slot": 21,
               "value": "thus"
             },
             {
-              "start_slot": 22,
-              "end_slot": 24,
+              "start_slot": 21,
+              "end_slot": 23,
               "value": "be necessary=ADV.NEG"
             },
             {
-              "start_slot": 24,
-              "end_slot": 26,
+              "start_slot": 23,
+              "end_slot": 25,
               "value": "look=SS"
+            },
+            {
+              "start_slot": 25,
+              "end_slot": 26,
+              "value": "REFL"
             },
             {
               "start_slot": 26,
               "end_slot": 27,
-              "value": "REFL"
-            },
-            {
-              "start_slot": 27,
-              "end_slot": 28,
               "value": "dad"
             },
             {
-              "start_slot": 28,
-              "end_slot": 32,
+              "start_slot": 27,
+              "end_slot": 31,
               "value": "urinate-IMPV=PL.SBJ=ACC"
             },
             {
-              "start_slot": 34,
-              "end_slot": 35,
+              "start_slot": 33,
+              "end_slot": 34,
               "value": "black person"
             },
             {
-              "start_slot": 35,
-              "end_slot": 37,
+              "start_slot": 34,
+              "end_slot": 36,
               "value": "person=ACC2"
             },
             {
-              "start_slot": 37,
-              "end_slot": 39,
+              "start_slot": 36,
+              "end_slot": 38,
               "value": "become=INF"
             }
           ]
@@ -1357,7 +1327,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 40,
+              "end_slot": 38,
               "value": "Since the son saw his dad's penis was black, the dad thought the son would convert into a black person."
             }
           ]
@@ -1367,7 +1337,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 40,
+              "end_slot": 38,
               "value": "Como el hijo vio que el pene de padre era negro, el padre pensó que el hijo se convirtiera en una persona de color negro."
             }
           ]
@@ -1375,8 +1345,8 @@
       ]
     },
     {
-      "num_slots": 10,
-      "text": "Tsa'caen in'jansi tsa du'shuja singove da .",
+      "num_slots": 9,
+      "text": "Tsa'caen in'jansi tsa du'shuja singove da.",
       "dependents": [
         {
           "tier": "T1",
@@ -1410,11 +1380,6 @@
               "start_slot": 8,
               "end_slot": 9,
               "value": "da"
-            },
-            {
-              "start_slot": 9,
-              "end_slot": 10,
-              "value": "."
             }
           ]
         },
@@ -1528,7 +1493,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 10,
+              "end_slot": 9,
               "value": "Thus, he knew the child became a black person."
             }
           ]
@@ -1538,7 +1503,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 10,
+              "end_slot": 9,
               "value": "Entonces sabió que el hijo se convirtió en una persona de color negro."
             }
           ]
@@ -1546,8 +1511,8 @@
       ]
     },
     {
-      "num_slots": 13,
-      "text": "Tsa'caen singove dapa jai'ngae pushepa singove atapa .",
+      "num_slots": 12,
+      "text": "Tsa'caen singove dapa jai'ngae pushepa singove atapa.",
       "dependents": [
         {
           "tier": "T1",
@@ -1586,11 +1551,6 @@
               "start_slot": 11,
               "end_slot": 12,
               "value": "atapa"
-            },
-            {
-              "start_slot": 12,
-              "end_slot": 13,
-              "value": "."
             }
           ]
         },
@@ -1719,7 +1679,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 13,
+              "end_slot": 12,
               "value": "After the child became black, he got a wife and had black children."
             }
           ]
@@ -1729,7 +1689,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 13,
+              "end_slot": 12,
               "value": "Después del hijo se convirtió en una persona de color negro, se casó con una chica y tuvo hijos negros."
             }
           ]
@@ -1737,8 +1697,8 @@
       ]
     },
     {
-      "num_slots": 14,
-      "text": "Tsa'ye tsu ja'ño pan singondeccuja va andeni canse'fa .",
+      "num_slots": 13,
+      "text": "Tsa'ye tsu ja'ño pan singondeccuja va andeni canse'fa.",
       "dependents": [
         {
           "tier": "T1",
@@ -1782,11 +1742,6 @@
               "start_slot": 11,
               "end_slot": 13,
               "value": "canse'fa"
-            },
-            {
-              "start_slot": 13,
-              "end_slot": 14,
-              "value": "."
             }
           ]
         },
@@ -1930,7 +1885,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 14,
+              "end_slot": 13,
               "value": "And that is how black people came to live in this land."
             }
           ]
@@ -1940,7 +1895,7 @@
           "values": [
             {
               "start_slot": 0,
-              "end_slot": 14,
+              "end_slot": 13,
               "value": "Así es como se crearon las personas de color negro. "
             }
           ]
