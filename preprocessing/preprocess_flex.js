@@ -26,8 +26,17 @@ function isSeparator(char) {
 // word - the data associated with a single word of the source text, 
 //   structured as in FLEx
 // return true if the word is tagged as punctuation within FLEx
+// If the word is marked as type "punct" but the word is alphanumeric,
+// this word might come from a different language than what FLEx is trying 
+// to detect in this file, so this word should not be marked as a punctuation. 
 function isPunctuation(word) {
-  return word.item[0].$.type === "punct";
+  if (word.item[0].$.type === "punct")  {
+    wordElement = word.item[0]._;
+    if (wordElement && wordElement.match(/^[0-9a-zA-ZÀ-ú]+$/)) {
+      return false; 
+    } 
+  }
+  return false; 
 }
 
 // metadata - a metadata object
