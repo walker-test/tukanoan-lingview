@@ -31,7 +31,7 @@ function isSeparator(char) {
 // to detect in this file, so this word should not be marked as a punctuation. 
 function isPunctuation(word) {
   if (word.item[0].$.type === "punct")  {
-    wordElement = word.item[0]._;
+    const wordElement = word.item[0]._;
     if (wordElement && wordElement.match(/^[0-9a-zA-ZÀ-ÿ]+$/)) {
       return false; 
     } 
