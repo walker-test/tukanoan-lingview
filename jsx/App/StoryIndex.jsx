@@ -45,7 +45,10 @@ export class StoryIndex extends React.Component {
                     { title: "Title" },
                     { title: "Author" },
                     { title: "Media" }
-                ]
+                ],
+                scrollY: '75vh',
+                scrollCollapse: true,
+                paging: false
             });
         });
         $('#indexTable').addClass("stripe");
@@ -54,8 +57,18 @@ export class StoryIndex extends React.Component {
     render() {
         return (
             <div id="index">
-                <table id="indexTable">
-                </table>
+
+                {/* <div class="dataTables_length" id="indexTable_length">
+                    <label>Show Entries</label>
+                    <select name="indexTable_length" aria-controls="indexTable" class>
+                        <option value="10">10</option>
+                        <option value="25">25</option>
+                        <option value="50">50</option>
+                        <option value="1" selected>1</option>
+                    </select>
+                </div> */}
+
+                <table id="indexTable"></table>
             </div>
         );
     }
