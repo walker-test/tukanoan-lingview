@@ -5,12 +5,8 @@ env:
   upstream_branch: master
   base_branch: master
   pr_branch: master-upgrade
-  GITHUB_TOKEN: ${{ secrets.PREPARE_UPGRADE_TOKEN }} 
 
-on:
-  push:   
-    branches: 
-      - master
+on: workflow_dispatch 
 
 jobs:
   check-actor:
@@ -21,7 +17,7 @@ jobs:
         route: GET /repos/:repository/collaborators/${{ github.actor }}
         repository: ${{ github.repository }}
       env:
-        GITHUB_TOKEN: ${{ secrets.PREPARE_UPGRADE_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   check-repo:
     runs-on: ubuntu-latest
     outputs:
@@ -36,9 +32,8 @@ jobs:
     if: needs.check-repo.outputs.is-core == 'false'
     runs-on: ubuntu-latest
     env:
-      actor: sciepsilon
-      actoremail: kalinda.pride@gmail.com
-      GITHUB_TOKEN: ${{ secrets.PREPARE_UPGRADE_TOKEN }}
+      actor: ${{ github.actor }}
+      actoremail: ${{ github.actor }}@users.noreply.github.com
     steps:
       - name: Check out base branch
         uses: actions/checkout@v2
@@ -49,10 +44,10 @@ jobs:
           git config user.email "$actoremail"
           git config user.name "$actor"
           git remote add upstream "https://github.com/$upstream.git"
-          git fetch upstream # probably not necessary, now that we've replaced merge with pull below
+          git fetch upstream
           remote_head_hash=$(git rev-parse "upstream/$upstream_branch")
           echo "::set-env name=remote_head_hash::$remote_head_hash"
-          git pull --rebase=true --strategy-option=ours --no-commit --no-ff --allow-unrelated-histories upstream $upstream_branch
+          git merge --no-commit --no-ff "upstream/$upstream_branch"
           # revert any updates in data path
           git reset -- data
           git checkout -- data
