@@ -1,6 +1,13 @@
 // Based on http://community.village.virginia.edu/etst/
 
 export function setupTextSync() {
+    console.log("YouTube API ready? " + youTubeIframeAPIReady);
+    player = new YT.Player('video', {
+          height: '270',
+          width: '480',
+          videoId: 'M7lc1UVf-VE'
+        });
+
     function scrollIntoViewIfNeeded(target) {
         var rect = target.getBoundingClientRect();
         if (rect.bottom > window.innerHeight) {

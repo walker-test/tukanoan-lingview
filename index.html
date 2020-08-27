@@ -27,5 +27,18 @@
         window.location.hash = "#/index/"
     }
     </script>
+    <script>
+      // This code loads the YouTube IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var youTubeIframeAPIReady = false;
+      var player;
+      function onYouTubeIframeAPIReady() {
+        youTubeIframeAPIReady = true;
+      }
+    </script>
 </body>
 </html>
