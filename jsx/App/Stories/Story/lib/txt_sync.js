@@ -1,12 +1,61 @@
 // Based on http://community.village.virginia.edu/etst/
 
 export function setupTextSync() {
+    // Initialize YouTube player: 
     console.log("YouTube API ready? " + youTubeIframeAPIReady);
     player = new YT.Player('video', {
           height: '270',
           width: '480',
           videoId: 'M7lc1UVf-VE'
         });
+
+    var doneInitializingPlayer = false;
+    function onPlayerReady(event) {
+        console.log("player ready");
+        if (doneInitializingPlayer) {
+            return;
+        }
+
+        // Make YouTube player behave like a <video/> or <audio/> element:
+
+        // mimic the currentTime property
+        Object.defineProperty(player, 'currentTime', { 
+            get: player.getCurrentTime,
+            set: function(t) { player.seekTo(t / 1000); },
+            enumerable: true 
+        });
+
+        // mimic the ontimeupdate property by checking every 0.1 second
+        Object.defineProperty(player, 'prevTime', { 
+            value: player.currentTime, 
+            enumerable: true,  
+            writable: true
+        });
+        Object.defineProperty(player, 'ontimeupdate', { 
+            value: function() {}, 
+            enumerable: true,  
+            writable: true
+        });
+        Object.defineProperty(player, 'checkTimeUpdate', { 
+            value: function checkTimeUpdate() {
+                console.log("checkTimeUpdate");
+                if (player.currentTime !== player.prevTime) {
+                    player.prevTime = player.currentTime;
+                    console.log("ontimeupdate, currentTime = " + player.currentTime);
+                    player.ontimeupdate();
+                }
+                setTimeout(checkTimeUpdate, 10);
+            }, 
+            enumerable: true
+        });
+        player.checkTimeUpdate();
+
+        doneInitializingPlayer = true;
+    }
+
+    // When running LingView locally, the YT API fails to call onPlayerReady (due to cross-origin stuff?).
+    // Make sure onPlayerReady gets called anyway. 
+    setTimeout(onPlayerReady, 500);
 
     function scrollIntoViewIfNeeded(target) {
         var rect = target.getBoundingClientRect();
@@ -23,7 +72,6 @@ export function setupTextSync() {
             // Somewhat hacky solution: decrease current_time by 0.001 to avoid highlighting before player starts
             if ((current_time-0.001 >= parseFloat(ts_start_time_array[i])/1000.0) && (current_time <= parseFloat(ts_stop_time_array[i])/1000.0)) {
                 ts_tag_array[i].setAttribute("id", "current");
-                // $('#example, #td').animate({scrollTop:$("#current").offset().top}, 500);
                 scrollIntoViewIfNeeded($("#current")[0]);
                 ts_tag_array[i].style.backgroundColor = "rgb(209, 200, 225)";
             }
