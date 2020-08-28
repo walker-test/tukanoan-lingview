@@ -32,7 +32,7 @@ export function setupTextSync() {
             writable: true
         });
         Object.defineProperty(player, 'ontimeupdate', { 
-            value: function() {}, 
+            value: function() { sync(player.currentTime); }, 
             enumerable: true,  
             writable: true
         });
