@@ -10,7 +10,6 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "cross-env": "^7.0.2",
     "datatables.net-dt": "^1.10.20",
     "fuse.js": "^3.2.1",
     "inquirer": "^5.0.0",
@@ -40,7 +39,7 @@
     "rebuild-db-offline": "cross-env MISSING_MEDIA=ignore node preprocessing/rebuild.js",
     "webpack": "webpack-cli --config webpack.config.js",
     "webpack-watch": "npm run webpack -- --watch --progress",
-    "bundle": "rm -rf bundle/ && mkdir -p bundle/media_files/ && cp -r index.html build/ css/ data/media_files/ images/ bundle/",
+    "bundle": "shx rm -rf bundle/ && shx mkdir -p bundle/media_files/ && shx cp -r index.html build/ css/ data/media_files/ images/ bundle/",
     "quick-build-online": "npm run rebuild-db-online && npm run webpack && echo \"Done! index.html is ready. To bundle LingView, run \"npm run bundle\".\"",
     "quick-build-offline": "npm run rebuild-db-offline && npm run webpack && echo \"Done! index.html is ready. To bundle LingView, run \"npm run bundle\".\""
   },
