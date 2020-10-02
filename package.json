@@ -10,6 +10,7 @@
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "cross-env": "^7.0.2",
     "datatables.net-dt": "^1.10.20",
     "fuse.js": "^3.2.1",
     "inquirer": "^5.0.0",
@@ -35,8 +36,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "rebuild-db-online": "MISSING_MEDIA=link node preprocessing/rebuild.js",
-    "rebuild-db-offline": "MISSING_MEDIA=ignore node preprocessing/rebuild.js",
+    "rebuild-db-online": "cross-env MISSING_MEDIA=link node preprocessing/rebuild.js",
+    "rebuild-db-offline": "cross-env MISSING_MEDIA=ignore node preprocessing/rebuild.js",
     "webpack": "webpack-cli --config webpack.config.js",
     "webpack-watch": "npm run webpack -- --watch --progress",
     "bundle": "rm -rf bundle/ && mkdir -p bundle/media_files/ && cp -r index.html build/ css/ data/media_files/ images/ bundle/",
