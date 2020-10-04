@@ -47,13 +47,13 @@
     "about:webpack-watch": "echo \"npm run webpack-watch - Rebuild the bundle.js file based on your jsx files, to update the UI of the website, then watch for additional changes and rebuild as needed.\n\"",
     "bundle": "shx rm -rf bundle/ && shx mkdir -p bundle/media_files/ && shx cp -r index.html build/ css/ data/media_files/ images/ bundle/",
     "about:bundle": "echo \"npm run bundle - If you want to give someone an offline copy of your LingView website, run this command, then send them the bundle directory. They can open its index.html file to view your site.\n\"",
-    "quick-build-linked": "npm run rebuild-db-online && npm run webpack && echo \"Done! index.html is ready. \nIf you want to send someone a copy of your LingView site that they can view offline, run npm run bundle.\n\"",
-    "about:quick-build-linked": "echo \"npm run quick-build-linked - Rebuilds LingView, to incorporate any changes you have made to your ELAN, FLEx, media, and jsx files. Use this version if some of your media files are on a remote server that your computer does not treat as part of its filesystem.\n\"",
-    "quick-build": "npm run rebuild-db-offline && npm run webpack && echo \"Done! index.html is ready. \nIf you want to send someone a copy of your LingView site that they can view offline, run npm run bundle.\"",
-    "about:quick-build": "echo \"npm run quick-build - Rebuilds LingView. Run this command after changing any ELAN, FLEx, media, or jsx files.\n\"",
-    "about:edit": "echo \"node preprocessing/edit.js <unique_id> - Edits the author, title, etc. displayed for documents on your LingView site. Replace <unique_id> with the document ID, which is the last part of its URL in LingView. You will need to npm run quick-build afterwards.\n\"",
-    "about:delete": "echo \"node preprocessing/delete.js <unique_id> - Removes a document from your LingView site. Replace <unique_id> with the document ID, which is the last part of its URL in LingView. You will need to npm run quick-build afterwards.\n\"",
-    "help": "echo \"Thanks for using LingView! Here are some commands you might find useful.\" && echo \"\" && npm run -s about:quick-build && npm run -s about:bundle && npm run -s about:edit && npm run -s about:delete"
+    "build-linked": "npm run rebuild-db-online && npm run webpack && echo \"Done! index.html is ready. \nIf you want to send someone a copy of your LingView site that they can view offline, run npm run bundle.\n\"",
+    "about:build-linked": "echo \"npm run build-linked - Rebuilds LingView, to incorporate any changes you have made to your ELAN, FLEx, media, and jsx files. Use this version if some of your media files are on a remote server that your computer does not treat as part of its filesystem.\n\"",
+    "build": "npm run rebuild-db-offline && npm run webpack && echo \"Done! index.html is ready. \nIf you want to send someone a copy of your LingView site that they can view offline, run npm run bundle.\"",
+    "about:build": "echo \"npm run build - Rebuilds LingView. Run this command after changing any ELAN, FLEx, media, or jsx files.\n\"",
+    "about:edit": "echo \"node preprocessing/edit.js <unique_id> - Edits the author, title, etc. displayed for documents on your LingView site. Replace <unique_id> with the document ID, which is the last part of its URL in LingView. You will need to npm run build afterwards.\n\"",
+    "about:delete": "echo \"node preprocessing/delete.js <unique_id> - Removes a document from your LingView site. Replace <unique_id> with the document ID, which is the last part of its URL in LingView. You will need to npm run build afterwards.\n\"",
+    "help": "echo \"Thanks for using LingView! Here are some commands you might find useful.\" && echo \"\" && npm run -s about:build && npm run -s about:bundle && npm run -s about:edit && npm run -s about:delete"
   },
   "repository": {
     "type": "git",
