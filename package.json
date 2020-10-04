@@ -46,7 +46,7 @@
     "webpack-watch": "npm run webpack -- --watch --progress",
     "about:webpack-watch": "echo \"npm run webpack-watch - Rebuild the bundle.js file based on your jsx files, to update the UI of the website, then watch for additional changes and rebuild as needed.\n\"",
     "bundle": "shx rm -rf bundle/ && shx mkdir -p bundle/media_files/ && shx cp -r index.html build/ css/ data/media_files/ images/ bundle/",
-    "about:bundle": "echo \"npm run bundle - If you want to give someone an offline copy of your LingView website, run this command, then send them the bundle directory. They can open its index.html file to view your site.\"",
+    "about:bundle": "echo \"npm run bundle - If you want to give someone an offline copy of your LingView website, run this command, then send them the bundle directory. They can open its index.html file to view your site.\n\"",
     "quick-build-linked": "npm run rebuild-db-online && npm run webpack && echo \"Done! index.html is ready. \nIf you want to send someone a copy of your LingView site that they can view offline, run npm run bundle.\n\"",
     "about:quick-build-linked": "echo \"npm run quick-build-linked - Rebuilds LingView, to incorporate any changes you have made to your ELAN, FLEx, media, and jsx files. Use this version if some of your media files are on a remote server that your computer does not treat as part of its filesystem.\n\"",
     "quick-build": "npm run rebuild-db-offline && npm run webpack && echo \"Done! index.html is ready. \nIf you want to send someone a copy of your LingView site that they can view offline, run npm run bundle.\"",
