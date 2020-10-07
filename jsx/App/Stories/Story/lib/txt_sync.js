@@ -26,11 +26,9 @@ export function setupTextSync() {
     function scrollIntoViewIfNeeded(target) {
         var rect = target.getBoundingClientRect();
         if (rect.bottom > window.innerHeight) {
-            console.log("first");
             target.scrollIntoView(false);
         }
         if (rect.top < 0) {
-            console.log("second");
             target.scrollIntoView();
         } 
     }
