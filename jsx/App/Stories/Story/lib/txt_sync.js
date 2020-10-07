@@ -72,13 +72,11 @@ export function setupTextSync() {
         }
     });
 
-    /* For files without AV, change the selected sentence's color and scroll to it. */
+    /* For files without AV, change the selected sentence's color and update query URL. */
     function updateForUntimedFile(sentId) {
         for (var i = 0; i < ts_tag_array.length; i++) {
             // sentence id starts with 1
             if (i+1 == sentId) {
-                ts_tag_array[i].setAttribute("id", "current");
-                scrollIntoViewIfNeeded($("#current")[0]);
                 highlightSentence(i);
             } else {
                 unHighlightSentence(i);
@@ -130,6 +128,8 @@ export function setupTextSync() {
                 setMediaCurrentTime(sentenceTimestampId + 1);
             } else {
                 updateForUntimedFile(sentenceTimestampId);
+                ts_tag_array[sentenceTimestampId].setAttribute("id", "current");
+                scrollIntoViewIfNeeded($("#current")[0]);
             } 
         }
     });
