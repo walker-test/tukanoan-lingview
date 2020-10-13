@@ -27,17 +27,17 @@ class tierRegistry {
     // Spanish UI text:
     switch (type) {
       case "txt":
-        return "Morfema (texto)";
+        return "morfema (texto)";
       case "cf":
-        return "Morfema (forma típico)";
+        return "morfema (forma típica)";
       case "gls":
-        return "Glosa de morfema";
+        return "glosa de morfema";
       case "msa":
-        return "Parte del habla";
+        return "parte del habla";
       case "words":
-        return "Palabra";
+        return "palabra";
       case "free":
-        return "Frase";
+        return "frase";
       default:
         return type;
     }
@@ -102,7 +102,7 @@ class tierRegistry {
     */
 
     // Spanish UI text:
-    return tierRegistry.decodeType(type) + " " + this.decodeLang(lang).toLowerCase();
+    return tierRegistry.decodeType(type) + " en " + this.decodeLang(lang).toLowerCase();
   }
 
   getTiersJson() {
