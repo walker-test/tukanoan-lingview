@@ -98,7 +98,7 @@ class tierRegistry {
   getTierName(lang, type) {
     /*
     // English UI text:
-      return decodeLang(lang) + " in " + decodeType(type);
+      return decodeLang(lang) + " " + decodeType(type);
     */
 
     // Spanish UI text:
