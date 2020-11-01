@@ -48,7 +48,7 @@ function decodeType(type) {
 // so that tier names can be guaranteed to be unique.
 function decodeLang(lang) {
 
-  const desiredName = "Native name"; // or we might want to use "ISO language name"
+  const desiredName = "Native name (endonym)"; // or we might want to use "ISO language name"
   
   // Override the usual iso-based decoding for some language codes
   switch (lang) {
