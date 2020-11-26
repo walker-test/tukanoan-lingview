@@ -11,13 +11,11 @@ export class Search extends React.Component {
     constructor(props) {
         super(props);
         this.state = { searchResults: [], searchIndex: null };
-        //console.log(this.props);
         this.runSearch = this.throttle(this.search, 300, this);
     }
 
     componentDidMount() {
         import('~./data/search_index.json').then(i => {
-            //console.log(i);
             this.setState({ searchIndex: i.default })
         });
     }
@@ -46,7 +44,6 @@ export class Search extends React.Component {
         document.getElementsByName("fields").forEach(function (e) {
             if (e.checked) fields.push(decode(`dependents.${e.id}.value`));
         });
-        //console.log(fields);
 
         var options = {
             isCaseSensitive: false,
@@ -58,7 +55,6 @@ export class Search extends React.Component {
             keys: fields
         };
         
-        //console.log("running search over: " + fields);
         return new Fuse(this.state.searchIndex.sentences, options)
     }
 
@@ -71,9 +67,6 @@ export class Search extends React.Component {
             return;
         }
         let searchResult = this.fuse.search(query).slice(0, 25);
-
-        //console.log("Search results:");
-        //console.log(searchResult);
         let searchResults = [];
         for (var i = 0, j = searchResult.length; i < j; i++) {
             if ('speaker' in searchResult[i]) {
@@ -94,7 +87,6 @@ export class Search extends React.Component {
     genCheckboxes () { // called by render()
         let checkboxes = [];
         let tiers = this.state.searchIndex['tier IDs'];
-        //console.log(tiers);
         tiers.forEach((tier) => {
             checkboxes.push(
                 <input id={htmlEscape(tier)} name="fields" type="checkbox" onChange={this.search.bind(this)} 
@@ -103,7 +95,6 @@ export class Search extends React.Component {
             checkboxes.push(<label>{tier}</label>);
             checkboxes.push(<span>&nbsp;&nbsp;</span>);
         })
-        //console.log(checkboxes);
         return checkboxes
     }
 
@@ -111,7 +102,6 @@ export class Search extends React.Component {
         if (!this.state.searchIndex) return <div className="loader">Loading Search...</div>; // (could use a dedicated loader component instead)
         
         let results = this.state.searchResults;
-        //console.log("rendering...");
         return (
             <div id="searchForm">
                 <label for="searchInput">Search database:</label> <input id="searchInput" onChange={this.handleInputChange.bind(this)} type="text" />
