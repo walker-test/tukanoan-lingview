@@ -1,11 +1,12 @@
 import React from 'react';
 import Fuse from 'fuse.js';
 import { SearchSentence } from './Stories/Story/Display/Sentence.jsx';
+import { TranslatableText } from './locale/TranslatableText.jsx'
+import { searchPagePromptText } from './locale/LocaleConstants.jsx';
 var htmlEscape = require('ent/encode');
 var decode = require('ent/decode');
-// Note: tier names should be escaped when used as HTML attributes (e.g. data-tier=tier_name), 
+// Note: tier names should be escaped when used as HTML attributes (e.g. data-tier=tier_name),
 // but not when used as page text (e.g. <label>{tier_name}</label>)
-
 
 export class Search extends React.Component {
     constructor(props) {
@@ -31,7 +32,7 @@ export class Search extends React.Component {
             var context = scope || this;
 
             var args = arguments;
-            
+
             if (deferTimer) clearTimeout(deferTimer);
             deferTimer = setTimeout(function () {
                 return fn.apply(context, args);
@@ -54,7 +55,8 @@ export class Search extends React.Component {
             threshold: 0.2, // 0.0 means perfect matches only, 1.0 matches anything
             keys: fields
         };
-        
+
+        console.log("running search over: " + fields);
         return new Fuse(this.state.searchIndex.sentences, options)
     }
 
@@ -89,7 +91,7 @@ export class Search extends React.Component {
         let tiers = this.state.searchIndex['tier IDs'];
         tiers.forEach((tier) => {
             checkboxes.push(
-                <input id={htmlEscape(tier)} name="fields" type="checkbox" onChange={this.search.bind(this)} 
+                <input id={htmlEscape(tier)} name="fields" type="checkbox" onChange={this.search.bind(this)}
                 defaultChecked />
             );
             checkboxes.push(<label>{tier}</label>);
@@ -100,11 +102,11 @@ export class Search extends React.Component {
 
     render() {
         if (!this.state.searchIndex) return <div className="loader">Loading Search...</div>; // (could use a dedicated loader component instead)
-        
+
         let results = this.state.searchResults;
         return (
             <div id="searchForm">
-                <label for="searchInput">Search database:</label> <input id="searchInput" onChange={this.handleInputChange.bind(this)} type="text" />
+                <label for="searchInput"><TranslatableText dictionary={searchPagePromptText} /></label> <input id="searchInput" onChange={this.handleInputChange.bind(this)} type="text" />
                 <br />
                 {this.genCheckboxes()}
                 <br />
