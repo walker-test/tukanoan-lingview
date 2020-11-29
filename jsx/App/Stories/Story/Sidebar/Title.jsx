@@ -1,6 +1,6 @@
 export function Title({ title }) {
-	// I/P: title, a string
-	// O/P: printed title
-	// Status: tested, working
-	return <h3 id="title">{title}</h3>;
+  // I/P: title, a string
+  // O/P: printed title
+  // Status: tested, working
+  return <h3 id="title">{title}</h3>;
 }

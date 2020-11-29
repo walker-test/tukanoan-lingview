@@ -45,107 +45,107 @@ export const navBarIndexText = {
 
 // Search page text
 export const searchPagePromptText = {
-  [ENGLISH] : "Search database:",
-  [ESPANOL] : "Buscar en la base de datos:",
-  [FRANCAIS] : "Rechercher dans la base de données:",
+  [ENGLISH]: "Search database:",
+  [ESPANOL]: "Buscar en la base de datos:",
+  [FRANCAIS]: "Rechercher dans la base de données:",
 };
 
 // Story index columns text.
 export const indexPageTitleHeaderText = {
-  [ENGLISH] : "Title",
-  [ESPANOL] : "Titre",
-  [FRANCAIS] : "Título",
+  [ENGLISH]: "Title",
+  [ESPANOL]: "Titre",
+  [FRANCAIS]: "Título",
 };
 
 export const indexPageAuthorHeaderText = {
-  [ENGLISH] : "Author",
-  [ESPANOL] : "Auteur",
-  [FRANCAIS] : "Autor",
+  [ENGLISH]: "Author",
+  [ESPANOL]: "Auteur",
+  [FRANCAIS]: "Autor",
 };
 
 export const indexPageMediaHeaderText = {
-  [ENGLISH] : "Media",
-  [ESPANOL] : "Médias",
-  [FRANCAIS] : "Medios",
+  [ENGLISH]: "Media",
+  [ESPANOL]: "Médias",
+  [FRANCAIS]: "Medios",
 };
 
 // Use if a story isn't found.
 export const notFoundPageText = {
-  [ENGLISH] : "Story not found. Perhaps you mistyped the URL?",
-  [ESPANOL] : "Historia no encontrada. ¿Quizás escribiste mal la URL?",
-  [FRANCAIS] : "Histoire introuvable. Peut-être avez-vous mal saisi l'URL?",
+  [ENGLISH]: "Story not found. Perhaps you mistyped the URL?",
+  [ESPANOL]: "Historia no encontrada. ¿Quizás escribiste mal la URL?",
+  [FRANCAIS]: "Histoire introuvable. Peut-être avez-vous mal saisi l'URL?",
 };
 
 // Use when a story is loading.
 export const loadingPageText = {
-  [ENGLISH] : "Loading...",
-  [ESPANOL] : "Cargando...",
-  [FRANCAIS] : "Chargement...",
+  [ENGLISH]: "Loading...",
+  [ESPANOL]: "Cargando...",
+  [FRANCAIS]: "Chargement...",
 };
 
 // Story controls and metadata.
 export const showVideoButtonText = {
-  [ENGLISH] : "Show video",
-  [ESPANOL] : "Mostrar video",
-  [FRANCAIS] : "Montrer la vidéo",
+  [ENGLISH]: "Show video",
+  [ESPANOL]: "Mostrar video",
+  [FRANCAIS]: "Montrer la vidéo",
 };
 
 export const showOrHideTiersButtonText = {
-  [ENGLISH] : "Show/hide tiers",
-  [ESPANOL] : "Mostrar/ocultar niveles",
-  [FRANCAIS] : "Afficher/masquer les niveaux",
+  [ENGLISH]: "Show/hide tiers",
+  [ESPANOL]: "Mostrar/ocultar niveles",
+  [FRANCAIS]: "Afficher/masquer les niveaux",
 };
 
 export const metadataAuthorText = {
-  [ENGLISH] : "Author",
-  [ESPANOL] : "Autor",
-  [FRANCAIS] : "Auteur",
+  [ENGLISH]: "Author",
+  [ESPANOL]: "Autor",
+  [FRANCAIS]: "Auteur",
 };
 
 export const metadataDateText = {
-  [ENGLISH] : "Date",
-  [ESPANOL] : "Fecha",
-  [FRANCAIS] : "Date",
+  [ENGLISH]: "Date",
+  [ESPANOL]: "Fecha",
+  [FRANCAIS]: "Date",
 };
 
 export const metadataDescriptionText = {
-  [ENGLISH] : "Description",
-  [ESPANOL] : "Descripción",
-  [FRANCAIS] : "Description",
+  [ENGLISH]: "Description",
+  [ESPANOL]: "Descripción",
+  [FRANCAIS]: "Description",
 };
 
 export const metadataGenreText = {
-  [ENGLISH] : "Genre",
-  [ESPANOL] : "Género",
-  [FRANCAIS] : "Genre",
+  [ENGLISH]: "Genre",
+  [ESPANOL]: "Género",
+  [FRANCAIS]: "Genre",
 };
 
 export const metadataGlosserText = {
-  [ENGLISH] : "Glosser",
-  [ESPANOL] : "Glosador",
-  [FRANCAIS] : "Glosser",
+  [ENGLISH]: "Glosser",
+  [ESPANOL]: "Glosador",
+  [FRANCAIS]: "Glosser",
 };
 
 export const metadataSourceText = {
-  [ENGLISH] : "Source",
-  [ESPANOL] : "Fuente",
-  [FRANCAIS] : "Source",
+  [ENGLISH]: "Source",
+  [ESPANOL]: "Fuente",
+  [FRANCAIS]: "Source",
 };
 
 export const metadataSpeakersText = {
-  [ENGLISH] : "Speakers",
-  [ESPANOL] : "Oradores",
-  [FRANCAIS] : "Haut-parleurs",
+  [ENGLISH]: "Speakers",
+  [ESPANOL]: "Oradores",
+  [FRANCAIS]: "Haut-parleurs",
 };
 
 export const storySearchText = {
-  [ENGLISH] : "Story",
-  [ESPANOL] : "Historia",
-  [FRANCAIS] : "Histoire",
+  [ENGLISH]: "Story",
+  [ESPANOL]: "Historia",
+  [FRANCAIS]: "Histoire",
 };
 
 export const storySearchViewStoryText = {
-  [ENGLISH] : "View story",
-  [ESPANOL] : "Ver historia",
-  [FRANCAIS] : "Voir l'histoire",
+  [ENGLISH]: "View story",
+  [ESPANOL]: "Ver historia",
+  [FRANCAIS]: "Voir l'histoire",
 };
