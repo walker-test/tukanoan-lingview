@@ -6,7 +6,6 @@ import * as LocaleConstants from './LocaleConstants.jsx';
  * Selection component for choosing language. This updates the LocaleContext value
  * which will trigger all TranslatableText components to rerender.
  */
-
 export const LocaleSelect = () => {
   const { locale, setLocale } = useContext(LocaleContext);
   const handleSelect = e => setLocale(e.target.value);
