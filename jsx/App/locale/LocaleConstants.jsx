@@ -65,7 +65,7 @@ export const indexPageAuthorHeaderText = {
 
 export const indexPageMediaHeaderText = {
   [ENGLISH] : "Media",
-  [ESPANOL] : "Médias",
+  [ESPANOL] : "Medios",
   [FRANCAIS] : "Medios",
 };
 
