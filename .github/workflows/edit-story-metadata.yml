@@ -33,7 +33,7 @@ jobs:
     strategy:
       matrix:
         node-version: [12.x]
-        
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -48,7 +48,7 @@ jobs:
 
       
 
-  upgrade:
+  uppdate-metadata:
     needs: [check-actor, check-repo, edit-data]
     if: needs.check-repo.outputs.is-core == 'false'
     runs-on: ubuntu-latest
