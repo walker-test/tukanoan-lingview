@@ -30,6 +30,10 @@ jobs:
 
   edit-data:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+        
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -64,7 +68,7 @@ jobs:
           committer: GitHub <noreply@github.com>
           title: 'Edit story metadata'
           body: |
-            Edit story metadata. Pull request to upgrade LingView version to `${{ env.upstream_branch }}` (${{ env.remote_head_hash }}) is ready to review and merge!
+            Pull request to upgrade story metadata. 
             
             > I automatically ignored any changes made to the `data/` folder, so your FLEx and ELAN files will not be changed. :)
             > 
