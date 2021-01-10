@@ -498,7 +498,6 @@ function preprocessDir(eafFilesDir, jsonFilesDir, callback) {
   };
 
   for (const eafFileName of eafFileNames) {
-    console.log("Processing " + eafFileName);
     const eafPath = eafFilesDir + eafFileName;
     
     // parse .pfsx file, if found

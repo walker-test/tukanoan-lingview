@@ -416,7 +416,6 @@ function preprocessDir(xmlFilesDir, jsonFilesDir, callback) {
   };
 
   for (const xmlFileName of xmlFileNames) {
-    console.log("Processing " + xmlFileName);
     const xmlPath = xmlFilesDir + xmlFileName;
     fs.readFile(xmlPath, function (err1, xmlData) {
       if (err1) throw err1;
