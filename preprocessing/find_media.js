@@ -64,11 +64,12 @@ function mediaSearch(filename, mediaType, mediaFiles, extensions) {
   console.log("🚨  WARN: " + filename + " is missing correctly linked " + mediaType + ". Attemping to find link...");
   const shortFilename = filename.substring(0, filename.lastIndexOf('.'));
   const shortestFilename = filename.substring(0, filename.indexOf('.')); // more possible matches for .postflex.flextext files
-  const filenamesToTry = mediaFiles;
+  const filenamesToTryRaw = mediaFiles;
   for (const extension of extensions) {
-    filenamesToTry.push(shortFilename + extension);
-    filenamesToTry.push(shortestFilename + extension);
+    filenamesToTryRaw.push(shortFilename + extension);
+    filenamesToTryRaw.push(shortestFilename + extension);
   }
+	const filenamesToTry = [...new Set(filenamesToTryRaw)]; // remove duplicates
   
   let mediaFile = findValidMedia(filenamesToTry);
   if (mediaFile != null) {
