@@ -20,7 +20,7 @@ function getFilenameFromPath(path) {
   // I/P: path, a string
   // O/P: the filename which occurs at the end of the path
   // Status: untested
-  const begin = path.lastIndexOf("/") + 1; // @Kalinda, this might fail on windows.
+  const begin = path.lastIndexOf("/") + 1;
   return path.substring(begin, path.length);
 }
 
@@ -85,7 +85,7 @@ function mediaSearch(filename, mediaType, mediaFiles, extensions) {
 		} else if (process.env.MISSING_MEDIA === 'link') {
 			mediaFile = remoteMedia.remoteUrl;
 		} else {
-			logRepetitiveError(`Error during media search: Unsupported value ${process.env.MISSING_MEDIA} for MISSING_MEDIA env variable.`);
+			console.warn(`Error during remote media search: Unsupported value ${process.env.MISSING_MEDIA} for MISSING_MEDIA env variable.`);
 		}
   }
 
@@ -100,7 +100,7 @@ function mediaSearch(filename, mediaType, mediaFiles, extensions) {
 
 function remoteMediaSearch(filenamesToTry) {
   if (!process.env.REMOTE_MEDIA_PATH || typeof process.env.REMOTE_MEDIA_PATH !== "string") {
-		logRepetitiveError(`Error while trying to locate media in remote storage: Unsupported value ${process.env.REMOTE_MEDIA_PATH} for REMOTE_MEDIA_PATH env variable.`);
+		console.warn(`Error while trying to locate media in remote storage: Unsupported value ${process.env.REMOTE_MEDIA_PATH} for REMOTE_MEDIA_PATH env variable.`);
   } else {
 		for (const filename of filenamesToTry) {
 			const remoteUrl = `${process.env.REMOTE_MEDIA_PATH.replace(/\/$/, '')}/${filename}`;
@@ -108,7 +108,7 @@ function remoteMediaSearch(filenamesToTry) {
 			try {
 				remoteUrlHeadSuccess = syncUrlExists(remoteUrl);
 			} catch (err) {
-				console.log(err);
+				console.warn(err);
 				continue;
 			}
 			if (remoteUrlHeadSuccess) {
@@ -117,19 +117,6 @@ function remoteMediaSearch(filenamesToTry) {
 		}
 	}
   return { filename: null, remoteUrl: null };
-}
-
-// Use this function for error messages that are likely to repeat, 
-// verbatim, multiple times during the rebuild process.
-// If possible, the errors will be saved until the end, 
-// and then each unique error will be printed exactly once. 
-// If that's not possible, the error will be printed immediately. 
-function logRepetitiveError(message) {
-	if (global.errorsToReportAtEnd) {
-		global.errorsToReportAtEnd.push(message);
-	} else {
-		console.warn(message);
-	}
 }
 
 const TARGET_MEDIA_FILE_EXTENSIONS = {

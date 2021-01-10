@@ -13,9 +13,7 @@ const searchIndexFileName = "data/search_index.json";
 
 console.log("Converting all files to .JSON. The stories index (data/index.json), search index (data/search_index.json), and stories' metadata will also be updated during this process. Status messages will appear below:")
 
-// These global variables are updated by fetch_materials, then reported at the end
 global.missingMediaFiles = [];
-global.errorsToReportAtEnd = [];
 
 const indexPath = path.resolve(__dirname, '..', indexFileName);
 if (!fs.existsSync(indexPath)) {
@@ -47,11 +45,6 @@ Promise.all([
 
 	if (global.missingMediaFiles.length > 0) {
 		console.log(global.missingMediaFiles.length, 'missing media files:', global.missingMediaFiles);
-	}
-	
-	if (global.errorsToReportAtEnd.length > 0) {
-		console.log(global.errorsToReportAtEnd.length, 'additional errors occurred:');
-		console.log(global.missingMediaFiles.join('\n'));
 	}
 
   return storyIDs;
