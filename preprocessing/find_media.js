@@ -61,7 +61,9 @@ function mediaSearch(filename, mediaType, mediaFiles, extensions) {
   // I/P: mediaFiles, a list of the media files that were linked in the ELAN or FLEx file
   // I/P: extensions, file extensions for media files, including the leading period (some iterable type, e.g. array or set)
   // O/P: the filename of the first valid media that was found, or null if none exists
-  console.log("🚨  WARN: " + filename + " is missing correctly linked " + mediaType + ". Attemping to find link...");
+	
+  process.stdout.write(filename + " is missing " + mediaType + "... "); // no newline
+	
   const shortFilename = filename.substring(0, filename.lastIndexOf('.'));
   const shortestFilename = filename.substring(0, filename.indexOf('.')); // more possible matches for .postflex.flextext files
   const filenamesToTryRaw = mediaFiles;
@@ -72,35 +74,25 @@ function mediaSearch(filename, mediaType, mediaFiles, extensions) {
 	const filenamesToTry = [...new Set(filenamesToTryRaw)]; // remove duplicates
   
   let mediaFile = findValidMedia(filenamesToTry);
-  if (mediaFile != null) {
-    console.log("🔍  SUCCESS: Found matching " + mediaType + ": " + mediaFile);
-  } else if (process.env.MISSING_MEDIA === 'ignore' || process.env.MISSING_MEDIA === 'link') {
-    console.log("🥽 Attempting to locate media in remote storage...");
+  if (mediaFile == null && process.env.MISSING_MEDIA != null) {
+    process.stdout.write("Looking in remote storage..."); // no newline
 
-    let remoteMedia, erred = false;
-    try {
-      remoteMedia = remoteMediaSearch(filenamesToTry);
-    } catch (err) {
-      console.log('Error while trying to locate media in remote storage:', err);
-      erred = true;
-    }
-
-    if (erred || remoteMedia.filename == null) {
-      console.log("👎 Failed to find requested media in remote storage for any of:", filenamesToTry);
-    } else if (process.env.MISSING_MEDIA === 'ignore') {
-      console.log("🥽 FOUND! Adding to list of required media.");
-      mediaFile = remoteMedia.filename;
-      if (global.missingMediaFiles) global.missingMediaFiles.push(`${remoteMedia.filename} (at ${remoteMedia.remoteUrl})`);
-    } else if (process.env.MISSING_MEDIA === 'link') {
-      console.log("🥽 FOUND! Linking to remote url...");
-      mediaFile = remoteMedia.remoteUrl;
-    }
-  } else if (typeof process.env.MISSING_MEDIA !== 'undefined') {
-    console.log("⚠ Unsupported value", process.env.MISSING_MEDIA, "for MISSING_MEDIA env variable.");
+    let remoteMedia = remoteMediaSearch(filenamesToTry);
+		
+		if (process.env.MISSING_MEDIA === 'ignore') {
+			mediaFile = remoteMedia.filename;
+			if (global.missingMediaFiles) global.missingMediaFiles.push(`${remoteMedia.filename} (at ${remoteMedia.remoteUrl})`);
+		} else if (process.env.MISSING_MEDIA === 'link') {
+			mediaFile = remoteMedia.remoteUrl;
+		} else {
+			logRepetitiveError(`Error during media search: Unsupported value ${process.env.MISSING_MEDIA} for MISSING_MEDIA env variable.`);
+		}
   }
 
-  if (mediaFile == null) {
-    console.log("❌  ERROR: Cannot find matching " + mediaType + " for " + shortFilename + ". ");
+  if (mediaFile != null) {
+		console.log("🥽 FOUND!");
+	} else {
+    console.log("❌ Not found.");
     if (global.missingMediaFiles) global.missingMediaFiles.push(filenamesToTry);
   }
   return mediaFile;
@@ -108,25 +100,36 @@ function mediaSearch(filename, mediaType, mediaFiles, extensions) {
 
 function remoteMediaSearch(filenamesToTry) {
   if (!process.env.REMOTE_MEDIA_PATH || typeof process.env.REMOTE_MEDIA_PATH !== "string") {
-    throw new Error(`Unsupported value ${process.env.REMOTE_MEDIA_PATH} for REMOTE_MEDIA_PATH env variable.`);
-  }
-
-  for (const filename of filenamesToTry) {
-    const remoteUrl = `${process.env.REMOTE_MEDIA_PATH.replace(/\/$/, '')}/${filename}`;
-    let remoteUrlHeadSuccess;
-    try {
-      remoteUrlHeadSuccess = syncUrlExists(remoteUrl);
-    } catch (err) {
-      console.log(err);
-      continue;
-    }
-    if (remoteUrlHeadSuccess) {
-      console.log('🔍 Found!', remoteUrl);
-      return { filename, remoteUrl };
-    }
-  }
-  console.log('❌ Could not find remotely!');
+		logRepetitiveError(`Error while trying to locate media in remote storage: Unsupported value ${process.env.REMOTE_MEDIA_PATH} for REMOTE_MEDIA_PATH env variable.`);
+  } else {
+		for (const filename of filenamesToTry) {
+			const remoteUrl = `${process.env.REMOTE_MEDIA_PATH.replace(/\/$/, '')}/${filename}`;
+			let remoteUrlHeadSuccess;
+			try {
+				remoteUrlHeadSuccess = syncUrlExists(remoteUrl);
+			} catch (err) {
+				console.log(err);
+				continue;
+			}
+			if (remoteUrlHeadSuccess) {
+				return { filename, remoteUrl };
+			}
+		}
+	}
   return { filename: null, remoteUrl: null };
+}
+
+// Use this function for error messages that are likely to repeat, 
+// verbatim, multiple times during the rebuild process.
+// If possible, the errors will be saved until the end, 
+// and then each unique error will be printed exactly once. 
+// If that's not possible, the error will be printed immediately. 
+function logRepetitiveError(message) {
+	if (global.errorsToReportAtEnd) {
+		global.errorsToReportAtEnd.push(message);
+	} else {
+		console.warn(message);
+	}
 }
 
 const TARGET_MEDIA_FILE_EXTENSIONS = {
@@ -190,7 +193,7 @@ function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
   // Worst case scenario: no media
   if (!hasWorkingAudio && !hasWorkingVideo) {
     metadata['timed'] = false;
-    console.log("❌  ERROR: " + filename + " (unique ID: " + storyID + ") has no linked audio or video in the media_files directory. It will be processed as an untimed file and no audio, video, or time alignment will be displayed on the site.");
+    // console.log("❌ WARN: " + filename + " (unique ID: " + storyID + ") has no linked audio or video in the media_files directory. It will be processed as an untimed file and no audio, video, or time alignment will be displayed on the site.");
   }
 }
 
@@ -227,7 +230,6 @@ module.exports.improveFLExIndexData = function improveFLExIndexData(path, storyI
   if (metadata == null) { // file not in index previously
   
     let defaultTitle = getTitleFromFilename(getFilenameFromPath(path));
-    // console.log(32332, path, defaultTitle);
     // Uncomment the three lines below to use a particular language title 
     // (in this case "es", Spanish) as the main title for newly added documents. 
     // if (titles["es"] != null && titles["es"] != "") {
