@@ -198,7 +198,7 @@ function getTitleFromFilename(filename) {
   return filename.substring(0, filename.lastIndexOf('.'));
 }
 
-function improveFLExIndexData(path, storyID, itext) {
+module.exports.improveFLExIndexData = function improveFLExIndexData(path, storyID, itext) {
   // I/P: path, a string
   //      itext, an interlinear text, e.g., jsonIn["document"]["interlinear-text"][0]
   // O/P: a JSON object, based on the index.json file and new metadata
@@ -288,7 +288,7 @@ function improveFLExIndexData(path, storyID, itext) {
   return metadata;
 }
 
-function improveElanIndexData(path, storyID, adoc) {
+module.exports.improveElanIndexData = function improveElanIndexData(path, storyID, adoc) {
   // I/P: path, a string
   //      storyID, a string
   //      adoc, an annotation document
@@ -350,11 +350,3 @@ function improveElanIndexData(path, storyID, adoc) {
 
   return metadata;
 }
-
-module.exports = {
-  verifyMedia: verifyMedia,
-  getMetadataFromIndex: getMetadataFromIndex,
-  getFilenameFromPath: getFilenameFromPath,
-  improveFLExIndexData: improveFLExIndexData,
-  improveElanIndexData: improveElanIndexData
-};
