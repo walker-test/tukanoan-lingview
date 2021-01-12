@@ -39,9 +39,14 @@ Promise.all([
 ])
 .then((results) => {
   console.log('Done preprocessing ELAN and FLEx!');
-	
-	const storyIDs = results[0].concat(results[1]);
-  console.log("The following stories were processed: " + storyIDs);
+  const resultsFromFlex = results[0];
+  const resultsFromElan = results[1];
+  const allStoryIDs2Name = Object.assign({}, resultsFromFlex.storyID2Name, resultsFromElan.storyID2Name);
+	//const storyIDs = results[0].concat(results[1]);
+  console.log("The following stories (IDs and filenames) were processed: "); 
+  console.log(allStoryIDs2Name);
+
+  const storyIDs = resultsFromFlex.storyIDs.concat(resultsFromElan.storyIDs);
 
 	if (global.missingMediaFiles.length > 0) {
 		console.log(global.missingMediaFiles.length, 'missing media files:', global.missingMediaFiles);
