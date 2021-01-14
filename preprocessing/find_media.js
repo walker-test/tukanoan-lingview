@@ -180,7 +180,6 @@ function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
   // Worst case scenario: no media
   if (!hasWorkingAudio && !hasWorkingVideo) {
     metadata['timed'] = false;
-    // console.log("❌ WARN: " + filename + " (unique ID: " + storyID + ") has no linked audio or video in the media_files directory. It will be processed as an untimed file and no audio, video, or time alignment will be displayed on the site.");
   }
 }
 
