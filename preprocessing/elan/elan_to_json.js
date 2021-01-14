@@ -530,8 +530,6 @@ function preprocessDir(eafFilesDir, jsonFilesDir, callback) {
 
   }
 
- 
-
 }
 
 module.exports = {

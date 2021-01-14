@@ -444,7 +444,6 @@ function preprocessDir(xmlFilesDir, jsonFilesDir, callback) {
     });
   }
 
-  
 }
 
 module.exports = {

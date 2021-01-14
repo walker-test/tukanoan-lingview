@@ -61,9 +61,9 @@ function mediaSearch(filename, mediaType, mediaFiles, extensions) {
   // I/P: mediaFiles, a list of the media files that were linked in the ELAN or FLEx file
   // I/P: extensions, file extensions for media files, including the leading period (some iterable type, e.g. array or set)
   // O/P: the filename of the first valid media that was found, or null if none exists
-	
+  
   process.stdout.write(filename + " is missing " + mediaType + "... "); // no newline
-	
+  
   const shortFilename = filename.substring(0, filename.lastIndexOf('.'));
   const shortestFilename = filename.substring(0, filename.indexOf('.')); // more possible matches for .postflex.flextext files
   const filenamesToTryRaw = mediaFiles;
@@ -71,27 +71,27 @@ function mediaSearch(filename, mediaType, mediaFiles, extensions) {
     filenamesToTryRaw.push(shortFilename + extension);
     filenamesToTryRaw.push(shortestFilename + extension);
   }
-	const filenamesToTry = [...new Set(filenamesToTryRaw)]; // remove duplicates
+  const filenamesToTry = [...new Set(filenamesToTryRaw)]; // remove duplicates
   
   let mediaFile = findValidMedia(filenamesToTry);
   if (mediaFile == null && process.env.MISSING_MEDIA != null) {
     process.stdout.write("Looking in remote storage..."); // no newline
 
     let remoteMedia = remoteMediaSearch(filenamesToTry);
-		
-		if (process.env.MISSING_MEDIA === 'ignore') {
-			mediaFile = remoteMedia.filename;
-			if (global.missingMediaFiles) global.missingMediaFiles.push(`${remoteMedia.filename} (at ${remoteMedia.remoteUrl})`);
-		} else if (process.env.MISSING_MEDIA === 'link') {
-			mediaFile = remoteMedia.remoteUrl;
-		} else {
-			console.warn(`Error during remote media search: Unsupported value ${process.env.MISSING_MEDIA} for MISSING_MEDIA env variable.`);
-		}
+    
+    if (process.env.MISSING_MEDIA === 'ignore') {
+      mediaFile = remoteMedia.filename;
+      if (global.missingMediaFiles) global.missingMediaFiles.push(`${remoteMedia.filename} (at ${remoteMedia.remoteUrl})`);
+    } else if (process.env.MISSING_MEDIA === 'link') {
+      mediaFile = remoteMedia.remoteUrl;
+    } else {
+      console.warn(`Error during remote media search: Unsupported value ${process.env.MISSING_MEDIA} for MISSING_MEDIA env variable.`);
+    }
   }
 
   if (mediaFile != null) {
-		console.log("🥽 FOUND!");
-	} else {
+    console.log("🥽 FOUND!");
+  } else {
     console.log("❌ Not found.");
     if (global.missingMediaFiles) global.missingMediaFiles.push(filenamesToTry);
   }
@@ -100,22 +100,22 @@ function mediaSearch(filename, mediaType, mediaFiles, extensions) {
 
 function remoteMediaSearch(filenamesToTry) {
   if (!process.env.REMOTE_MEDIA_PATH || typeof process.env.REMOTE_MEDIA_PATH !== "string") {
-		console.warn(`Error while trying to locate media in remote storage: Unsupported value ${process.env.REMOTE_MEDIA_PATH} for REMOTE_MEDIA_PATH env variable.`);
+    console.warn(`Error while trying to locate media in remote storage: Unsupported value ${process.env.REMOTE_MEDIA_PATH} for REMOTE_MEDIA_PATH env variable.`);
   } else {
-		for (const filename of filenamesToTry) {
-			const remoteUrl = `${process.env.REMOTE_MEDIA_PATH.replace(/\/$/, '')}/${filename}`;
-			let remoteUrlHeadSuccess;
-			try {
-				remoteUrlHeadSuccess = syncUrlExists(remoteUrl);
-			} catch (err) {
-				console.warn(err);
-				continue;
-			}
-			if (remoteUrlHeadSuccess) {
-				return { filename, remoteUrl };
-			}
-		}
-	}
+    for (const filename of filenamesToTry) {
+      const remoteUrl = `${process.env.REMOTE_MEDIA_PATH.replace(/\/$/, '')}/${filename}`;
+      let remoteUrlHeadSuccess;
+      try {
+        remoteUrlHeadSuccess = syncUrlExists(remoteUrl);
+      } catch (err) {
+        console.warn(err);
+        continue;
+      }
+      if (remoteUrlHeadSuccess) {
+        return { filename, remoteUrl };
+      }
+    }
+  }
   return { filename: null, remoteUrl: null };
 }
 
