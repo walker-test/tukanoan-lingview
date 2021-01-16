@@ -23,6 +23,62 @@ export function setupTextSync() {
     }
 
     /* Scrolls to a selected sentence. */
+    // Initialize YouTube player: 
+    console.log("YouTube API ready? " + youTubeIframeAPIReady);
+    player = new YT.Player('video', {
+          height: '270',
+          width: '480',
+          videoId: 'M7lc1UVf-VE'
+        });
+
+    var doneInitializingPlayer = false;
+    function onPlayerReady(event) {
+        console.log("player ready");
+        if (doneInitializingPlayer) {
+            return;
+        }
+
+        // Make YouTube player behave like a <video/> or <audio/> element:
+
+        // mimic the currentTime property
+        Object.defineProperty(player, 'currentTime', { 
+            get: player.getCurrentTime,
+            set: function(t) { player.seekTo(t / 1000); },
+            enumerable: true 
+        });
+
+        // mimic the ontimeupdate property by checking every 0.1 second
+        Object.defineProperty(player, 'prevTime', { 
+            value: player.currentTime, 
+            enumerable: true,  
+            writable: true
+        });
+        Object.defineProperty(player, 'ontimeupdate', { 
+            value: function() { sync(player.currentTime); }, 
+            enumerable: true,  
+            writable: true
+        });
+        Object.defineProperty(player, 'checkTimeUpdate', { 
+            value: function checkTimeUpdate() {
+                console.log("checkTimeUpdate");
+                if (player.currentTime !== player.prevTime) {
+                    player.prevTime = player.currentTime;
+                    console.log("ontimeupdate, currentTime = " + player.currentTime);
+                    player.ontimeupdate();
+                }
+                setTimeout(checkTimeUpdate, 10);
+            }, 
+            enumerable: true
+        });
+        player.checkTimeUpdate();
+
+        doneInitializingPlayer = true;
+    }
+
+    // When running LingView locally, the YT API fails to call onPlayerReady (due to cross-origin stuff?).
+    // Make sure onPlayerReady gets called anyway. 
+    setTimeout(onPlayerReady, 500);
+
     function scrollIntoViewIfNeeded(target) {
         var rect = target.getBoundingClientRect();
         if (rect.bottom > window.innerHeight) {
