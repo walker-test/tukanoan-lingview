@@ -37,7 +37,7 @@ function getFlexMediaFilenames(itext) {
 }
 
 function verifyMedia(filename) {
-  // I/P: filename, a .mp3 or .mp4 file
+  // I/P: filename, a .mp3, .mp4, or .youtube file
   // O/P: boolean, whether or not file exists in media_files directory
   // Status: untested
   const media_files = fs.readdirSync("data/media_files");
@@ -66,6 +66,7 @@ function mediaSearch(filename, mediaType, mediaFiles, extensions) {
   
   const shortFilename = filename.substring(0, filename.lastIndexOf('.'));
   const shortestFilename = filename.substring(0, filename.indexOf('.')); // more possible matches for .postflex.flextext files
+
   const filenamesToTryRaw = mediaFiles;
   for (const extension of extensions) {
     filenamesToTryRaw.push(shortFilename + extension);
@@ -121,8 +122,9 @@ function remoteMediaSearch(filenamesToTry) {
 
 const TARGET_MEDIA_FILE_EXTENSIONS = {
   audio: new Set(['.mp3', '.wav']),
-  video: new Set(['.mp4']),
+  video: new Set(['.mp4', '.youtube']),
 };
+
 function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
   // Only call this function if the file contains timestamps.
   // I/P: filename, of the FLEx or ELAN file
