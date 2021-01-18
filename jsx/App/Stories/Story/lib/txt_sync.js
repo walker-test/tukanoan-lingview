@@ -23,62 +23,6 @@ export function setupTextSync() {
     }
 
     /* Scrolls to a selected sentence. */
-    // Initialize YouTube player: 
-    console.log("YouTube API ready? " + youTubeIframeAPIReady);
-    player = new YT.Player('video', {
-          height: '270',
-          width: '480',
-          videoId: 'M7lc1UVf-VE'
-        });
-
-    var doneInitializingPlayer = false;
-    function onPlayerReady(event) {
-        console.log("player ready");
-        if (doneInitializingPlayer) {
-            return;
-        }
-
-        // Make YouTube player behave like a <video/> or <audio/> element:
-
-        // mimic the currentTime property
-        Object.defineProperty(player, 'currentTime', { 
-            get: player.getCurrentTime,
-            set: function(t) { player.seekTo(t / 1000); },
-            enumerable: true 
-        });
-
-        // mimic the ontimeupdate property by checking every 0.1 second
-        Object.defineProperty(player, 'prevTime', { 
-            value: player.currentTime, 
-            enumerable: true,  
-            writable: true
-        });
-        Object.defineProperty(player, 'ontimeupdate', { 
-            value: function() { sync(player.currentTime); }, 
-            enumerable: true,  
-            writable: true
-        });
-        Object.defineProperty(player, 'checkTimeUpdate', { 
-            value: function checkTimeUpdate() {
-                console.log("checkTimeUpdate");
-                if (player.currentTime !== player.prevTime) {
-                    player.prevTime = player.currentTime;
-                    console.log("ontimeupdate, currentTime = " + player.currentTime);
-                    player.ontimeupdate();
-                }
-                setTimeout(checkTimeUpdate, 10);
-            }, 
-            enumerable: true
-        });
-        player.checkTimeUpdate();
-
-        doneInitializingPlayer = true;
-    }
-
-    // When running LingView locally, the YT API fails to call onPlayerReady (due to cross-origin stuff?).
-    // Make sure onPlayerReady gets called anyway. 
-    setTimeout(onPlayerReady, 500);
-
     function scrollIntoViewIfNeeded(target) {
         var rect = target.getBoundingClientRect();
         if (rect.bottom > window.innerHeight) {
@@ -190,4 +134,84 @@ export function setupTextSync() {
         }
     });
   
+}
+
+
+export function setupYoutube() {
+    const youtubeMedia = document.querySelectorAll("[is-youtube='true']")[0];
+    if (!youtubeMedia) {
+        return; 
+    }
+
+    const youtubeID = youtubeMedia.getAttribute('youtube-id');
+
+    // Initialize YouTube player: 
+    window.YT.ready(function() {
+        player = new window.YT.Player("video", {
+            height: "270",
+            width: "480",
+            videoId: youtubeID,
+            events: {
+                onReady: onPlayerReady,
+                onStateChange: onPlayerStateChange
+            }
+        });
+    });
+
+    var doneInitializingPlayer = false;
+    function onPlayerReady(event) {
+        //console.log("player ready");
+        if (doneInitializingPlayer) {
+            return;
+        }
+
+        // Make YouTube player behave like a <video/> or <audio/> element:
+
+        // mimic the currentTime property
+        Object.defineProperty(player, 'currentTime', { 
+            get: player.getCurrentTime,
+            set: function(t) { player.seekTo(t / 1000); },
+            enumerable: true 
+        });
+
+        // mimic the ontimeupdate property by checking every 0.1 second
+        Object.defineProperty(player, 'prevTime', { 
+            value: player.currentTime, 
+            enumerable: true,  
+            writable: true
+        });
+        Object.defineProperty(player, 'ontimeupdate', { 
+            value: function() { sync(player.currentTime); }, 
+            enumerable: true,  
+            writable: true
+        });
+        Object.defineProperty(player, 'checkTimeUpdate', { 
+            value: function checkTimeUpdate() {
+                console.log("checkTimeUpdate");
+                if (player.currentTime !== player.prevTime) {
+                    player.prevTime = player.currentTime;
+                    console.log("ontimeupdate, currentTime = " + player.currentTime);
+                    player.ontimeupdate();
+                }
+                setTimeout(checkTimeUpdate, 10);
+            }, 
+            enumerable: true
+        });
+        player.checkTimeUpdate();
+
+        doneInitializingPlayer = true;
+    }
+
+    // From documentation:
+    // The API will call the onPlayerStateChange function when the player's state changes, 
+    // which may indicate that the player is playing, paused, finished, and so forth. 
+    // The function indicates that when the player state is 1 (play the player should play for six seconds 
+    // and then call the stopVideo function to stop the video.
+    // --- Might be useful for handling text sync
+    function onPlayerStateChange(event) {
+    } 
+
+    // When running LingView locally, the YT API fails to call onPlayerReady (due to cross-origin stuff?).
+    // Make sure onPlayerReady gets called anyway. 
+    setTimeout(onPlayerReady, 500);
 }
