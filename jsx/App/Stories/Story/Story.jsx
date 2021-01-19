@@ -66,29 +66,22 @@ export function getMediaFilePath(mediaFilename) {
     return /^(\w)+:\/\//i.test(mediaFilename) ? mediaFilename : `data/media_files/${mediaFilename}`;
 }
 
-// Check if the file extension is ".youtube".
+// Check if a video filepath is a Youtube URL or an actual filepath pointing to
+// any of .mp3, .wav, or .mp4 files
 function isVideoFilePathYoutube(mediaFilename) {
-    // length of ".youtube" extension is 8.
-    const lengthOfYTExtension = 8;
-    return mediaFilename.slice(mediaFilename.length - lengthOfYTExtension) === ".youtube";
-}
-
-async function loadYoutubeUrl(mediaFilename) {
-    // TODO: need to fix this to read content of a file
-    const youtubeUrl = await mediaFilename.text();
-    return youtubeUrl; 
+    const nonYoutubeExtensions = new Set(['.mp3', '.wav', '.mp4']);
+    if (mediaFilename.slice(mediaFilename.length - 4) in nonYoutubeExtensions) {
+        return false;
+    }
+    return true;
 }
 
 // Source: https://stackoverflow.com/questions/3452546/how-do-i-get-the-youtube-video-id-from-a-url
-function getYoutubeID(mediaFilename) {
-    loadYoutubeUrl(mediaFilename)
-        .then(function(youtubeUrl) {
-            console.log("url: " + youtubeUrl);
-            var videoID = youtubeUrl.split('v=')[1];
-            var ampersandPosition = videoID.indexOf('&');
-            if(ampersandPosition != -1) {
-                videoID = videoID.substring(0, ampersandPosition);
-            }
-            return videoID;
-        });
+function getYoutubeID(youtubeUrl) {
+    var videoID = youtubeUrl.split('v=')[1];
+    var ampersandPosition = videoID.indexOf('&');
+    if (ampersandPosition != -1) {
+        videoID = videoID.substring(0, ampersandPosition);
+    }
+    return videoID;
 }

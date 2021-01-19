@@ -75,6 +75,7 @@ function mediaSearch(filename, mediaType, mediaFiles, extensions) {
   const filenamesToTry = [...new Set(filenamesToTryRaw)]; // remove duplicates
   
   let mediaFile = findValidMedia(filenamesToTry);
+  
   if (mediaFile == null && process.env.MISSING_MEDIA != null) {
     process.stdout.write("Looking in remote storage..."); // no newline
 
@@ -145,6 +146,14 @@ function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
   let hasWorkingVideo = verifyMedia(videoFile);
   if (!hasWorkingVideo) {
     metadata['media']['video'] = "";
+  } else {
+    // If the video file has ".youtube" extension,
+    // change the content of the 'video' tag to the actual Youtube URL.
+    const lengthOfExtension = 8; // length of .youtube extension is 8
+    if (videoFile.slice(videoFile.length - lengthOfExtension) === ".youtube") {
+      const videoFileContent = fs.readFileSync("./data/media_files/" + videoFile, 'utf8');
+      metadata['media']['video'] = videoFileContent;
+    }
   }
 
   // If both audio/video work, then we're done. Otherwise, figure out what we need.
