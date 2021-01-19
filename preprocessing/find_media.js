@@ -3,6 +3,11 @@ const fs = require('fs');
 const syncUrlExists = require('sync-rpc')(require.resolve('./url_exists'));
 const readFlex = require('./flex/read_flex.js'); // TODO use me more, and use read_eaf.js too, for stylistic consistency
 
+const TARGET_MEDIA_FILE_EXTENSIONS = {
+  audio: new Set(['.mp3', '.wav']),
+  video: new Set(['.mp4', '.youtube']),
+};
+
 function getMetadataFromIndex(filename) {
   // I/P: filename, an XML or EAF file
   // O/P: a JSON object with metadata for the given file;
@@ -39,9 +44,20 @@ function getFlexMediaFilenames(itext) {
 function verifyMedia(filename) {
   // I/P: filename, a .mp3, .mp4, or .youtube file
   // O/P: boolean, whether or not file exists in media_files directory
-  // Status: untested
-  const media_files = fs.readdirSync("data/media_files");
-  return (media_files.indexOf(filename) >= 0);
+
+  // If the "filename" is actually a name of a file, it must end in
+  // an extension name that is part of the all valid video file extensions.
+  // In this case, check if there exists a file with that name. 
+
+  if (TARGET_MEDIA_FILE_EXTENSIONS.video.has(('.' + filename.split('.').pop()))) {
+    const media_files = fs.readdirSync("data/media_files");
+    return (media_files.indexOf(filename) >= 0);
+  } else if (filename.slice(4) === "http") {
+    // Else if the "filename" as stored in the metadata is actually an URL.
+    // Return true in this case, assuming the URL is a valid from Youtube.
+    return true; 
+  }
+  return false; 
 }
 
 function findValidMedia(filenames) {
@@ -53,6 +69,12 @@ function findValidMedia(filenames) {
     }
   }
   return null;
+}
+
+// Check if a video file's path ends in the ".youtube" extension. 
+function isVideoFilepathYoutubeExtension(videoFile) {
+  const lengthOfExtension = 8; // length of .youtube extension is 8
+  return videoFile.slice(videoFile.length - lengthOfExtension) === ".youtube"; 
 }
 
 function mediaSearch(filename, mediaType, mediaFiles, extensions) {
@@ -121,11 +143,6 @@ function remoteMediaSearch(filenamesToTry) {
   return { filename: null, remoteUrl: null };
 }
 
-const TARGET_MEDIA_FILE_EXTENSIONS = {
-  audio: new Set(['.mp3', '.wav']),
-  video: new Set(['.mp4', '.youtube']),
-};
-
 function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
   // Only call this function if the file contains timestamps.
   // I/P: filename, of the FLEx or ELAN file
@@ -149,8 +166,7 @@ function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
   } else {
     // If the video file has ".youtube" extension,
     // change the content of the 'video' tag to the actual Youtube URL.
-    const lengthOfExtension = 8; // length of .youtube extension is 8
-    if (videoFile.slice(videoFile.length - lengthOfExtension) === ".youtube") {
+    if (isVideoFilepathYoutubeExtension(videoFile)) {
       const videoFileContent = fs.readFileSync("./data/media_files/" + videoFile, 'utf8');
       metadata['media']['video'] = videoFileContent;
     }
@@ -185,6 +201,12 @@ function updateMediaMetadata(filename, storyID, metadata, linkedMediaPaths) {
     if (videoFile != null) {
       hasWorkingVideo = true;
       metadata['media']['video'] = videoFile;
+      // If the video file has ".youtube" extension,
+      // change the content of the 'video' tag to the actual Youtube URL.
+      if (isVideoFilepathYoutubeExtension(videoFile)) {
+        const videoFileContent = fs.readFileSync("./data/media_files/" + videoFile, 'utf8');
+        metadata['media']['video'] = videoFileContent;
+      }
     }
   }
   
