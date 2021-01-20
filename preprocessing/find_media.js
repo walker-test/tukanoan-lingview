@@ -48,8 +48,9 @@ function verifyMedia(filename) {
   // If the "filename" is actually a name of a file, it must end in
   // an extension name that is part of the all valid video file extensions.
   // In this case, check if there exists a file with that name. 
-
-  if (TARGET_MEDIA_FILE_EXTENSIONS.video.has(('.' + filename.split('.').pop()))) {
+  const fileExtension = '.' + filename.split('.').pop();
+  if (TARGET_MEDIA_FILE_EXTENSIONS.video.has(fileExtension) 
+  || TARGET_MEDIA_FILE_EXTENSIONS.audio.has(fileExtension)) {
     const media_files = fs.readdirSync("data/media_files");
     return (media_files.indexOf(filename) >= 0);
   } else if (filename.slice(4) === "http") {
