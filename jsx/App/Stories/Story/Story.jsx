@@ -33,6 +33,7 @@ export class Story extends React.Component {
         const sentences = story['sentences'];
         const timed = (story['metadata']['timed']);
         let footer = null;
+
         if (timed) {
             const media = story['metadata']['media'];
             if (media['audio'] != '') {
@@ -50,6 +51,7 @@ export class Story extends React.Component {
                 
             }
         }
+
         return (
             <div>
                 <div id="middle">
@@ -70,7 +72,7 @@ export function getMediaFilePath(mediaFilename) {
 // any of .mp3, .wav, or .mp4 files
 function isVideoFilePathYoutube(mediaFilename) {
     const nonYoutubeExtensions = new Set(['.mp3', '.wav', '.mp4']);
-    if (mediaFilename.slice(mediaFilename.length - 4) in nonYoutubeExtensions) {
+    if (nonYoutubeExtensions.has(mediaFilename.slice(mediaFilename.length - 4))) {
         return false;
     }
     return true;

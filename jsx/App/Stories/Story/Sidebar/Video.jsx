@@ -3,7 +3,7 @@ export class Video extends React.Component {
 	// O/P: a video player
 	// Status: re-written, untested
 	render() {
-		return <div id="video" />;
+		return <video src={this.props.path} id="video" controls controlsList="nodownload" />;
 	}
 
 	static show() {

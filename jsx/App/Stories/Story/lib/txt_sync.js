@@ -4,6 +4,7 @@ export function setupTextSync() {
 
     // "media" is undefined if there are no AV files associated with the current text. 
     const media = document.querySelectorAll("[data-live='true']")[0];
+    
     let ts_tag_array = []; // Array that stores all timestamps/sentence id
     let ts_start_time_array = [];
     let ts_stop_time_array = [];
