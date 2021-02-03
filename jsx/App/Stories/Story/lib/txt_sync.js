@@ -38,7 +38,7 @@ export function setupTextSync() {
     }
 
     /* Sync function for files with AV */
-    window.sync = function sync(current_time) {
+    function sync(current_time) {
         for (var i=0; i<ts_tag_array.length; i++) {
             // Somewhat hacky solution: decrease current_time by 0.001 to avoid highlighting before player starts
             if ((current_time-0.001 >= parseFloat(ts_start_time_array[i])/1000.0) && (current_time <= parseFloat(ts_stop_time_array[i])/1000.0)) {
@@ -53,6 +53,8 @@ export function setupTextSync() {
             }
         }
     }
+
+    window.sync = sync;
 
     /* Two functions that highlights/unhighlights a sentence. */
     function highlightSentence(timestampIndex) {
@@ -170,49 +172,9 @@ export function setupYoutube() {
         });
     });
 
-    //var doneInitializingPlayer = false;
     function onPlayerReady(event) {
-        // if (doneInitializingPlayer) {
-        //     return;
-        // }
-
-        // Make YouTube player behave like a <video/> or <audio/> element:
-
-        // mimic the currentTime property
-        // Object.defineProperty(player, 'currentTime', { 
-        //     get: player.getCurrentTime,
-        //     set: function(t) { player.seekTo(t / 1000); },
-        //     enumerable: true 
-        // });
-
-        // // mimic the ontimeupdate property by checking every 0.1 second
-        // Object.defineProperty(player, 'prevTime', { 
-        //     value: player.currentTime, 
-        //     enumerable: true,  
-        //     writable: true
-        // });
-        // Object.defineProperty(player, 'ontimeupdate', { 
-        //     value: function() { sync(player.currentTime); }, 
-        //     enumerable: true,  
-        //     writable: true
-        // });
-        // Object.defineProperty(player, 'checkTimeUpdate', { 
-        //     value: function checkTimeUpdate() {
-        //         //console.log("checkTimeUpdate");
-        //         if (player.currentTime !== player.prevTime) {
-        //             player.prevTime = player.currentTime;
-        //             //console.log("ontimeupdate, currentTime = " + player.currentTime);
-        //             player.ontimeupdate();
-        //         }
-        //         setTimeout(checkTimeUpdate, 10);
-        //     }, 
-        //     enumerable: true
-        // });
-        // player.checkTimeUpdate();
-
-        // doneInitializingPlayer = true;
+    
     }
-
 
     // This function is called when the player's state changes, ie.
     // when the Youtube player is paused, resumed, finished, etc. 
