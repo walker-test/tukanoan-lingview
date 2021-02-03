@@ -1,5 +1,8 @@
 // Based on http://community.village.virginia.edu/etst/
 
+
+let player; 
+
 export function setupTextSync() {
 
     // "media" is undefined if there are no AV files associated with the current text. 
@@ -91,11 +94,19 @@ export function setupTextSync() {
     // Status: untested
     // This function adjusts the AV file(s)' timestamp according to the 
     // selected sentence's URL
-    function setMediaCurrentTime(t) {
-        const media = $("[data-live='true']").get(0);
-        if (media) {
-            media.currentTime = (t + 2) / 1000;
+    function setMediaCurrentTime(timestampMilliseconds) {
+        const youtubeVideo = $("[is-youtube='true']").get(0);
+        if (youtubeVideo) {
+            // The timestamp unit on Youtube videos is seconds,
+            // so need to divide t, which is in ms, by 1000.
+            player.seekTo(timestampMilliseconds / 1000);
+        } else {
+            const media = $("[data-live='true']").get(0);
+            if (media) {
+                media.currentTime = (timestampMilliseconds + 2) / 1000;
+            } 
         }
+        
     }
 
     /* Updates the URL according to a sentence's index id. */
@@ -153,21 +164,21 @@ export function setupYoutube() {
             width: "480",
             videoId: youtubeID,
             events: {
-                onReady: onPlayerReady,
-                onStateChange: onPlayerStateChange
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
             }
         });
     });
 
-    var doneInitializingPlayer = false;
+    //var doneInitializingPlayer = false;
     function onPlayerReady(event) {
         // if (doneInitializingPlayer) {
         //     return;
         // }
 
-        // // Make YouTube player behave like a <video/> or <audio/> element:
+        // Make YouTube player behave like a <video/> or <audio/> element:
 
-        // // mimic the currentTime property
+        // mimic the currentTime property
         // Object.defineProperty(player, 'currentTime', { 
         //     get: player.getCurrentTime,
         //     set: function(t) { player.seekTo(t / 1000); },
@@ -187,10 +198,10 @@ export function setupYoutube() {
         // });
         // Object.defineProperty(player, 'checkTimeUpdate', { 
         //     value: function checkTimeUpdate() {
-        //         console.log("checkTimeUpdate");
+        //         //console.log("checkTimeUpdate");
         //         if (player.currentTime !== player.prevTime) {
         //             player.prevTime = player.currentTime;
-        //             console.log("ontimeupdate, currentTime = " + player.currentTime);
+        //             //console.log("ontimeupdate, currentTime = " + player.currentTime);
         //             player.ontimeupdate();
         //         }
         //         setTimeout(checkTimeUpdate, 10);
@@ -202,13 +213,12 @@ export function setupYoutube() {
         // doneInitializingPlayer = true;
     }
 
-    // From documentation:
-    // The API will call the onPlayerStateChange function when the player's state changes, 
-    // which may indicate that the player is playing, paused, finished, and so forth. 
-    // The function indicates that when the player state is 1 (play the player should play for six seconds 
-    // and then call the stopVideo function to stop the video.
-    // --- Might be useful for handling text sync
+
+    // This function is called when the player's state changes, ie.
+    // when the Youtube player is paused, resumed, finished, etc. 
     function onPlayerStateChange(event) {
+        const currentTime = player.playerInfo.currentTime;
+        sync(currentTime);
     } 
 
     // When running LingView locally, the YT API fails to call onPlayerReady (due to cross-origin stuff?).

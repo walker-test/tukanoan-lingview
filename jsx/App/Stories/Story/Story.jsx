@@ -43,7 +43,7 @@ export class Story extends React.Component {
                 const mediaName = media['video'];
                 if (isVideoFilePathYoutube(mediaName)) {
                     const youtubeID = getYoutubeID(mediaName);
-                    footer = <div hidden id="footer"><audio data-live="false" is-youtube="true" controls controlsList="nodownload" id="video" youtube-id={youtubeID}/></div>;
+                    footer = <div hidden id="footer"><audio data-live="true" is-youtube="true" controls controlsList="nodownload" id="video-youtube" youtube-id={youtubeID}/></div>;
                 } else {
                     const videoFilePath = getMediaFilePath(mediaName);
                     footer = <div hidden id="footer"><audio data-live="true" is-youtube="false" controls controlsList="nodownload" id="video" src={videoFilePath}/></div>;
