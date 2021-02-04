@@ -152,6 +152,7 @@ export function setupTextSync() {
 
 
 export function setupYoutube() {
+
     const youtubeMedia = document.querySelectorAll("[is-youtube='true']")[0];
     if (!youtubeMedia) {
         return; 
@@ -179,11 +180,14 @@ export function setupYoutube() {
     // This function is called when the player's state changes, ie.
     // when the Youtube player is paused, resumed, finished, etc. 
     function onPlayerStateChange(event) {
-        const currentTime = player.playerInfo.currentTime;
-        sync(currentTime);
+
     } 
 
-    // When running LingView locally, the YT API fails to call onPlayerReady (due to cross-origin stuff?).
-    // Make sure onPlayerReady gets called anyway. 
-    setTimeout(onPlayerReady, 500);
+    // Call the sync function on the Youtube video every second.
+    // This ensures that the corresponding text is highlighted when
+    // the text's timestamp matches the video's timestamp. 
+    setInterval(function(){
+        const currentTime = player.playerInfo.currentTime;
+        sync(currentTime);
+      }, 1000);
 }
