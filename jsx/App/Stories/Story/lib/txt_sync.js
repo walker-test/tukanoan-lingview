@@ -165,29 +165,15 @@ export function setupYoutube() {
         player = new window.YT.Player("video", {
             height: "270",
             width: "480",
-            videoId: youtubeID,
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-            }
+            videoId: youtubeID
         });
     });
 
-    function onPlayerReady(event) {
-    
-    }
-
-    // This function is called when the player's state changes, ie.
-    // when the Youtube player is paused, resumed, finished, etc. 
-    function onPlayerStateChange(event) {
-
-    } 
-
-    // Call the sync function on the Youtube video every second.
+    // Call the sync function on the Youtube video every 0.1 second.
     // This ensures that the corresponding text is highlighted when
     // the text's timestamp matches the video's timestamp. 
     setInterval(function(){
         const currentTime = player.playerInfo.currentTime;
         sync(currentTime);
-      }, 1000);
+      }, 100);
 }

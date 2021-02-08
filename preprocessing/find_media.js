@@ -74,8 +74,7 @@ function findValidMedia(filenames) {
 
 // Check if a video file's path ends in the ".youtube" extension. 
 function isVideoFilepathYoutubeExtension(videoFile) {
-  const lengthOfExtension = 8; // length of .youtube extension is 8
-  return videoFile.slice(videoFile.length - lengthOfExtension) === ".youtube"; 
+  return videoFile.endsWith(".youtube");
 }
 
 function mediaSearch(filename, mediaType, mediaFiles, extensions) {
