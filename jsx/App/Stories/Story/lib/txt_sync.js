@@ -185,7 +185,7 @@ export function setupYoutubeAndTextSync() {
         player = new window.YT.Player("video", {
             height: "270",
             width: "480",
-            videoId: youtubeID,
+            videoId: youtubeID
         });
         player.addEventListener('onReady', onPlayerReady);
     });
