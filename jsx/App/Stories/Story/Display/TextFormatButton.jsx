@@ -1,47 +1,70 @@
 
 export function TextFormatButton({ sentences, metadata }) {
 
-    // functions for processing sentences (maps of words to morphemes and glossings, etc)
     function processSentences() {
         const dependents = sentences[0]["dependents"];
+        //console.log(dependents);
         const aingaeWordList = dependents[0]["values"];
-        console.log(aingaeWordList);
         const morphemeList = dependents[1]["values"];
-        console.log(morphemeList);
+        const glossList = dependents[3]["values"];
 
-        const word2morpheme = wordToMorpheme(aingaeWordList, morphemeList);
-        console.log(word2morpheme);
+        const morphAndGloss = organizeWords(aingaeWordList, morphemeList, glossList);
+        const morphemeMap = morphAndGloss["morphemes"];
+        const glossMap = morphAndGloss["gloss"];
+        console.log("--------");
+        console.log(morphemeMap);
+        console.log(glossMap);
+       
         return "hi";
     }
 
-    function wordToMorpheme(wordList, morphemeList) {
+    /* Returns a map between each word and all of its sub-components (core and clitics, and gloss, etc.) */
+    function organizeWords(wordList, morphemeList, glossList) {
         let wordListCounter = 0;
-        let word2Morpheme = {};
         let morphemeListIndex = 0;
-        let wordCounterIndex = 0; // Each word gets a unique id
+
+        let word2Morpheme = {};
+        let word2Gloss = {};
 
         while (wordListCounter < wordList.length) {
+            word2Morpheme[wordListCounter] = {};
+            word2Gloss[wordListCounter] = {};
+
             const wordEntry = wordList[wordListCounter];
             const word = wordEntry["value"];
-            word2Morpheme[wordCounterIndex] = { word : [] };
-
             const wordStartSlot = wordEntry["start_slot"];
             const wordEndSlot = wordEntry["end_slot"];
-            // TODO: Check these start and end slots 
+
             let morphemes = [];
-            while (morphemeListIndex < morphemeList.length) {
+            let gloss = [];
+            let flag = true; 
+            // Find the morphemes belonging to the current word, and add them and their gloss
+            // into a list. 
+            while (flag && morphemeListIndex < morphemeList.length) {
                 const morphemeEntry = morphemeList[morphemeListIndex];
-                if (morphemeEntry["start_slot"] >= wordStartSlot && morphemeEntry["end_slot"] < wordEndSlot) {
+                const glossEntry = glossList[morphemeListIndex];
+                if (morphemeEntry["start_slot"] >= wordStartSlot && morphemeEntry["end_slot"] <= wordEndSlot) {
                     morphemes.push(morphemeEntry["value"]);
-                }
-                morphemeListIndex += 1;
+                    gloss.push(glossEntry["value"]);
+                    morphemeListIndex += 1;
+                } else {   
+                    flag = false;
+                } 
             }
-            word2Morpheme[wordCounterIndex][word] = morphemes;
-            wordCounterIndex += 1;
+
+            word2Morpheme[wordListCounter][word] = morphemes;
+            word2Gloss[wordListCounter][word] = gloss;
             wordListCounter += 1;
         }
 
-        return word2Morpheme;
+        return {
+            "morphemes" : word2Morpheme,
+            "gloss" : word2Gloss
+        };
+    }
+
+    function processMetadata() {
+
     }
 
     // functions for adding the formatter latex code 
