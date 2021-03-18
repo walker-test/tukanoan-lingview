@@ -1,6 +1,10 @@
 
 export function TextFormatButton({ sentences, metadata }) {
 
+    /* 
+    Calls on individual helper functions to gather the morphemes,
+    gloss, translation, and title of the selected sentence. 
+    */
     function processSentences() {
         const dependents = sentences[0]["dependents"];
         //console.log(dependents);
@@ -11,11 +15,18 @@ export function TextFormatButton({ sentences, metadata }) {
         const morphAndGloss = organizeWords(aingaeWordList, morphemeList, glossList);
         const morphemeMap = morphAndGloss["morphemes"];
         const glossMap = morphAndGloss["gloss"];
-        console.log("--------");
-        console.log(morphemeMap);
-        console.log(glossMap);
-       
-        return "hi";
+        //console.log(morphemeMap);
+        //console.log(glossMap);
+
+        const sentenceTranslation = getSentenceTranslation();     
+        const title = getTitle();
+
+        return {
+            title : title,
+            morphemes : morphemeMap,
+            gloss : glossMap,
+            sentenceTranslation : sentenceTranslation  
+        };
     }
 
     /* Returns a map between each word and all of its sub-components (core and clitics, and gloss, etc.) */
@@ -63,23 +74,29 @@ export function TextFormatButton({ sentences, metadata }) {
         };
     }
 
-    function processMetadata() {
+    function getSentenceTranslation() {
+        return sentences[0]["dependents"][5]["values"][0]["value"];
+    }
 
+    function getTitle() {
+        const title = metadata["title"]["_default"];
+        return title; 
     }
 
     // functions for adding the formatter latex code 
 
+
+
     // functions to display these in a popup
     function displayInPopup(material) {
         let textFormatWindow = window.open("", "TextFormatWindow", "width=500,height=600");
-        textFormatWindow.document.write(material);
+        textFormatWindow.document.write(JSON.stringify(material));
     }
 
     function handleClick(e) {
         e.preventDefault();
-
-        const processedSentences = processSentences();
-        //displayInPopup(processedSentences);
+        const processedMaterial = processSentences();
+        displayInPopup(processedMaterial);
     }
 
     return (
