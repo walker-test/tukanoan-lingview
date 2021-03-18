@@ -57,6 +57,9 @@ function LabeledTimeBlock({ sentences, timestamp }) {
 		}
 	}
 	return (
+		// TODO for text formatter: 
+		// Can add a new component "TextFormatButton" here
+		// prob need to pass in sentences to the button
 		<div className="labeledTimeBlock" data-start_time={minStart} data-end_time={maxEnd}>
 			<span className="timeStampContainer timeStamp" id={minStart} data-start_time={minStart}>
 				{timestamp}

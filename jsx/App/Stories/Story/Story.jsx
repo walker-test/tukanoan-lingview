@@ -52,6 +52,7 @@ export class Story extends React.Component {
         }
 
         return (
+            // TODO for text formatter: prob need to pass metadata to CenterPanel too
             <div>
                 <div id="middle">
                     <Sidebar metadata={story['metadata']}/>
