@@ -83,7 +83,31 @@ export function TextFormatButton({ sentences, metadata }) {
         return title; 
     }
 
-    // functions for adding the formatter latex code 
+    /* Put the list of morphemes and gloss into LaTeX format with gb4e package style. */
+    function convertToLatex(material) {
+        // Some literal symbols used as latex markups.
+        const begin = "\\begin{exe} \n  \\ex ";
+        const end = "\\end{exe}";
+        const glossStart = "\\gll";
+        const glossEnd = ".\\\\ \n";
+        const textscStart = "\\textsc{";
+        const textscClose = "}";
+        const translationSymbol = "\\glt";
+
+        const morphemes = material["morphemes"];
+        let wordList = [];
+        let glossList = [glossStart];
+        let morphemeList = [];
+        for (const [id, entry] of Object.entries(morphemes)) {
+            for (const [wholeWord, morphs] of Object.entries(entry)) {
+                wordList.push(wholeWord);
+                glossList.push(morphs.join(""));
+            }
+        }
+        glossList.push(glossEnd);
+        // console.log(wordList);
+        // console.log(glossList);
+    }
 
 
 
@@ -96,7 +120,7 @@ export function TextFormatButton({ sentences, metadata }) {
     function handleClick(e) {
         e.preventDefault();
         const processedMaterial = processSentences();
-        displayInPopup(processedMaterial);
+        convertToLatex(processedMaterial);
     }
 
     return (
