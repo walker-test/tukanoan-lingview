@@ -83,42 +83,61 @@ export function TextFormatButton({ sentences, metadata }) {
         return title; 
     }
 
-    /* Put the list of morphemes and gloss into LaTeX format with gb4e package style. */
+    /* Convert a sentence into LaTeX format with gb4e package style. */
     function convertToLatex(material) {
         // Some literal symbols used as latex markups.
         const begin = "\\begin{exe} \n  \\ex ";
         const end = "\\end{exe}";
         
-        const glossLines = getGlossLines(material["morphemes"]);
-        console.log(glossLines);
-
+        const morphLines = getMorphemeLines(material["morphemes"])
+        const glossLines = getMorphologicalAnalysisLine(material["gloss"]);
         const translationLine = getTranslationLatexLine(material["sentenceTranslation"]);
-        console.log(translationLine);
-
-        return begin + glossLines + translationLine;
+        const toDisplay = begin + morphLines + glossLines + translationLine + end;
+        console.log(toDisplay);
+        return toDisplay; 
     }
 
-    function getGlossLines(morphemes) {
-        const glossStart = "\\gll";
-        const glossEnd = ".\\\\ \n";
-        const textscStart = "\\textsc{";
-        const textscClose = "}";
-
+    /* Combines the glossing and morphological analysis into their corresponding lines. */
+    function getMorphemeLines(morphemes) {
+        const morphemeStart = "\\gll";
+        const morphemeEnd = ".\\\\ \n";
+        
         let wordList = []; // This will contain the complete sentence without - or == 
-        let glossList = [glossStart];
-        let morphemeList = [];
+        let morphemeList = [morphemeStart]; // This has each word decomposed into suffices and clitics.
         for (const [id, entry] of Object.entries(morphemes)) {
             for (const [wholeWord, morphs] of Object.entries(entry)) {
                 wordList.push(wholeWord);
-                glossList.push(morphs.join(""));
-                for (const morph in morphs) {
-                    morphemeList.push(textscStart + morph + textscClose + " ");
-                }
+                morphemeList.push(morphs.join(""));
             }
         }
-        glossList.push(glossEnd);
+        morphemeList.push(morphemeEnd);
+        
+        return wordList.join(" ") + " \\\\\n" + morphemeList.join(" ");
+    }
 
-        return wordList.join(" ") + " \\\\\n" + glossList.join(" ");
+    function getMorphologicalAnalysisLine(gloss) {
+        const textscStart = "\\textsc{";
+        const textscClose = "}";
+
+        let glossList = []; // This has the morphological analysis line.
+        for (const [id, entry] of Object.entries(gloss)) {
+            for (const [wholeWord, glossItems] of Object.entries(entry)) {
+                let glossForThisWord = [];
+                for (const [id, glossItem] of Object.entries(glossItems)) {
+                    // Only the suffices and clitics need \textsc
+                    if (isSuffix(glossItem)) {
+                        // TODO: need to lowercase he clitics
+                        glossForThisWord.push(textscStart + glossItem + textscClose);
+                    } else {
+                        glossForThisWord.push(glossItem); 
+                    } 
+                }
+                glossList.push(glossForThisWord.join(""));
+            }
+        }
+        glossList.push("\\\\ \n");
+
+        return glossList.join(" ");
     }
 
     /* Puts the sentence translation into LaTeX format. */
@@ -126,6 +145,12 @@ export function TextFormatButton({ sentences, metadata }) {
         const translationStart = "\\glt `";
         const translationEnd = "'\n";
         return translationStart + sentence + translationEnd;
+    }
+
+    /* Checks if an item is a suffix or clitic. */
+    function isSuffix(item) {
+        return item.startsWith("=") || item.startsWith("-");
+        // TODO: also need to check if the item is complete capitalized
     }
 
     /* Displays the created material in a popup window. */
@@ -138,7 +163,7 @@ export function TextFormatButton({ sentences, metadata }) {
         e.preventDefault();
         const processedMaterial = processSentences();
         const latexLines = convertToLatex(processedMaterial);
-        displayInPopup(latexLines);
+        //displayInPopup(latexLines);
     }
 
     return (
