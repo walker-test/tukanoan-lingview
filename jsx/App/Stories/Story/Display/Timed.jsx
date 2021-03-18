@@ -36,7 +36,7 @@ function printSeconds(r) {
 	r=Number(r);var t=Math.floor(r/3600),i=Math.floor(r%3600/60),n=Math.floor(r%3600%60);if(n>=10)e=String(n);else var e="0"+String(n);var o=String(i)+":";if(0==t)a="";else if(i>=10)a=String(t)+":";else var a=String(t)+":0";return a+o+e;
 }
 
-function LabeledTimeBlock({ sentences, timestamp }) {
+function LabeledTimeBlock({ sentences, timestamp, metadata }) {
 	// I/P: sentences, a list of sentences with the same start time
 	//      timestamp, an integer number of seconds
 	// O/P: a TimeBlock with a left-floating timestamp
@@ -58,22 +58,19 @@ function LabeledTimeBlock({ sentences, timestamp }) {
 		}
 	}
 	return (
-		// TODO for text formatter: 
-		// Can add a new component "TextFormatButton" here
-		// prob need to pass in sentences to the button
 		<div className="labeledTimeBlock" data-start_time={minStart} data-end_time={maxEnd}>
 			<div className="timeStampAndButtonContainer">
 				<span className="timeStampContainer timeStamp" id={minStart} data-start_time={minStart}>
 					{timestamp}
 				</span>
-				<TextFormatButton />
+				<TextFormatButton sentences={sentences} metadata={metadata}/>
 			</div>
 			<TimeBlock sentences={sentences} />
 		</div>
 	);
 }
 
-export function TimedTextDisplay({ sentences }) {
+export function TimedTextDisplay({ sentences, metadata }) {
 	// I/P: sentences, stored in JSON format, as in test_data.json
 	// O/P: the main gloss view, with several LabeledTimeBlocks arranged vertically
 	// Status: tested, working
@@ -105,6 +102,7 @@ export function TimedTextDisplay({ sentences }) {
 				key={id.generate()}
 				sentences={correspondingSentences}
 				timestamp={timestamp}
+				metadata={metadata}
 			/>
 		);
 	}
