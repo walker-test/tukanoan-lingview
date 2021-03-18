@@ -1,5 +1,6 @@
 import id from 'shortid';
 import { Sentence } from './Sentence.jsx';
+import { TextFormatButton } from './TextFormatButton.jsx';
 
 function LabeledSentence({ sentence }) {
 	// I/P: sentence, a sentence
@@ -61,9 +62,12 @@ function LabeledTimeBlock({ sentences, timestamp }) {
 		// Can add a new component "TextFormatButton" here
 		// prob need to pass in sentences to the button
 		<div className="labeledTimeBlock" data-start_time={minStart} data-end_time={maxEnd}>
-			<span className="timeStampContainer timeStamp" id={minStart} data-start_time={minStart}>
-				{timestamp}
-			</span>
+			<div className="timeStampAndButtonContainer">
+				<span className="timeStampContainer timeStamp" id={minStart} data-start_time={minStart}>
+					{timestamp}
+				</span>
+				<TextFormatButton />
+			</div>
 			<TimeBlock sentences={sentences} />
 		</div>
 	);

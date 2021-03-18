@@ -153,6 +153,12 @@ td {
 	overflow-x: auto;
 }
 
+.timeStampAndButtonContainer {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	padding-left: 5%
+}
+
 span.timeStamp {
 	padding-top: 3px;
 	float: left;
