@@ -88,39 +88,57 @@ export function TextFormatButton({ sentences, metadata }) {
         // Some literal symbols used as latex markups.
         const begin = "\\begin{exe} \n  \\ex ";
         const end = "\\end{exe}";
+        
+        const glossLines = getGlossLines(material["morphemes"]);
+        console.log(glossLines);
+
+        const translationLine = getTranslationLatexLine(material["sentenceTranslation"]);
+        console.log(translationLine);
+
+        return begin + glossLines + translationLine;
+    }
+
+    function getGlossLines(morphemes) {
         const glossStart = "\\gll";
         const glossEnd = ".\\\\ \n";
         const textscStart = "\\textsc{";
         const textscClose = "}";
-        const translationSymbol = "\\glt";
 
-        const morphemes = material["morphemes"];
-        let wordList = [];
+        let wordList = []; // This will contain the complete sentence without - or == 
         let glossList = [glossStart];
         let morphemeList = [];
         for (const [id, entry] of Object.entries(morphemes)) {
             for (const [wholeWord, morphs] of Object.entries(entry)) {
                 wordList.push(wholeWord);
                 glossList.push(morphs.join(""));
+                for (const morph in morphs) {
+                    morphemeList.push(textscStart + morph + textscClose + " ");
+                }
             }
         }
         glossList.push(glossEnd);
-        // console.log(wordList);
-        // console.log(glossList);
+
+        return wordList.join(" ") + " \\\\\n" + glossList.join(" ");
     }
 
+    /* Puts the sentence translation into LaTeX format. */
+    function getTranslationLatexLine(sentence) {
+        const translationStart = "\\glt `";
+        const translationEnd = "'\n";
+        return translationStart + sentence + translationEnd;
+    }
 
-
-    // functions to display these in a popup
+    /* Displays the created material in a popup window. */
     function displayInPopup(material) {
         let textFormatWindow = window.open("", "TextFormatWindow", "width=500,height=600");
-        textFormatWindow.document.write(JSON.stringify(material));
+        textFormatWindow.document.write(material);
     }
 
     function handleClick(e) {
         e.preventDefault();
         const processedMaterial = processSentences();
-        convertToLatex(processedMaterial);
+        const latexLines = convertToLatex(processedMaterial);
+        displayInPopup(latexLines);
     }
 
     return (
