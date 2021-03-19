@@ -6,7 +6,8 @@ export function TextFormatButton({ sentences, metadata }) {
     gloss, translation, and title of the selected sentence. 
     */
     function processSentences() {
-
+        console.log(metadata);
+        console.log(sentences);
         let dependents;
         if (! sentences[0]) {
             dependents = sentences["dependents"]
@@ -24,8 +25,10 @@ export function TextFormatButton({ sentences, metadata }) {
 
         const sentenceTranslation = getSentenceTranslation(dependents);     
         const title = getTitle();
+        const storyId = getStoryId();
 
         return {
+            storyId : storyId,
             title : title,
             morphemes : morphemeMap,
             gloss : glossMap,
@@ -111,6 +114,10 @@ export function TextFormatButton({ sentences, metadata }) {
         return title; 
     }
 
+    function getStoryId() {
+        return metadata["story ID"];
+    }
+
     /* Convert a sentence into LaTeX format with gb4e-modified package style. */
     function convertToLatex(material) {
         const begin = "\\begin{exe} \n  \\ex \\label{example} \n  ";
@@ -121,6 +128,7 @@ export function TextFormatButton({ sentences, metadata }) {
         const translationLine = getTranslationLatexLine(material["sentenceTranslation"]);
         // Replace _ with \_ so that it is recognized as underscore in LaTeX
         const storyTitle = material["title"].replace(/_/g, "\\_") + "\n"; 
+        
         const toDisplay = begin + morphLines + glossLine + translationLine + storyTitle + end;
         return toDisplay; 
     }
@@ -185,17 +193,23 @@ export function TextFormatButton({ sentences, metadata }) {
     }
 
     /* Displays the created material in a popup window. */
-    function displayInPopup(material) {
+    function displayInPopup(processedMaterial, latexLines) {
+        const headerLine = "=============== New Sentence ================ <br>";
+        const storyIdLine = "Story ID: " + processedMaterial["storyId"].replace(/_/g, "\\_") + "\n\n"; 
+        const latexLibraryLine = "Formatted for gb4e and gb4e-modified LaTeX packages: <br>";
+
         let popupWindow = window.open("", "TextFormatWindow", "width=700,height=500");
-        popupWindow.document.write("========= Formatted for gb4e and gb4e-modified packages ===== <br>");
-        popupWindow.document.write("<pre>" + material + "</pre>");
+        popupWindow.document.write(headerLine);
+        popupWindow.document.write("<pre>" + storyIdLine + "</pre>");
+        popupWindow.document.write(latexLibraryLine);
+        popupWindow.document.write("<pre>" + latexLines + "</pre>");
     }
 
     function handleClick(e) {
         e.preventDefault();
         const processedMaterial = processSentences();
         const latexLines = convertToLatex(processedMaterial);
-        displayInPopup(latexLines);
+        displayInPopup(processedMaterial, latexLines);
     }
 
     return (
