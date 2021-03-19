@@ -1,4 +1,5 @@
 
+/* Models a text format button. */
 export function TextFormatButton({ sentences, metadata }) {
 
     /* 
@@ -135,7 +136,7 @@ export function TextFormatButton({ sentences, metadata }) {
         
         const morphLines = getMorphemeLines(material["morphemes"])
         const glossLine = getMorphologicalAnalysisLine(material["gloss"]);
-        const translationLine = getTranslationLatexLine(material["sentenceTranslation"]);
+        const translationLine = getSentenceTranslationLine(material["sentenceTranslation"]);
         // Replace _ with \_ so that it is recognized as underscore in LaTeX
         const storyTitle = material["title"].replace(/_/g, "\\_") + "\n"; 
         
@@ -190,7 +191,7 @@ export function TextFormatButton({ sentences, metadata }) {
     }
 
     /* Puts the sentence translation into LaTeX format. */
-    function getTranslationLatexLine(sentence) {
+    function getSentenceTranslationLine(sentence) {
         const translationStart = "\\glt `";
         const translationEnd = "' \\\\ \n  ";
         return translationStart + sentence + translationEnd;
@@ -212,6 +213,7 @@ export function TextFormatButton({ sentences, metadata }) {
 
         let popupWindow = window.open("", "TextFormatWindow", "width=700,height=500");
         popupWindow.document.write(headerLine);
+        // The <pre> tag is used for any pre-formatted texts. 
         popupWindow.document.write("<pre>" + storyTitleLine + "</pre>");
         popupWindow.document.write("<pre>" + storyIdLine + "</pre>");
         popupWindow.document.write("<pre>" + sentenceUrlLine + "</pre>");
@@ -232,6 +234,5 @@ export function TextFormatButton({ sentences, metadata }) {
             <button class="textFormatButton" onClick={handleClick}>
                 Format
             </button>
-        </div>)
-    ; 
+        </div>); 
 }
