@@ -184,7 +184,7 @@ export function TextFormatButton({ sentences, metadata }) {
 
     return (
         <div>
-            <button onClick={handleClick}>
+            <button class="textFormatButton" onClick={handleClick}>
                 Format
             </button>
         </div>)
