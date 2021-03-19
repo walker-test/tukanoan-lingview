@@ -52,6 +52,7 @@ export function TextFormatButton({ sentences, metadata }) {
 
             const wordEntry = wordList[wordListCounter];
             const word = wordEntry["value"];
+            console.log("word: " + word);
             const wordStartSlot = wordEntry["start_slot"];
             const wordEndSlot = wordEntry["end_slot"];
 
@@ -61,15 +62,20 @@ export function TextFormatButton({ sentences, metadata }) {
             // Find the morphemes belonging to the current word, and add them and their gloss
             // into a list. 
             while (flag && morphemeListIndex < morphemeList.length) {
-                const morphemeEntry = morphemeList[morphemeListIndex];
-                const glossEntry = glossList[morphemeListIndex];
+                // Add the "Undefined" strings just in case that some texts have glossing misaligned.
+                // For texts with aligned morphemes and glossing, "Undefined" shouldn't show up,
+                // but they do to avoid an error being thrown and as a way to let the user know 
+                // that something is off with this sentence so they should edit the generated LaTeX code. 
+                const morphemeEntry = morphemeList[morphemeListIndex] || "Undefined";;
+                const glossEntry = glossList[morphemeListIndex] || "Undefined";
                 if (morphemeEntry["start_slot"] >= wordStartSlot && morphemeEntry["end_slot"] <= wordEndSlot) {
                     // If a morpheme item has the whole word, eg. "cundyi-'je='fa", we need to
                     // split the current morpheme on = or -, so that each root or suffix or clitic is on its own. 
-
+                    const morphemeValue = morphemeEntry["value"] || "Undefined";
+                    const glossValue = glossEntry["value"] || "Undefined";
                     // First, add a space in front of = and - so that we can split on space later and preserve both = and -
-                    const currentMorpheme = morphemeEntry["value"].replace("=", " =").replace("-", " -");
-                    const currentGloss = glossEntry["value"].replace("=", " =").replace("-", " -");;          
+                    const currentMorpheme = morphemeValue.replace("=", " =").replace("-", " -");
+                    const currentGloss = glossValue.replace("=", " =").replace("-", " -");;          
                     const currentMorphemeSplit = currentMorpheme.split(" ");
                     const currentGlossSplit = currentGloss.split(" ");
 
