@@ -85,7 +85,7 @@ export function TextFormatButton({ sentences, metadata }) {
     function convertToLatex(material) {
         // Some literal symbols used as latex markups.
         const begin = "\\begin{exe} \n  \\ex \\label{example} \n  ";
-        const end = "\\end{exe}";
+        const end = "\\end{exe} \n";
         
         const morphLines = getMorphemeLines(material["morphemes"])
         const glossLine = getMorphologicalAnalysisLine(material["gloss"]);
@@ -160,7 +160,8 @@ export function TextFormatButton({ sentences, metadata }) {
     /* Displays the created material in a popup window. */
     function displayInPopup(material) {
         let textFormatWindow = window.open("", "TextFormatWindow", "width=500,height=600");
-        textFormatWindow.document.write(material);
+        textFormatWindow.document.write("===== New example ===== <br>");
+        textFormatWindow.document.write("<pre>" + material + "</pre>");
     }
 
     function handleClick(e) {
