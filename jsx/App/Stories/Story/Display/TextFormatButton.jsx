@@ -59,14 +59,30 @@ export function TextFormatButton({ sentences, metadata }) {
                 const morphemeEntry = morphemeList[morphemeListIndex];
                 const glossEntry = glossList[morphemeListIndex];
                 if (morphemeEntry["start_slot"] >= wordStartSlot && morphemeEntry["end_slot"] <= wordEndSlot) {
-                    morphemes.push(morphemeEntry["value"]);
-                    gloss.push(glossEntry["value"]);
+                    // If a morpheme item has the whole word, eg. "cundyi-'je='fa", we need to
+                    // split the current morpheme on = or -, so that each root or suffix or clitic is on its own. 
+
+                    // First, add a space in front of = and - so that we can split on space later and preserve both = and -
+                    const currentMorpheme = morphemeEntry["value"].replace("=", " =").replace("-", " -");
+                    const currentGloss = glossEntry["value"].replace("=", " =").replace("-", " -");;          
+                    const currentMorphemeSplit = currentMorpheme.split(" ");
+                    const currentGlossSplit = currentGloss.split(" ");
+
+                    for (const e of currentMorphemeSplit) {
+                        if (e !== "") {
+                            morphemes.push(e);
+                        }
+                    }
+                    for (const e of currentGlossSplit) {
+                        if (e !== "") {
+                            gloss.push(e);
+                        }
+                    }
                     morphemeListIndex += 1;
                 } else {   
                     flag = false;
                 } 
             }
-
             word2Morpheme[wordListCounter][word] = morphemes;
             word2Gloss[wordListCounter][word] = gloss;
             wordListCounter += 1;
