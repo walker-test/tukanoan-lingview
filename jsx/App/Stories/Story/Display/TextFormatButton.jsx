@@ -52,7 +52,6 @@ export function TextFormatButton({ sentences, metadata }) {
 
             const wordEntry = wordList[wordListCounter];
             const word = wordEntry["value"];
-            console.log("word: " + word);
             const wordStartSlot = wordEntry["start_slot"];
             const wordEndSlot = wordEntry["end_slot"];
 
