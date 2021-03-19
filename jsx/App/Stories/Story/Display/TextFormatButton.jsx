@@ -6,8 +6,6 @@ export function TextFormatButton({ sentences, metadata }) {
     gloss, translation, and title of the selected sentence. 
     */
     function processSentences() {
-        console.log(metadata);
-        console.log(sentences);
         let dependents;
         if (! sentences[0]) {
             dependents = sentences["dependents"]
@@ -22,14 +20,17 @@ export function TextFormatButton({ sentences, metadata }) {
         const morphAndGloss = organizeWords(aingaeWordList, morphemeList, glossList);
         const morphemeMap = morphAndGloss["morphemes"];
         const glossMap = morphAndGloss["gloss"];
+        const sentenceTranslation = getSentenceTranslation(dependents);  
 
-        const sentenceTranslation = getSentenceTranslation(dependents);     
+        // Some metadata
         const title = getTitle();
         const storyId = getStoryId();
+        const sentenceUrl = getSentenceUrl();
 
         return {
             storyId : storyId,
             title : title,
+            sentenceUrl : sentenceUrl,
             morphemes : morphemeMap,
             gloss : glossMap,
             sentenceTranslation : sentenceTranslation  
@@ -114,8 +115,17 @@ export function TextFormatButton({ sentences, metadata }) {
         return title; 
     }
 
+    /* Retrives the story ID. */
     function getStoryId() {
         return metadata["story ID"];
+    }
+
+    /* Retrives the sentence's URL. */ 
+    function getSentenceUrl() {
+        const isStoryTimed = metadata["timed"];
+        const indexID = isStoryTimed ? (sentences[0]["start_time_ms"]-1) : (sentences["sentence_id"]);
+        const url = window.location.href.replace(/\?.*$/,'') + `?${indexID}`;
+        return url;
     }
 
     /* Convert a sentence into LaTeX format with gb4e-modified package style. */
@@ -195,12 +205,17 @@ export function TextFormatButton({ sentences, metadata }) {
     /* Displays the created material in a popup window. */
     function displayInPopup(processedMaterial, latexLines) {
         const headerLine = "=============== New Sentence ================ <br>";
-        const storyIdLine = "Story ID: " + processedMaterial["storyId"].replace(/_/g, "\\_") + "\n\n"; 
+        const storyTitleLine = "Story title: " + processedMaterial["title"].replace(/\_/g, " ") + "\n"; 
+        const storyIdLine = "Story ID: " + processedMaterial["storyId"].replace(/_/g, "\\_") + "\n"; 
+        const sentenceUrlLine = "Sentence URL: " + processedMaterial["sentenceUrl"].replace(/_/g, "\\_") + "\n"; 
         const latexLibraryLine = "Formatted for gb4e and gb4e-modified LaTeX packages: <br>";
 
         let popupWindow = window.open("", "TextFormatWindow", "width=700,height=500");
         popupWindow.document.write(headerLine);
+        popupWindow.document.write("<pre>" + storyTitleLine + "</pre>");
         popupWindow.document.write("<pre>" + storyIdLine + "</pre>");
+        popupWindow.document.write("<pre>" + sentenceUrlLine + "</pre>");
+        popupWindow.document.write("<br>");
         popupWindow.document.write(latexLibraryLine);
         popupWindow.document.write("<pre>" + latexLines + "</pre>");
     }
