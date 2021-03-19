@@ -10,6 +10,6 @@ export function CenterPanel({ timed, sentences, metadata}) {
 	if (timed) {
 		return <div id="centerPanel"><TimedTextDisplay sentences={sentences} metadata={metadata}/></div>;
 	} else {
-		return <div id="centerPanel"><UntimedTextDisplay sentences={sentences}/></div>;
+		return <div id="centerPanel"><UntimedTextDisplay sentences={sentences} metadata={metadata}/></div>;
 	}
 }

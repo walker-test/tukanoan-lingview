@@ -6,7 +6,13 @@ export function TextFormatButton({ sentences, metadata }) {
     gloss, translation, and title of the selected sentence. 
     */
     function processSentences() {
-        const dependents = sentences[0]["dependents"];
+
+        let dependents;
+        if (! sentences[0]) {
+            dependents = sentences["dependents"]
+        } else {
+            dependents = sentences[0]["dependents"];
+        }
 
         const aingaeWordList = dependents[0]["values"];
         const morphemeList = dependents[1]["values"];
@@ -16,7 +22,7 @@ export function TextFormatButton({ sentences, metadata }) {
         const morphemeMap = morphAndGloss["morphemes"];
         const glossMap = morphAndGloss["gloss"];
 
-        const sentenceTranslation = getSentenceTranslation();     
+        const sentenceTranslation = getSentenceTranslation(dependents);     
         const title = getTitle();
 
         return {
@@ -72,10 +78,18 @@ export function TextFormatButton({ sentences, metadata }) {
         };
     }
 
-    function getSentenceTranslation() {
-        return sentences[0]["dependents"][5]["values"][0]["value"];
+    /* Retrieves the English translation for the sentence. */
+    function getSentenceTranslation(dependents) {
+        // Find the tier that corresponds to the English translation. 
+        for (let i = 0; i < dependents.length; i+=1) {
+            const tierName = dependents[i]["tier"].toLowerCase();
+            if (tierName == "frase en inglés" || tierName == "english") {
+                return dependents[i]["values"][0]["value"];
+            }
+        }
     }
 
+    /* Retrives the title of the story from metadata. */
     function getTitle() {
         const title = metadata["title"]["_default"];
         return title; 
@@ -83,7 +97,6 @@ export function TextFormatButton({ sentences, metadata }) {
 
     /* Convert a sentence into LaTeX format with gb4e-modified package style. */
     function convertToLatex(material) {
-        // Some literal symbols used as latex markups.
         const begin = "\\begin{exe} \n  \\ex \\label{example} \n  ";
         const end = "\\end{exe} \n";
         
@@ -93,7 +106,6 @@ export function TextFormatButton({ sentences, metadata }) {
         // Replace _ with \_ so that it is recognized as underscore in LaTeX
         const storyTitle = material["title"].replace(/_/g, "\\_") + "\n"; 
         const toDisplay = begin + morphLines + glossLine + translationLine + storyTitle + end;
-        console.log(toDisplay);
         return toDisplay; 
     }
 
@@ -136,7 +148,6 @@ export function TextFormatButton({ sentences, metadata }) {
                 // separate glossed word by the LaTeX package, so adding the underscore makes sure 
                 // that a phrase made up with multiple words can still be grouped together after being rendered in LaTeX. 
                 glossList.push(glossForThisWord.join("").replace(" ", "\\_"));
-                console.log(glossList);
             }
         }
         glossList.push("\\\\ \n  ");
@@ -159,9 +170,9 @@ export function TextFormatButton({ sentences, metadata }) {
 
     /* Displays the created material in a popup window. */
     function displayInPopup(material) {
-        let textFormatWindow = window.open("", "TextFormatWindow", "width=500,height=600");
-        textFormatWindow.document.write("===== New example ===== <br>");
-        textFormatWindow.document.write("<pre>" + material + "</pre>");
+        let popupWindow = window.open("", "TextFormatWindow", "width=700,height=500");
+        popupWindow.document.write("========= Formatted for gb4e and gb4e-modified packages ===== <br>");
+        popupWindow.document.write("<pre>" + material + "</pre>");
     }
 
     function handleClick(e) {
