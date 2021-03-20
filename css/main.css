@@ -159,6 +159,18 @@ td {
 	padding-left: 5%
 }
 
+.textFormatButton {
+    display: none;
+}
+
+.labeledTimeBlock:hover .textFormatButton {
+    display: block;
+}
+
+.untimedBlock:hover .textFormatButton {
+    display: block;
+} 
+
 span.timeStamp {
 	padding-top: 3px;
 	float: left;
