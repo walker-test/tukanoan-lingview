@@ -9,7 +9,7 @@ function UntimedBlock({ sentence, sentenceId, metadata }) {
 				<span className="timeStampContainer timeStamp" data-sentence_id={sentenceId}>
 					{sentenceId}
 				</span>
-				<TextFormatButton sentences={sentence} metadata={metadata}/>
+				<TextFormatButton sentence={sentence} metadata={metadata}/>
 			</div>
 			<Sentence sentence={sentence} />
 		</div>

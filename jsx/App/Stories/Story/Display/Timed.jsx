@@ -63,7 +63,7 @@ function LabeledTimeBlock({ sentences, timestamp, metadata }) {
 				<span className="timeStampContainer timeStamp" id={minStart} data-start_time={minStart}>
 					{timestamp}
 				</span>
-				<TextFormatButton sentences={sentences} metadata={metadata}/>
+				<TextFormatButton sentence={sentences[0]} metadata={metadata}/>
 			</div>
 			<TimeBlock sentences={sentences} />
 		</div>

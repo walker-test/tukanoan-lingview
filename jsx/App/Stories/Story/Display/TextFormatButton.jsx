@@ -1,6 +1,45 @@
 
 /* Models a text format button. */
-export function TextFormatButton({ sentences, metadata }) {
+export function TextFormatButton({ sentence, metadata }) {
+
+    function getTierNames() {
+        let tierNames = [];
+        for (var tierEntry of sentence["dependents"]) {
+            tierNames.push(tierEntry["tier"]);
+        }
+        return tierNames;
+    }
+
+    function displayTierSelectionWindow() {
+        let tierNames = getTierNames();
+
+        let processTierSelectionFunctionString = 
+            `<script> 
+                function processTierSelection(tierName) {
+                    console.log(tierName);
+                }
+            </script>`;
+
+        let selectionWindow = window.open("", "TierSelectionWindow", "width=700,height=500");
+        selectionWindow.document.write(processTierSelectionFunctionString);
+        
+        let tierMap = {}; 
+
+        let buttonListString = `<ul>`;
+        for (var tierName of tierNames) {
+            buttonListString += 
+                `<li><input type="button" 
+                            id="tier-button-${tierName}" 
+                            value="${tierName}" 
+                            onClick="processTierSelection(this.id)"></li>`;
+        }
+        buttonListString += `</ul>`;
+        selectionWindow.document.write(buttonListString);
+
+        return tierMap;
+    }
+
+    
 
     /* 
     Calls on individual helper functions to gather the morphemes,
@@ -8,10 +47,12 @@ export function TextFormatButton({ sentences, metadata }) {
     */
     function processSentences() {
         let dependents;
-        if (! sentences[0]) {
-            dependents = sentences["dependents"]
+        if (! sentence[0]) {
+            dependents = sentence["dependents"]
         } else {
-            dependents = sentences[0]["dependents"];
+            // TODO: there might be multiple sentences in this timestamp 
+            // (according to LabeledTimeBlock from Timed.jsx)
+            dependents = sentence[0]["dependents"];
         }
 
         const aingaeWordList = dependents[0]["values"];
@@ -129,7 +170,7 @@ export function TextFormatButton({ sentences, metadata }) {
     /* Retrives the sentence's URL. */ 
     function getSentenceUrl() {
         const isStoryTimed = metadata["timed"];
-        const indexID = isStoryTimed ? (sentences[0]["start_time_ms"]-1) : (sentences["sentence_id"]);
+        const indexID = isStoryTimed ? (sentence["start_time_ms"]-1) : (sentence["sentence_id"]);
         const url = window.location.href.replace(/\?.*$/,'') + `?${indexID}`;
         return url;
     }
@@ -229,9 +270,12 @@ export function TextFormatButton({ sentences, metadata }) {
 
     function handleClick(e) {
         e.preventDefault();
-        const processedMaterial = processSentences();
-        const latexLines = convertToLatex(processedMaterial);
-        displayInPopup(processedMaterial, latexLines);
+
+        displayTierSelectionWindow();
+
+        // const processedMaterial = processSentences();
+        // const latexLines = convertToLatex(processedMaterial);
+        // displayInPopup(processedMaterial, latexLines);
     }
 
     return (
