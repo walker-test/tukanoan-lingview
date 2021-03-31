@@ -1,16 +1,22 @@
+import React from 'react';
+import TierSelectionWindow from "./TierSelectionWindow.jsx";
 
 /* Models a text format button. */
-export function TextFormatButton({ sentence, metadata }) {
+export class TextFormatButton extends React.Component {
 
-    function getTierNames() {
+    constructor(props) {
+        super(props);
+      }
+
+    getTierNames() {
         let tierNames = [];
-        for (var tierEntry of sentence["dependents"]) {
+        for (var tierEntry of this.state.sentence["dependents"]) {
             tierNames.push(tierEntry["tier"]);
         }
         return tierNames;
     }
 
-    function displayTierSelectionWindow() {
+    fdisplayTierSelectionWindow() {
         let tierNames = getTierNames();
 
         let selectionWindow = window.open("", "TierSelectionWindow", "width=700,height=500");
@@ -60,25 +66,25 @@ export function TextFormatButton({ sentence, metadata }) {
     Calls on individual helper functions to gather the morphemes,
     gloss, translation, and title of the selected sentence. 
     */
-    function processSentences() {
+    processSentences() {
 
         // TODO: there might be multiple sentences in this timestamp 
         // (according to LabeledTimeBlock from Timed.jsx)
-        let dependents = sentence["dependents"];
+        let dependents = this.state.sentence["dependents"];
 
         const aingaeWordList = dependents[0]["values"];
         const morphemeList = dependents[1]["values"];
         const glossList = dependents[3]["values"];
 
-        const morphAndGloss = organizeWords(aingaeWordList, morphemeList, glossList);
+        const morphAndGloss = this.organizeWords(aingaeWordList, morphemeList, glossList);
         const morphemeMap = morphAndGloss["morphemes"];
         const glossMap = morphAndGloss["gloss"];
-        const sentenceTranslation = getSentenceTranslation(dependents);  
+        const sentenceTranslation = this.getSentenceTranslation(dependents);  
 
         // Some metadata
-        const title = getTitle();
-        const storyId = getStoryId();
-        const sentenceUrl = getSentenceUrl();
+        const title = this.getTitle();
+        const storyId = this.getStoryId();
+        const sentenceUrl = this.getSentenceUrl();
 
         return {
             storyId : storyId,
@@ -91,7 +97,7 @@ export function TextFormatButton({ sentence, metadata }) {
     }
 
     /* Returns a map between each word and all of its sub-components (core and clitics, and gloss, etc.) */
-    function organizeWords(wordList, morphemeList, glossList) {
+    organizeWords(wordList, morphemeList, glossList) {
         let wordListCounter = 0;
         let morphemeListIndex = 0;
 
@@ -157,7 +163,7 @@ export function TextFormatButton({ sentence, metadata }) {
     }
 
     /* Retrieves the English translation for the sentence. */
-    function getSentenceTranslation(dependents) {
+    getSentenceTranslation(dependents) {
         // Find the tier that corresponds to the English translation. 
         for (let i = 0; i < dependents.length; i+=1) {
             const tierName = dependents[i]["tier"].toLowerCase();
@@ -168,32 +174,32 @@ export function TextFormatButton({ sentence, metadata }) {
     }
 
     /* Retrives the title of the story from metadata. */
-    function getTitle() {
-        const title = metadata["title"]["_default"];
+    getTitle() {
+        const title = this.state.metadata["title"]["_default"];
         return title; 
     }
 
     /* Retrives the story ID. */
-    function getStoryId() {
-        return metadata["story ID"];
+    getStoryId() {
+        return this.state.metadata["story ID"];
     }
 
     /* Retrives the sentence's URL. */ 
-    function getSentenceUrl() {
-        const isStoryTimed = metadata["timed"];
-        const indexID = isStoryTimed ? (sentence["start_time_ms"]-1) : (sentence["sentence_id"]);
+    getSentenceUrl() {
+        const isStoryTimed = this.state.metadata["timed"];
+        const indexID = isStoryTimed ? (this.state.sentence["start_time_ms"]-1) : (this.state.sentence["sentence_id"]);
         const url = window.location.href.replace(/\?.*$/,'') + `?${indexID}`;
         return url;
     }
 
     /* Convert a sentence into LaTeX format with gb4e-modified package style. */
-    function convertToLatex(material) {
+    convertToLatex(material) {
         const begin = "\\begin{exe} \n  \\ex \\label{example} \n  ";
         const end = "\\end{exe} \n";
         
-        const morphLines = getMorphemeLines(material["morphemes"])
-        const glossLine = getMorphologicalAnalysisLine(material["gloss"]);
-        const translationLine = getSentenceTranslationLine(material["sentenceTranslation"]);
+        const morphLines = this.getMorphemeLines(material["morphemes"])
+        const glossLine = this.getMorphologicalAnalysisLine(material["gloss"]);
+        const translationLine = this.getSentenceTranslationLine(material["sentenceTranslation"]);
         // Replace _ with \_ so that it is recognized as underscore in LaTeX
         const storyTitle = material["title"].replace(/_/g, "\\_") + "\n"; 
         
@@ -202,7 +208,7 @@ export function TextFormatButton({ sentence, metadata }) {
     }
 
     /* Combines the glossing and morphological analysis into their corresponding lines. */
-    function getMorphemeLines(morphemes) {
+    getMorphemeLines(morphemes) {
         const morphemeStart = "\\gll";
         const morphemeEnd = "\\\\ \n  ";
         
@@ -219,7 +225,7 @@ export function TextFormatButton({ sentence, metadata }) {
         return wordList.join(" ") + " \\\\\n  " + morphemeList.join(" ");
     }
 
-    function getMorphologicalAnalysisLine(gloss) {
+    getMorphologicalAnalysisLine(gloss) {
         const textscStart = "\\textsc{";
         const textscClose = "}";
 
@@ -229,7 +235,7 @@ export function TextFormatButton({ sentence, metadata }) {
                 let glossForThisWord = [];
                 for (const [id, glossItem] of Object.entries(glossItems)) {
                     // Only the suffices and clitics need \textsc
-                    if (isSuffix(glossItem)) {
+                    if (this.isSuffix(glossItem)) {
                         glossForThisWord.push(textscStart + glossItem.toLowerCase() + textscClose);
                     } else {
                         glossForThisWord.push(glossItem); 
@@ -248,20 +254,20 @@ export function TextFormatButton({ sentence, metadata }) {
     }
 
     /* Puts the sentence translation into LaTeX format. */
-    function getSentenceTranslationLine(sentence) {
+    getSentenceTranslationLine(sentence) {
         const translationStart = "\\glt `";
         const translationEnd = "' \\\\ \n  ";
         return translationStart + sentence + translationEnd;
     }
 
     /* Checks if an item is a suffix or clitic. */
-    function isSuffix(item) {
+    isSuffix(item) {
         // Suffix or clitic starts with = or -, or the entire word is capitalized.
         return item.startsWith("=") || item.startsWith("-") || item === item.toUpperCase();
     }
 
     /* Displays the created material in a popup window. */
-    function displayInPopup(processedMaterial, latexLines) {
+    displayInPopup(processedMaterial, latexLines) {
         const headerLine = "=============== New Sentence ================ <br>";
         const storyTitleLine = "Story title: " + processedMaterial["title"].replace(/\_/g, " ") + "\n"; 
         const storyIdLine = "Story ID: " + processedMaterial["storyId"].replace(/_/g, "\\_") + "\n"; 
@@ -279,20 +285,32 @@ export function TextFormatButton({ sentence, metadata }) {
         popupWindow.document.write("<pre>" + latexLines + "</pre>");
     }
 
-    function handleClick(e) {
+    handleClick(e) {
         e.preventDefault();
 
-        const selectionWindow = displayTierSelectionWindow();
+        //const selectionWindow = displayTierSelectionWindow();
 
-        // const processedMaterial = processSentences();
-        // const latexLines = convertToLatex(processedMaterial);
-        // displayInPopup(processedMaterial, latexLines);
+        // const processedMaterial = this.processSentences();
+        // const latexLines = this.convertToLatex(processedMaterial);
+        // this.displayInPopup(processedMaterial, latexLines);
+
+        return (<TierSelectionWindow sentence={this.state.sentences} metadata={this.state.metadata}/>);
     }
 
-    return (
-        <div>
-            <button class="textFormatButton" onClick={handleClick}>
-                Format
-            </button>
-        </div>); 
+    componentDidMount() {
+        this.setState({ 
+            sentence : this.props.sentence,
+            metadata : this.props.metadata
+        });
+    }
+
+    render() {
+        return (
+            <div>
+                <button class="textFormatButton" onClick={this.handleClick.bind(this)}>
+                    Format
+                </button>
+            </div>); 
+    }
+    
 }
