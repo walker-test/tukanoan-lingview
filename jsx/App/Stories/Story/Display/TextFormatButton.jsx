@@ -13,47 +13,58 @@ export function TextFormatButton({ sentence, metadata }) {
     function displayTierSelectionWindow() {
         let tierNames = getTierNames();
 
-        let processTierSelectionFunctionString = 
+        let selectionWindow = window.open("", "TierSelectionWindow", "width=700,height=500");
+
+        let selectionWindowFunctions = 
             `<script> 
-                function processTierSelection(tierName) {
-                    console.log(tierName);
+                let tierMap = {};
+                function processTierSelection(selectionString) {
+                    tierMap["hi"] = 1;
+                }
+
+                function confirmSelection() {
+                    window.open("", "DisplayWindow", "width=700,height=500");
                 }
             </script>`;
 
-        let selectionWindow = window.open("", "TierSelectionWindow", "width=700,height=500");
-        selectionWindow.document.write(processTierSelectionFunctionString);
+        selectionWindow.document.write(selectionWindowFunctions);
+        selectionWindow.document.write("<p>Please tell us how you would like the sentence formatted in LaTeX: </p><br>");
         
-        let tierMap = {}; 
+        let latexSectionNames = ["original sentence", "morphemes", "morpheme translations", "sentence translation"];
+        for (var latexSectionName of latexSectionNames) {
+            selectionWindow.document.write(`<p>Which tier should formatted as the ${latexSectionName} in the LaTeX example? </p><br>`);
 
-        let buttonListString = `<ul>`;
-        for (var tierName of tierNames) {
-            buttonListString += 
-                `<li><input type="button" 
-                            id="tier-button-${tierName}" 
-                            value="${tierName}" 
-                            onClick="processTierSelection(this.id)"></li>`;
+            // Create a list of buttons for this Latex section's selection.
+            let buttonListString = "";
+            for (var tierName of tierNames) {
+                buttonListString += 
+                    `<li><input type="button" 
+                                id="${tierName}-for-${latexSectionName}" 
+                                value="${tierName}" 
+                                onClick="processTierSelection(this.id)"></li>`;
+            }
+            selectionWindow.document.write(buttonListString);
+            selectionWindow.document.write("<br>");
         }
-        buttonListString += `</ul>`;
-        selectionWindow.document.write(buttonListString);
 
-        return tierMap;
+        selectionWindow.document.write(
+            `<input type="button" 
+                id="confirm-button" 
+                value="Confirm" 
+                onClick="confirmSelection()">`);
+
+        return selectionWindow;
     }
-
-    
 
     /* 
     Calls on individual helper functions to gather the morphemes,
     gloss, translation, and title of the selected sentence. 
     */
     function processSentences() {
-        let dependents;
-        if (! sentence[0]) {
-            dependents = sentence["dependents"]
-        } else {
-            // TODO: there might be multiple sentences in this timestamp 
-            // (according to LabeledTimeBlock from Timed.jsx)
-            dependents = sentence[0]["dependents"];
-        }
+
+        // TODO: there might be multiple sentences in this timestamp 
+        // (according to LabeledTimeBlock from Timed.jsx)
+        let dependents = sentence["dependents"];
 
         const aingaeWordList = dependents[0]["values"];
         const morphemeList = dependents[1]["values"];
@@ -271,7 +282,7 @@ export function TextFormatButton({ sentence, metadata }) {
     function handleClick(e) {
         e.preventDefault();
 
-        displayTierSelectionWindow();
+        const selectionWindow = displayTierSelectionWindow();
 
         // const processedMaterial = processSentences();
         // const latexLines = convertToLatex(processedMaterial);
