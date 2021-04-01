@@ -12,60 +12,7 @@ export class TextFormatButton extends React.Component {
         this.handleClick = this.handleClick.bind(this);
       }
 
-    getTierNames() {
-        let tierNames = [];
-        for (var tierEntry of this.state.sentence["dependents"]) {
-            tierNames.push(tierEntry["tier"]);
-        }
-        return tierNames;
-    }
-
-    displayTierSelectionWindow() {
-        let tierNames = getTierNames();
-
-        let selectionWindow = window.open("", "TierSelectionWindow", "width=700,height=500");
-
-        let selectionWindowFunctions = 
-            `<script> 
-                let tierMap = {};
-                function processTierSelection(selectionString) {
-                    tierMap["hi"] = 1;
-                }
-
-                function confirmSelection() {
-                    window.open("", "DisplayWindow", "width=700,height=500");
-                }
-            </script>`;
-
-        selectionWindow.document.write(selectionWindowFunctions);
-        selectionWindow.document.write("<p>Please tell us how you would like the sentence formatted in LaTeX: </p><br>");
-        
-        let latexSectionNames = ["original sentence", "morphemes", "morpheme translations", "sentence translation"];
-        for (var latexSectionName of latexSectionNames) {
-            selectionWindow.document.write(`<p>Which tier should formatted as the ${latexSectionName} in the LaTeX example? </p><br>`);
-
-            // Create a list of buttons for this Latex section's selection.
-            let buttonListString = "";
-            for (var tierName of tierNames) {
-                buttonListString += 
-                    `<li><input type="button" 
-                                id="${tierName}-for-${latexSectionName}" 
-                                value="${tierName}" 
-                                onClick="processTierSelection(this.id)"></li>`;
-            }
-            selectionWindow.document.write(buttonListString);
-            selectionWindow.document.write("<br>");
-        }
-
-        selectionWindow.document.write(
-            `<input type="button" 
-                id="confirm-button" 
-                value="Confirm" 
-                onClick="confirmSelection()">`);
-
-        return selectionWindow;
-    }
-
+    
     /* 
     Calls on individual helper functions to gather the morphemes,
     gloss, translation, and title of the selected sentence. 
@@ -292,8 +239,6 @@ export class TextFormatButton extends React.Component {
     handleClick(e) {
         e.preventDefault();
 
-        //const selectionWindow = displayTierSelectionWindow();
-
         // const processedMaterial = this.processSentences();
         // const latexLines = this.convertToLatex(processedMaterial);
         // this.displayInPopup(processedMaterial, latexLines);
@@ -316,7 +261,12 @@ export class TextFormatButton extends React.Component {
                 <button class="textFormatButton" onClick={this.handleClick}>
                     Format
                 </button>
-                {this.state.buttonClicked ? <TierSelectionWindow sentence={this.state.sentence} metadata={this.state.metadata}/> : null}
+                {this.state.buttonClicked ? 
+                    <TierSelectionWindow 
+                        sentence={this.state.sentence} 
+                        metadata={this.state.metadata} 
+                        sentenceId = {this.state.metadata["timed"] ? (this.state.sentence["start_time_ms"]-1) : (this.state.sentence["sentence_id"])} /> 
+                    : null}
             </div>); 
     }
     
