@@ -6,6 +6,10 @@ export class TextFormatButton extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            buttonClicked : false
+        }
+        this.handleClick = this.handleClick.bind(this);
       }
 
     getTierNames() {
@@ -16,7 +20,7 @@ export class TextFormatButton extends React.Component {
         return tierNames;
     }
 
-    fdisplayTierSelectionWindow() {
+    displayTierSelectionWindow() {
         let tierNames = getTierNames();
 
         let selectionWindow = window.open("", "TierSelectionWindow", "width=700,height=500");
@@ -294,7 +298,9 @@ export class TextFormatButton extends React.Component {
         // const latexLines = this.convertToLatex(processedMaterial);
         // this.displayInPopup(processedMaterial, latexLines);
 
-        return (<TierSelectionWindow sentence={this.state.sentences} metadata={this.state.metadata}/>);
+        this.setState({
+            buttonClicked : true
+        });
     }
 
     componentDidMount() {
@@ -307,9 +313,10 @@ export class TextFormatButton extends React.Component {
     render() {
         return (
             <div>
-                <button class="textFormatButton" onClick={this.handleClick.bind(this)}>
+                <button class="textFormatButton" onClick={this.handleClick}>
                     Format
                 </button>
+                {this.state.buttonClicked ? <TierSelectionWindow sentence={this.state.sentence} metadata={this.state.metadata}/> : null}
             </div>); 
     }
     

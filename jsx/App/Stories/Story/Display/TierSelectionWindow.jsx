@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class TierSelectionWindow extends React.Component {
+export default class TierSelectionWindow extends React.Component {
     constructor(props) {
         super(props);
       }
@@ -8,7 +8,7 @@ export class TierSelectionWindow extends React.Component {
       render() {
         return (
             <div className="tierSelectionContainer">
-                <p> select {sentence[0]} </p>
+                <p> select {this.props.sentence[0]} </p>
             </div>
         );
       }; 
