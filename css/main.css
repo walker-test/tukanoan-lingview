@@ -171,6 +171,17 @@ td {
     display: block;
 } 
 
+.tierSelectionContainer {
+	background : yellow;
+	height: 400px;
+	width: 600px
+}
+
+.formatResultContainer {
+	background : cyan;
+	height: 400px
+}
+
 span.timeStamp {
 	padding-top: 3px;
 	float: left;

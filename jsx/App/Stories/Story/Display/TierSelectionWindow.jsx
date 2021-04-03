@@ -30,14 +30,14 @@ export default class TierSelectionWindow extends React.Component {
         let tierNames = this.getTierNames();
 
         let selectionContainer;
-        let selectionContainers = document.getElementsByClassName("tierSelectionWrapper");
+        let selectionContainers = document.getElementsByClassName("tierSelectionForm");
         for (var e of selectionContainers) {
           if (e.getAttribute("id") == this.props.sentenceId) {
             selectionContainer = e;
             break;
           }
         }
-        // let selectionContainer = document.getElementById(this.props.sentenceId).getElementsByClassName("tierSelectionWrapper")[0];
+       
         for (var latexSectionName of this.latexSectionNames) {
             const header = document.createElement("p");
             header.innerHTML = `Which tier should formatted as the ${latexSectionName} section in the LaTeX example?`;
@@ -90,6 +90,10 @@ export default class TierSelectionWindow extends React.Component {
         buttonClicked : true,
         tierMap : tierMap
       }); 
+
+      // TODO: make the selection window invisible
+      document.getElementsByClassName("tierSelectionWrapper")[0].style.display = "none";;
+
     }
 
     componentDidMount() {
@@ -99,10 +103,13 @@ export default class TierSelectionWindow extends React.Component {
     render() {
       return (
           <div className="tierSelectionContainer">
-              <form className="tierSelectionWrapper" id={this.props.sentenceId}></form>
-              <button class="confirmButton" onClick={this.handleConfirmButtonClick}>
-                  Confirm
-              </button>
+              <div className="tierSelectionWrapper">
+                <form className="tierSelectionForm" id={this.props.sentenceId}></form>
+                <button class="confirmButton" onClick={this.handleConfirmButtonClick}>
+                    Confirm
+                </button>
+              </div>
+              
               {this.state.buttonClicked ? 
                 <TextFormatResultWindow 
                   sentenceId={this.props.sentenceId} 

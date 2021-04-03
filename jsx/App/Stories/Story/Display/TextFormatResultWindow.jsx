@@ -237,7 +237,7 @@ export default class TextFormatResultWindow extends React.Component {
         const storyIdLine = "Story ID: " + processedMaterial["storyId"].replace(/_/g, "\\_") + "\n"; 
         const sentenceUrlLine = "Sentence URL: " + processedMaterial["sentenceUrl"].replace(/_/g, "\\_") + "\n"; 
         const latexLibraryLine = "Formatted for gb4e and gb4e-modified LaTeX packages: ";
-        
+
         let resultContainer;
         let resultContainers = document.getElementsByClassName("formatResultContainer");
         for (var e of resultContainers) {
@@ -266,6 +266,7 @@ export default class TextFormatResultWindow extends React.Component {
         this.displayResult(processedMaterial, latexLines);
     }
 
+    // TODO: add a close button
     render() {
       return (
           <div className="formatResultContainer" id={this.props.sentenceId}></div>
