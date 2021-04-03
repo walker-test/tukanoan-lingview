@@ -4,11 +4,11 @@ export default class TextFormatResultWindow extends React.Component {
 
     constructor(props) {
         super(props);
+        this.latexSectionNames = ["original sentence", "morphemes", "morpheme translations", "sentence translation"];
     }
 
     componentDidMount() {
-        console.log(this.props.tierMap);
-        this.convertToLatex(); 
+        this.main(); 
     }
 
     /* 
@@ -21,14 +21,38 @@ export default class TextFormatResultWindow extends React.Component {
       // (according to LabeledTimeBlock from Timed.jsx)
       let dependents = this.props.sentence["dependents"];
 
-      const aingaeWordList = dependents[0]["values"];
-      const morphemeList = dependents[1]["values"];
-      const glossList = dependents[3]["values"];
+      // Get each Latex section's corresponding tier name.
+      const wordTier = this.props.tierMap["original sentence"];
+      const morphemeTier = this.props.tierMap["morphemes"];
+      const glossTier = this.props.tierMap["morpheme translations"];
+      const sentenceTranslationTier = this.props.tierMap["sentence translation"];
 
-      const morphAndGloss = this.organizeWords(aingaeWordList, morphemeList, glossList);
+      let wordList = [];
+      let morphemeList = [];
+      let glossList = [];
+      let sentenceTranslation = []; 
+
+      // Loop through dependents to match each Latex section's tier name to the actual content of that tier. 
+      for (var idx in dependents) {
+          const tierName = dependents[idx]["tier"];
+          if (tierName === wordTier) {
+            wordList = dependents[idx]["values"];
+          }
+          if (tierName === morphemeTier) {
+            morphemeList = dependents[idx]["values"];
+          }
+          if (tierName === glossTier) {
+            glossList = dependents[idx]["values"];
+          }
+          if (tierName === sentenceTranslationTier) {
+            sentenceTranslation = dependents[idx]["values"];
+          }
+          
+      }
+
+      const morphAndGloss = this.organizeWords(wordList, morphemeList, glossList);
       const morphemeMap = morphAndGloss["morphemes"];
       const glossMap = morphAndGloss["gloss"];
-      const sentenceTranslation = this.getSentenceTranslation(dependents);  
 
       // Some metadata
       const title = this.getTitle();
@@ -111,17 +135,6 @@ export default class TextFormatResultWindow extends React.Component {
         };
     }
 
-    /* Retrieves the English translation for the sentence. */
-    getSentenceTranslation(dependents) {
-        // Find the tier that corresponds to the English translation. 
-        for (let i = 0; i < dependents.length; i+=1) {
-            const tierName = dependents[i]["tier"].toLowerCase();
-            if (tierName == "frase en inglés" || tierName == "english") {
-                return dependents[i]["values"][0]["value"];
-            }
-        }
-    }
-
     /* Retrives the title of the story from metadata. */
     getTitle() {
         const title = this.props.metadata["title"]["_default"];
@@ -171,7 +184,7 @@ export default class TextFormatResultWindow extends React.Component {
         }
         morphemeList.push(morphemeEnd);
         
-        return wordList.join(" ") + " \\\\\n  " + morphemeList.join(" ");
+        return wordList.join(" ") + " \n  " + morphemeList.join(" ");
     }
 
     getMorphologicalAnalysisLine(gloss) {
@@ -203,7 +216,8 @@ export default class TextFormatResultWindow extends React.Component {
     }
 
     /* Puts the sentence translation into LaTeX format. */
-    getSentenceTranslationLine(sentence) {
+    getSentenceTranslationLine(sentenceObject) {
+        const sentence = sentenceObject[0]["value"];
         const translationStart = "\\glt `";
         const translationEnd = "' \\\\ \n  ";
         return translationStart + sentence + translationEnd;
@@ -217,7 +231,7 @@ export default class TextFormatResultWindow extends React.Component {
 
     /* Displays the created material in a popup window. */
     displayResult(processedMaterial, latexLines) {
-    //displayResult() {
+        console.log(latexLines);
         const headerLine = "Result: ";
         const storyTitleLine = "Story title: " + processedMaterial["title"].replace(/\_/g, " ") + "\n"; 
         const storyIdLine = "Story ID: " + processedMaterial["storyId"].replace(/_/g, "\\_") + "\n"; 
@@ -252,12 +266,10 @@ export default class TextFormatResultWindow extends React.Component {
       resultContainer.appendChild(newParagraphElement);
     }
 
-    convertToLatex() {
+    main() {
         const processedMaterial = this.processSentences();
-        //const latexLines = this.convertToLatex(processedMaterial);
-        //this.displayResult(processedMaterial, latexLines);
-
-        //this.displayResult();
+        const latexLines = this.convertToLatex(processedMaterial);
+        this.displayResult(processedMaterial, latexLines);
     }
 
     render() {
