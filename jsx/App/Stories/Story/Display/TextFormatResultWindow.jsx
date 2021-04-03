@@ -236,19 +236,8 @@ export default class TextFormatResultWindow extends React.Component {
         const storyTitleLine = "Story title: " + processedMaterial["title"].replace(/\_/g, " ") + "\n"; 
         const storyIdLine = "Story ID: " + processedMaterial["storyId"].replace(/_/g, "\\_") + "\n"; 
         const sentenceUrlLine = "Sentence URL: " + processedMaterial["sentenceUrl"].replace(/_/g, "\\_") + "\n"; 
-        const latexLibraryLine = "Formatted for gb4e and gb4e-modified LaTeX packages: <br>";
-
-
-        // let popupWindow = window.open("", "TextFormatWindow", "width=700,height=500");
-        // popupWindow.document.write(headerLine);
-        // popupWindow.document.write("<pre>" + storyTitleLine + "</pre>");
-        // popupWindow.document.write("<pre>" + storyIdLine + "</pre>");
-        // popupWindow.document.write("<pre>" + sentenceUrlLine + "</pre>");
-        // popupWindow.document.write("<br>");
-        // popupWindow.document.write(latexLibraryLine);
-        // popupWindow.document.write("<pre>" + latexLines + "</pre>");
-
-
+        const latexLibraryLine = "Formatted for gb4e and gb4e-modified LaTeX packages: ";
+        
         let resultContainer;
         let resultContainers = document.getElementsByClassName("formatResultContainer");
         for (var e of resultContainers) {
@@ -258,10 +247,15 @@ export default class TextFormatResultWindow extends React.Component {
           }
         }
         this.createParagraphElement(resultContainer, headerLine); 
+        this.createParagraphElement(resultContainer, storyTitleLine); 
+        this.createParagraphElement(resultContainer, storyIdLine); 
+        this.createParagraphElement(resultContainer, sentenceUrlLine); 
+        this.createParagraphElement(resultContainer, latexLibraryLine); 
+        this.createParagraphElement(resultContainer, latexLines); 
     }
 
     createParagraphElement(resultContainer, content) {
-      const newParagraphElement = document.createElement("p");
+      const newParagraphElement = document.createElement("pre");
       newParagraphElement.innerHTML = content;
       resultContainer.appendChild(newParagraphElement);
     }
