@@ -5,13 +5,15 @@ export default class TierSelectionWindow extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          buttonClicked : false
+          buttonClicked : false,
+          tierMap : {}
         }
 
-        this.handleClick = this.handleClick.bind(this);
+        this.handleConfirmButtonClick = this.handleConfirmButtonClick.bind(this);
         this.latexSectionNames = ["original sentence", "morphemes", "morpheme translations", "sentence translation"];
     }
 
+    /* Retrieves all the tier names for this story. */
     getTierNames() {
       let tierNames = [];
       for (var tierEntry of this.props.sentence["dependents"]) {
@@ -20,10 +22,22 @@ export default class TierSelectionWindow extends React.Component {
       return tierNames;
     }
 
+    /* 
+      Displays the tier selection window where the user tells LingView 
+      which tier corresponds to which section in the LaTeX example.
+    */
     displayTierSelectionWindow() {
         let tierNames = this.getTierNames();
 
-        let selectionContainer = document.getElementById(this.props.sentenceId);
+        let selectionContainer;
+        let selectionContainers = document.getElementsByClassName("tierSelectionWrapper");
+        for (var e of selectionContainers) {
+          if (e.getAttribute("id") == this.props.sentenceId) {
+            selectionContainer = e;
+            break;
+          }
+        }
+        // let selectionContainer = document.getElementById(this.props.sentenceId).getElementsByClassName("tierSelectionWrapper")[0];
         for (var latexSectionName of this.latexSectionNames) {
             const header = document.createElement("p");
             header.innerHTML = `Which tier should formatted as the ${latexSectionName} section in the LaTeX example?`;
@@ -52,11 +66,8 @@ export default class TierSelectionWindow extends React.Component {
         }
     }
 
-    processTierSelection(buttonId) {
-      console.log(buttonId);
-    }
-
-    handleClick(e) {
+    /* Saves a map between latex section names and their selected tier names in state. */
+    handleConfirmButtonClick(e) {
       e.preventDefault();
 
       let tierMap = {};
@@ -73,10 +84,11 @@ export default class TierSelectionWindow extends React.Component {
         }
         tierMap[`${latexSectionName}`] = selectedValue;
       }
-      
-      console.log(tierMap);
+      // Add the tierMap to the state so that this object can be passed
+      // on to the result window.
       this.setState({
-        buttonClicked : true
+        buttonClicked : true,
+        tierMap : tierMap
       }); 
     }
 
@@ -88,10 +100,15 @@ export default class TierSelectionWindow extends React.Component {
       return (
           <div className="tierSelectionContainer">
               <form className="tierSelectionWrapper" id={this.props.sentenceId}></form>
-              <button class="confirmButton" onClick={this.handleClick}>
+              <button class="confirmButton" onClick={this.handleConfirmButtonClick}>
                   Confirm
               </button>
-              {this.state.buttonClicked ? <TextFormatResultWindow /> : null}
+              {this.state.buttonClicked ? 
+                <TextFormatResultWindow 
+                  sentenceId={this.props.sentenceId} 
+                  tierMap={this.state.tierMap} 
+                  sentence={this.props.sentence}
+                  metadata={this.props.metadata}/> : null}
           </div>
       );
     }; 
