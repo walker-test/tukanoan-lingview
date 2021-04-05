@@ -231,7 +231,7 @@ export default class TextFormatResultWindow extends React.Component {
 
     /* Displays the created material in a popup window. */
     displayResult(processedMaterial, latexLines) {
-        console.log(latexLines);
+        //console.log(latexLines);
         const headerLine = "Result: ";
         const storyTitleLine = "Story title: " + processedMaterial["title"].replace(/\_/g, " ") + "\n"; 
         const storyIdLine = "Story ID: " + processedMaterial["storyId"].replace(/_/g, "\\_") + "\n"; 

@@ -91,8 +91,8 @@ export default class TierSelectionWindow extends React.Component {
         tierMap : tierMap
       }); 
 
-      // TODO: make the selection window invisible
-      document.getElementsByClassName("tierSelectionWrapper")[0].style.display = "none";;
+      // Make the selection window invisible after selection confirmed
+      //document.getElementsByClassName("tierSelectionWrapper")[0].style.display = "none";;
 
     }
 

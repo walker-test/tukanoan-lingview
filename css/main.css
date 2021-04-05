@@ -140,7 +140,8 @@ td {
 .labeledTimeBlock {
 	clear: both;
 	float: left;
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 7fr;
 	padding-right: 10px;
 	padding-top: 27px;
 	padding-bottom: 27px;
@@ -153,10 +154,27 @@ td {
 	overflow-x: auto;
 }
 
-.timeStampAndButtonContainer {
+/*	MAIN.CSS
+	->	Text Display
+		Untimed */
+#untimedTextDisplay {
+	position: fixed;
+	width: calc(100% - 300px);
+	height: calc(100% - 88px); /* Minus the navBar and the footer. */
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.untimedBlock {
+	clear: both;
+	float: left;
 	display: grid;
-	grid-template-rows: 1fr 1fr;
-	padding-left: 5%
+	grid-template-columns: 1fr 7fr;
+	padding-right: 10px;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	width: 100%;
+	overflow-x: auto;
 }
 
 .textFormatButton {
@@ -171,15 +189,21 @@ td {
     display: block;
 } 
 
+.textFormatSection {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
 .tierSelectionContainer {
 	background : yellow;
-	height: 400px;
-	width: 600px
+	display: grid;
+  	grid-template-rows: 1fr 1fr;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 .formatResultContainer {
 	background : cyan;
-	height: 400px
 }
 
 span.timeStamp {
@@ -220,27 +244,7 @@ span.timeStamp {
 	margin-top: 3px;
 	font-weight: 600;
 }
-/*	MAIN.CSS
-	->	Text Display
-		Untimed */
-#untimedTextDisplay {
-	position: fixed;
-	width: calc(100% - 300px);
-	height: calc(100% - 88px); /* Minus the navBar and the footer. */
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
 
-.untimedBlock {
-	clear: both;
-	float: left;
-	display: flex;
-	padding-right: 10px;
-	padding-top: 27px;
-	padding-bottom: 27px;
-	width: 100%;
-	overflow-x: auto;
-}
 
 table.gloss {
 	padding-left: 5px;

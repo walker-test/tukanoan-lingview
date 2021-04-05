@@ -19,6 +19,7 @@ export class TextFormatButton extends React.Component {
         this.setState({
             buttonClicked : true
         });
+
     }
 
     componentDidMount() {
@@ -30,7 +31,7 @@ export class TextFormatButton extends React.Component {
 
     render() {
         return (
-            <div>
+            <div class="textFormatSection">
                 <button class="textFormatButton" onClick={this.handleClick}>
                     Format
                 </button>

@@ -59,13 +59,11 @@ function LabeledTimeBlock({ sentences, timestamp, metadata }) {
 	}
 	return (
 		<div className="labeledTimeBlock" data-start_time={minStart} data-end_time={maxEnd}>
-			<div className="timeStampAndButtonContainer">
-				<span className="timeStampContainer timeStamp" id={minStart} data-start_time={minStart}>
-					{timestamp}
-				</span>
-				<TextFormatButton sentence={sentences[0]} metadata={metadata}/>
-			</div>
+			<span className="timeStampContainer timeStamp" id={minStart} data-start_time={minStart}>
+				{timestamp}
+			</span>	
 			<TimeBlock sentences={sentences} />
+			<TextFormatButton sentence={sentences[0]} metadata={metadata}/>
 		</div>
 	);
 }

@@ -5,13 +5,11 @@ import { TextFormatButton } from './TextFormatButton.jsx';
 function UntimedBlock({ sentence, sentenceId, metadata }) {
 	return (
 		<div className="untimedBlock">
-			<div className="timeStampAndButtonContainer">
-				<span className="timeStampContainer timeStamp" data-sentence_id={sentenceId}>
-					{sentenceId}
-				</span>
-				<TextFormatButton sentence={sentence} metadata={metadata}/>
-			</div>
+			<span className="timeStampContainer timeStamp" data-sentence_id={sentenceId}>
+				{sentenceId}
+			</span>
 			<Sentence sentence={sentence} />
+			<TextFormatButton sentence={sentence} metadata={metadata}/>
 		</div>
 	);
 }
