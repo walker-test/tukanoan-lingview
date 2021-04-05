@@ -195,15 +195,18 @@ td {
 }
 
 .tierSelectionContainer {
-	background : yellow;
+	background : rgb(215, 233, 252);
 	display: grid;
   	grid-template-rows: 1fr 1fr;
-	margin-left: 5%;
-	margin-right: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .formatResultContainer {
-	background : cyan;
+	background : rgb(215, 233, 252);
+	overflow-x: scroll;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 span.timeStamp {
