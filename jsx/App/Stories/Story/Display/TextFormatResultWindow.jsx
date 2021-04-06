@@ -4,6 +4,7 @@ export default class TextFormatResultWindow extends React.Component {
 
     constructor(props) {
         super(props);
+        this.handleCloseButtonClick = this.handleCloseButtonClick.bind(this);
         this.latexSectionNames = ["original sentence", "morphemes", "morpheme translations", "sentence translation"];
     }
 
@@ -231,17 +232,22 @@ export default class TextFormatResultWindow extends React.Component {
 
     /* Displays the created material in a popup window. */
     displayResult(processedMaterial, latexLines) {
-        //console.log(latexLines);
-        const headerLine = "Result: ";
+        const headerLine = "Format result: ";
         const storyTitleLine = "Story title: " + processedMaterial["title"].replace(/\_/g, " ") + "\n"; 
         const storyIdLine = "Story ID: " + processedMaterial["storyId"].replace(/_/g, "\\_") + "\n"; 
         const sentenceUrlLine = "Sentence URL: " + processedMaterial["sentenceUrl"].replace(/_/g, "\\_") + "\n"; 
         const latexLibraryLine = "Formatted for gb4e and gb4e-modified LaTeX packages: ";
 
+
+        // let resultContainer;
+        // let resultContainers = document.querySelectorAll(`div[className="formatResultContainer"][sentenceId=${this.props.sentenceId}]`); 
+        // if (resultContainers.length === 1) {
+        //     resultContainer = resultContainers[0];
+        // }
         let resultContainer;
         let resultContainers = document.getElementsByClassName("formatResultContainer");
         for (var e of resultContainers) {
-          if (e.getAttribute("id") == this.props.sentenceId) {
+          if (e.getAttribute("sentenceId") == this.props.sentenceId) {
             resultContainer = e;
             break;
           }
@@ -266,10 +272,25 @@ export default class TextFormatResultWindow extends React.Component {
         this.displayResult(processedMaterial, latexLines);
     }
 
-    // TODO: add a close button
+    handleCloseButtonClick(e) {
+        e.preventDefault();
+
+        let resultSections = document.getElementsByClassName("formatResultSection");
+        for (var e of resultSections) {
+          if (e.getAttribute("sentenceId") == this.props.sentenceId) {
+            e.innerHTML = '';
+            break;
+          }
+        }
+    }
+
     render() {
       return (
-          <div className="formatResultContainer" id={this.props.sentenceId}></div>
+          <diiv className="formatResultSection" sentenceId={this.props.sentenceId}>
+              <div className="formatResultContainer" sentenceId={this.props.sentenceId}></div>
+              <button class="confirmButton" onClick={this.handleCloseButtonClick}>Close</button>
+          </diiv>
+          
       );
     }; 
 

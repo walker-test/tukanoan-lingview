@@ -194,15 +194,17 @@ td {
 	grid-column-end: 3;
 }
 
-.tierSelectionContainer {
+.tierSelectionSection {
 	background : rgb(215, 233, 252);
 	display: grid;
-  	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	padding-bottom: 5%;
 	padding-left: 5%;
 	padding-right: 5%;
+	padding-top: 5%; 
 }
 
-.formatResultContainer {
+.formatResultSection {
 	background : rgb(215, 233, 252);
 	overflow-x: scroll;
 	padding-left: 5%;

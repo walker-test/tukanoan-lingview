@@ -70,6 +70,8 @@ export default class TierSelectionWindow extends React.Component {
     handleConfirmButtonClick(e) {
       e.preventDefault();
 
+      //this.clearResultContainer();
+
       let tierMap = {};
       // Go through the selected radio buttons for this sentence and retrieve their value.
       for (var latexSectionName of this.latexSectionNames) {
@@ -84,6 +86,7 @@ export default class TierSelectionWindow extends React.Component {
         }
         tierMap[`${latexSectionName}`] = selectedValue;
       }
+
       // Add the tierMap to the state so that this object can be passed
       // on to the result window.
       this.setState({
@@ -91,8 +94,21 @@ export default class TierSelectionWindow extends React.Component {
         tierMap : tierMap
       }); 
 
-      // Make the selection window invisible after selection confirmed
-      //document.getElementsByClassName("tierSelectionWrapper")[0].style.display = "none";;
+    }
+
+    /* 
+      Goal: Clears anything that is already in the result container. 
+      This makes sure that when the user changes the tier selection after a result is already generated,
+      the new result can override the old result and gets displayed in the result container.
+    */
+    clearResultContainer() {
+      const formatResultContainers = document.getElementsByClassName("formatResultContainer");
+      for (let e of formatResultContainers) {
+        if (e.getAttribute('sentenceId') == this.props.sentenceId) {
+          e.innerHTML = '';
+          break;
+        }
+      }
 
     }
 
@@ -102,7 +118,7 @@ export default class TierSelectionWindow extends React.Component {
 
     render() {
       return (
-          <div className="tierSelectionContainer">
+          <div className="tierSelectionSection">
               <div className="tierSelectionWrapper">
                 <form className="tierSelectionForm" id={this.props.sentenceId}></form>
                 <button class="confirmButton" onClick={this.handleConfirmButtonClick}>
