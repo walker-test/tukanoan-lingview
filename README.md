@@ -12,7 +12,7 @@ To begin using this site, you'll need to have NPM and Node.js installed. Downloa
     
 This will install all the node modules required by our program. 
 
-The first time you use the site, and after each time you make changes, you'll need to rebuild the LingView site. To do so, type the command `npm run quick-build-offline` in the repository's root directory. 
+The first time you use the site, and after each time you make changes, you'll need to rebuild the LingView site. To do so, type the command `npm run quick-build` in the repository's root directory. 
 
 To view the website in your browser, open the `index.html` file.
 
