@@ -12,7 +12,7 @@ export class TextFormatButton extends React.Component {
         this.handleClick = this.handleClick.bind(this);
       }
 
-
+    /* Updates the flag when button is clicked so that the tier selection component gets rendered. */
     handleClick(e) {
         e.preventDefault();
 

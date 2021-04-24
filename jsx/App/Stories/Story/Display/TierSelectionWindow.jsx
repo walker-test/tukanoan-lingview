@@ -100,6 +100,7 @@ export default class TierSelectionWindow extends React.Component {
       Goal: Clears anything that is already in the result container. 
       This makes sure that when the user changes the tier selection after a result is already generated,
       the new result can override the old result and gets displayed in the result container.
+      This is NOT being used right now.
     */
     clearResultContainer() {
       const formatResultContainers = document.getElementsByClassName("formatResultContainer");

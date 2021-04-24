@@ -238,12 +238,6 @@ export default class TextFormatResultWindow extends React.Component {
         const sentenceUrlLine = "Sentence URL: " + processedMaterial["sentenceUrl"].replace(/_/g, "\\_") + "\n"; 
         const latexLibraryLine = "Formatted for gb4e and gb4e-modified LaTeX packages: ";
 
-
-        // let resultContainer;
-        // let resultContainers = document.querySelectorAll(`div[className="formatResultContainer"][sentenceId=${this.props.sentenceId}]`); 
-        // if (resultContainers.length === 1) {
-        //     resultContainer = resultContainers[0];
-        // }
         let resultContainer;
         let resultContainers = document.getElementsByClassName("formatResultContainer");
         for (var e of resultContainers) {
@@ -260,18 +254,25 @@ export default class TextFormatResultWindow extends React.Component {
         this.createParagraphElement(resultContainer, latexLines); 
     }
 
+    /* Creates an HTML element <pre>, which means that its content is pre-formatted text. */
     createParagraphElement(resultContainer, content) {
       const newParagraphElement = document.createElement("pre");
       newParagraphElement.innerHTML = content;
       resultContainer.appendChild(newParagraphElement);
     }
 
+    /* 
+        The main function that gets called when the component loads. 
+        This function calls helper methods that process tier selection
+        and converts the sentence into a Latex example accordingly.
+    */
     main() {
         const processedMaterial = this.processSentences();
         const latexLines = this.convertToLatex(processedMaterial);
         this.displayResult(processedMaterial, latexLines);
     }
 
+    /* Clear the current result section when the close button is clicked. */
     handleCloseButtonClick(e) {
         e.preventDefault();
 
@@ -288,7 +289,7 @@ export default class TextFormatResultWindow extends React.Component {
       return (
           <diiv className="formatResultSection" sentenceId={this.props.sentenceId}>
               <div className="formatResultContainer" sentenceId={this.props.sentenceId}></div>
-              <button class="confirmButton" onClick={this.handleCloseButtonClick}>Close</button>
+              <button class="closeResultButton" onClick={this.handleCloseButtonClick}>Close</button>
           </diiv>
           
       );
