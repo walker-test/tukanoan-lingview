@@ -272,17 +272,10 @@ export default class TextFormatResultWindow extends React.Component {
         this.displayResult(processedMaterial, latexLines);
     }
 
-    /* Clear the current result section when the close button is clicked. */
+    /* Reload the window when the close button is clicked. This clears the tier selection and result windows. */
     handleCloseButtonClick(e) {
         e.preventDefault();
-
-        let resultSections = document.getElementsByClassName("formatResultSection");
-        for (var e of resultSections) {
-          if (e.getAttribute("sentenceId") == this.props.sentenceId) {
-            e.innerHTML = '';
-            break;
-          }
-        }
+        location.reload();
     }
 
     render() {
