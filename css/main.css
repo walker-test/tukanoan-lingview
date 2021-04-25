@@ -178,7 +178,8 @@ td {
 }
 
 .textFormatButton {
-    display: none;
+	display: none;
+	margin-left: 3%
 }
 
 .labeledTimeBlock:hover .textFormatButton {
