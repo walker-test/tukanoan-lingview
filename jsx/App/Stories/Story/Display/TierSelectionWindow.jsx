@@ -1,6 +1,14 @@
 import React from 'react';
 import TextFormatResultWindow from "./TextFormatResultWindow.jsx";
 
+/*
+  This class models a window where the user tells LingView which tier should 
+  be matched to which LaTeX section during the conversion. 
+  The user does this by selecting the tier out of a list of radio buttons.
+  When the Confirm button is clicked, the text is processed to be formatted,
+  and the result is shown in a TextFormatResultWindow that gets rendered after 
+  the confirm button is clicked. 
+*/ 
 export default class TierSelectionWindow extends React.Component {
     constructor(props) {
         super(props);
@@ -24,7 +32,8 @@ export default class TierSelectionWindow extends React.Component {
 
     /* 
       Displays the tier selection window where the user tells LingView 
-      which tier corresponds to which section in the LaTeX example.
+      which tier corresponds to which section in the LaTeX example through
+      selecting from a radio button list form.
     */
     displayTierSelectionWindow() {
         let selectionContainer;
@@ -36,10 +45,13 @@ export default class TierSelectionWindow extends React.Component {
           }
         }
         
+        // Add a header line that shows the purpose of this selection form. 
         const header = document.createElement("p");
         header.innerHTML = "Please select the tier that corresponds to each section in the LaTeX formating."
         selectionContainer.appendChild(header);
 
+        // For each LaTeX section that needs to be formatted, create a list of radio buttons
+        // so that the user can select which tier is matched to this section.
         let tierNames = this.getTierNames();
         for (var latexSectionName of this.latexSectionNames) {
           const tierSelectionRow = this.createButtonList(tierNames, latexSectionName); 
@@ -47,6 +59,7 @@ export default class TierSelectionWindow extends React.Component {
         }
     }
 
+    /* Creates a list of radio buttons for all the tier names. */
     createButtonList(tierNames, latexSectionName) {
 
       const tierSelectionRow = document.createElement("div");
@@ -87,7 +100,10 @@ export default class TierSelectionWindow extends React.Component {
       return tierSelectionRow;
     }
 
-    /* Saves a map between latex section names and their selected tier names in state. */
+    /* 
+     When the confirm button is clicked, 
+     saves a map between latex section names and their selected tier names in state. 
+    */
     handleConfirmButtonClick(e) {
       e.preventDefault();
 

@@ -1,7 +1,10 @@
 import React from 'react';
 import TierSelectionWindow from "./TierSelectionWindow.jsx";
 
-/* Models a text format button. */
+/* 
+  A text format button that renders a window for tier selection on clicked. 
+  This tier selection window then leads to a new block displaying the result of LaTeX format conversion.
+*/
 export class TextFormatButton extends React.Component {
 
     constructor(props) {

@@ -1,5 +1,9 @@
 import React from 'react';
 
+/*
+ This window displays the LaTeX conversion format result, along with 
+ some other metadata of the story.
+*/
 export default class TextFormatResultWindow extends React.Component {
 
     constructor(props) {
@@ -8,14 +12,21 @@ export default class TextFormatResultWindow extends React.Component {
         this.latexSectionNames = ["original sentence", "morphemes", "morpheme translations", "sentence translation"];
     }
 
+    /* 
+     Calls helper methods that process tier selection
+     and converts the sentence into a Latex example accordingly.
+    */
     componentDidMount() {
-        this.main(); 
+        const processedMaterial = this.processSentences();
+        const latexLines = this.convertToLatex(processedMaterial);
+        this.displayResult(processedMaterial, latexLines); 
     }
 
     /* 
-      Calls on individual helper functions to gather the morphemes,
-      gloss, translation, and title of the selected sentence. 
-      */
+      Calls individual helper functions to gather the words,
+      morphemes, morpheme translation, and metadata 
+      of the selected sentence. 
+    */
     processSentences() {
       let dependents = this.props.sentence["dependents"];
 
@@ -52,7 +63,7 @@ export default class TextFormatResultWindow extends React.Component {
       const morphemeMap = morphAndGloss["morphemes"];
       const glossMap = morphAndGloss["gloss"];
 
-      // Some metadata
+      // Retrieves some metadata to be displayed later.
       const title = this.getTitle();
       const storyId = this.getStoryId();
       const sentenceUrl = this.getSentenceUrl();
@@ -185,7 +196,9 @@ export default class TextFormatResultWindow extends React.Component {
         return wordList.join(" ") + " \n  " + morphemeList.join(" ");
     }
 
+    /* Creates the line for the morpheme translations. */
     getMorphologicalAnalysisLine(gloss) {
+        // The \textsc tag is added for each suffix/clitic translation.
         const textscStart = "\\textsc{";
         const textscClose = "}";
 
@@ -258,18 +271,7 @@ export default class TextFormatResultWindow extends React.Component {
       resultContainer.appendChild(newParagraphElement);
     }
 
-    /* 
-        The main function that gets called when the component loads. 
-        This function calls helper methods that process tier selection
-        and converts the sentence into a Latex example accordingly.
-    */
-    main() {
-        const processedMaterial = this.processSentences();
-        const latexLines = this.convertToLatex(processedMaterial);
-        this.displayResult(processedMaterial, latexLines);
-    }
-
-    /* Reload the window when the close button is clicked. This clears the tier selection and result windows. */
+    /* Reload the window when the close button is clicked. This clears the tier selection window and result window. */
     handleCloseButtonClick(e) {
         e.preventDefault();
         location.reload();

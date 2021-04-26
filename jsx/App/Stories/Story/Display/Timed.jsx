@@ -22,7 +22,8 @@ function TimeBlock({ sentences, metadata }) {
 	// Status: tested, working
 	let output = [];
 	// A timeblock may contain multiple sentences with the same start time.
-	// Iterate through the list of these sentences.
+	// Iterate through the list of these sentences and create a LabeledSentence block 
+	// as well as a text format button for this block.
 	for (const sentence of sentences) {
 		output.push(<LabeledSentence key={id.generate()} sentence={sentence} />);
 		output.push(<TextFormatButton sentence={sentence} metadata={metadata}/>);
