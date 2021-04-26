@@ -27,8 +27,6 @@ export default class TierSelectionWindow extends React.Component {
       which tier corresponds to which section in the LaTeX example.
     */
     displayTierSelectionWindow() {
-        let tierNames = this.getTierNames();
-
         let selectionContainer;
         let selectionContainers = document.getElementsByClassName("tierSelectionForm");
         for (var e of selectionContainers) {
@@ -37,41 +35,56 @@ export default class TierSelectionWindow extends React.Component {
             break;
           }
         }
-       
+        
+        const header = document.createElement("p");
+        header.innerHTML = "Please select the tier that corresponds to each section in the LaTeX formating."
+        selectionContainer.appendChild(header);
+
+        let tierNames = this.getTierNames();
         for (var latexSectionName of this.latexSectionNames) {
-            const header = document.createElement("p");
-            header.innerHTML = `Which tier should formatted as the ${latexSectionName} section in the LaTeX example?`;
-            selectionContainer.appendChild(header);
-
-            // Create a list of radio buttons for this Latex section's selection.
-            const buttonListContainer = document.createElement("div");  
-            // Iterate through tier names and create a list of radio buttons corresponding to each tier. 
-            for (let i = 0; i < tierNames.length; i++) {
-              const tierName = tierNames[i];
-
-              const selectionButton = document.createElement("input");
-              const groupName = `button-${this.props.sentenceId}-for-${latexSectionName}`;
-              const buttonId = `button-${this.props.sentenceId}-${tierName}-for-${latexSectionName}`;
-              selectionButton.setAttribute("type", "radio");
-              selectionButton.setAttribute("groupName", groupName);
-              selectionButton.setAttribute("id", buttonId);
-              selectionButton.setAttribute("value", `${tierName}`);
-              selectionButton.setAttribute("name", `${latexSectionName}`);
-
-              // Default select the first tier.
-              if (i === 0) {
-                selectionButton.setAttribute("checked", true);
-              }
-
-              const buttonLabel = document.createElement("label");
-              buttonLabel.setAttribute("for", buttonId);
-              buttonLabel.innerHTML = `${tierName}`;
-
-              buttonListContainer.appendChild(selectionButton);
-              buttonListContainer.appendChild(buttonLabel);
-            }
-            selectionContainer.appendChild(buttonListContainer);
+          const tierSelectionRow = this.createButtonList(tierNames, latexSectionName); 
+          selectionContainer.appendChild(tierSelectionRow);
         }
+    }
+
+    createButtonList(tierNames, latexSectionName) {
+
+      const tierSelectionRow = document.createElement("div");
+      tierSelectionRow.setAttribute("className", "tierSelectionRow");
+
+      const sectionName = document.createElement("div");
+      sectionName.innerHTML = `${latexSectionName}`;
+      tierSelectionRow.appendChild(sectionName);
+
+      // Create a list of radio buttons for this Latex section's selection.
+      const buttonListContainer = document.createElement("div");  
+      // Iterate through tier names and create a list of radio buttons corresponding to each tier. 
+      for (let i = 0; i < tierNames.length; i++) {
+        const tierName = tierNames[i];
+
+        const selectionButton = document.createElement("input");
+        const groupName = `button-${this.props.sentenceId}-for-${latexSectionName}`;
+        const buttonId = `button-${this.props.sentenceId}-${tierName}-for-${latexSectionName}`;
+        selectionButton.setAttribute("type", "radio");
+        selectionButton.setAttribute("groupName", groupName);
+        selectionButton.setAttribute("id", buttonId);
+        selectionButton.setAttribute("value", `${tierName}`);
+        selectionButton.setAttribute("name", `${latexSectionName}`);
+
+        // Default select the first tier.
+        if (i === 0) {
+          selectionButton.setAttribute("checked", true);
+        }
+
+        const buttonLabel = document.createElement("label");
+        buttonLabel.setAttribute("for", buttonId);
+        buttonLabel.innerHTML = `${tierName}`;
+
+        buttonListContainer.appendChild(selectionButton);
+        buttonListContainer.appendChild(buttonLabel);
+      }
+      tierSelectionRow.appendChild(buttonListContainer);
+      return tierSelectionRow;
     }
 
     /* Saves a map between latex section names and their selected tier names in state. */

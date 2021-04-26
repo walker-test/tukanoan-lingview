@@ -205,6 +205,14 @@ td {
 	padding-top: 5%; 
 }
 
+.tierSelectionRow {
+	/* display: grid;
+	grid-template-columns: 1fr 7fr;
+	overflow-x: scroll; */
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+
 .formatResultSection {
 	background : rgb(215, 233, 252);
 	overflow-x: scroll;
