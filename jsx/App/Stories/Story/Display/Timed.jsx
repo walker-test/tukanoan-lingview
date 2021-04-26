@@ -16,7 +16,7 @@ function LabeledSentence({ sentence }) {
 	);
 }
 
-function TimeBlock({ sentences }) {
+function TimeBlock({ sentences, metadata }) {
 	// I/P: sentences, a list of sentences with the same start time
 	// O/P: div containing multiple LabeledSentences
 	// Status: tested, working
@@ -25,6 +25,7 @@ function TimeBlock({ sentences }) {
 	// Iterate through the list of these sentences.
 	for (const sentence of sentences) {
 		output.push(<LabeledSentence key={id.generate()} sentence={sentence} />);
+		output.push(<TextFormatButton sentence={sentence} metadata={metadata}/>);
 	}
 	return <div className="timeBlock">{output}</div>;
 }
@@ -57,13 +58,13 @@ function LabeledTimeBlock({ sentences, timestamp, metadata }) {
 			maxEnd = endTime;
 		}
 	}
+
 	return (
 		<div className="labeledTimeBlock" data-start_time={minStart} data-end_time={maxEnd}>	
 			<span className="timeStampContainer timeStamp" id={minStart} data-start_time={minStart}>
 				{timestamp}
 			</span>	
-			<TimeBlock sentences={sentences} />
-			<TextFormatButton sentence={sentences[0]} metadata={metadata}/>
+			<TimeBlock sentences={sentences} metadata={metadata}/>
 		</div>
 	);
 }
