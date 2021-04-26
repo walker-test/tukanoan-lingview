@@ -182,7 +182,7 @@ td {
 	margin-left: 3%
 }
 
-.labeledTimeBlock:hover .textFormatButton {
+.timeBlock:hover .textFormatButton {
     display: block;
 }
 

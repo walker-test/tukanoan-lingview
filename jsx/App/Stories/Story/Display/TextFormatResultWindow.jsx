@@ -17,9 +17,6 @@ export default class TextFormatResultWindow extends React.Component {
       gloss, translation, and title of the selected sentence. 
       */
     processSentences() {
-
-      // TODO: there might be multiple sentences in this timestamp 
-      // (according to LabeledTimeBlock from Timed.jsx)
       let dependents = this.props.sentence["dependents"];
 
       // Get each Latex section's corresponding tier name.

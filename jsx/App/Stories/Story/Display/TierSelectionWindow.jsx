@@ -45,7 +45,10 @@ export default class TierSelectionWindow extends React.Component {
 
             // Create a list of radio buttons for this Latex section's selection.
             const buttonListContainer = document.createElement("div");  
-            for (var tierName of tierNames) {
+            // Iterate through tier names and create a list of radio buttons corresponding to each tier. 
+            for (let i = 0; i < tierNames.length; i++) {
+              const tierName = tierNames[i];
+
               const selectionButton = document.createElement("input");
               const groupName = `button-${this.props.sentenceId}-for-${latexSectionName}`;
               const buttonId = `button-${this.props.sentenceId}-${tierName}-for-${latexSectionName}`;
@@ -54,6 +57,11 @@ export default class TierSelectionWindow extends React.Component {
               selectionButton.setAttribute("id", buttonId);
               selectionButton.setAttribute("value", `${tierName}`);
               selectionButton.setAttribute("name", `${latexSectionName}`);
+
+              // Default select the first tier.
+              if (i === 0) {
+                selectionButton.setAttribute("checked", true);
+              }
 
               const buttonLabel = document.createElement("label");
               buttonLabel.setAttribute("for", buttonId);
@@ -69,8 +77,6 @@ export default class TierSelectionWindow extends React.Component {
     /* Saves a map between latex section names and their selected tier names in state. */
     handleConfirmButtonClick(e) {
       e.preventDefault();
-
-      //this.clearResultContainer();
 
       let tierMap = {};
       // Go through the selected radio buttons for this sentence and retrieve their value.
@@ -93,23 +99,6 @@ export default class TierSelectionWindow extends React.Component {
         buttonClicked : true,
         tierMap : tierMap
       }); 
-
-    }
-
-    /* 
-      Goal: Clears anything that is already in the result container. 
-      This makes sure that when the user changes the tier selection after a result is already generated,
-      the new result can override the old result and gets displayed in the result container.
-      This is NOT being used right now.
-    */
-    clearResultContainer() {
-      const formatResultContainers = document.getElementsByClassName("formatResultContainer");
-      for (let e of formatResultContainers) {
-        if (e.getAttribute('sentenceId') == this.props.sentenceId) {
-          e.innerHTML = '';
-          break;
-        }
-      }
 
     }
 
