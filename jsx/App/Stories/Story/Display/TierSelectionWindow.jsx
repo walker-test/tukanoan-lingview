@@ -1,5 +1,7 @@
 import React from 'react';
 import TextFormatResultWindow from "./TextFormatResultWindow.jsx";
+//var htmlEscape = require('ent/encode');
+var htmlEscape = require("html-es6cape");
 
 /*
   This class models a window where the user tells LingView which tier should 
@@ -25,7 +27,7 @@ export default class TierSelectionWindow extends React.Component {
     getTierNames() {
       let tierNames = [];
       for (var tierEntry of this.props.sentence["dependents"]) {
-          tierNames.push(tierEntry["tier"]);
+        tierNames.push(tierEntry["tier"]);
       }
       return tierNames;
     }
@@ -59,7 +61,10 @@ export default class TierSelectionWindow extends React.Component {
         }
     }
 
-    /* Creates a list of radio buttons for all the tier names. */
+    /* 
+     Creates a list of radio buttons for all the tier names. 
+     The tierNames passed in here have not been escaped. They may contain special characters.
+    */
     createButtonList(tierNames, latexSectionName) {
 
       const tierSelectionRow = document.createElement("div");
@@ -73,15 +78,16 @@ export default class TierSelectionWindow extends React.Component {
       const buttonListContainer = document.createElement("div");  
       // Iterate through tier names and create a list of radio buttons corresponding to each tier. 
       for (let i = 0; i < tierNames.length; i++) {
-        const tierName = tierNames[i];
+        // Call escape function on tier names so that special characters can be used as HTML property names.
+        const escapedTierName = htmlEscape(tierNames[i]);
 
         const selectionButton = document.createElement("input");
         const groupName = `button-${this.props.sentenceId}-for-${latexSectionName}`;
-        const buttonId = `button-${this.props.sentenceId}-${tierName}-for-${latexSectionName}`;
+        const buttonId = `button-${this.props.sentenceId}-${escapedTierName}-for-${latexSectionName}`;
         selectionButton.setAttribute("type", "radio");
         selectionButton.setAttribute("groupName", groupName);
         selectionButton.setAttribute("id", buttonId);
-        selectionButton.setAttribute("value", `${tierName}`);
+        selectionButton.setAttribute("value", `${escapedTierName}`);
         selectionButton.setAttribute("name", `${latexSectionName}`);
 
         // Default select the first tier.
@@ -91,7 +97,7 @@ export default class TierSelectionWindow extends React.Component {
 
         const buttonLabel = document.createElement("label");
         buttonLabel.setAttribute("for", buttonId);
-        buttonLabel.innerHTML = `${tierName}`;
+        buttonLabel.innerHTML = `${escapedTierName}`;
 
         buttonListContainer.appendChild(selectionButton);
         buttonListContainer.appendChild(buttonLabel);

@@ -1,4 +1,5 @@
 import React from 'react';
+var htmlEscape = require("html-es6cape");
 
 /*
  This window displays the LaTeX conversion format result, along with 
@@ -43,17 +44,20 @@ export default class TextFormatResultWindow extends React.Component {
 
       // Loop through dependents to match each Latex section's tier name to the actual content of that tier. 
       for (var idx in dependents) {
-          const tierName = dependents[idx]["tier"];
-          if (tierName === wordTier) {
+          // The selected tier names from the tierMap should have been escaped,
+          // so here we also need to escape each original tier name so that the selected 
+          // tier name can be matched to one of the original tier names. 
+          const escapedTierName = htmlEscape(dependents[idx]["tier"]);
+          if (escapedTierName === wordTier) {
             wordList = dependents[idx]["values"];
           }
-          if (tierName === morphemeTier) {
+          if (escapedTierName === morphemeTier) {
             morphemeList = dependents[idx]["values"];
           }
-          if (tierName === glossTier) {
+          if (escapedTierName === glossTier) {
             glossList = dependents[idx]["values"];
           }
-          if (tierName === sentenceTranslationTier) {
+          if (escapedTierName === sentenceTranslationTier) {
             sentenceTranslation = dependents[idx]["values"];
           }
           
