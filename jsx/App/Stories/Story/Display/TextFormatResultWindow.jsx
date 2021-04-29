@@ -1,4 +1,6 @@
 import React from 'react';
+import { TranslatableText } from "../../../locale/TranslatableText.jsx";
+import { textFormatCloseButtonText } from "../../../locale/LocaleConstants.jsx";
 var htmlEscape = require("html-es6cape");
 
 /*
@@ -284,7 +286,9 @@ export default class TextFormatResultWindow extends React.Component {
       return (
           <div className="formatResultSection" sentenceId={this.props.sentenceId}>
               <div className="formatResultContainer" sentenceId={this.props.sentenceId}></div>
-              <button class="closeResultButton" onClick={this.handleCloseButtonClick}>Close</button>
+              <button class="closeResultButton" onClick={this.handleCloseButtonClick}>
+                <TranslatableText dictionary={textFormatCloseButtonText} />
+              </button>
           </div>
           
       );

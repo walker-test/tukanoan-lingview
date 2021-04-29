@@ -149,3 +149,25 @@ export const storySearchViewStoryText = {
   [ESPANOL] : "Ver historia",
   [FRANCAIS] : "Voir l'histoire",
 };
+
+// Texts for LaTeX conversion buttons
+// Text on the format button
+export const formatButtonText = {
+  [ENGLISH] : "Format",
+  [ESPANOL] : "Formatear",
+  [FRANCAIS] : "Formater",
+};
+
+// Text on the tier selection confirm button
+export const tierSelectionConfirmButtonText = {
+  [ENGLISH] : "Confirm",
+  [ESPANOL] : "Confirmar",
+  [FRANCAIS] : "Confirmer",
+};
+
+// Text on the format result window close button
+export const textFormatCloseButtonText = {
+  [ENGLISH] : "Close",
+  [ESPANOL] : "Cerrar",
+  [FRANCAIS] : "Fermer",
+}

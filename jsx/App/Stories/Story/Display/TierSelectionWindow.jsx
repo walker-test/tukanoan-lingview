@@ -1,7 +1,10 @@
 import React from 'react';
 import TextFormatResultWindow from "./TextFormatResultWindow.jsx";
-//var htmlEscape = require('ent/encode');
+import { TranslatableText } from "../../../locale/TranslatableText.jsx";
+import { tierSelectionConfirmButtonText } from "../../../locale/LocaleConstants.jsx";
+
 var htmlEscape = require("html-es6cape");
+
 
 /*
   This class models a window where the user tells LingView which tier should 
@@ -147,7 +150,7 @@ export default class TierSelectionWindow extends React.Component {
               <div className="tierSelectionWrapper">
                 <form className="tierSelectionForm" id={this.props.sentenceId}></form>
                 <button class="confirmButton" onClick={this.handleConfirmButtonClick}>
-                    Confirm
+                  <TranslatableText dictionary={tierSelectionConfirmButtonText} />
                 </button>
               </div>
               
