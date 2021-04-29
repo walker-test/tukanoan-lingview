@@ -103,7 +103,7 @@ export default class TextFormatResultWindow extends React.Component {
             while (flag && morphemeListIndex < morphemeList.length) {
                 // Add the "Undefined" strings just in case that some texts have glossing misaligned.
                 // For texts with aligned morphemes and glossing, "Undefined" shouldn't show up,
-                // but they do to avoid an error being thrown and as a way to let the user know 
+                // but adding "Undefined here" avoids an error being thrown and is a way of letting the user know 
                 // that something is off with this sentence so they should edit the generated LaTeX code. 
                 const morphemeEntry = morphemeList[morphemeListIndex] || "Undefined";;
                 const glossEntry = glossList[morphemeListIndex] || "Undefined";
@@ -236,7 +236,6 @@ export default class TextFormatResultWindow extends React.Component {
 
     /* Checks if an item is a suffix or clitic. */
     isSuffix(item) {
-        // Suffix or clitic starts with = or -, or the entire word is capitalized.
         return item.startsWith("=") || item.startsWith("-") || item === item.toUpperCase();
     }
 
@@ -279,10 +278,10 @@ export default class TextFormatResultWindow extends React.Component {
 
     render() {
       return (
-          <diiv className="formatResultSection" sentenceId={this.props.sentenceId}>
+          <div className="formatResultSection" sentenceId={this.props.sentenceId}>
               <div className="formatResultContainer" sentenceId={this.props.sentenceId}></div>
               <button class="closeResultButton" onClick={this.handleCloseButtonClick}>Close</button>
-          </diiv>
+          </div>
           
       );
     }; 

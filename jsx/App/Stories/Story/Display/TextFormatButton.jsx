@@ -25,24 +25,19 @@ export class TextFormatButton extends React.Component {
 
     }
 
-    componentDidMount() {
-        this.setState({ 
-            sentence : this.props.sentence,
-            metadata : this.props.metadata
-        });
-    }
-
     render() {
         return (
             <div class="textFormatSection">
                 <button class="textFormatButton" onClick={this.handleClick}>
                     Format
                 </button>
+                {/* The -1 from start time ms matches how the sentence's search index is calculated for the sentence's URL.
+                A timed sentence's index in the URL is its start time minus 1. */}
                 {this.state.buttonClicked ? 
                     <TierSelectionWindow 
-                        sentence={this.state.sentence} 
-                        metadata={this.state.metadata} 
-                        sentenceId = {this.state.metadata["timed"] ? (this.state.sentence["start_time_ms"]-1) : (this.state.sentence["sentence_id"])} /> 
+                        sentence={this.props.sentence} 
+                        metadata={this.props.metadata} 
+                        sentenceId = {this.props.metadata["timed"] ? (this.props.sentence["start_time_ms"]-1) : (this.props.sentence["sentence_id"])} /> 
                     : null}
             </div>); 
     }

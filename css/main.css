@@ -178,16 +178,18 @@ td {
 }
 
 .textFormatButton {
-	display: none;
+	visibility: hidden;
 	margin-left: 3%
 }
 
 .timeBlock:hover .textFormatButton {
-    display: block;
+	display: block;
+	visibility: visible;
 }
 
 .untimedBlock:hover .textFormatButton {
-    display: block;
+	display: block;
+	visibility: visible;
 } 
 
 .textFormatSection {
