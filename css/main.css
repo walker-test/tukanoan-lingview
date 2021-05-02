@@ -140,7 +140,8 @@ td {
 .labeledTimeBlock {
 	clear: both;
 	float: left;
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 7fr;
 	padding-right: 10px;
 	padding-top: 27px;
 	padding-bottom: 27px;
@@ -151,6 +152,74 @@ td {
 	float: left;
 	padding-left: 9px;
 	overflow-x: auto;
+}
+
+/*	MAIN.CSS
+	->	Text Display
+		Untimed */
+#untimedTextDisplay {
+	position: fixed;
+	width: calc(100% - 300px);
+	height: calc(100% - 88px); /* Minus the navBar and the footer. */
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.untimedBlock {
+	clear: both;
+	float: left;
+	display: grid;
+	grid-template-columns: 1fr 7fr;
+	padding-right: 10px;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	width: 100%;
+	overflow-x: auto;
+}
+
+.textFormatButton {
+	visibility: hidden;
+	margin-left: 3%
+}
+
+.timeBlock:hover .textFormatButton {
+	display: block;
+	visibility: visible;
+}
+
+.untimedBlock:hover .textFormatButton {
+	display: block;
+	visibility: visible;
+} 
+
+.textFormatSection {
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.tierSelectionSection {
+	background : rgb(215, 233, 252);
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	padding-bottom: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5%; 
+}
+
+.tierSelectionRow {
+	/* display: grid;
+	grid-template-columns: 1fr 7fr;
+	overflow-x: scroll; */
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+
+.formatResultSection {
+	background : rgb(215, 233, 252);
+	overflow-x: scroll;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 span.timeStamp {
@@ -191,27 +260,7 @@ span.timeStamp {
 	margin-top: 3px;
 	font-weight: 600;
 }
-/*	MAIN.CSS
-	->	Text Display
-		Untimed */
-#untimedTextDisplay {
-	position: fixed;
-	width: calc(100% - 300px);
-	height: calc(100% - 88px); /* Minus the navBar and the footer. */
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
 
-.untimedBlock {
-	clear: both;
-	float: left;
-	display: flex;
-	padding-right: 10px;
-	padding-top: 27px;
-	padding-bottom: 27px;
-	width: 100%;
-	overflow-x: auto;
-}
 
 table.gloss {
 	padding-left: 5px;
