@@ -1,7 +1,7 @@
 import React from 'react';
-import TierSelectionWindow from "./TierSelectionWindow.jsx";
-import { TranslatableText } from "../../../locale/TranslatableText.jsx";
-import { formatButtonText } from "../../../locale/LocaleConstants.jsx";
+import TierSelectionWindow from "./TextFormat/TierSelectionWindow.jsx";
+import { TranslatableText } from "~./jsx/App/locale/TranslatableText.jsx";
+import { formatButtonText } from "~./jsx/App/locale/LocaleConstants.jsx";
 
 /* 
   A text format button that renders a window for tier selection on clicked. 
