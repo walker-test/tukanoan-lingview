@@ -150,12 +150,42 @@ export const storySearchViewStoryText = {
   [FRANCAIS] : "Voir l'histoire",
 };
 
-// Texts for LaTeX conversion buttons
+// Texts for LaTeX conversion UI
 // Text on the format button
 export const formatButtonText = {
   [ENGLISH] : "Format",
   [ESPANOL] : "Formatear",
   [FRANCAIS] : "Formater",
+};
+
+export const formatSelectTiersPromptText = {
+  [ENGLISH] : "Please select the tier that corresponds to each section in the LaTeX formatting.",
+  [ESPANOL] : "Seleccione el nivel que corresponde a cada sección en el formato LaTeX.",
+  [FRANCAIS] : "Veuillez sélectionner le niveau qui correspond à chaque section du formatage LaTeX.",
+};
+
+export const latexSentenceTierName = {
+	[ENGLISH] : "original sentence",
+	[ESPANOL] : "frase original",
+	[FRANCAIS] : "phrase originale",
+};
+
+export const latexMorphemesTierName = {
+	[ENGLISH] : "morphemes",
+	[ESPANOL] : "morfemas",
+	[FRANCAIS] : "morphèmes",
+};
+
+export const latexMorphemeTranslationsTierName = {
+	[ENGLISH] : "morpheme translations",
+	[ESPANOL] : "morfemas traducidos",
+	[FRANCAIS] : "morphèmes traduits",
+};
+
+export const latexSentenceTranslationsTierName = {
+	[ENGLISH] : "sentence translation",
+	[ESPANOL] : "frase traducida",
+	[FRANCAIS] : "phrase traduite",
 };
 
 // Text on the tier selection confirm button
@@ -165,9 +195,39 @@ export const tierSelectionConfirmButtonText = {
   [FRANCAIS] : "Confirmer",
 };
 
+export const formatResultHeaderText = {
+  [ENGLISH] : "Format result:",
+  [ESPANOL] : "Resultado de formato:",
+  [FRANCAIS] : "Résultat du format:",
+};
+
+export const formatStoryTitleText = {
+  [ENGLISH] : "Story title:",
+  [ESPANOL] : "Título de la historia:",
+  [FRANCAIS] : "Titre de l'histoire:",
+};
+
+export const formatStoryIDText = {
+  [ENGLISH] : "Story ID:",
+  [ESPANOL] : "ID de historia:",
+  [FRANCAIS] : "ID de l'histoire:",
+};
+
+export const formatSentenceURLText = {
+  [ENGLISH] : "Sentence URL:",
+  [ESPANOL] : "URL de la frase:",
+  [FRANCAIS] : "URL de la phrase:",
+};
+
+export const formatLatexLibraryText = {
+  [ENGLISH] : "Formatted for gb4e and gb4e-modified LaTeX packages:",
+  [ESPANOL] : "Formateado para paquetes LaTeX gb4e y gb4e-modified:",
+  [FRANCAIS] : "Formaté pour les packages LaTeX gb4e et gb4e-modified:",
+};
+
 // Text on the format result window close button
 export const textFormatCloseButtonText = {
   [ENGLISH] : "Close",
   [ESPANOL] : "Cerrar",
   [FRANCAIS] : "Fermer",
-}
+};
