@@ -56,7 +56,7 @@ export default class TierSelectionWindow extends React.Component {
     selecting from a radio button list form.
   */
   getTierSelectionFormChildren() {
-    const children = [<TranslatableText dictionary={formatSelectTiersPromptText} />];
+    const children = [];
     
     // For each LaTeX section that needs to be formatted, create a list of radio buttons
     // so that the user can select which tier is matched to this section.
