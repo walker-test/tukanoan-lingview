@@ -79,7 +79,7 @@ export default class TierSelectionWindow extends React.Component {
     // Go through the selected radio buttons for this sentence and retrieve their value.
     for (let [latexSectionId, latexSectionName] of Object.entries(latexSectionIdsToNames)) {
       const buttons = document.querySelectorAll(
-            `input[name="${latexSectionId}"][groupName="button-${this.props.sentenceId}-for-${latexSectionId}"]`);
+            `input[name="button-${this.props.sentenceId}-for-${latexSectionId}"]`);
       let selectedValue;
       for (const button of buttons) {
           if (button.checked) {

@@ -52,11 +52,10 @@ const TierRadioButton = ({ sentenceId, escapedTierName, latexSectionId, buttonId
   return (
     <input 
       type="radio" 
-      groupName={groupName} 
       id={buttonId} 
       value={escapedTierName} 
-      name={latexSectionId} 
-      checked={isChecked} 
+      name={groupName} 
+      defaultChecked={isChecked}
     />
   );
 };
