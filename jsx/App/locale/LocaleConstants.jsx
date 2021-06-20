@@ -218,10 +218,3 @@ export const formatLatexLibraryText = {
   [ESPANOL] : "Formateado para paquetes LaTeX gb4e y gb4e-modified:",
   [FRANCAIS] : "Formaté pour les packages LaTeX gb4e et gb4e-modified:",
 };
-
-// Text on the format result window close button
-export const textFormatCloseButtonText = {
-  [ENGLISH] : "Close",
-  [ESPANOL] : "Cerrar",
-  [FRANCAIS] : "Fermer",
-};

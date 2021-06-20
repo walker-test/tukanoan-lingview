@@ -6,7 +6,6 @@ import {
   latexMorphemesTierName, 
   latexMorphemeTranslationsTierName, 
   latexSentenceTranslationsTierName,
-  textFormatCloseButtonText, 
 } from "~./jsx/App/locale/LocaleConstants.jsx";
 var htmlEscape = require("html-es6cape");
 
@@ -18,7 +17,6 @@ export default class TextFormatResultWindow extends React.Component {
 
   constructor(props) {
     super(props);
-    this.handleCloseButtonClick = this.handleCloseButtonClick.bind(this);
   }
 
   /* 
@@ -165,24 +163,13 @@ export default class TextFormatResultWindow extends React.Component {
     return url;
   }
 
-  /* Reload the window when the close button is clicked. This clears the tier selection window and result window. */
-  handleCloseButtonClick(e) {
-    e.preventDefault();
-    location.reload();
-  }
-
   render() {
     const processedMaterial = this.processSentences();
     return (
-      <div className="formatResultSection" sentenceId={this.props.sentenceId}>
-        <LatexFormatResultContainer 
-          sentenceId={this.props.sentenceId} 
-          processedMaterial={processedMaterial} 
-        />
-        <button class="closeResultButton" onClick={this.handleCloseButtonClick}>
-        <TranslatableText dictionary={textFormatCloseButtonText} />
-        </button>
-      </div>
+      <LatexFormatResultContainer 
+        sentenceId={this.props.sentenceId} 
+        processedMaterial={processedMaterial} 
+      />
     );
   }; 
 
