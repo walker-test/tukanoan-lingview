@@ -1,6 +1,5 @@
 import { TranslatableText } from "~./jsx/App/locale/TranslatableText.jsx";
 import { 
-  formatResultHeaderText,
   formatStoryTitleText,
   formatStoryIDText,
   formatSentenceURLText,
@@ -8,13 +7,14 @@ import {
 } from "~./jsx/App/locale/LocaleConstants.jsx";
 
 export const LatexFormatResultContainer = ({ sentenceId, processedMaterial }) => {
-  // <pre> means that its content is pre-formatted text
+  // <pre> means that its content is pre-formatted text. Newlines are preserved.
   return (
     <div className="formatResultContainer" sentenceId={sentenceId}>
-      <pre><TranslatableText dictionary={formatResultHeaderText} /></pre>
-      <pre><TranslatableText dictionary={formatStoryTitleText}/> {processedMaterial["title"].replace(/\_/g, " ") + "\n"}</pre>
-      <pre><TranslatableText dictionary={formatStoryIDText}/> {processedMaterial["storyId"].replace(/_/g, "\\_") + "\n"}</pre>
-      <pre><TranslatableText dictionary={formatSentenceURLText}/> {processedMaterial["sentenceUrl"].replace(/_/g, "\\_") + "\n"}</pre>
+      <pre>
+        <TranslatableText dictionary={formatStoryTitleText}/> {processedMaterial["title"].replace(/\_/g, " ") + "\n"}
+        <TranslatableText dictionary={formatStoryIDText}/> {processedMaterial["storyId"].replace(/_/g, "\\_") + "\n"}
+        <TranslatableText dictionary={formatSentenceURLText}/> {processedMaterial["sentenceUrl"].replace(/_/g, "\\_") + "\n"}
+      </pre>
       <pre><TranslatableText dictionary={formatLatexLibraryText} /></pre>
       <pre>{convertToLatex(processedMaterial)}</pre>
     </div>

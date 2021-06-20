@@ -195,12 +195,6 @@ export const tierSelectionConfirmButtonText = {
   [FRANCAIS] : "Confirmer",
 };
 
-export const formatResultHeaderText = {
-  [ENGLISH] : "Format result:",
-  [ESPANOL] : "Resultado de formato:",
-  [FRANCAIS] : "Résultat du format:",
-};
-
 export const formatStoryTitleText = {
   [ENGLISH] : "Story title:",
   [ESPANOL] : "Título de la historia:",
