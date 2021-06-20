@@ -104,7 +104,7 @@ export default class TierSelectionWindow extends React.Component {
       <div className="tierSelectionSection">
           <div className="tierSelectionWrapper">
             <form className="tierSelectionForm" id={this.props.sentenceId}>
-              <TranslatableText dictionary={formatSelectTiersPromptText} />
+              <p><TranslatableText dictionary={formatSelectTiersPromptText} /></p>
               {this.getTierSelectionFormChildren()}
             </form>
             <button class="confirmButton" onClick={this.handleConfirmButtonClick}>

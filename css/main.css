@@ -199,8 +199,6 @@ td {
 
 .tierSelectionSection {
 	background : rgb(215, 233, 252);
-	display: grid;
-	grid-template-rows: 1fr 1fr;
 	padding-bottom: 5%;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -208,11 +206,7 @@ td {
 }
 
 .tierSelectionRow {
-	/* display: grid;
-	grid-template-columns: 1fr 7fr;
-	overflow-x: scroll; */
-	padding-bottom: 5%;
-	padding-top: 5%;
+	padding-bottom: 9px;
 }
 
 .formatResultSection {
