@@ -9,7 +9,7 @@ const htmlEscape = require("html-es6cape");
 export const TierButtonList = ({ sentenceId, tierNames, latexSectionId, latexSectionName }) => {
   return (
     <div className="tierSelectionRow">
-      <TranslatableText dictionary={latexSectionName} />
+      <b><TranslatableText dictionary={latexSectionName} /></b>
       <TierRadioButtons sentenceId={sentenceId} tierNames={tierNames} latexSectionId={latexSectionId} latexSectionName={latexSectionName} />
     </div>
   );
