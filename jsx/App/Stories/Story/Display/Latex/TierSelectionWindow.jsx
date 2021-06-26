@@ -1,5 +1,5 @@
 import React from 'react';
-import TextFormatResultWindow from "./TextFormatResultWindow.jsx";
+import LatexResultWindow from "./LatexResultWindow.jsx";
 import { TierButtonList } from "./TierButtonList.jsx";
 import { TranslatableText } from "~./jsx/App/locale/TranslatableText.jsx";
 import { 
@@ -27,7 +27,7 @@ export const latexSectionIdsToNames = {
   be matched to which LaTeX section during the conversion. 
   The user does this by selecting the tier out of a list of radio buttons.
   When the Confirm button is clicked, the text is processed to be formatted,
-  and the result is shown in a TextFormatResultWindow that gets rendered after 
+  and the result is shown in a LatexResultWindow that gets rendered after 
   the confirm button is clicked. 
 */ 
 export default class TierSelectionWindow extends React.Component {
@@ -113,7 +113,7 @@ export default class TierSelectionWindow extends React.Component {
           </div>
           
           {this.state.buttonClicked ? 
-            <TextFormatResultWindow 
+            <LatexResultWindow 
               sentenceId={this.props.sentenceId} 
               tierMap={this.state.tierMap} 
               sentence={this.props.sentence}

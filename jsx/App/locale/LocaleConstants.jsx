@@ -152,10 +152,10 @@ export const storySearchViewStoryText = {
 
 // Texts for LaTeX conversion UI
 // Text on the format button
-export const formatButtonText = {
-  [ENGLISH] : "Format",
-  [ESPANOL] : "Formatear",
-  [FRANCAIS] : "Formater",
+export const latexButtonText = {
+  [ENGLISH] : "LaTeX",
+  [ESPANOL] : "LaTeX",
+  [FRANCAIS] : "LaTeX",
 };
 
 export const formatSelectTiersPromptText = {
@@ -195,25 +195,25 @@ export const tierSelectionConfirmButtonText = {
   [FRANCAIS] : "Confirmer",
 };
 
-export const formatStoryTitleText = {
+export const latexStoryTitleText = {
   [ENGLISH] : "Story title:",
   [ESPANOL] : "Título de la historia:",
   [FRANCAIS] : "Titre de l'histoire:",
 };
 
-export const formatStoryIDText = {
+export const latexStoryIDText = {
   [ENGLISH] : "Story ID:",
   [ESPANOL] : "ID de historia:",
   [FRANCAIS] : "ID de l'histoire:",
 };
 
-export const formatSentenceURLText = {
+export const latexSentenceURLText = {
   [ENGLISH] : "Sentence URL:",
   [ESPANOL] : "URL de la frase:",
   [FRANCAIS] : "URL de la phrase:",
 };
 
-export const formatLatexLibraryText = {
+export const latexLibraryText = {
   [ENGLISH] : "Formatted for gb4e and gb4e-modified LaTeX packages:",
   [ESPANOL] : "Formateado para paquetes LaTeX gb4e y gb4e-modified:",
   [FRANCAIS] : "Formaté pour les packages LaTeX gb4e et gb4e-modified:",

@@ -1,6 +1,6 @@
 import id from 'shortid';
 import { Sentence } from './Sentence.jsx';
-import { TextFormatButton } from './TextFormatButton.jsx';
+import { LatexButton } from './LatexButton.jsx';
 
 function LabeledSentence({ sentence }) {
 	// I/P: sentence, a sentence
@@ -23,10 +23,10 @@ function TimeBlock({ sentences, metadata }) {
 	let output = [];
 	// A timeblock may contain multiple sentences with the same start time.
 	// Iterate through the list of these sentences and create a LabeledSentence block 
-	// as well as a text format button for this block.
+	// as well as a LaTeX button for this block.
 	for (const sentence of sentences) {
 		output.push(<LabeledSentence key={id.generate()} sentence={sentence} />);
-		output.push(<TextFormatButton sentence={sentence} metadata={metadata}/>);
+		output.push(<LatexButton sentence={sentence} metadata={metadata}/>);
 	}
 	return <div className="timeBlock">{output}</div>;
 }

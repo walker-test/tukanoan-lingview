@@ -1,5 +1,5 @@
 import React from 'react';
-import { LatexFormatResultContainer } from "./LatexFormatResultContainer.jsx";
+import { LatexResultContainer } from "./LatexResultContainer.jsx";
 import { TranslatableText } from "~./jsx/App/locale/TranslatableText.jsx";
 import { 
   latexSentenceTierName, 
@@ -13,7 +13,7 @@ var htmlEscape = require("html-es6cape");
  This window displays the LaTeX conversion format result, along with 
  some other metadata of the story.
 */
-export default class TextFormatResultWindow extends React.Component {
+export default class LatexResultWindow extends React.Component {
 
   constructor(props) {
     super(props);
@@ -166,7 +166,7 @@ export default class TextFormatResultWindow extends React.Component {
   render() {
     const processedMaterial = this.processSentences();
     return (
-      <LatexFormatResultContainer 
+      <LatexResultContainer 
         sentenceId={this.props.sentenceId} 
         processedMaterial={processedMaterial} 
       />

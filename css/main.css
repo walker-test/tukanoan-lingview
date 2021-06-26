@@ -177,17 +177,17 @@ td {
 	overflow-x: auto;
 }
 
-.textFormatButton {
+.latexButton {
 	visibility: hidden;
 	margin-left: 3%
 }
 
-.timeBlock:hover .textFormatButton {
+.timeBlock:hover .latexButton {
 	display: block;
 	visibility: visible;
 }
 
-.untimedBlock:hover .textFormatButton {
+.untimedBlock:hover .latexButton {
 	display: block;
 	visibility: visible;
 } 
