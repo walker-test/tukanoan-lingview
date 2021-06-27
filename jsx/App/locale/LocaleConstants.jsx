@@ -151,7 +151,7 @@ export const storySearchViewStoryText = {
 };
 
 // Texts for LaTeX conversion UI
-// Text on the format button
+
 export const latexButtonText = {
   [ENGLISH] : "LaTeX",
   [ESPANOL] : "LaTeX",

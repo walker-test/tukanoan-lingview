@@ -29,7 +29,7 @@ export class LatexButton extends React.Component {
 
     render() {
         return (
-            <div class="textFormatSection">
+            <div class="latexButtonContainer">
                 <button class="latexButton" onClick={this.handleClick}>
                     <TranslatableText dictionary={latexButtonText} />
                 </button>
