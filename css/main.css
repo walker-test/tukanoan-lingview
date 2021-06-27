@@ -177,30 +177,28 @@ td {
 	overflow-x: auto;
 }
 
-.textFormatButton {
+.latexButton {
 	visibility: hidden;
 	margin-left: 3%
 }
 
-.timeBlock:hover .textFormatButton {
+.timeBlock:hover .latexButton {
 	display: block;
 	visibility: visible;
 }
 
-.untimedBlock:hover .textFormatButton {
+.untimedBlock:hover .latexButton {
 	display: block;
 	visibility: visible;
 } 
 
-.textFormatSection {
+.latexButtonContainer {
 	grid-column-start: 1;
 	grid-column-end: 3;
 }
 
 .tierSelectionSection {
 	background : rgb(215, 233, 252);
-	display: grid;
-	grid-template-rows: 1fr 1fr;
 	padding-bottom: 5%;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -208,18 +206,11 @@ td {
 }
 
 .tierSelectionRow {
-	/* display: grid;
-	grid-template-columns: 1fr 7fr;
-	overflow-x: scroll; */
-	padding-bottom: 5%;
-	padding-top: 5%;
+	padding-bottom: 12px;
 }
 
-.formatResultSection {
-	background : rgb(215, 233, 252);
+.latexResultContainer {
 	overflow-x: scroll;
-	padding-left: 5%;
-	padding-right: 5%;
 }
 
 span.timeStamp {

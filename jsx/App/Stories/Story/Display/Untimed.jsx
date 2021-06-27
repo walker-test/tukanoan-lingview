@@ -1,6 +1,6 @@
 import id from 'shortid';
 import { Sentence } from "./Sentence.jsx";
-import { TextFormatButton } from './TextFormatButton.jsx';
+import { LatexButton } from './LatexButton.jsx';
 
 function UntimedBlock({ sentence, sentenceId, metadata }) {
 	return (
@@ -9,7 +9,7 @@ function UntimedBlock({ sentence, sentenceId, metadata }) {
 				{sentenceId}
 			</span>
 			<Sentence sentence={sentence} />
-			<TextFormatButton sentence={sentence} metadata={metadata}/>
+			<LatexButton sentence={sentence} metadata={metadata}/>
 		</div>
 	);
 }
