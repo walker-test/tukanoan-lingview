@@ -3,7 +3,7 @@ import LatexResultWindow from "./LatexResultWindow.jsx";
 import { TierButtonList } from "./TierButtonList.jsx";
 import { TranslatableText } from "~./jsx/App/locale/TranslatableText.jsx";
 import { 
-  formatSelectTiersPromptText,
+  latexSelectTiersPromptText,
   latexSentenceTierName, 
   latexMorphemesTierName, 
   latexMorphemeTranslationsTierName, 
@@ -104,7 +104,7 @@ export default class TierSelectionWindow extends React.Component {
       <div className="tierSelectionSection">
           <div className="tierSelectionWrapper">
             <form className="tierSelectionForm" id={this.props.sentenceId}>
-              <p><TranslatableText dictionary={formatSelectTiersPromptText} /></p>
+              <p><TranslatableText dictionary={latexSelectTiersPromptText} /></p>
               {this.getTierSelectionFormChildren()}
             </form>
             <button class="confirmButton" onClick={this.handleConfirmButtonClick}>

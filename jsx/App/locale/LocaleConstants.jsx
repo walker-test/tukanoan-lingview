@@ -158,10 +158,10 @@ export const latexButtonText = {
   [FRANCAIS] : "LaTeX",
 };
 
-export const formatSelectTiersPromptText = {
-  [ENGLISH] : "Please select the tier that corresponds to each section in the LaTeX formatting.",
-  [ESPANOL] : "Seleccione el nivel que corresponde a cada sección en el formato LaTeX.",
-  [FRANCAIS] : "Veuillez sélectionner le niveau qui correspond à chaque section du formatage LaTeX.",
+export const latexSelectTiersPromptText = {
+  [ENGLISH] : "Please select what tier to use for each line in the LaTeX gloss.",
+  [ESPANOL] : "Seleccione qué nivel usar para cada línea en la glosa en LaTeX.",
+  [FRANCAIS] : "Veuillez sélectionner le niveau à utiliser pour chaque ligne du gloss LaTeX.",
 };
 
 export const latexSentenceTierName = {
