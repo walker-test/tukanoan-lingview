@@ -179,8 +179,8 @@ export default class TextFormatResultWindow extends React.Component {
         const translationLine = this.getSentenceTranslationLine(material["sentenceTranslation"]);
         // Replace _ with \_ so that it is recognized as underscore in LaTeX
         const storyTitle = material["title"].replace(/_/g, "\\_") + "\n"; 
-        
-        const toDisplay = begin + morphLines + glossLine + translationLine + storyTitle + end;
+        const citation = `\\href{${this.getSentenceUrl()}}{(${storyTitle})} \n`;
+        const toDisplay = begin + morphLines + glossLine + translationLine + citation + end;
         return toDisplay; 
     }
 
