@@ -150,12 +150,42 @@ export const storySearchViewStoryText = {
   [FRANCAIS] : "Voir l'histoire",
 };
 
-// Texts for LaTeX conversion buttons
-// Text on the format button
-export const formatButtonText = {
-  [ENGLISH] : "Format",
-  [ESPANOL] : "Formatear",
-  [FRANCAIS] : "Formater",
+// Texts for LaTeX conversion UI
+
+export const latexButtonText = {
+  [ENGLISH] : "LaTeX",
+  [ESPANOL] : "LaTeX",
+  [FRANCAIS] : "LaTeX",
+};
+
+export const latexSelectTiersPromptText = {
+  [ENGLISH] : "Please select what tier to use for each line in the LaTeX gloss.",
+  [ESPANOL] : "Seleccione qué nivel usar para cada línea en la glosa en LaTeX.",
+  [FRANCAIS] : "Veuillez sélectionner le niveau à utiliser pour chaque ligne du gloss LaTeX.",
+};
+
+export const latexSentenceTierName = {
+	[ENGLISH] : "original sentence",
+	[ESPANOL] : "frase original",
+	[FRANCAIS] : "phrase originale",
+};
+
+export const latexMorphemesTierName = {
+	[ENGLISH] : "morphemes",
+	[ESPANOL] : "morfemas",
+	[FRANCAIS] : "morphèmes",
+};
+
+export const latexMorphemeTranslationsTierName = {
+	[ENGLISH] : "morpheme translations",
+	[ESPANOL] : "morfemas traducidos",
+	[FRANCAIS] : "morphèmes traduits",
+};
+
+export const latexSentenceTranslationsTierName = {
+	[ENGLISH] : "sentence translation",
+	[ESPANOL] : "frase traducida",
+	[FRANCAIS] : "phrase traduite",
 };
 
 // Text on the tier selection confirm button
@@ -165,9 +195,26 @@ export const tierSelectionConfirmButtonText = {
   [FRANCAIS] : "Confirmer",
 };
 
-// Text on the format result window close button
-export const textFormatCloseButtonText = {
-  [ENGLISH] : "Close",
-  [ESPANOL] : "Cerrar",
-  [FRANCAIS] : "Fermer",
-}
+export const latexStoryTitleText = {
+  [ENGLISH] : "Story title:",
+  [ESPANOL] : "Título de la historia:",
+  [FRANCAIS] : "Titre de l'histoire:",
+};
+
+export const latexStoryIDText = {
+  [ENGLISH] : "Story ID:",
+  [ESPANOL] : "ID de historia:",
+  [FRANCAIS] : "ID de l'histoire:",
+};
+
+export const latexSentenceURLText = {
+  [ENGLISH] : "Sentence URL:",
+  [ESPANOL] : "URL de la frase:",
+  [FRANCAIS] : "URL de la phrase:",
+};
+
+export const latexLibraryText = {
+  [ENGLISH] : "Formatted for gb4e and gb4e-modified LaTeX packages:",
+  [ESPANOL] : "Formateado para paquetes LaTeX gb4e y gb4e-modified:",
+  [FRANCAIS] : "Formaté pour les packages LaTeX gb4e et gb4e-modified:",
+};
