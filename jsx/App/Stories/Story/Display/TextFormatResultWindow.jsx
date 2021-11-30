@@ -192,7 +192,11 @@ export default class TextFormatResultWindow extends React.Component {
         let wordList = []; // This will contain the complete sentence without - or == 
         let morphemeList = [morphemeStart]; // This has each word decomposed into suffices and clitics.
         for (const [id, entry] of Object.entries(morphemes)) {
-            for (const [wholeWord, morphs] of Object.entries(entry)) {
+            for (let [wholeWord, morphs] of Object.entries(entry)) {
+                // Capitalize the first word in the original sentence.
+                if (id === "0") {
+                    wholeWord = wholeWord[0].toUpperCase() + wholeWord.slice(1);
+                }
                 wordList.push(wholeWord);
                 morphemeList.push(morphs.join(""));
             }
