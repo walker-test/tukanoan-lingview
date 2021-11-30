@@ -50,6 +50,20 @@ export default class TierSelectionWindow extends React.Component {
     return tierNames;
   }
 
+  /* Create the header containing all the tier names in one row. */
+  createTiersHeader() {
+    let tiers = this.getTierNames().map((tierName) => (
+      <div className="tierHeaderName">{tierName}</div>
+    ));
+    // Add an empty element in the beginning so that each header is aligned with
+    // the column of radio buttons appearing underneath it. 
+    // The left-most column in the entire selection grid should be the tier name column.
+    return <div className="tiersHeaderSection">
+            <div className="fillerSlot"></div>
+            <div className="tiersHeader">{tiers}</div>
+           </div>;
+  }
+
   /* 
     Displays the tier selection window where the user tells LingView 
     which tier corresponds to which section in the LaTeX example through
@@ -57,12 +71,10 @@ export default class TierSelectionWindow extends React.Component {
   */
   getTierSelectionFormChildren() {
     const children = [];
-    
     // For each LaTeX section that needs to be formatted, create a list of radio buttons
     // so that the user can select which tier is matched to this section.
-    let tierNames = this.getTierNames();
     for (let [latexSectionId, latexSectionName] of Object.entries(latexSectionIdsToNames)) { 
-      children.push(<TierButtonList sentenceId={this.props.sentenceId} tierNames={tierNames} latexSectionId={latexSectionId} latexSectionName={latexSectionName} />);
+      children.push(<TierButtonList sentenceId={this.props.sentenceId} tierNames={this.getTierNames()} latexSectionId={latexSectionId} latexSectionName={latexSectionName} />);
     }
     
     return children;
@@ -105,7 +117,10 @@ export default class TierSelectionWindow extends React.Component {
           <div className="tierSelectionWrapper">
             <form className="tierSelectionForm" id={this.props.sentenceId}>
               <p><TranslatableText dictionary={latexSelectTiersPromptText} /></p>
-              {this.getTierSelectionFormChildren()}
+              <div className="tierSelectionGrid">
+                {this.createTiersHeader()}
+                {this.getTierSelectionFormChildren()}
+              </div>
             </form>
             <button class="confirmButton" onClick={this.handleConfirmButtonClick}>
               <TranslatableText dictionary={tierSelectionConfirmButtonText} />

@@ -205,8 +205,23 @@ td {
 	padding-top: 5%; 
 }
 
-.tierSelectionRow {
-	padding-bottom: 12px;
+.tiersHeaderSection, .tierSelectionRow {
+	display: grid;
+	grid-template-columns: 1fr 8fr;
+	justify-self: center;
+	padding: 5px;
+}
+
+.tiersHeader, .tierSelectionRowButtonSection {
+	display: flex;
+	flex-direction: row;
+	margin: 5px;
+	justify-content: space-evenly;
+}
+
+.tierHeaderName {
+	margin: 5px;
+	width: 100%;
 }
 
 .latexResultContainer {

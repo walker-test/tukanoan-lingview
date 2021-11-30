@@ -10,43 +10,27 @@ export const TierButtonList = ({ sentenceId, tierNames, latexSectionId, latexSec
   return (
     <div className="tierSelectionRow">
       <b><TranslatableText dictionary={latexSectionName} /></b>
-      <TierRadioButtons sentenceId={sentenceId} tierNames={tierNames} latexSectionId={latexSectionId} latexSectionName={latexSectionName} />
+      <div className="tierSelectionRowButtonSection">
+        {tierNames.map((tierName, i) => {
+          return (<TierRadioButton 
+                    sentenceId={sentenceId}
+                    escapedTierName={htmlEscape(tierName)} 
+                    latexSectionId={latexSectionId} 
+                    buttonId={`button-${sentenceId}-${htmlEscape(tierName)}-for-${latexSectionId}`} 
+                    isChecked={i == 0} 
+                  />);
+        })}
+      </div>
+      
     </div>
   );
 };
 
-const TierRadioButtons = ({ sentenceId, tierNames, latexSectionId, latexSectionName }) => {
-  const children = [];
-  
-  // Iterate through tier names and create a list of radio buttons corresponding to each tier. 
-  for (let i = 0; i < tierNames.length; i++) {
-    // Call escape function on tier names so that special characters can be used as HTML property names.
-    const tierName = tierNames[i];
-    const escapedTierName = htmlEscape(tierName);
-    
-    const buttonId = `button-${sentenceId}-${escapedTierName}-for-${latexSectionId}`;
-    
-    children.push(
-      <TierRadioButton 
-        sentenceId={sentenceId}
-        escapedTierName={escapedTierName} 
-        latexSectionId={latexSectionId} 
-        buttonId={buttonId} 
-        isChecked={i == 0} 
-      />
-    );
-    children.push(
-      <TierRadioButtonLabel 
-        tierName={tierName} 
-        buttonId={buttonId} 
-      />
-    );
-  }
-  
-  return (<div>{children}</div>);
-};
-
-const TierRadioButton = ({ sentenceId, escapedTierName, latexSectionId, buttonId, isChecked }) => {
+const TierRadioButton = ({ sentenceId, 
+                           escapedTierName, 
+                           latexSectionId, 
+                           buttonId, 
+                           isChecked }) => {
   const groupName = `button-${sentenceId}-for-${latexSectionId}`;
   
   return (
@@ -58,8 +42,4 @@ const TierRadioButton = ({ sentenceId, escapedTierName, latexSectionId, buttonId
       defaultChecked={isChecked}
     />
   );
-};
-
-const TierRadioButtonLabel = ({ tierName, buttonId }) => {
-  return (<label for={buttonId}>{tierName}</label>);
 };
