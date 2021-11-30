@@ -6,7 +6,7 @@ import {
   latexLibraryText, 
 } from "~./jsx/App/locale/LocaleConstants.jsx";
 
-export const LatexResultContainer = ({ sentenceId, processedMaterial }) => {
+export const LatexResultContainer = ({ sentenceId, sentenceUrl, processedMaterial }) => {
   // <pre> means that its content is pre-formatted text. Newlines are preserved.
   return (
     <div className="latexResultContainer" sentenceId={sentenceId}>
@@ -16,13 +16,13 @@ export const LatexResultContainer = ({ sentenceId, processedMaterial }) => {
         <TranslatableText dictionary={latexSentenceURLText}/> {processedMaterial["sentenceUrl"].replace(/_/g, "\\_") + "\n"}
       </pre>
       <pre><TranslatableText dictionary={latexLibraryText} /></pre>
-      <pre>{convertToLatex(processedMaterial)}</pre>
+      <pre>{convertToLatex(processedMaterial, sentenceUrl)}</pre>
     </div>
   );
 };
 
 /* Convert a sentence into LaTeX format with gb4e-modified package style. */
-function convertToLatex(material) {
+function convertToLatex(material, sentenceUrl) {
   const begin = "\\begin{exe} \n  \\ex \\label{example} \n  ";
   const end = "\\end{exe} \n";
   
@@ -31,8 +31,8 @@ function convertToLatex(material) {
   const translationLine = getSentenceTranslationLine(material["sentenceTranslation"]);
   // Replace _ with \_ so that it is recognized as underscore in LaTeX
   const storyTitle = material["title"].replace(/_/g, "\\_") + "\n"; 
-  
-  const toDisplay = begin + morphLines + glossLine + translationLine + storyTitle + end;
+  const citation = `\\href{${sentenceUrl}}{(${storyTitle})} \n`;
+  const toDisplay = begin + morphLines + glossLine + translationLine + citation + end;
   return toDisplay; 
 }
 
@@ -44,7 +44,11 @@ function getMorphemeLines(morphemes) {
   let wordList = []; // This will contain the complete sentence without - or == 
   let morphemeList = [morphemeStart]; // This has each word decomposed into suffices and clitics.
   for (const [id, entry] of Object.entries(morphemes)) {
-    for (const [wholeWord, morphs] of Object.entries(entry)) {
+    for (let [wholeWord, morphs] of Object.entries(entry)) {
+      // Capitalize the first word in the original sentence.
+      if (id === "0") {
+        wholeWord = wholeWord[0].toUpperCase() + wholeWord.slice(1);
+      }
       wordList.push(wholeWord);
       morphemeList.push(morphs.join(""));
     }

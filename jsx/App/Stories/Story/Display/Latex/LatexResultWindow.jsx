@@ -168,6 +168,7 @@ export default class LatexResultWindow extends React.Component {
     return (
       <LatexResultContainer 
         sentenceId={this.props.sentenceId} 
+        sentenceUrl={this.getSentenceUrl()}
         processedMaterial={processedMaterial} 
       />
     );
