@@ -9,9 +9,8 @@ import {
   latexMorphemeTranslationsTierName, 
   latexSentenceTranslationsTierName,
   tierSelectionConfirmButtonText,
+  latexCloseButtonText
 } from "~./jsx/App/locale/LocaleConstants.jsx";
-
-const htmlEscape = require("html-es6cape");
 
 // Each ID is a stable identifier that doesn't depend on the current language.
 // The names are textTranslations to show to the user. 
@@ -34,11 +33,13 @@ export default class TierSelectionWindow extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      buttonClicked : false,
+      latexButtonClicked : false,
       tierMap : {}
     }
-
+    // Create and ID for this sentence's LaTeX window. 
+    this.latexResultWindowId = `latex-result-window-${this.props.sentenceId}`; 
     this.handleConfirmButtonClick = this.handleConfirmButtonClick.bind(this);
+    this.closeFormatter = this.closeFormatter.bind(this);
   }
 
   /* Retrieves all the tier names for this story. */
@@ -105,10 +106,16 @@ export default class TierSelectionWindow extends React.Component {
     // Add the tierMap to the state so that this object can be passed
     // on to the result window.
     this.setState({
-      buttonClicked : true,
+      latexButtonClicked : true,
       tierMap : tierMap
     }); 
 
+  }
+
+  /* Reload the page when the close button is clicked. */
+  closeFormatter(e) {
+    e.preventDefault();
+    window.location.reload();
   }
 
   render() {
@@ -122,17 +129,22 @@ export default class TierSelectionWindow extends React.Component {
                 {this.getTierSelectionFormChildren()}
               </div>
             </form>
-            <button class="confirmButton" onClick={this.handleConfirmButtonClick}>
+            <button id="latexFormatterConfirmButton" 
+                    onClick={this.handleConfirmButtonClick}>
               <TranslatableText dictionary={tierSelectionConfirmButtonText} />
             </button>
           </div>
-          
-          {this.state.buttonClicked ? 
+          {this.state.latexButtonClicked ? 
             <LatexResultWindow 
+              id={this.latexResultWindowId}
               sentenceId={this.props.sentenceId} 
               tierMap={this.state.tierMap} 
               sentence={this.props.sentence}
               metadata={this.props.metadata}/> : null}
+          <button id="latexFormatterCloseButton"
+                  onClick={this.closeFormatter}>
+            <TranslatableText dictionary={latexCloseButtonText} />
+          </button>
       </div>
     );
   }; 

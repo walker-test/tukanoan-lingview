@@ -195,6 +195,13 @@ export const tierSelectionConfirmButtonText = {
   [FRANCAIS] : "Confirmer",
 };
 
+// Text on the LaTeX formatter close button
+export const latexCloseButtonText = {
+  [ENGLISH] : "Close",
+  [ESPANOL] : "Cerrar",
+  [FRANCAIS] : "Fermer",
+};
+
 export const latexStoryTitleText = {
   [ENGLISH] : "Story title:",
   [ESPANOL] : "Título de la historia:",

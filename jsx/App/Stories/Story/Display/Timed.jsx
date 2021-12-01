@@ -16,7 +16,7 @@ function LabeledSentence({ sentence }) {
 	);
 }
 
-function TimeBlock({ sentences, metadata }) {
+function TimeBlock({ sentences, metadata, minStart }) {
 	// I/P: sentences, a list of sentences with the same start time
 	// O/P: div containing multiple LabeledSentences
 	// Status: tested, working
@@ -26,7 +26,7 @@ function TimeBlock({ sentences, metadata }) {
 	// as well as a LaTeX button for this block.
 	for (const sentence of sentences) {
 		output.push(<LabeledSentence key={id.generate()} sentence={sentence} />);
-		output.push(<LatexButton sentence={sentence} metadata={metadata}/>);
+		output.push(<LatexButton sentenceMinStart={minStart} sentence={sentence} metadata={metadata}/>);
 	}
 	return <div className="timeBlock">{output}</div>;
 }
@@ -65,7 +65,7 @@ function LabeledTimeBlock({ sentences, timestamp, metadata }) {
 			<span className="timeStampContainer timeStamp" id={minStart} data-start_time={minStart}>
 				{timestamp}
 			</span>	
-			<TimeBlock sentences={sentences} metadata={metadata}/>
+			<TimeBlock sentences={sentences} metadata={metadata} minStart={minStart}/>
 		</div>
 	);
 }

@@ -20,7 +20,9 @@ export class LatexButton extends React.Component {
     /* Updates the flag when button is clicked so that the tier selection component gets rendered. */
     handleClick(e) {
         e.preventDefault();
-
+        // Do a click action on the sentence's time stamp so that this sentence
+        // is highlighted and the site's URL changes to this sentence's URL.
+        document.getElementById(this.props.sentenceMinStart).click();
         this.setState({
             buttonClicked : true
         });
