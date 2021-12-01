@@ -177,9 +177,9 @@ export const latexMorphemesTierName = {
 };
 
 export const latexMorphemeTranslationsTierName = {
-	[ENGLISH] : "morpheme translations",
-	[ESPANOL] : "morfemas traducidos",
-	[FRANCAIS] : "morphèmes traduits",
+	[ENGLISH] : "morpheme glosses",
+	[ESPANOL] : "glosas de morfemas",
+	[FRANCAIS] : "gloses de morphèmes",
 };
 
 export const latexSentenceTranslationsTierName = {
