@@ -177,9 +177,9 @@ export const latexMorphemesTierName = {
 };
 
 export const latexMorphemeTranslationsTierName = {
-	[ENGLISH] : "morpheme translations",
-	[ESPANOL] : "morfemas traducidos",
-	[FRANCAIS] : "morphèmes traduits",
+	[ENGLISH] : "morpheme glosses",
+	[ESPANOL] : "glosas de morfemas",
+	[FRANCAIS] : "gloses de morphèmes",
 };
 
 export const latexSentenceTranslationsTierName = {
@@ -193,6 +193,13 @@ export const tierSelectionConfirmButtonText = {
   [ENGLISH] : "Confirm",
   [ESPANOL] : "Confirmar",
   [FRANCAIS] : "Confirmer",
+};
+
+// Text on the LaTeX formatter close button
+export const latexCloseButtonText = {
+  [ENGLISH] : "Close",
+  [ESPANOL] : "Cerrar",
+  [FRANCAIS] : "Fermer",
 };
 
 export const latexStoryTitleText = {

@@ -198,7 +198,7 @@ td {
 }
 
 .tierSelectionSection {
-	background : rgb(215, 233, 252);
+	background : rgb(212, 234, 247);
 	padding-bottom: 5%;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -226,6 +226,28 @@ td {
 
 .latexResultContainer {
 	overflow-x: scroll;
+}
+
+#latexFormatterConfirmButton,   
+#latexFormatterCloseButton {
+	background-color: white;
+	border-radius: 4px;
+	transition-duration: 0.2s;
+}
+
+#latexFormatterConfirmButton:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+  
+#latexFormatterCloseButton {
+	margin-bottom: 3%;
+	margin-top: 3%;
+}
+
+#latexFormatterCloseButton:hover {
+	background-color: #f44336;
+	color: white;
 }
 
 span.timeStamp {
