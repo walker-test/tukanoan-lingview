@@ -5,11 +5,11 @@ import { LatexButton } from './LatexButton.jsx';
 function UntimedBlock({ sentence, sentenceId, metadata }) {
 	return (
 		<div className="untimedBlock">
-			<span className="timeStampContainer timeStamp" data-sentence_id={sentenceId}>
+			<span className="timeStampContainer timeStamp" id={sentenceId} data-sentence_id={sentenceId}>
 				{sentenceId}
 			</span>
 			<Sentence sentence={sentence} />
-			<LatexButton sentence={sentence} metadata={metadata}/>
+			<LatexButton sentenceMinStart={sentenceId} sentence={sentence} metadata={metadata}/>
 		</div>
 	);
 }
