@@ -106,5 +106,5 @@ export function SearchSentence({ sentence }) {
 	url += ("story/" + sentence["story ID"] + "?" + query_index);
 
     // hacky way to introduce a line break (extra <tr> of height 12px)
-	return <div className="searchSentence"><table className="gloss"><thead><tr><td><b> <TranslatableText dictionary={storySearchText} /></b>: {title}</td></tr><tr style={{"height": "12px"}}></tr></thead><tbody>{rowList}</tbody></table><div class="storyLink"><a href={url}><TranslatableText dictionary={storySearchViewStoryText} /></a></div></div>;
+	return <div className="searchSentence"><table className="gloss"><thead><tr><td><b> <TranslatableText dictionary={storySearchText} /></b>: {title}</td></tr><tr style={{"height": "12px"}}></tr></thead><tbody>{rowList}</tbody></table><div class="storyLink"><a target="_blank" href={url}><TranslatableText dictionary={storySearchViewStoryText} /></a></div></div>;
 }
