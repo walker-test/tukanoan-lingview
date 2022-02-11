@@ -2,17 +2,25 @@ import React from 'react';
 import Fuse from 'fuse.js';
 import { SearchSentence } from './Stories/Story/Display/Sentence.jsx';
 import { TranslatableText } from './locale/TranslatableText.jsx'
-import { searchPagePromptText } from './locale/LocaleConstants.jsx';
+import { searchPagePromptText, searchPageNextButtonText, searchPagePrevButtonText } from './locale/LocaleConstants.jsx';
 var htmlEscape = require('ent/encode');
 var decode = require('ent/decode');
 // Note: tier names should be escaped when used as HTML attributes (e.g. data-tier=tier_name),
 // but not when used as page text (e.g. <label>{tier_name}</label>)
 
+let SEARCH_PAGE_SIZE = 20; // the number of search results to show on one page
+
 export class Search extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { searchResults: [], searchIndex: null };
+        this.state = { 
+            searchResults: [], 
+            searchIndex: null, 
+            displayedSearchResultsIndex: 0
+         };
         this.runSearch = this.throttle(this.search, 300, this);
+        this.goToNextSearchPage = this.goToNextSearchPage.bind(this);
+        this.goToPrevSearchPage = this.goToPrevSearchPage.bind(this);
     }
 
     componentDidMount() {
@@ -55,8 +63,6 @@ export class Search extends React.Component {
             threshold: 0.2, // 0.0 means perfect matches only, 1.0 matches anything
             keys: fields
         };
-
-        console.log("running search over: " + fields);
         return new Fuse(this.state.searchIndex.sentences, options)
     }
 
@@ -68,7 +74,7 @@ export class Search extends React.Component {
         } else {
             return;
         }
-        let searchResult = this.fuse.search(query).slice(0, 25);
+        let searchResult = this.fuse.search(query); 
         let searchResults = [];
         for (var i = 0, j = searchResult.length; i < j; i++) {
             if ('speaker' in searchResult[i]) {
@@ -100,10 +106,21 @@ export class Search extends React.Component {
         return checkboxes
     }
 
+    goToNextSearchPage() {
+        let newDisplayIndex = this.state.displayedSearchResultsIndex + SEARCH_PAGE_SIZE;
+        this.setState({ displayedSearchResultsIndex: newDisplayIndex });
+    }
+
+    goToPrevSearchPage() {
+        let newDisplayIndex = this.state.displayedSearchResultsIndex - SEARCH_PAGE_SIZE;
+        this.setState({ displayedSearchResultsIndex: newDisplayIndex });
+    }
+
     render() {
         if (!this.state.searchIndex) return <div className="loader">Loading Search...</div>; // (could use a dedicated loader component instead)
-
-        let results = this.state.searchResults;
+        let results = this.state.searchResults.slice(
+            this.state.displayedSearchResultsIndex, 
+            Math.min(this.state.displayedSearchResultsIndex + SEARCH_PAGE_SIZE, this.state.searchResults.length));  
         return (
             <div id="searchForm">
                 <label for="searchInput"><TranslatableText dictionary={searchPagePromptText} /></label> <input id="searchInput" onChange={this.handleInputChange.bind(this)} type="text" />
@@ -111,6 +128,20 @@ export class Search extends React.Component {
                 {this.genCheckboxes()}
                 <br />
                 <div id="searchResults">{results}</div>
+                {this.state.searchResults.length > 0 ?
+                    <div>
+                        <button class="searchPageButton" 
+                                onClick={this.goToPrevSearchPage}
+                                disabled={this.state.displayedSearchResultsIndex <= 0}>
+                            <TranslatableText dictionary={searchPagePrevButtonText} />
+                        </button>
+                        <button class="searchPageButton" 
+                                onClick={this.goToNextSearchPage}
+                                disabled={this.state.searchResults.length === 0 || 
+                                    this.state.displayedSearchResultsIndex + SEARCH_PAGE_SIZE >= this.state.searchResults.length}>
+                            <TranslatableText dictionary={searchPageNextButtonText} />
+                        </button>
+                    </div> : null}
             </div>
         )
     };
