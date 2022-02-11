@@ -50,6 +50,18 @@ export const searchPagePromptText = {
   [FRANCAIS] : "Rechercher dans la base de données:",
 };
 
+export const searchPageNextButtonText = {
+  [ENGLISH] : "Next page",
+  [ESPANOL] : "Página siguiente",
+  [FRANCAIS] : "Page suivante",
+};
+
+export const searchPagePrevButtonText = {
+  [ENGLISH] : "Previous page",
+  [ESPANOL] : "Página anterior",
+  [FRANCAIS] : "Page précédente",
+};
+
 // Story index columns text.
 export const indexPageTitleHeaderText = {
   [ENGLISH] : "Title",
