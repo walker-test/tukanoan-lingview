@@ -128,15 +128,20 @@ export class Search extends React.Component {
                 {this.genCheckboxes()}
                 <br />
                 <div id="searchResults">{results}</div>
-                {this.state.displayedSearchResultsIndex > 0 ?
-                    <button class="searchPageButton" onClick={this.goToPrevSearchPage}>
-                        <TranslatableText dictionary={searchPagePrevButtonText} />
-                    </button>: null}
-                {this.state.searchResults.length > 0 && 
-                 this.state.displayedSearchResultsIndex + SEARCH_PAGE_SIZE < this.state.searchResults.length ?
-                    <button class="searchPageButton" onClick={this.goToNextSearchPage}>
-                        <TranslatableText dictionary={searchPageNextButtonText} />
-                    </button>: null}
+                {this.state.searchResults.length > 0 ?
+                    <div>
+                        <button class="searchPageButton" 
+                                onClick={this.goToPrevSearchPage}
+                                disabled={this.state.displayedSearchResultsIndex <= 0}>
+                            <TranslatableText dictionary={searchPagePrevButtonText} />
+                        </button>
+                        <button class="searchPageButton" 
+                                onClick={this.goToNextSearchPage}
+                                disabled={this.state.searchResults.length === 0 || 
+                                    this.state.displayedSearchResultsIndex + SEARCH_PAGE_SIZE >= this.state.searchResults.length}>
+                            <TranslatableText dictionary={searchPageNextButtonText} />
+                        </button>
+                    </div> : null}
             </div>
         )
     };
