@@ -65,20 +65,20 @@ export const searchPagePrevButtonText = {
 // Story index columns text.
 export const indexPageTitleHeaderText = {
   [ENGLISH] : "Title",
-  [ESPANOL] : "Titre",
-  [FRANCAIS] : "Título",
+  [ESPANOL] : "Título",
+  [FRANCAIS] : "Titre",
 };
 
 export const indexPageAuthorHeaderText = {
   [ENGLISH] : "Author",
-  [ESPANOL] : "Auteur",
-  [FRANCAIS] : "Autor",
+  [ESPANOL] : "Autor",
+  [FRANCAIS] : "Auteur",
 };
 
 export const indexPageMediaHeaderText = {
   [ENGLISH] : "Media",
   [ESPANOL] : "Medios",
-  [FRANCAIS] : "Medios",
+  [FRANCAIS] : "Médias",
 };
 
 // Use if a story isn't found.
@@ -147,7 +147,7 @@ export const metadataSourceText = {
 export const metadataSpeakersText = {
   [ENGLISH] : "Speakers",
   [ESPANOL] : "Oradores",
-  [FRANCAIS] : "Haut-parleurs",
+  [FRANCAIS] : "Orateurs",
 };
 
 export const storySearchText = {
