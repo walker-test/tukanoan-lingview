@@ -11,7 +11,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^7.0.2",
-    "datatables.net-dt": "^1.10.20",
+    "datatables.net-dt": "^1.12.1",
     "ent": "^2.2.0",
     "fuse.js": "^6.4.1",
     "html-es6cape": "^1.0.5",
