@@ -10,6 +10,9 @@ export function App() {
     <LocaleProvider>
         <Header />
         <footer>
+        <small> 
+        <span translate="yes">This website is powered by <a href='https://github.com/BrownCLPS/LingView/' target="_blank" rel="noopener noreferrer">Lingview</a> © 2022</span>
+        </small>
           <LocaleSelect />
         </footer>
     </LocaleProvider>
