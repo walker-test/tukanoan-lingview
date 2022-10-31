@@ -3,6 +3,8 @@ import React from 'react';
 import { Header } from './Header.jsx';
 import { LocaleProvider } from './locale/LocaleContext.jsx'
 import { LocaleSelect } from './locale/LocaleSelect.jsx'
+import { TranslatableText } from "./locale/TranslatableText.jsx";
+import { lingviewBrandingText } from "./locale/LocaleConstants.jsx";
 
 
 export function App() {
@@ -11,7 +13,8 @@ export function App() {
         <Header />
         <footer>
         <small> 
-        <span translate="yes">This website is powered by <a href='https://github.com/BrownCLPS/LingView/' target="_blank" rel="noopener noreferrer">Lingview</a> © 2022</span>
+        <TranslatableText dictionary={lingviewBrandingText} />
+        <span><a href='https://github.com/BrownCLPS/LingView/' target="_blank" rel="noopener noreferrer">Lingview</a> © 2022</span>
         </small>
           <LocaleSelect />
         </footer>
