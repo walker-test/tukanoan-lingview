@@ -238,7 +238,7 @@ export const latexLibraryText = {
   [FRANCAIS] : "Formaté pour les packages LaTeX gb4e et gb4e-modified:",
 };
 
-export const lingviewBrandingText = {
+export const footerText = {
   [ENGLISH]: "This website is powered by ",
   [ESPANOL]: "Este sitio web funciona con ",
   [FRANCAIS]: "Ce site Web est alimenté par ",
