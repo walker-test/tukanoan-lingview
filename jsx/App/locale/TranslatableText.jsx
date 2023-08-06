@@ -12,6 +12,21 @@ import { LocaleContext } from "./LocaleContext.jsx"
 export const TranslatableText = ({ dictionary }) => {
   const { locale } = useContext(LocaleContext);
 
+  if (!dictionary) {
+    // If dictionary is undefined due to a bug,
+    // don't break the entire site, just log an error and move on.
+    // Without this, we would throw "Uncaught TypeError: dictionary is undefined"
+    // and the entire LingView site would be replaced with a blank white screen.
+    console.error(
+      `[TranslatableText] Error: dictionary is undefined.`
+    );
+
+    // To debug, you can return a string, then look for that string on your LingView site:
+    // return "This TranslatableText is undefined.";
+
+    return null;
+  }
+
   // Display text in the currently selected language, if it exists
   if (dictionary[locale]) {
     return dictionary[locale];
