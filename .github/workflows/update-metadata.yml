@@ -24,7 +24,7 @@ jobs:
       - name: Run update_metadata.js
         run: |
           npm install
-          node update_metadata.js
+          node /preprocessing/update_metadata.js
         env:
           CI: true
 
