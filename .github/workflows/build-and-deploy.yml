@@ -36,7 +36,7 @@ jobs:
         run: |
           git config --global user.name "Your Name"
           git config --global user.email "youremail@example.com"
-          git pull
+          git pull origin
           git add .
           git commit -m "Updated json"
           git push origin master
