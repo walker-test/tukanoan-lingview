@@ -26,7 +26,7 @@ jobs:
       - name: Run update_json.js
         run: |
           npm ci
-          node update_json.js
+          node preprocessing/update_json.js
         env:
           CI: true
 
