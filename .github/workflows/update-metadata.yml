@@ -34,6 +34,7 @@ jobs:
         run: |
           git config --global user.name "Your Name"
           git config --global user.email "youremail@example.com"
+          git pull
           git add .
           git commit -m "Updated metadata"
           git push origin master
