@@ -4,7 +4,7 @@
   video filepath: ""
   description: ""
   genre: ""
-  author: me!
+  author: ""
   glosser: ""
   date recorded: ""
   source: ""
@@ -12,7 +12,8 @@
   title: Kuke chiste
   audio filepath: 20170804_kuke_chiste_FACQ.mp3
   video filepath: 20170804_kuke_chiste_FACQ_handbrake.mp4
-  description: A joke about a hares
+  description: |
+    A joke about a hare
   genre: ""
   author: ""
   glosser: ""
