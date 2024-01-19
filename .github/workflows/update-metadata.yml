@@ -26,6 +26,7 @@ jobs:
       - name: Run update_metadata.js
         run: |
           npm ci
+          npm quick-build
           node preprocessing/update_metadata.js
         env:
           CI: true
