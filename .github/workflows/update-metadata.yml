@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "data/"
+      # This action really only cares about the /data directory, but that wasn't working
 
 jobs:
   update:
