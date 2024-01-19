@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - master
-    paths:
-      - "data/index.json"
+      # This action really only cares about the /data directory, but that wasn't working
 
 jobs:
   update:
@@ -26,6 +25,7 @@ jobs:
       - name: Run update_metadata.js
         run: |
           npm ci
+          npm run quick-build
           node preprocessing/update_metadata.js
         env:
           CI: true
@@ -34,6 +34,7 @@ jobs:
         run: |
           git config --global user.name "Your Name"
           git config --global user.email "youremail@example.com"
+          git pull origin
           git add .
           git commit -m "Updated metadata"
           git push origin master

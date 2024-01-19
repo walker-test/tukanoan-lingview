@@ -24,21 +24,12 @@ jobs:
       - name: Build online version
         run: |
           npm ci
-          npm run quick-build
           npm run rebuild-db-online
           npm run webpack
           npm run bundle
         env:
           CI: true
           REMOTE_MEDIA_PATH: ${{ secrets.REMOTE_MEDIA_PATH }}
-
-      - name: Commit changes
-        run: |
-          git config --global user.name "Your Name"
-          git config --global user.email "youremail@example.com"
-          git add .
-          git commit -m "Updated json"
-          git push origin master
 
       - name: Deploy online version to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
