@@ -4,7 +4,7 @@
   video filepath: ""
   description: ""
   genre: ""
-  author: Not Me!
+  author:
   glosser: ""
   date recorded: ""
   source: ""
@@ -15,7 +15,7 @@
   description: |
     A joke about a hare
   genre: ""
-  author: Also me!
+  author:
   glosser: ""
   date recorded: ""
   source: ""
