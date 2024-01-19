@@ -5,6 +5,8 @@ on:
     branches:
       - master
       # This action really only cares about the /data directory, but that wasn't working
+    paths-ignore: 
+      - 'data/metadata.yaml'
 
 jobs:
   update:
