@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - "data/index.json"
+      - "data/"
 
 jobs:
   update:
