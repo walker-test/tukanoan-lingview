@@ -31,7 +31,7 @@ tryCatch(() => {
       "video filepath": indexObj[uniqueId].media.video,
       description: indexObj[uniqueId].description,
       genre: indexObj[uniqueId].genre,
-      author: indexObj[uniqueId].author,
+      author: indexObj[uniqueId].author || "",
       glosser: indexObj[uniqueId].glosser,
       "date recorded": indexObj[uniqueId].date_created,
       //In the current "source" code, it doesn't look like _default is populated
