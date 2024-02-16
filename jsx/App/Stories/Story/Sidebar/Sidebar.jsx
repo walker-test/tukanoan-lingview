@@ -1,6 +1,7 @@
-import { Title } from './title.jsx';
-import { Video } from './video.jsx';
+import { Title } from './Title.jsx';
+import { Video } from './Video.jsx';
 import { Minibar } from './Minibar/Minibar.jsx'
+import { getMediaFilePath } from '../Story.jsx';
 
 export function Sidebar({ metadata }) {
 	// I/P: metadata, in JSON format
@@ -11,10 +12,10 @@ export function Sidebar({ metadata }) {
 	if (metadata['title']['_default'] != '') {
 		title = metadata['title']['_default'];
 	}
-	
+
 	if (metadata['timed'] && metadata['media']['video'] != '') {
 		const filename = metadata['media']['video'];
-		const path = 'data/media_files/' + filename;
+		const path = getMediaFilePath(filename);
 		return (
 			<div id="leftPanel">
 				<Video path={path} />
