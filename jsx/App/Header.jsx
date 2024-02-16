@@ -38,6 +38,7 @@ export function Header() {
             <TranslatableText dictionary={navBarSubmissionsText} />
           </NavLink
       </div>
+      </div>
       <div className="content">
         <Route exact path="/">
           <LandingPage />
