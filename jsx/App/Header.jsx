@@ -6,11 +6,9 @@ import { Contact } from "./Contact.jsx";
 import { StoryIndex } from "./StoryIndex.jsx";
 import { Stories } from "./Stories/Stories.jsx";
 import { Submissions } from "./Submissions.jsx";
-import { Search } from "./Search.jsx";
 import { TranslatableText } from "./locale/TranslatableText.jsx";
 import {
   navBarTitleText,
-  navBarSearchText,
   navBarAboutText,
   navBarIndexText,
   navBarContactText,
@@ -38,11 +36,7 @@ export function Header() {
           </NavLink>
           <NavLink to="/submissions">
             <TranslatableText dictionary={navBarSubmissionsText} />
-          </NavLink>
-          <NavLink to="/search">
-            <TranslatableText dictionary={navBarSearchText} />
-          </NavLink>
-
+          </NavLink
         </div>
       </div>
       <div className="content">
@@ -63,9 +57,6 @@ export function Header() {
         </Route>
         <Route exact path="/submissions">
           <Submissions />
-        </Route>
-        <Route exact path="/search">
-          <Search />
         </Route>
 
       </div>
