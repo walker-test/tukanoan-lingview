@@ -14,9 +14,9 @@ export const DEFAULT_LOCALE = ENGLISH;
 
 // NavBar text (header).
 export const navBarTitleText = {
-  [ENGLISH]: "LingView: ELAN and FLEx Web Display",
-  [ESPANOL]: "LingView: Pantella Web ELAN y FLEx",
-  [FRANCAIS]: "LingView: Affichage Web ELAN et FLEx",
+  [ENGLISH]: "Tukanoan Language Web Interface",
+  [ESPANOL]: "Interfaz Web de Lenguas Tukanoanas",
+  [FRANCAIS]: "Interface Web des Langues Tukanoanes"
 };
 
 export const navBarSearchText = {
