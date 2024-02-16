@@ -27,6 +27,7 @@ jobs:
           npm run rebuild-db-online
           npm run webpack
           npm run bundle
+          npm run quick-build
         env:
           CI: true
           REMOTE_MEDIA_PATH: ${{ secrets.REMOTE_MEDIA_PATH }}
