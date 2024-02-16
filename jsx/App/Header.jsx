@@ -36,7 +36,7 @@ export function Header() {
           </NavLink>
           <NavLink to="/submissions">
             <TranslatableText dictionary={navBarSubmissionsText} />
-          </NavLink
+          </NavLink>
       </div>
       </div>
       <div className="content">
