@@ -65,7 +65,7 @@ export function Header() {
           <Submissions />
         </Route>
         <Route exact path="/search">
-          <Submissions />
+          <Search />
         </Route>
 
       </div>
