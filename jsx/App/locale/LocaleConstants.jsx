@@ -43,6 +43,12 @@ export const navBarIndexText = {
   [FRANCAIS]: "Index des Textes",
 };
 
+export const navBarContactText = {
+    [ENGLISH]: "Contact Us",
+    [ESPANOL]: "Contáctenos",
+    [FRANCAIS]: "Nous Contacter",
+};
+
 // Search page text
 export const searchPagePromptText = {
   [ENGLISH] : "Search database:",

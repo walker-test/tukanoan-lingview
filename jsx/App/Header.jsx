@@ -2,7 +2,7 @@ import React from "react";
 import { HashRouter as Router, Route, Link, NavLink } from "react-router-dom";
 import { AboutPage } from "./AboutPage.jsx";
 import { LandingPage } from "./LandingPage.jsx";
-import { GlossaryPage } from "./GlossaryPage.jsx";
+import { Contact } from "./Contact.jsx";
 import { StoryIndex } from "./StoryIndex.jsx";
 import { Search } from "./Search.jsx";
 import { Stories } from "./Stories/Stories.jsx";
@@ -12,7 +12,7 @@ import {
   navBarSearchText,
   navBarAboutText,
   navBarIndexText,
-  navBarGlossaryText,
+  navBarContactText,
 } from "./locale/LocaleConstants.jsx";
 
 export function Header() {
@@ -31,8 +31,8 @@ export function Header() {
           <NavLink to="/about">
             <TranslatableText dictionary={navBarAboutText} />
           </NavLink>
-          <NavLink to="/glossary">
-            <TranslatableText dictionary={navBarGlossaryText} />
+          <NavLink to="/contact-us">
+            <TranslatableText dictionary={navBarContactText} />
           </NavLink>
           <NavLink to="/index">
             <TranslatableText dictionary={navBarIndexText} />
@@ -55,8 +55,8 @@ export function Header() {
         <Route exact path="/about">
           <AboutPage />
         </Route>
-        <Route exact path="/glossary">
-          <GlossaryPage />
+        <Route exact path="/contact-us">
+          <Contact />
         </Route>
       </div>
     </Router>
