@@ -3,7 +3,7 @@
     "timed": true,
     "story ID": "7c44ce2c-4585-4ee3-a333-71c3c0634125",
     "title": {
-      "_default": "DES_2014_DAS_coletor_de_sauvas_noturnas"
+      "_default": "Coletor de sauvas noturnas / Colector de sauvas nocturna / The Nocturnal Sauvas Collector"
     },
     "media": {
       "audio": "DES_2014_DAS_coletor_de_sauvas_noturnas.wav",
@@ -17,7 +17,7 @@
     },
     "description": "",
     "genre": "",
-    "author": null,
+    "author": "Daniel Salazar",
     "glosser": "",
     "speakers": [
       "Daniel Salazar"
@@ -55,7 +55,7 @@
     "timed": true,
     "story ID": "b1d68818-d963-4ef8-97dd-9e551791d152",
     "title": {
-      "_default": "DES_2014_EDC_homem_ea_mulher_diabo"
+      "_default": "Homem e a Mulher Diabo / El hombre y la mujer del diablo / The Man and the Devil Woman"
     },
     "media": {
       "audio": "DES_2014_EDC_homem_ea_mulher_diabo.wav",
@@ -69,7 +69,7 @@
     },
     "description": "",
     "genre": "",
-    "author": "",
+    "author": "Edmilson Dias Carrasquilla",
     "glosser": "",
     "speakers": [
       "Edmilson Dias Carrasquilla"
@@ -107,7 +107,7 @@
     "timed": false,
     "story ID": "2dde283a-6204-45f1-a6d6-b9f0aacb07c6",
     "title": {
-      "_default": "DES_2014_SSV_cacador_eo_baixinho"
+      "_default": "Caçador e o baixinho / Cazador y el enano / The Hunter and the Dwarf"
     },
     "media": {
       "audio": "",
@@ -121,7 +121,7 @@
     },
     "description": "",
     "genre": "",
-    "author": "",
+    "author": "Sergio Zalasar",
     "glosser": "",
     "speakers": [
       "Sergio Zalasar",
@@ -160,7 +160,7 @@
     "timed": true,
     "story ID": "26738e57-be95-445b-a8b0-fbba68641878",
     "title": {
-      "_default": "DES_2016_LGL_anta_eo_esquilo"
+      "_default": "Anta e o esquilo / La sachavaca y la ardilla / The Tapir and the Squirrel"
     },
     "media": {
       "audio": "DES_2016_LGL_anta_eo_esquilo.wav",
@@ -174,7 +174,7 @@
     },
     "description": "",
     "genre": "",
-    "author": "",
+    "author": "Luis Lana",
     "glosser": "",
     "speakers": [
       "Luis lana",
@@ -213,7 +213,7 @@
     "timed": false,
     "story ID": "5f52bbf0-623c-4c1f-8f8e-3a90c46247b0",
     "title": {
-      "_default": "SIR_2014_JVC_rapazes_na_festa"
+      "_default": "Rapazes na Festa / Los muchachos en la fiesta / The Boys at the Party"
     },
     "media": {
       "audio": "",
@@ -227,7 +227,7 @@
     },
     "description": "",
     "genre": "",
-    "author": "",
+    "author": "Javier Vasquez Carrasquilla",
     "glosser": "",
     "speakers": [
       "Javier Vasquez Carrasquilla"
