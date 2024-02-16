@@ -1,6 +1,4 @@
 import id from 'shortid';
-import { metadataSpeakersText } from '~./jsx/App/locale/LocaleConstants.jsx';
-import { TranslatableText } from '~./jsx/App/locale/TranslatableText.jsx'
 
 export function SpeakerInfo({ speakers }) {
 	// I/P: speakers, a map from speaker IDs to objects containing speaker names, languages, etc.
@@ -18,7 +16,7 @@ export function SpeakerInfo({ speakers }) {
 	 	}
 		return (
 			<div id="speakerList">
-				<TranslatableText dictionary={metadataSpeakersText} />: <ul>{speaker_list}</ul>
+				Speakers: <ul>{speaker_list}</ul>
 			</div>
 		);
 	} else {
