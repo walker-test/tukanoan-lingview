@@ -1,70 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Tukanoan Language - LingView</title>
-    <!-- <script src="https://unpkg.com/react@15.3.0/dist/react.js"></script> -->
-    <!-- <script src="https://unpkg.com/react-dom@15.3.0/dist/react-dom.js"></script> -->
-    <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
-    <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-    <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.3/require.min.js"></script> -->
-    <!-- <script src="CDNs/react.js"></script> -->
-    <!-- <script src="CDNs/react-dom.js"></script> -->
-    <!-- <script src="CDNs/babel.js"></script> -->
-    <!-- <script src="CDNs/jquery.js"></script> -->
-    <link rel="stylesheet" href="css/main.css?version=0.2.4" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- <script type="text/jsx" src="jsx/index.jsx"></script> -->
-    <link
-      rel="stylesheet"
-      href="//fonts.googleapis.com/css?family=Open+Sans:255,0,0"
-    />
-    <link rel="icon" href="images/favicon.ico" />
-    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-      crossorigin=""
-    ></script>
-  </head>
+<head>
+    <meta charset="utf-8">
+    <title>LingView</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+    <link rel="icon" href="images/favicon.ico">
+</head>
 
-  <body>
-    <div id="navbar">
-      <div id="navTitle">
-        <a href="#/LandingPage/" id="homeButton"
-          >Tukanoan Languages Web Interface</a
-        >
-      </div>
-      <ul id="navLinks">
-        <li><a href="#/about/">About</a></li>
-        <li><a href="#/index/">Index of Texts</a></li>
-        <li><a href="#/contact/">Contact Us</a></li>
-        <li><a href="#/mapview/">Map</a></li>
-      </ul>
-    </div>
+<body>
     <div id="main"></div>
-    <div id="langSelect">
-      <div id="engButton">English</div>
-      <div id="spanButton">Spanish</div>
-    </div>
     <script src="build/bundle.js"></script>
-
     <script>
-      if (window.location.hash == "" || window.location.hash == "/") {
-        window.location.hash = "/LandingPage/";
+      // This code loads the YouTube IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      var youTubeIframeAPIReady = false;
+      function onYouTubeIframeAPIReady() {
+        youTubeIframeAPIReady = true;
       }
     </script>
-  </body>
+</body>
 </html>
