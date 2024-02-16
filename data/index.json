@@ -104,13 +104,13 @@
     }
   },
   "2dde283a-6204-45f1-a6d6-b9f0aacb07c6": {
-    "timed": false,
+    "timed": true,
     "story ID": "2dde283a-6204-45f1-a6d6-b9f0aacb07c6",
     "title": {
       "_default": "Caçador e o baixinho / Cazador y el enano / The Hunter and the Dwarf"
     },
     "media": {
-      "audio": null,
+      "audio": "DES_2014_SSV_cacador_eo_baixinho.wav",
       "video": ""
     },
     "languages": [],
@@ -210,13 +210,13 @@
     }
   },
   "5f52bbf0-623c-4c1f-8f8e-3a90c46247b0": {
-    "timed": false,
+    "timed": true,
     "story ID": "5f52bbf0-623c-4c1f-8f8e-3a90c46247b0",
     "title": {
       "_default": "Rapazes na Festa / Los muchachos en la fiesta / The Boys at the Party"
     },
     "media": {
-      "audio": "",
+      "audio": "SIR_2014_JVC_rapazes_na_festa.wav",
       "video": ""
     },
     "languages": [],
