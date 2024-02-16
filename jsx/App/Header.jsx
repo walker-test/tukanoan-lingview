@@ -4,7 +4,6 @@ import { AboutPage } from "./AboutPage.jsx";
 import { LandingPage } from "./LandingPage.jsx";
 import { Contact } from "./Contact.jsx";
 import { StoryIndex } from "./StoryIndex.jsx";
-import { Search } from "./Search.jsx";
 import { Stories } from "./Stories/Stories.jsx";
 import { Submissions } from "./Submissions.jsx";
 import { TranslatableText } from "./locale/TranslatableText.jsx";
@@ -27,10 +26,7 @@ export function Header() {
           </Link>
         </div>
         <div id="navLinks">
-          <NavLink to="/search">
-            <TranslatableText dictionary={navBarSearchText} />
-          </NavLink>
-          <NavLink to="/about">
+         <NavLink to="/about">
             <TranslatableText dictionary={navBarAboutText} />
           </NavLink>
           <NavLink to="/contact-us">
@@ -55,10 +51,7 @@ export function Header() {
         <Route path="/story">
           <Stories />
         </Route>
-        <Route path="/search">
-          <Search />
-        </Route>
-        <Route exact path="/about">
+       <Route exact path="/about">
           <AboutPage />
         </Route>
         <Route exact path="/contact-us">
