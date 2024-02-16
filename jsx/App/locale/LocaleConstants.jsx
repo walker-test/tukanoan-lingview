@@ -49,6 +49,12 @@ export const navBarContactText = {
     [FRANCAIS]: "Nous Contacter",
 };
 
+export const navBarSubmissionsText = {
+    [ENGLISH]: "Submissions",
+    [ESPANOL]: "Envíos",
+    [FRANCAIS]: "Soumissions",
+};
+
 // Search page text
 export const searchPagePromptText = {
   [ENGLISH] : "Search database:",
